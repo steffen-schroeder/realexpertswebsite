@@ -47,7 +47,7 @@ collections:
         label: "Frontpage"
         name: "frontpage"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "front-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Claim", name: "claim", widget: "object", fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Teaser text", name: "teaser", widget: "text"}, {label: "Link to", name: "linkto", widget: "relation", collection: "pages", searchFields: [name, path, title], valueField: "path"}]}
           - {label: "Thesis", name: "thesis", widget: list, fields: [{label: "Headline", name: "headline", widget: "string"}, {label: "Highlight", name: "highlighted", widget: "boolean"}, {label: "Body", name: "body", widget: "markdown"}]}

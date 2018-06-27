@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: front-page
 title: Welcome
 claim:
   heading: 'Proin sapien ipsum, porta a, auctor quis, euismod ut, mi.'
