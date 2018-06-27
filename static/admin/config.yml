@@ -52,4 +52,4 @@ collections:
           - {label: "Claim", name: "claim", widget: "object", fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Teaser text", name: "teaser", widget: "text"}, {label: "Link to", name: "linkto", widget: "relation", collection: "pages", searchFields: [name, path, title], valueField: "path"}]}
           - {label: "Thesis", name: "thesis", widget: list, fields: [{label: "Headline", name: "headline", widget: "string"}, {label: "Highlight", name: "highlighted", widget: "boolean"}, {label: "Body", name: "body", widget: "markdown"}]}
           - {label: "Featured video", name: "video", widget: string}
-          - {label: "Top Posts", name: "top_posts", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: [name, title], valueField: title}]}
+          - {label: "Top Posts", name: "relatedPosts", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: [name, title], valueField: title}]}

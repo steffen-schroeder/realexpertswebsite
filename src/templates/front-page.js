@@ -9,7 +9,7 @@ export const FrontPageTemplate = ({
   claim,
   thesis,
   video,
-  top_posts
+  relatedPosts
 }) => {
   const thesisElements = thesis.map((thesisElement, key) => (
     <div key={key} className={`thesis ${thesisElement.highlighted ? 'highlighted' : 'normal'}`}>
@@ -17,8 +17,8 @@ export const FrontPageTemplate = ({
       <p>{thesisElement.body}</p>
     </div>
   ))
-  const topPosts = top_posts.map((post, key) => (
-    <li key={key}>{post.post}</li>
+  const topPosts = relatedPosts.map((node, key) => (
+    <li key={key}>{node.post}</li>
   ))
 
   return (
@@ -65,7 +65,7 @@ FrontPageTemplate.propTypes = {
     body: PropTypes.string,
   })),
   video: PropTypes.string.isRequired,
-  top_posts: PropTypes.arrayOf(PropTypes.object),
+  relatedPosts: PropTypes.arrayOf(PropTypes.object),
 }
 
 const FrontPage = ({ data }) => {
@@ -77,7 +77,7 @@ const FrontPage = ({ data }) => {
       claim={post.frontmatter.claim}
       thesis={post.frontmatter.thesis}
       video={post.frontmatter.video}
-      top_posts={post.frontmatter.top_posts}
+      relatedPosts={post.frontmatter.relatedPosts}
     />
   )
 }
@@ -104,7 +104,7 @@ export const frontPageQuery = graphql`
           body
         }
         video
-        top_posts {
+        relatedPosts {
           post
         }
       }

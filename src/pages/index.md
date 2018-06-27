@@ -1,6 +1,7 @@
 ---
 templateKey: front-page
 title: Welcome
+path: /
 claim:
   heading: 'Proin sapien ipsum, porta a, auctor quis, euismod ut, mi.'
   linkto: /about
@@ -53,7 +54,7 @@ thesis:
     headline: Vivamus consectetuer hendrerit lacus
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
-top_posts:
+relatedPosts:
   - post: A beginners’ guide to brewing with Chemex
   - post: 'Just in: small batch of Jamaican Blue Mountain in store next week'
 ---
