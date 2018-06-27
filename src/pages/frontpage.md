@@ -52,7 +52,7 @@ thesis:
       eu, molestie vel, lacus. Fusce a quam.
     headline: Vivamus consectetuer hendrerit lacus
     highlighted: true
-video: 'https://www.youtube-nocookie.com/embed/r7wNymK__-s'
+video: 'https://youtu.be/r7wNymK__-s'
 top_posts:
   - post: src/pages/blog/2016-12-17-making-sense-of-the-scaas-new-flavor-wheel.md
 ---
