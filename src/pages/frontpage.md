@@ -54,6 +54,7 @@ thesis:
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
 top_posts:
-  - post: src/pages/blog/2016-12-17-making-sense-of-the-scaas-new-flavor-wheel.md
+  - post: A beginners’ guide to brewing with Chemex
+  - post: 'Just in: small batch of Jamaican Blue Mountain in store next week'
 ---
 
