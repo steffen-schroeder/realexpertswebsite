@@ -11,15 +11,26 @@ export const FrontPageTemplate = ({
   video,
   relatedPosts
 }) => {
+  // TODO: Create component for thesis
   const thesisElements = thesis.map((thesisElement, key) => (
     <div key={key} className={`thesis ${thesisElement.highlighted ? 'highlighted' : 'normal'}`}>
       <h3>{thesisElement.headline}</h3>
       <p>{thesisElement.body}</p>
     </div>
-  ))
-  const topPosts = relatedPosts.map((node, key) => (
-    <li key={key}>{node.post}</li>
-  ))
+  ));
+
+  // TODO: Create component for related posts
+  const topPosts = relatedPosts.map((node) => (
+    <li key={node.fields.slug}>
+      <div className='tags'>
+        {node.frontmatter.tags.map((tag, key) => {
+          return <div key={key} className='tag'><Link to={`/tags/${tag}`}>{tag}</Link></div>
+        })}
+      </div>
+      <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+      <p>{node.excerpt}</p>
+    </li>
+  ));
 
   return (
     <section>
@@ -50,7 +61,7 @@ export const FrontPageTemplate = ({
       <ul>{topPosts}</ul>
     </section>
   )
-}
+};
 
 FrontPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
@@ -66,10 +77,10 @@ FrontPageTemplate.propTypes = {
   })),
   video: PropTypes.string.isRequired,
   relatedPosts: PropTypes.arrayOf(PropTypes.object),
-}
+};
 
 const FrontPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <FrontPageTemplate
@@ -77,20 +88,32 @@ const FrontPage = ({ data }) => {
       claim={post.frontmatter.claim}
       thesis={post.frontmatter.thesis}
       video={post.frontmatter.video}
-      relatedPosts={post.frontmatter.relatedPosts}
+      relatedPosts={post.fields.relatedPosts}
     />
   )
-}
+};
 
 FrontPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
 export default FrontPage
 
 export const frontPageQuery = graphql`
   query FrontPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      fields {
+        relatedPosts {
+          excerpt(pruneLength: 300)
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            tags
+          }
+        }
+      }
       frontmatter {
         title
         claim {
@@ -110,4 +133,4 @@ export const frontPageQuery = graphql`
       }
     }
   }
-`
+`;
