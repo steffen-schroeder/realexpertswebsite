@@ -2,6 +2,9 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby + Netlify CMS Starter',
   },
+  mapping: {
+    "MarkdownRemark.fields.relatedPosts": "MarkdownRemark",
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
