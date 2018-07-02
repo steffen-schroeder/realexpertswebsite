@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Real Experts',
   },
   mapping: {
     "MarkdownRemark.fields.relatedPosts": "MarkdownRemark",
@@ -27,7 +27,9 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [],
+        plugins: [
+          'gatsby-remark-responsive-iframe',
+        ],
       },
     },
     {
