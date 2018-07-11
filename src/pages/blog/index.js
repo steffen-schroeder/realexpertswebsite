@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 import BlogPostTeaser from '../../components/BlogPostTeaser';
 
 export default class BlogIndexPage extends React.Component {
   render() {
     const { data } = this.props;
+    const { siteMetadata: title } = data.site;
     // only consider the first three related posts on the front page as top posts
     const topPosts = data.markdownRemark.fields.relatedPosts.slice(0,3);
     // exclude posts from `all posts` which are already in top posts
@@ -15,6 +17,7 @@ export default class BlogIndexPage extends React.Component {
 
     return (
       <section>
+        <Helmet title={`Blog | ${title}`} />
         <h2>Top Beiträge</h2>
         {topPosts.map((topPost, key) => (
           <BlogPostTeaser key={topPost.id}
@@ -34,6 +37,11 @@ export default class BlogIndexPage extends React.Component {
 
 BlogIndexPage.propTypes = {
   data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string,
+      }),
+    }),
     markdownRemark: PropTypes.shape({
       id: PropTypes.string,
       fields: PropTypes.shape({
@@ -60,6 +68,11 @@ BlogIndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     # Query front page for related posts used as top posts
     markdownRemark(fields: { slug: { eq: "/" }}) {
       id
