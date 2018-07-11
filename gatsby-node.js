@@ -121,5 +121,18 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       node,
       value,
     });
+
+    if (node.frontmatter.image) {
+      let imagePath = node.frontmatter.image;
+      if (node.frontmatter.image.startsWith('/img/')) {
+        imagePath = `../../../static${node.frontmatter.image}`;
+        createNodeField({
+          name: `image`,
+          node,
+          value: imagePath,
+        });
+      }
+    }
+
   }
 };
