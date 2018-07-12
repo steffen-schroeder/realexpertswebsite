@@ -3,10 +3,17 @@ templateKey: blog-post
 title: Making sense of the SCAA’s new Flavor Wheel
 date: 2016-12-17T15:04:10.000Z
 image: /img/jumbotron.jpg
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+description: >-
+  The Coffee Taster’s Flavor Wheel, the official resource used by coffee
+  tasters, has been revised for the first time this year.
 tags:
   - flavor
   - tasting
+relatedPosts:
+  - post: A beginners’ guide to brewing with Chemex
+  - post: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+  - post: A beginners’ guide to brewing with Chemex
+  - post: 'Just in: small batch of Jamaican Blue Mountain in store next week'
 ---
 
 ![flavor wheel](/img/flavor_wheel.jpg)
