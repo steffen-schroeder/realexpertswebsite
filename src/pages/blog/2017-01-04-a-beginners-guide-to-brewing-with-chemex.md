@@ -3,10 +3,16 @@ templateKey: blog-post
 title: A beginners’ guide to brewing with Chemex
 date: 2017-01-04T15:04:10.000Z
 image: /img/jumbotron.jpg
-description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
+description: >-
+  Brewing with a Chemex probably seems like a complicated, time-consuming
+  ordeal, but once you get used to the process, it becomes a soothing ritual
+  that's worth the effort every time.
 tags:
   - brewing
   - chemex
+relatedPosts:
+  - post: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+  - post: Making sense of the SCAA’s new Flavor Wheel
 ---
 ![chemex](/img/chemex.jpg)
 
