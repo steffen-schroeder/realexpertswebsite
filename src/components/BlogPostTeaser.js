@@ -46,5 +46,5 @@ BlogPostTeaser.propTypes = {
       date: PropTypes.string,
     }),
   }),
-  type: PropTypes.oneOf(['normal', 'featured', 'top']),
+  type: PropTypes.oneOf(['normal', 'featured', 'top', 'related']),
 };
