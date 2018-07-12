@@ -6,6 +6,7 @@ import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import BlogPostTeaser from '../components/BlogPostTeaser';
 import Content, { HTMLContent } from '../components/Content';
+import SocialButtons from '../components/SocialButtons';
 
 export const BlogPostTemplate = ({
   content,
@@ -16,6 +17,7 @@ export const BlogPostTemplate = ({
   helmet,
   featuredImage,
   relatedPosts,
+  socialConfig,
 }) => {
   const PostContent = contentComponent || Content
   const relatedPostsContent = !relatedPosts ? null : relatedPosts.map(post => (
@@ -41,6 +43,7 @@ export const BlogPostTemplate = ({
       </div>
       <p>{description}</p>
       <PostContent content={content} />
+      <SocialButtons socialConfig={socialConfig} tags={tags} />
       <div className="related-posts">
         {relatedPostsContent}
       </div>
@@ -52,14 +55,26 @@ BlogPostTemplate.propTypes = {
   content: PropTypes.string.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   helmet: PropTypes.instanceOf(Helmet),
   featuredImage: PropTypes.object,
   relatedPosts: PropTypes.arrayOf(PropTypes.object),
+  socialConfig: PropTypes.shape({
+    twitterHandle: PropTypes.string,
+    config: PropTypes.shape({
+      url: PropTypes.string,
+      title: PropTypes.string,
+    }),
+  }),
 };
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data;
+  const {
+    markdownRemark: post,
+    site: {
+      siteMetadata: { url, twitterHandle },
+    },
+  } = data;
   const helmet = <Helmet title={`${post.frontmatter.title} | Blog`} />;
   console.log('POST', post);
   return (
@@ -72,12 +87,20 @@ const BlogPost = ({ data }) => {
       title={post.frontmatter.title}
       featuredImage={post.fields.image}
       relatedPosts={post.fields.relatedPosts}
+      socialConfig={{
+        twitterHandle,
+        config: {
+          url: `${url}${post.fields.slug}`,
+          title: post.frontmatter.title,
+        },
+      }}
     />
   )
 };
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
+    site: PropTypes.object,
     markdownRemark: PropTypes.object,
   }),
 };
@@ -86,6 +109,12 @@ export default BlogPost;
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
+    site {
+      siteMetadata {
+        url
+        twitterHandle
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       id
       html

@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Real Experts',
+    twitterHandle: '@hut1315',
+    url: 'https://www.realexperts.de/',
   },
   mapping: {
     "MarkdownRemark.fields.relatedPosts": "MarkdownRemark",
