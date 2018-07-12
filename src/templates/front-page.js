@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import ReactPlayer from 'react-player'
+import BlogPostTeaser from '../components/BlogPostTeaser';
 
 export const FrontPageTemplate = ({
   title,
@@ -11,7 +12,7 @@ export const FrontPageTemplate = ({
   video,
   relatedPosts
 }) => {
-  // TODO: Create component for thesis
+
   const thesisElements = thesis.map((thesisElement, key) => (
     <div key={key} className={`thesis ${thesisElement.highlighted ? 'highlighted' : 'normal'}`}>
       <h3>{thesisElement.headline}</h3>
@@ -19,17 +20,11 @@ export const FrontPageTemplate = ({
     </div>
   ));
 
-  // TODO: Create component for related posts
-  const topPosts = relatedPosts.map((node) => (
-    <li key={node.fields.slug}>
-      <div className='tags'>
-        {node.frontmatter.tags.map((tag, key) => {
-          return <div key={key} className='tag'><Link to={`/tags/${tag}`}>{tag}</Link></div>
-        })}
-      </div>
-      <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-      <p>{node.excerpt}</p>
-    </li>
+  // show the first three related posts as top posts
+  const topPosts = relatedPosts.slice(0,3).map((post) => (
+    <BlogPostTeaser key={post.id}
+                    type='top'
+                    post={post} />
   ));
 
   return (
@@ -49,16 +44,12 @@ export const FrontPageTemplate = ({
           <ReactPlayer url={video}
                        width='100%'
                        height='100%'
-                       style={{
-                         position: "absolute",
-                         top: "0",
-                         left: "0"
-                       }}
+                       style={{ position: 'absolute', top: '0', left: '0' }}
           />
         </div>
       </div>
       <h2>Top Beiträge</h2>
-      <ul>{topPosts}</ul>
+      {topPosts}
     </section>
   )
 };
@@ -104,13 +95,23 @@ export const frontPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       fields {
         relatedPosts {
-          excerpt(pruneLength: 300)
+          excerpt(pruneLength: 400)
+          id
           fields {
             slug
+            image {
+              childImageSharp {
+                sizes(maxWidth: 630) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
           frontmatter {
             title
+            templateKey
             tags
+            date(formatString: "MMMM DD, YYYY")
           }
         }
       }
