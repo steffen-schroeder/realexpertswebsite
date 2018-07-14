@@ -2,6 +2,7 @@
 templateKey: simple-page
 contentType: author
 title: Christoph Rauhut
+twitterHandle: "@hut1315"
 position: CEO
 company: Real Experts
 email: rauhut@realexperts.de
