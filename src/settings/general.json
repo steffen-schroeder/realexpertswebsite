@@ -1,7 +1,10 @@
 {
-  "site_title": "Real Experts",
+  "general": {
+    "title": "Real Experts",
+    "url": "https://realexperts.de"
+  },
   "posts": {
     "frontLimit": "3",
-    "author": "Christoph Rauhut"
+    "defaultAuthor": "Christoph Rauhut"
   }
 }

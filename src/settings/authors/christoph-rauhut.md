@@ -1,5 +1,6 @@
 ---
 templateKey: simple-page
+contentType: author
 title: Christoph Rauhut
 position: CEO
 company: Real Experts

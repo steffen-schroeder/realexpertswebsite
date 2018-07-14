@@ -10,31 +10,47 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
   .filter(node => node.internal.type === "MarkdownRemark")
   .forEach(node => {
 
+    // Expand related posts to full blown nodes in fields.relatedPosts.
     if (node.frontmatter.relatedPosts) {
-
       const resolvedRelatedPosts = [];
-
       node.frontmatter.relatedPosts.map(relatedPost => {
-
         const postNode = sourceNodes.find(someNode =>
           someNode.internal.type === "MarkdownRemark" &&
           someNode.frontmatter.title === relatedPost.post
         );
-
         if (postNode) {
           resolvedRelatedPosts.push(postNode.id)
         }
       });
-
       if (resolvedRelatedPosts.length) {
         createNodeField({
           node,
           name: "relatedPosts",
           value: resolvedRelatedPosts
-        })
+        });
       }
     }
-  })
+  });
+
+  // Expand the default author's information on the settings node.
+  const settings = sourceNodes.filter(node => node.internal.type === "SettingsJson")[0];
+  if (!!settings.posts.defaultAuthor) {
+    const authorNode = sourceNodes.find(someNode =>
+      someNode.internal.type === "MarkdownRemark" &&
+      someNode.frontmatter.contentType === "author" &&
+      someNode.frontmatter.title === settings.posts.defaultAuthor
+    );
+    if (authorNode) {
+      // The following actually works but it's not the way it's been intended
+      // since sources are considered to be immutable.
+      // settings.posts.defaultAuthor = authorNode.id;
+      createNodeField({
+        node: settings,
+        name: "defaultAuthor",
+        value: authorNode.id
+      });
+    }
+  }
 };
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
@@ -63,10 +79,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         result.errors.forEach(e => console.error(e.toString()));
         return reject(result.errors);
       }
+      const { allMarkdownRemark: { edges: pages} } = result.data;
 
-      const posts = result.data.allMarkdownRemark.edges;
-
-      posts.forEach(edge => {
+      pages.forEach(edge => {
         const id = edge.node.id;
 
         createPage({
@@ -85,7 +100,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       // Tag pages:
       let tags = [];
       // Iterate through each post, putting all found tags into `tags`
-      posts.forEach(edge => {
+      pages.forEach(edge => {
         if (_.get(edge, `node.frontmatter.tags`)) {
           tags = tags.concat(edge.node.frontmatter.tags)
         }
@@ -122,6 +137,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       value,
     });
 
+    // Fix all image paths got set by netlify-cms but are not resolvable
+    // by imageSharp which needs those paths to be relative.
+    // Actually, that's kind of a fragile setup since it makes the assumption
+    // to find the static folder exactly three folders down from file the images
+    // path was defined in.
     if (node.frontmatter.image) {
       let imagePath = node.frontmatter.image;
       if (node.frontmatter.image.startsWith('/img/')) {

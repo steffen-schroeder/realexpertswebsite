@@ -70,10 +70,12 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
+      - {label: "Content type", name: "contentType", widget: "hidden", default: "author"}
       - {label: "Name", name: "title", widget: "string"}
       - {label: "Position", name: "position", widget: "string"}
       - {label: "Company", name: "company", widget: "string"}
       - {label: "Email", name: "email", widget: "string"}
+      - {label: "Twitter handle", name: "twitterHandle", widget: "string"}
       - {label: "Profile Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}
   - name: "settings"
@@ -83,14 +85,20 @@ collections:
       preview: false
     files:
       - name: "general"
-        label: "Site Settings"
+        label: "Settings"
         file: "src/settings/general.json"
         description: "General Site Settings"
         fields:
           - {label: "Global title", name: "site_title", widget: "string"}
-          - label: "Post Settings"
+          - label: "Global"
+            name: "global"
+            widget: "object"
+            fields:
+              - {label: "Title of the website", name: "title", widget: "string"}
+              - {label: "URL of the website (https://example.com)", name: "url", widget: "string"}
+          - label: "Posts"
             name: "posts"
             widget: "object"
             fields:
               - {label: "Number of posts on frontpage", name: "frontLimit", widget: "number"}
-              - {label: "Default Author", name: "author", widget: "relation", collection: "authors", searchFields: ["title", "position", "company"], valueField: "title"}
+              - {label: "Default Author", name: "defaultAuthor", widget: "relation", collection: "authors", searchFields: ["title", "position", "company"], valueField: "title"}
