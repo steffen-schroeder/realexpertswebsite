@@ -6,6 +6,7 @@ module.exports = {
   },
   mapping: {
     "MarkdownRemark.fields.relatedPosts": "MarkdownRemark",
+    "MarkdownRemark.fields.author": "MarkdownRemark",
     "SettingsJson.fields.defaultAuthor": "MarkdownRemark",
   },
   plugins: [

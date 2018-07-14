@@ -2,9 +2,28 @@ const _ = require('lodash');
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
+
 exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
   const { createNodeField } = boundActionCreators;
   const sourceNodes = getNodes();
+
+  const expandAuthorField = (nodeToExpand, authorTitle, fieldName) => {
+    const authorNode = sourceNodes.find(someNode =>
+      someNode.internal.type === "MarkdownRemark" &&
+      someNode.frontmatter.contentType === "author" &&
+      someNode.frontmatter.title === authorTitle
+    );
+    if (authorNode) {
+      // The following actually works but it's not the way it's been intended
+      // since sources are considered to be immutable.
+      // e.g. `settings.posts.defaultAuthor = authorNode.id;`
+      createNodeField({
+        node: nodeToExpand,
+        name: fieldName,
+        value: authorNode.id
+      });
+    }
+  };
 
   sourceNodes
   .filter(node => node.internal.type === "MarkdownRemark")
@@ -30,26 +49,16 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
         });
       }
     }
+
+    if (!!node.frontmatter.author) {
+      expandAuthorField(node, node.frontmatter.author, "author");
+    }
   });
 
   // Expand the default author's information on the settings node.
   const settings = sourceNodes.filter(node => node.internal.type === "SettingsJson")[0];
   if (!!settings.posts.defaultAuthor) {
-    const authorNode = sourceNodes.find(someNode =>
-      someNode.internal.type === "MarkdownRemark" &&
-      someNode.frontmatter.contentType === "author" &&
-      someNode.frontmatter.title === settings.posts.defaultAuthor
-    );
-    if (authorNode) {
-      // The following actually works but it's not the way it's been intended
-      // since sources are considered to be immutable.
-      // settings.posts.defaultAuthor = authorNode.id;
-      createNodeField({
-        node: settings,
-        name: "defaultAuthor",
-        value: authorNode.id
-      });
-    }
+    expandAuthorField(settings, settings.posts.defaultAuthor, "defaultAuthor");
   }
 };
 

@@ -72,30 +72,44 @@ class BlogPost extends React.Component {
   render() {
     const {
       settings: {
-        general: { title, url },
+        general: { title: siteTitle, url },
         fields: {
           defaultAuthor
         }
       },
-      post: post,
+      post: {
+        html,
+        frontmatter: {
+          description,
+          tags,
+          title,
+        },
+        fields: {
+          image,
+          relatedPosts,
+          slug,
+          author,
+        }
+      },
     } = this.props.data;
-    console.log('defaultAuthor', defaultAuthor);
-    const helmet = <Helmet title={`${post.frontmatter.title} | Blog | ${title}`} />;
+    const postAuthor = author ? author : defaultAuthor;
+    const helmet = <Helmet title={`${title} | Blog | ${siteTitle}`} />;
+    console.log(postAuthor);
     return (
       <BlogPostTemplate
-        content={post.html}
+        content={html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
+        description={description}
         helmet={helmet}
-        tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
-        featuredImage={post.fields.image}
-        relatedPosts={post.fields.relatedPosts}
+        tags={tags}
+        title={title}
+        featuredImage={image}
+        relatedPosts={relatedPosts}
         socialConfig={{
-          twitterHandle: defaultAuthor.frontmatter.twitterHandle,
+          twitterHandle: postAuthor.frontmatter.twitterHandle,
           config: {
-            url: `${url}${post.fields.slug}`,
-            title: post.frontmatter.title,
+            url: `${url}${slug}`,
+            title: siteTitle,
           },
         }}
       />
@@ -150,7 +164,6 @@ export const pageQuery = graphql`
       }
     }
     post: markdownRemark(id: { eq: $id }) {
-      id
       html
       fields {
         slug
@@ -172,6 +185,25 @@ export const pageQuery = graphql`
           }
           fields {
             slug
+            author {
+              fields {
+                image {
+                  childImageSharp {
+                    sizes (maxWidth: 100, maxHeight: 100) {
+                      ...GatsbyImageSharpSizes
+                    }
+                  }
+                }
+              }
+              frontmatter {
+                title
+                position
+                company
+                email
+                twitterHandle
+                description
+              }
+            }
             image {
               id
               childImageSharp {
@@ -185,7 +217,6 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        templateKey
         tags
         date(formatString: "MMMM DD, YYYY")
       }
