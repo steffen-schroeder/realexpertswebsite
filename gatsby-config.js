@@ -6,6 +6,7 @@ module.exports = {
   },
   mapping: {
     "MarkdownRemark.fields.relatedPosts": "MarkdownRemark",
+    "SettingsJson.fields.defaultAuthor": "MarkdownRemark",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -27,12 +28,27 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: `staticImages`,
+        name: 'staticImages',
         path: `${__dirname}/static/img`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'authors',
+        path: `${__dirname}/src/settings`, // Pointing to settings only adds the folder to the slug
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'settings',
+        path: `${__dirname}/src/settings/general.json`,
       },
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-transformer-json',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -49,4 +65,4 @@ module.exports = {
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
-}
+};
