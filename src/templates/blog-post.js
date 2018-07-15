@@ -14,8 +14,10 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  date,
   helmet,
   featuredImage,
+  author,
   relatedPosts,
   socialConfig,
 }) => {
@@ -41,6 +43,13 @@ export const BlogPostTemplate = ({
            style={{ height: 'auto', width: '100%' }}>
         { featuredImage && <Img sizes={featuredImage.childImageSharp.sizes} /> }
       </div>
+      <div className="blog-post-author">
+        { author.fields.image && <Img sizes={author.fields.image.childImageSharp.sizes} /> }
+        <h5>{author.frontmatter.title}</h5>
+        <small>{author.frontmatter.position}</small>
+        <p>{author.frontmatter.company}</p>
+        <p>Veröffentlicht am {date}</p>
+      </div>
       <p>{description}</p>
       <PostContent content={content} />
       <SocialButtons socialConfig={socialConfig} tags={tags} />
@@ -56,8 +65,21 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
   helmet: PropTypes.instanceOf(Helmet),
   featuredImage: PropTypes.object,
+  author: PropTypes.shape({
+    fields: PropTypes.shape({
+      image: PropTypes.object,
+    }),
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string,
+      position: PropTypes.string,
+      company: PropTypes.string,
+      email: PropTypes.string,
+      twitterHandle: PropTypes.string,
+    }),
+  }),
   relatedPosts: PropTypes.arrayOf(PropTypes.object),
   socialConfig: PropTypes.shape({
     twitterHandle: PropTypes.string,
@@ -82,6 +104,7 @@ class BlogPost extends React.Component {
         frontmatter: {
           description,
           tags,
+          date,
           title,
         },
         fields: {
@@ -94,7 +117,6 @@ class BlogPost extends React.Component {
     } = this.props.data;
     const postAuthor = author ? author : defaultAuthor;
     const helmet = <Helmet title={`${title} | Blog | ${siteTitle}`} />;
-    console.log(postAuthor);
     return (
       <BlogPostTemplate
         content={html}
@@ -103,7 +125,9 @@ class BlogPost extends React.Component {
         helmet={helmet}
         tags={tags}
         title={title}
+        date={date}
         featuredImage={image}
+        author={postAuthor}
         relatedPosts={relatedPosts}
         socialConfig={{
           twitterHandle: postAuthor.frontmatter.twitterHandle,
@@ -156,9 +180,7 @@ export const pageQuery = graphql`
             title
             position
             company
-            email
             twitterHandle
-            description
           }
         }
       }
@@ -180,7 +202,7 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 400)
           frontmatter {
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
             tags
           }
           fields {
@@ -199,9 +221,7 @@ export const pageQuery = graphql`
                 title
                 position
                 company
-                email
                 twitterHandle
-                description
               }
             }
             image {
