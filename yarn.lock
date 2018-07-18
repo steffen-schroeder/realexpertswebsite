@@ -10631,6 +10631,10 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
+typeface-changa@^0.0.56:
+  version "0.0.56"
+  resolved "https://registry.yarnpkg.com/typeface-changa/-/typeface-changa-0.0.56.tgz#df3ea2e8c9835987917bb0c5aad147be184f5d09"
+
 ua-parser-js@^0.7.18:
   version "0.7.18"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.18.tgz#a7bfd92f56edfb117083b69e31d2aa8882d4b1ed"

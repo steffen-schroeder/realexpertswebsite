@@ -27,6 +27,7 @@
     "react-helmet": "^5.2.0",
     "react-player": "^1.6.4",
     "react-share": "^2.2.0",
+    "typeface-changa": "^0.0.56",
     "uuid": "^3.2.1"
   },
   "keywords": [
