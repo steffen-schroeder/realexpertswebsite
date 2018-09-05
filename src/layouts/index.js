@@ -5,13 +5,13 @@ import Helmet from 'react-helmet'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import 'typeface-changa'
-import './all.sass'
+import './all.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Home | Gatsby + Netlify CMS" />
-    <Navbar />
-    <div>{children()}</div>
+    <header id="header-main"><Navbar /></header>
+    <main>{children()}</main>
     <Footer />
   </div>
 )

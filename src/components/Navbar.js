@@ -17,36 +17,29 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item">
-              <figure className="image">
-                <img src={logo} alt="Real Experts"/>
-              </figure>
-            </Link>
-            <a role="button"
-               className="navbar-burger"
-               aria-label="menu"
-               aria-expanded="false"
-               onClick={this.toggleClass}>
-              <span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span>
-            </a>
-          </div>
-          <div className={`navbar-menu ${this.state.mobileMenuActive ? 'is-active': 'not-active'}`}>
-            <div className="navbar-start"> </div>
-            <div className="navbar-end">
-              <Link className="navbar-item"
-                    activeClassName="is-active"
-                    onClick={this.toggleClass}
-                    to="/"> Start </Link>
-              <Link className="navbar-item"
-                    activeClassName="is-active"
-                    onClick={this.toggleClass}
-                    to="/blog"> Blog </Link>
-            </div>
-          </div>
-        </div>
+      <nav role="navigation" aria-label="main navigation">
+        <Link to="/" className="navigation-bar-logo">
+          <figure className="image">
+            <img src={logo} alt="Real Experts GmbH"/>
+          </figure>
+        </Link>
+        <a role="button"
+           className="navigation-bar-burger"
+           aria-label="menu"
+           aria-expanded="false"
+           onClick={this.toggleClass}>
+          <span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+        </a>
+      <div className={`navigation-bar-menu ${this.state.mobileMenuActive ? 'is-active': 'not-active'}`}>
+          <Link className="navigation-bar-item"
+                activeClassName="is-active"
+                onClick={this.toggleClass}
+                to="/"> Start </Link>
+          <Link className="navigation-bar-item"
+                activeClassName="is-active"
+                onClick={this.toggleClass}
+                to="/blog"> Blog </Link>
+      </div>
       </nav>
     )
   }
