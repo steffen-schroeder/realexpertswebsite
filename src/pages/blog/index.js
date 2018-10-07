@@ -5,31 +5,35 @@ import BlogPostTeaser from '../../components/BlogPostTeaser';
 
 export default class BlogIndexPage extends React.Component {
   render() {
-    const { data } = this.props;
-    const { siteMetadata: title } = data.site;
+    const {data} = this.props;
+    const {siteMetadata: title} = data.site;
     // only consider the first three related posts on the front page as top posts
-    const topPosts = data.markdownRemark.fields.relatedPosts.slice(0,3);
+    const topPosts = data.markdownRemark.fields.relatedPosts.slice(0, 3);
     // exclude posts from `all posts` which are already in top posts
     const posts = data.allMarkdownRemark.edges
-      .filter(({ node: post }) => {
+      .filter(({node: post}) => {
         return !topPosts.find(topPost => topPost.id === post.id);
       });
 
     return (
-      <section>
-        <Helmet title={`Blog | ${title}`} />
+      <section className="blog">
+        <Helmet title={`Blog | ${title}`}/>
         <h2>Top Beiträge</h2>
-        {topPosts.map((topPost, key) => (
-          <BlogPostTeaser key={topPost.id}
-                          post={topPost}
-                          type={key === 0 ? 'featured' : 'top'} />
-        ))}
+        <div className="top-posts">
+          {topPosts.map((topPost, key) => (
+            <BlogPostTeaser key={topPost.id}
+                            post={topPost}
+                            type={key === 0 ? 'featured' : 'top'}/>
+          ))}
+        </div>
         <h2>Alle Beiträge</h2>
-        {posts.map(({ node: post }) => (
-          <BlogPostTeaser key={post.id}
-                          post={post}
-                          type='normal' />
-        ))}
+        <div className="all-posts">
+          {posts.map(({node: post}) => (
+            <BlogPostTeaser key={post.id}
+                            post={post}
+                            type='normal'/>
+          ))}
+        </div>
       </section>
     )
   }

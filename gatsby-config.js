@@ -15,13 +15,6 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'settings',
-        path: `${__dirname}/src/settings`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
       },
@@ -38,6 +31,20 @@ module.exports = {
       options: {
         name: 'staticImages',
         path: `${__dirname}/static/img`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'authors',
+        path: `${__dirname}/src/settings`, // Pointing to settings only adds the folder to the slug
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'settings',
+        path: `${__dirname}/src/settings/general.json`,
       },
     },
     'gatsby-plugin-sharp',

@@ -8,7 +8,7 @@ import 'typeface-changa'
 import './all.scss'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="content">
     <Helmet title="Home | Gatsby + Netlify CMS" />
     <header id="header-main"><Navbar /></header>
     <main>{children()}</main>

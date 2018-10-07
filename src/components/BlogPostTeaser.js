@@ -10,24 +10,25 @@ export default class BlogPostTeaser extends React.Component {
 
     return (
       <div className={`post ${type}`}>
-        <div className={`image-type-${type}`}
-             style={{ float: 'left', height: '148px', width: '220px' }}>
+        <div className={`image-type-${type}`}>
           { post.fields.image && <Img sizes={post.fields.image.childImageSharp.sizes} /> }
         </div>
-        <ul className='post-tags'>
-          {post.frontmatter.tags.map((tag, key) => (
-            <li key={key}>
-              <Link to={`/tags/${tag}`}>{tag}</Link>
-            </li>
-          ))}
-        </ul>
-        <small>{post.frontmatter.date}</small>
-        <Link to={post.fields.slug}>
-          <h4>{post.frontmatter.title}</h4>
-        </Link>
-        <p>{post.excerpt}</p>
-        { type === 'featured'
-          && <Link to={post.fields.slug}>Artikel lesen</Link> }
+        <div className="post-content">
+          <ul className='taglist'>
+            {post.frontmatter.tags.map((tag, key) => (
+              <li key={key}>
+                <Link to={`/tags/${tag}`}>{tag}</Link>
+              </li>
+            ))}
+          </ul>
+          {/*<small>{post.frontmatter.date}</small>*/}
+          <Link to={post.fields.slug}>
+            <h4>{post.frontmatter.title}</h4>
+          </Link>
+          <p className='post-content-excerpt'>{post.excerpt}</p>
+          { type === 'featured'
+          && <Link className="more" to={post.fields.slug}>Artikel lesen</Link> }
+        </div>
       </div>
     )
   }

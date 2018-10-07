@@ -1,61 +1,87 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { kebabCase } from 'lodash';
+import {kebabCase} from 'lodash';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import BlogPostTeaser from '../components/BlogPostTeaser';
-import Content, { HTMLContent } from '../components/Content';
+import Content, {HTMLContent} from '../components/Content';
 import SocialButtons from '../components/SocialButtons';
 
+import left from '../img/icons/chevron-left.svg';
+import right from '../img/icons/chevron-right.svg';
+
 export const BlogPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
-  date,
-  helmet,
-  featuredImage,
-  author,
-  relatedPosts,
-  socialConfig,
-}) => {
-  const PostContent = contentComponent || Content
+                                   content,
+                                   contentComponent,
+                                   description,
+                                   tags,
+                                   title,
+                                   date,
+                                   helmet,
+                                   featuredImage,
+                                   author,
+                                   relatedPosts,
+                                   socialConfig,
+                                   onRelatedLeft,
+                                   onRelatedRight,
+                                   relatedIndex
+                                 }) => {
+  const PostContent = contentComponent || Content;
   const relatedPostsContent = !relatedPosts ? null : relatedPosts.map(post => (
-    <BlogPostTeaser post={post} type='related' key={post.id} />
+    <BlogPostTeaser post={post} type='related' key={post.id}/>
   ));
 
   return (
-    <section className="section">
+    <section className="blog-post"
+             style={{marginBottom: relatedPosts !== null ? '470px' : '40px'}}>
       {helmet || ''}
       {tags && tags.length ? (
-          <ul className="taglist">
-            {tags.map(tag => (
-              <li key={tag + `-tag`}>
-                <Link to={`/tags/${kebabCase(tag)}/`}>{tag.toUpperCase()}</Link>
-              </li>
-            ))}
-          </ul>
+        <ul className="taglist divided">
+          {tags.map(tag => (
+            <li key={tag + `-tag`}>
+              <Link to={`/tags/${kebabCase(tag)}/`}>{tag.toUpperCase()}</Link>
+            </li>
+          ))}
+        </ul>
       ) : null}
       <h1>{title}</h1>
-      <div className="image-type-featured"
-           style={{ height: 'auto', width: '100%' }}>
-        { featuredImage && <Img sizes={featuredImage.childImageSharp.sizes} /> }
+      <div className="image-type-featured">
+        {featuredImage && <Img sizes={featuredImage.childImageSharp.sizes}/>}
       </div>
       <div className="blog-post-author">
-        { author.fields.image && <Img sizes={author.fields.image.childImageSharp.sizes} /> }
-        <h5>{author.frontmatter.title}</h5>
-        <small>{author.frontmatter.position}</small>
-        <p>{author.frontmatter.company}</p>
-        <p>Veröffentlicht am {date}</p>
+        {author.fields.image && <Img sizes={author.fields.image.childImageSharp.sizes}/>}
+        <div className="blog-author-info">
+          <h5 className="title">{author.frontmatter.title}</h5>
+          <small className="position">{author.frontmatter.position}</small>
+          <p className="company">{author.frontmatter.company}</p>
+        </div>
+        <p className="release-date">Veröffentlicht am {date}</p>
       </div>
-      <p>{description}</p>
-      <PostContent content={content} />
-      <SocialButtons socialConfig={socialConfig} tags={tags} />
+      {/*<p className="description">{description}</p>*/}
+      <PostContent className="content" content={content}/>
+      <SocialButtons socialConfig={socialConfig} tags={tags}/>
+      {relatedPosts &&
       <div className="related-posts">
-        {relatedPostsContent}
+        <div className="related-posts-wrapper">
+          <h3>Relevante Artikel</h3>
+          <div className="related-posts-list-wrapper">
+            <div className="related-posts-list"
+                 style={{width: (relatedPosts.length * 350) + 'px', marginLeft: (-relatedIndex * 350) + 'px'}}>
+              {relatedPostsContent}
+            </div>
+          </div>
+          <div className="controls">
+            {relatedIndex > 0 &&
+            <img className="left" src={left} onClick={onRelatedLeft} alt=""/>
+            }
+            {relatedIndex < relatedPosts.length - 3 &&
+            <img className="right" src={right} onClick={onRelatedRight} alt=""/>
+            }
+          </div>
+        </div>
       </div>
+      }
     </section>
   )
 };
@@ -68,6 +94,9 @@ BlogPostTemplate.propTypes = {
   date: PropTypes.string.isRequired,
   helmet: PropTypes.instanceOf(Helmet),
   featuredImage: PropTypes.object,
+  onRelatedLeft: PropTypes.func,
+  onRelatedRight: PropTypes.func,
+  relatedIndex: PropTypes.number,
   author: PropTypes.shape({
     fields: PropTypes.shape({
       image: PropTypes.object,
@@ -91,10 +120,34 @@ BlogPostTemplate.propTypes = {
 };
 
 class BlogPost extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      relatedIndex: 0,
+      relatedPostsLength: 0
+    };
+  }
+
+  relatedLeft() {
+
+    if (this.state.relatedIndex > 0) {
+      console.log(this.state.relatedIndex);
+      this.setState({relatedIndex: this.state.relatedIndex - 1});
+    }
+  }
+
+  relatedRight(relatedPostsLength) {
+    if (this.state.relatedIndex < relatedPostsLength) {
+      console.log(this.state.relatedIndex);
+      this.setState({relatedIndex: this.state.relatedIndex + 1});
+    }
+  }
+
   render() {
     const {
       settings: {
-        general: { title: siteTitle, url },
+        general: {title: siteTitle, url},
         fields: {
           defaultAuthor
         }
@@ -116,7 +169,8 @@ class BlogPost extends React.Component {
       },
     } = this.props.data;
     const postAuthor = author ? author : defaultAuthor;
-    const helmet = <Helmet title={`${title} | Blog | ${siteTitle}`} />;
+    const helmet = <Helmet title={`${title} | Blog | ${siteTitle}`}/>;
+    console.log("sdasd");
     return (
       <BlogPostTemplate
         content={html}
@@ -129,6 +183,13 @@ class BlogPost extends React.Component {
         featuredImage={image}
         author={postAuthor}
         relatedPosts={relatedPosts}
+        onRelatedLeft={() => {
+          this.relatedLeft();
+        }}
+        onRelatedRight={() => {
+          this.relatedRight(relatedPosts.length);
+        }}
+        relatedIndex={this.state.relatedIndex}
         socialConfig={{
           twitterHandle: postAuthor.frontmatter.twitterHandle,
           config: {

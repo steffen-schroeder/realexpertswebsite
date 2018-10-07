@@ -6,12 +6,12 @@ import ReactPlayer from 'react-player'
 import BlogPostTeaser from '../components/BlogPostTeaser';
 
 export const FrontPageTemplate = ({
-  title,
-  claim,
-  thesis,
-  video,
-  relatedPosts
-}) => {
+                                    title,
+                                    claim,
+                                    thesis,
+                                    video,
+                                    relatedPosts
+                                  }) => {
 
   const thesisElements = thesis.map((thesisElement, key) => (
     <div key={key} className={`thesis ${thesisElement.highlighted ? 'highlighted' : 'normal'}`}>
@@ -21,35 +21,51 @@ export const FrontPageTemplate = ({
   ));
 
   // show the first three related posts as top posts
-  const topPosts = relatedPosts.slice(0,3).map((post) => (
+  const topPosts = relatedPosts.slice(0, 3).map((post) => (
     <BlogPostTeaser key={post.id}
                     type='top'
-                    post={post} />
+                    post={post}/>
   ));
 
   return (
     <section>
-      <Helmet title={title} />
-      <h1>{claim.heading}</h1>
-      <p>{claim.teaser}</p>
-      <Link to={claim.linkto}>Mehr erfahren</Link>
-      <div className="thesis-wrapper">
-        {thesisElements}
-      </div>
-      <div className='featured-video' style={{ width: "800px" }}>
-        <div style={{
-          position: "relative",
-          paddingTop: "56.25%"
-        }}>
-          <ReactPlayer url={video}
-                       width='100%'
-                       height='100%'
-                       style={{ position: 'absolute', top: '0', left: '0' }}
-          />
+      <Helmet title={title}/>
+      <div className="hero">
+        <div className="claim">
+          <h1>{claim.heading}</h1>
+          <p>{claim.teaser}</p>
+          <Link to={claim.linkto}>Mehr erfahren</Link>
         </div>
       </div>
-      <h2>Top Beiträge</h2>
-      {topPosts}
+      <div className="page-content">
+        <div className="thesis-wrapper">
+          {thesisElements}
+        </div>
+
+        <div className="featured-video-wrapper">
+          <div className='featured-video'>
+            <div style={{
+              position: "relative",
+              paddingTop: "56.25%"
+            }}>
+              <ReactPlayer url={video}
+                           width='100%'
+                           height='100%'
+                           style={{position: 'absolute', top: '0', left: '0'}}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="posts">
+          <h2>Top Beiträge</h2>
+          <div className="top-posts">
+            {topPosts}
+          </div>
+        </div>
+
+      </div>
+
     </section>
   )
 };
@@ -70,8 +86,8 @@ FrontPageTemplate.propTypes = {
   relatedPosts: PropTypes.arrayOf(PropTypes.object),
 };
 
-const FrontPage = ({ data }) => {
-  const { markdownRemark: post } = data;
+const FrontPage = ({data}) => {
+  const {markdownRemark: post} = data;
 
   return (
     <FrontPageTemplate

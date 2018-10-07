@@ -14,19 +14,19 @@ const SocialButtons = ({ socialConfig, tags }) => (
     <FacebookShareButton url={socialConfig.config.url} className="facebook" >
       <FacebookIcon size={48}
                     round={false}
-                    iconBgStyle={{ fill: '#eee' }}
+                    iconBgStyle={{ fill: '#879fc9' }}
                     logoFillColor='white' />
     </FacebookShareButton>
     <TwitterShareButton url={socialConfig.config.url} className="twitter" title={socialConfig.config.title} via={socialConfig.twitterHandle.split('@').join('')} hashtags={tags} >
       <TwitterIcon size={48}
                    round={false}
-                   iconBgStyle={{ fill: '#eee' }}
+                   iconBgStyle={{ fill: '#879fc9' }}
                    logoFillColor='white' />
     </TwitterShareButton>
     <GooglePlusShareButton url={socialConfig.config.url} className="googleplus" >
       <GooglePlusIcon size={48}
                       round={false}
-                      iconBgStyle={{ fill: '#eee' }}
+                      iconBgStyle={{ fill: '#879fc9' }}
                       logoFillColor='white' />
     </GooglePlusShareButton>
   </div>

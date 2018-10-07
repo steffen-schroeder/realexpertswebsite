@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import logo from '../img/realexperts-textual.svg'
+import menu from '../img/icons/menu.svg'
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -23,13 +24,13 @@ class Navbar extends React.Component {
             <img src={logo} alt="Real Experts GmbH"/>
           </figure>
         </Link>
-        <a role="button"
+        <img role="button"
+             src={menu}
            className="navigation-bar-burger"
            aria-label="menu"
            aria-expanded="false"
            onClick={this.toggleClass}>
-          <span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span>
-        </a>
+        </img>
       <div className={`navigation-bar-menu ${this.state.mobileMenuActive ? 'is-active': 'not-active'}`}>
           <Link className="navigation-bar-item"
                 activeClassName="is-active"

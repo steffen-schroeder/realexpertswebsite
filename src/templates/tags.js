@@ -14,13 +14,15 @@ export default class TagRoute extends React.Component {
     } in Kategorie “${tag}”`;
 
     return (
-      <section>
+      <section className="section blogs-by-tag">
+
         <Helmet title={`${tag} | ${title}`} />
-        <small>{tagHeader}</small>
-        <h2>Alle Beiträge in <strong>{tag}</strong></h2>
+        <h2>Alle Beiträge in <strong>{tag}</strong> ({totalCount})</h2>
+        <div className="all-posts">
         {posts.map(({ node: post}) => (
           <BlogPostTeaser post={post} type='normal' key={post.id} />
         ))}
+        </div>
         <p>
           <Link to="/tags/">Alle Kategorien</Link>
         </p>

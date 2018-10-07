@@ -5,18 +5,10 @@ const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
   const { createNodeField } = boundActionCreators;
-  const allNodes = getNodes();
-
-  // Print some debug information on what nodes are actually there because
-  // the order in which they are defined to be sourced in gatsby-config.js
-  // does seem to matter!
-  console.log(
-    'All sourced nodes (type => id)',
-    allNodes.map(someNode => someNode.internal.type + ' => ' + someNode.id)
-  );
+  const sourceNodes = getNodes();
 
   const expandAuthorField = (nodeToExpand, authorTitle, fieldName) => {
-    const authorNode = allNodes.find(someNode =>
+    const authorNode = sourceNodes.find(someNode =>
       someNode.internal.type === "MarkdownRemark" &&
       someNode.frontmatter.contentType === "author" &&
       someNode.frontmatter.title === authorTitle
@@ -33,7 +25,7 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
     }
   };
 
-  allNodes
+  sourceNodes
   .filter(node => node.internal.type === "MarkdownRemark")
   .forEach(node => {
 
@@ -41,7 +33,7 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
     if (node.frontmatter.relatedPosts) {
       const resolvedRelatedPosts = [];
       node.frontmatter.relatedPosts.map(relatedPost => {
-        const postNode = allNodes.find(someNode =>
+        const postNode = sourceNodes.find(someNode =>
           someNode.internal.type === "MarkdownRemark" &&
           someNode.frontmatter.title === relatedPost.post
         );
@@ -64,7 +56,7 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
   });
 
   // Expand the default author's information on the settings node.
-  const settings = allNodes.find(node => node.internal.type === "SettingsJson" && node.id === "general-settings");
+  const settings = sourceNodes.filter(node => node.internal.type === "SettingsJson")[0];
   if (!!settings.posts.defaultAuthor) {
     expandAuthorField(settings, settings.posts.defaultAuthor, "defaultAuthor");
   }

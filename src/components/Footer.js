@@ -5,11 +5,13 @@ import logo from '../img/realexperts-speechbubble.svg'
 
 const Footer = () => (
   <footer className="footer">
-    <div className="container">
-      <div>
-        <img src={logo} alt="Real Experts"style={{ maxHeight: '100px' }} />
-        Powered by Real Experts<br/>
-        Network GmbH
+    <div className="footer-container">
+      <div className="footer-logo">
+        <img src={logo} alt="Real Experts" style={{ maxHeight: '75px' }} />
+        <div className="footer-powered-by">
+          Powered by Real Experts<br/>
+          Network GmbH
+        </div>
       </div>
       <nav>
         <ul>
