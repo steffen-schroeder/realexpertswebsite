@@ -219,19 +219,37 @@
     .blog-post {
       flex-direction: column;
 
-      .gatsby-image-outer-wrapper {
-        float: left;
+      .content {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
       }
+
 
       .wrapper-for-tablet {
         float: left;
+        margin-left: 20px;
 
       }
       .blog-post-author {
         width: 100%;
+        float: left;
+
+
+
+        .gatsby-image-outer-wrapper {
+        float: left;
+        }
 
         .blog-author-info {
+          .title {
+            margin-top: 0px;
+          }
 
+        }
+
+        .release-date {
+          margin-bottom: 20px;
         }
       }
 
@@ -240,6 +258,13 @@
         .related-posts-wrapper {
           width: 100%;
 
+        }
+      }
+
+      .post-social {
+        flex-direction: row;
+        .SocialMediaShareButton{
+        margin-right: 10px;
         }
       }
     }
