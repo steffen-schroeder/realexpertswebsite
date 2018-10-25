@@ -80,16 +80,27 @@ body {
         color: $secondary;
         font-family: 'Changa', sans-serif;
         position: relative;
-        top: -4px;
+        top: -7px;
       }
     }
 
-    &.divided li {
-      padding: 0 10px;
-      border-right: 2px solid $secondary;
-      &:last-child {
-        border: none;
+    &.divided {
+
+      margin-left: -10px;
+
+      li {
+
+        height: 13px;
+        margin-bottom: 10px;
+
+        padding: 0 10px;
+        border-right: 2px solid $secondary;
+        &:last-child {
+          border: none;
+        }
+
       }
+
     }
   }
 
@@ -205,13 +216,12 @@ main {
       margin-left: -160px;
       margin-right: -160px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       flex-direction: column;
       background-image: url('../img/hero.jpg');
 
       .claim {
 
-        padding-bottom: 140px;
         width: 50%;
         align-self: center;
         display: flex;
@@ -247,7 +257,7 @@ main {
 
     .page-content {
 
-      margin-top: 80px;
+      margin-top: 60px;
 
       .thesis-wrapper {
 
@@ -289,7 +299,7 @@ main {
 
       .posts {
 
-        margin-top: 80px;
+        margin-top: 60px;
 
         .top-posts {
           margin-top: 40px;
@@ -345,6 +355,13 @@ main {
 
           a.more {
             color: $primary;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            .arrow {
+              margin-bottom: -5px;
+              margin-left: 10px;
+            }
           }
         }
       }
@@ -543,6 +560,12 @@ main {
           }
         }
       }
+    }
+  }
+  .simple {
+    padding-top: 40px;
+    .content {
+      align-items: flex-start;
     }
   }
 }

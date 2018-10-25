@@ -32,7 +32,9 @@ export const BlogPostTemplate = ({
     <BlogPostTeaser post={post} type='related' key={post.id}/>
   ));
   
-  const isMobile = window.innerWidth <= 480;
+  const isMobile = window.innerWidth <= 1024;
+  const w = !isMobile ? (relatedPosts.length * 350) + 'px' : 'auto';
+  const mL = !isMobile ? (-relatedIndex * 350) + 'px' : 'auto';
 
   return (
     <section className="blog-post"
@@ -71,7 +73,7 @@ export const BlogPostTemplate = ({
           <h3>Relevante Artikel</h3>
           <div className="related-posts-list-wrapper">
             <div className="related-posts-list"
-                 style={[(!isMobile) ? {width: (relatedPosts.length * 350) + 'px', marginLeft: (-relatedIndex * 350) + 'px'} : '']}>
+                 style={{width: w, marginLeft: mL}}>
               {relatedPostsContent}
             </div>
           </div>

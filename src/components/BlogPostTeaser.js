@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
-
+import arrow from "../img/icons/arrow-right.svg";
 export default class BlogPostTeaser extends React.Component {
+
   render() {
     const post = this.props.post;
     const type = this.props.type || 'normal';
@@ -14,7 +15,7 @@ export default class BlogPostTeaser extends React.Component {
           { post.fields.image && <Img sizes={post.fields.image.childImageSharp.sizes} /> }
         </div>
         <div className="post-content">
-          <ul className='taglist'>
+          <ul className='taglist divided'>
             {post.frontmatter.tags.map((tag, key) => (
               <li key={key}>
                 <Link to={`/tags/${tag}`}>{tag}</Link>
@@ -27,7 +28,8 @@ export default class BlogPostTeaser extends React.Component {
           </Link>
           <p className='post-content-excerpt'>{post.excerpt}</p>
           { type === 'featured'
-          && <Link className="more" to={post.fields.slug}>Artikel lesen</Link> }
+          && <Link className="more" to={post.fields.slug}>Artikel lesen<img className="arrow" src={arrow} alt=""/></Link> }
+
         </div>
       </div>
     )
