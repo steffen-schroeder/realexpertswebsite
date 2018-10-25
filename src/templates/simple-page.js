@@ -6,7 +6,7 @@ export const SimplePageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section>
+    <section className='simple'>
       <h2>{title}</h2>
       <PageContent className="content" content={content} />
     </section>

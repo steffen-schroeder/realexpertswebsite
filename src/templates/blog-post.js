@@ -32,7 +32,9 @@ export const BlogPostTemplate = ({
     <BlogPostTeaser post={post} type='related' key={post.id}/>
   ));
   
-  const isMobile = window.innerWidth <= 480;
+  const isMobile = window.innerWidth <= 1024;
+  const w = !isMobile ? (relatedPosts.length * 350) + 'px' : 'auto';
+  const mL = !isMobile ? (-relatedIndex * 350) + 'px' : 'auto';
 
   return (
     <section className="blog-post"
@@ -53,12 +55,14 @@ export const BlogPostTemplate = ({
       </div>
       <div className="blog-post-author">
         {author.fields.image && <Img sizes={author.fields.image.childImageSharp.sizes}/>}
+          <div className="wrapper-for-tablet">
         <div className="blog-author-info">
           <h5 className="title">{author.frontmatter.title}</h5>
           <small className="position">{author.frontmatter.position}</small>
           <p className="company">{author.frontmatter.company}</p>
         </div>
         <p className="release-date">Veröffentlicht am {date}</p>
+          </div>
       </div>
       {/*<p className="description">{description}</p>*/}
       <PostContent className="content" content={content}/>
@@ -69,7 +73,7 @@ export const BlogPostTemplate = ({
           <h3>Relevante Artikel</h3>
           <div className="related-posts-list-wrapper">
             <div className="related-posts-list"
-                 style={[(!isMobile) ? {width: (relatedPosts.length * 350) + 'px', marginLeft: (-relatedIndex * 350) + 'px'} : '']}>
+                 style={{width: w, marginLeft: mL}}>
               {relatedPostsContent}
             </div>
           </div>
