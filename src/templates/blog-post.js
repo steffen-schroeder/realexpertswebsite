@@ -28,13 +28,9 @@ export const BlogPostTemplate = ({
                                    relatedIndex
                                  }) => {
   const PostContent = contentComponent || Content;
-  const relatedPostsContent = !relatedPosts ? null : relatedPosts.map(post => (
+  const relatedPostsContent = !relatedPosts ? null : relatedPosts.slice(0, 3).map(post => (
     <BlogPostTeaser post={post} type='related' key={post.id}/>
   ));
-  
-  const isMobile = window.innerWidth <= 1024;
-  const w = !isMobile ? (relatedPosts.length * 350) + 'px' : 'auto';
-  const mL = !isMobile ? (-relatedIndex * 350) + 'px' : 'auto';
 
   return (
     <section className="blog-post"
@@ -72,18 +68,9 @@ export const BlogPostTemplate = ({
         <div className="related-posts-wrapper">
           <h3>Relevante Artikel</h3>
           <div className="related-posts-list-wrapper">
-            <div className="related-posts-list"
-                 style={{width: w, marginLeft: mL}}>
+            <div className="related-posts-list">
               {relatedPostsContent}
             </div>
-          </div>
-          <div className="controls">
-            {relatedIndex > 0 &&
-            <img className="left" src={left} onClick={onRelatedLeft} alt=""/>
-            }
-            {relatedIndex < relatedPosts.length - 3 &&
-            <img className="right" src={right} onClick={onRelatedRight} alt=""/>
-            }
           </div>
         </div>
       </div>
