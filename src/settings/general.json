@@ -1,6 +1,6 @@
 {
   "id": "general-settings",
-  "general": {
+  "global": {
     "title": "Real Experts",
     "url": "https://realexperts.de"
   },
