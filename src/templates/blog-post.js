@@ -140,7 +140,7 @@ class BlogPost extends React.Component {
   render() {
     const {
       settings: {
-        general: {title: siteTitle, url},
+        global: {title: siteTitle, url},
         fields: {
           defaultAuthor
         }
@@ -198,7 +198,7 @@ class BlogPost extends React.Component {
 BlogPost.propTypes = {
   data: PropTypes.shape({
     settings: PropTypes.shape({
-      general: PropTypes.shape({
+      global: PropTypes.shape({
         title: PropTypes.string,
         url: PropTypes.string,
       }),
@@ -215,7 +215,7 @@ export default BlogPost;
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
     settings: settingsJson {
-      general {
+      global {
         title
         url
       }
