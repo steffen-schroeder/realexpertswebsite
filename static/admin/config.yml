@@ -15,12 +15,12 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Author", name: "author", widget: "relation", collection: "authors", searchFields: ["title", "position", "company"], valueField: "title"}
+      - {label: "Author", name: "author", widget: "relation", collection: "authors", searchFields: ["name", "title"], valueField: "title"}
       - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Related Posts", name: "relatedPosts", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: [name, title], valueField: title}]}
+      - {label: "Related Posts", name: "relatedPosts", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}]}
   - name: "pages"
     label: "Pages"
     files:
