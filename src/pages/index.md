@@ -1,7 +1,6 @@
 ---
 templateKey: front-page
-title: Welcome
-path: /
+title: Start
 claim:
   heading: 'Proin sapien ipsum, porta a, auctor quis, euismod ut, mi.'
   linkto: /about
