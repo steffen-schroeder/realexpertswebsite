@@ -162,8 +162,8 @@ class BlogPost extends React.Component {
       },
     } = this.props.data;
     const postAuthor = author ? author : defaultAuthor;
+
     const helmet = <Helmet title={`${title} | Blog | ${siteTitle}`}/>;
-    console.log("sdasd");
     return (
       <BlogPostTemplate
         content={html}
@@ -248,6 +248,27 @@ export const pageQuery = graphql`
             sizes(maxWidth: 1020) {
               ...GatsbyImageSharpSizes
             }
+          }
+        }
+        author {
+          fields {
+            image {
+              id
+              childImageSharp {
+                sizes (maxWidth: 100, maxHeight: 100) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
+          }
+          frontmatter {
+            title
+            contentType
+            twitterHandle
+            position
+            company
+            email
+            description
           }
         }
         relatedPosts {
