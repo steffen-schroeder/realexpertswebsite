@@ -27,7 +27,8 @@ thesis:
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
 relatedPosts:
-  - post: A beginners’ guide to brewing with Chemex
-  - post: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+  - post: Real Experts - Der Beginn einer Reise
+  - post: Was bedeutet es gut zusammenzuarbeiten?
+  - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
 ---
 
