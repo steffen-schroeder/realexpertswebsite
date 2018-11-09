@@ -2,10 +2,10 @@
 templateKey: simple-page
 contentType: author
 title: Christoph Rauhut
-twitterHandle: "@hut1315"
-position: CEO
-company: Real Experts
+position: Geschäftsführer
+company: Real Experts Network GmbH
 email: rauhut@realexperts.de
+twitterHandle: '@hut1315'
 image: /img/authors/crauhut.jpg
 description: >-
   Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Cras
