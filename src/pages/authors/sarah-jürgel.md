@@ -2,7 +2,7 @@
 templateKey: simple-page
 contentType: author
 title: Sarah Jürgel
-position: Marketing Expert
+position: Marketing
 company: Real Experts Network GmbH
 email: juergel@realexperts.de
 twitterHandle: /blabla
