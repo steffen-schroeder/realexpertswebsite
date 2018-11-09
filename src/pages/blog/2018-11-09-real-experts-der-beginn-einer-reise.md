@@ -14,7 +14,8 @@ description: >-
 tags:
   - ''
 relatedPosts:
-  - post: Making sense of the SCAA’s new Flavor Wheel
+  - post: Was bedeutet es gut zusammenzuarbeiten?
+  - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
 ---
 Die Reise von Real Experts ist eine Reise die schon vor einer Weile begonnen hat. Es ist eine Reise in die Zukunft, bei der aktuell noch niemand weiß, wohin diese uns führen wird. Es wird eine Reise mit vielen neue Entdeckungen und spannenden und neuen Zielen sein. Jeder Mitarbeiter, Kunde und Partner wird Teil dieser Reise und gestaltet diese auf individuelle und eigene Art und Weise mit. 
 
