@@ -12,7 +12,7 @@ description: >-
   wird Teil dieser Reise und gestaltet diese auf individuelle und eigene Art und
   Weise mit. 
 tags:
-  - Real Experts
+  - RealExperts
 relatedPosts:
   - post: Was bedeutet es gut zusammenzuarbeiten?
   - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
