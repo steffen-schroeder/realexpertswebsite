@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Real Experts - Der Beginn einer Reise
-date: '2018-11-09T11:26:50+01:00'
+date: '2018-03-01T11:26:50+01:00'
 author: Christoph Rauhut
 image: /img/statue_schuetze.jpg
 description: >-
