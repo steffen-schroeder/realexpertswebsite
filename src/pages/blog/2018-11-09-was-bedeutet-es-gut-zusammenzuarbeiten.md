@@ -13,7 +13,7 @@ description: >-
   bedeutet eigentlich gute Teamarbeit und somit auch gute Zusammenarbeit im
   Unternehmen?
 tags:
-  - Real Experts
+  - RealExperts
 relatedPosts:
   - post: Real Experts - Der Beginn einer Reise
   - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
