@@ -12,7 +12,7 @@ description: >-
   Kennen Sie das vielleicht? Dann sind Sie eine Führungskraft von vielen. Denn
   es gibt einige Gründe, welche effektive Zusammenarbeit verhindern.
 tags:
-  - Real Experts
+  - RealExperts
 relatedPosts:
   - post: Was bedeutet es gut zusammenzuarbeiten?
   - post: Real Experts - Der Beginn einer Reise
