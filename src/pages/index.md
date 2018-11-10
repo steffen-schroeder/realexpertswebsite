@@ -2,7 +2,7 @@
 templateKey: front-page
 title: Start
 claim:
-  heading: Bald steht hier was Nettes
+  heading: Bald steht hier was Nettes und noch mehr
   linkto: /about
   teaser: >-
     Curabitur blandit mollis lacus. Fusce vel dui. Sed hendrerit.
