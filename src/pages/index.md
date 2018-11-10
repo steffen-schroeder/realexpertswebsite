@@ -2,7 +2,7 @@
 templateKey: front-page
 title: Start
 claim:
-  heading: 'Proin sapien ipsum, porta a, auctor quis, euismod ut, mi.'
+  heading: Bald steht hier was Nettes
   linkto: /about
   teaser: >-
     Curabitur blandit mollis lacus. Fusce vel dui. Sed hendrerit.
