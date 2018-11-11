@@ -4,13 +4,7 @@ title: Real Experts - Der Beginn einer Reise
 date: '2018-03-01T11:26:50+01:00'
 author: Christoph Rauhut
 image: /img/statue_schuetze.jpg
-description: >-
-  Die Reise von Real Experts ist eine Reise die schon vor einer Weile begonnen
-  hat. Es ist eine Reise in die Zukunft, bei der aktuell noch niemand weiß,
-  wohin diese uns führen wird. Es wird eine Reise mit vielen neue Entdeckungen
-  und spannenden und neuen Zielen sein. Jeder Mitarbeiter, Kunde und Partner
-  wird Teil dieser Reise und gestaltet diese auf individuelle und eigene Art und
-  Weise mit. 
+description: test test
 tags:
   - Real_Experts
 relatedPosts:
