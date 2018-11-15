@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import BlogPostTeaser from '../../components/BlogPostTeaser';
+import favicon from "../../img/favicon.ico";
 
 export default class BlogIndexPage extends React.Component {
   render() {
     const {data} = this.props;
-    const {siteMetadata: title} = data.site;
     // only consider the first three related posts on the front page as top posts
     const topPosts = data.markdownRemark.fields.relatedPosts.slice(0, 3);
     // exclude posts from `all posts` which are already in top posts
@@ -17,7 +17,11 @@ export default class BlogIndexPage extends React.Component {
 
     return (
       <section className="blog">
-        <Helmet title={`Blog | ${title}`}/>
+        <Helmet
+          title={`Blog | ${data.settings.global.title}`}
+          link={[
+            { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
+          ]}/>
         <h2>Top Beiträge</h2>
         <div className="top-posts">
           {topPosts.map((topPost, key) => (
@@ -72,9 +76,10 @@ BlogIndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    site {
-      siteMetadata {
+    settings: settingsJson {
+      global {
         title
+        url
       }
     }
     # Query front page for related posts used as top posts
@@ -84,7 +89,7 @@ export const pageQuery = graphql`
         relatedPosts {
           id
           # TODO: Should we use _description_ instead?
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 160)
           frontmatter {
             title
             date

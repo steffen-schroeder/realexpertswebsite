@@ -1,12 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
+import favicon from "../img/favicon.ico";
+import Helmet from "react-helmet";
 
 export const SimplePageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
     <section className='simple'>
+      <Helmet
+        title={title}
+        link={[
+          { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
+        ]}
+      />
       <h2>{title}</h2>
       <PageContent className="content" content={content} />
     </section>
@@ -25,7 +33,7 @@ const SimplePage = ({ data }) => {
   return (
     <SimplePageTemplate
       contentComponent={HTMLContent}
-      title={post.frontmatter.title}
+      title={`${post.frontmatter.title} | ${data.settings.global.title}`}
       content={post.html}
     />
   )
@@ -39,6 +47,12 @@ export default SimplePage;
 
 export const simplePageQuery = graphql`
   query SimplePage($id: String!) {
+    settings: settingsJson {
+      global {
+        title
+        url
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

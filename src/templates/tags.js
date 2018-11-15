@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import BlogPostTeaser from '../components/BlogPostTeaser';
+import favicon from "../img/favicon.ico";
 
 export default class TagRoute extends React.Component {
   render() {
@@ -16,7 +17,12 @@ export default class TagRoute extends React.Component {
     return (
       <section className="section blogs-by-tag">
 
-        <Helmet title={`${tag} | ${title}`} />
+        <Helmet
+          title={`${tag} | ${title}`}
+          link={[
+            { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
+          ]}
+          />
         <h2>Alle Beiträge in <strong>{tag}</strong> ({totalCount})</h2>
         <div className="all-posts">
         {posts.map(({ node: post}) => (

@@ -12,7 +12,10 @@ export default class BlogPostTeaser extends React.Component {
     return (
       <div className={`post ${type}`}>
         <div className={`image-type-${type}`}>
-          { post.fields.image && <Img sizes={post.fields.image.childImageSharp.sizes} /> }
+          { post.fields.image &&
+          <Link to={post.fields.slug}>
+            <Img sizes={post.fields.image.childImageSharp.sizes} />
+          </Link>}
         </div>
         <div className="post-content">
           <ul className='taglist divided'>

@@ -5,6 +5,8 @@ import Link from 'gatsby-link'
 import ReactPlayer from 'react-player'
 import BlogPostTeaser from '../components/BlogPostTeaser';
 
+import favicon from '../img/favicon.ico';
+
 export const FrontPageTemplate = ({
                                     title,
                                     claim,
@@ -28,8 +30,16 @@ export const FrontPageTemplate = ({
   ));
 
   return (
-    <section>
-      <Helmet title={title}/>
+    <section className="front">
+      <Helmet
+        title={title}
+        link={[
+          { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
+        ]}
+        bodyAttributes={{
+          class: 'front-page'
+        }}
+      />
       <div className="hero">
         <div className="claim">
           <h1>{claim.heading}</h1>
@@ -71,6 +81,11 @@ export const FrontPageTemplate = ({
 };
 
 FrontPageTemplate.propTypes = {
+  site: PropTypes.shape({
+    siteMetadata: PropTypes.shape({
+      title: PropTypes.string,
+    }),
+  }),
   title: PropTypes.string.isRequired,
   claim: PropTypes.shape({
     heading: PropTypes.string.isRequired,
@@ -87,11 +102,12 @@ FrontPageTemplate.propTypes = {
 };
 
 const FrontPage = ({data}) => {
+
   const {markdownRemark: post} = data;
 
   return (
     <FrontPageTemplate
-      title={post.frontmatter.title}
+      title={`${post.frontmatter.title} | ${data.settings.global.title}`}
       claim={post.frontmatter.claim}
       thesis={post.frontmatter.thesis}
       video={post.frontmatter.video}
@@ -108,6 +124,12 @@ export default FrontPage
 
 export const frontPageQuery = graphql`
   query FrontPage($id: String!) {
+    settings: settingsJson {
+      global {
+        title
+        url
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       fields {
         relatedPosts {
