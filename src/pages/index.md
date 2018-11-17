@@ -5,9 +5,12 @@ claim:
   heading: Zusammenarbeit und Wirksamkeit in Unternehmen neu gestalten
   linkto: /blog
   teaser: >-
-    Real Experts ermöglichen jedem Unternehmen sein größtmögliches Potential zu
-    entfalten. Wir wollen befähigen, motivieren und nachhaltige Lösungen
-    anbieten. Wir leben vor, was wir für unsere Kunden erreichen wollen. 
+    Real Experts ermöglicht jedem Unternehmen sein größtmögliches Potential zu
+    entfalten. 
+
+    Wir wollen befähigen, motivieren und nachhaltige Lösungen anbieten. 
+
+    Unsere Mitarbeiter leben, was wir für unsere Kunden erreichen wollen. 
 thesis:
   - body: >-
       Für unsere Kunden entwickeln wir Strategien und Lösungen für eine neue
@@ -17,11 +20,11 @@ thesis:
     headline: Was wir machen
     highlighted: true
   - body: >-
-      Wir erschafft eine nie dagewesene Form einer freien, selbstorganisierten
-      und leistungsfähigen Form der Zusammenarbeit in einem skalierbaren
-      Netzwerk. Nur dadurch können individuelle und ganzheitliche Lösungen für
-      den Kunden entstehen. Wir haben die richtigen Experten für die
-      Herausforderungen in Ihrem Unternehmen.
+      Real Experts erschafft eine nie dagewesene Form einer freien,
+      selbstorganisierten und leistungsfähigen Form der Zusammenarbeit in einem
+      skalierbaren Netzwerk. Nur dadurch können individuelle und ganzheitliche
+      Lösungen für den Kunden entstehen. Wir haben die richtigen Experten für
+      die Herausforderungen in Ihrem Unternehmen.
     headline: Wie wir arbeiten
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
