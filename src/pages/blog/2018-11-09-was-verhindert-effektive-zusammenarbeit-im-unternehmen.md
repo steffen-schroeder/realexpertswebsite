@@ -14,7 +14,6 @@ description: >-
 tags:
   - Effektive Zusammenarbeit
 relatedPosts:
-  - post: Was bedeutet es gut zusammenzuarbeiten?
   - post: Real Experts - Der Beginn einer Reise
 ---
 Teamziele werden nicht erreicht. Es gibt deutlich spürbare Kommunikationsmängel. Aufgaben werden doppelt erledigt und dafür bleiben andere wiederum liegen. Jeder arbeitet für sich und es entsteht zunehmend immer mehr Silodenken. Der Widerstand gegen Veränderungen ist erheblich. Kennen Sie das vielleicht? Dann sind Sie eine Führungskraft von vielen. Denn es gibt einige Gründe, welche effektive Zusammenarbeit verhindern.
