@@ -32,5 +32,6 @@ relatedPosts:
   - post: Real Experts - Der Beginn einer Reise
   - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
   - post: Der Weg zur Vision
+  - post: Ein Unternehmen hat keine Mitarbeiter
 ---
 
