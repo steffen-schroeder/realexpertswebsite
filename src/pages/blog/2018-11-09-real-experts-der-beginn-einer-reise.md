@@ -6,7 +6,7 @@ author: Christoph Rauhut
 image: /img/statue_schuetze.jpg
 description: test test
 tags:
-  - Real_Experts
+  - Real Experts
 relatedPosts:
   - post: Was bedeutet es gut zusammenzuarbeiten?
   - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
