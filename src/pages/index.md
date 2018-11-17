@@ -29,8 +29,8 @@ thesis:
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
 relatedPosts:
-  - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
   - post: Real Experts - Der Beginn einer Reise
-  - post: Was bedeutet es gut zusammenzuarbeiten?
+  - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
+  - post: Der Weg zur Vision
 ---
 
