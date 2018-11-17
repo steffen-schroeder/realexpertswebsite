@@ -8,7 +8,7 @@ claim:
     Real Experts ermöglicht jedem Unternehmen sein größtmögliches Potential zu
     entfalten. 
 
-    Wir wollen befähigen, motivieren und nachhaltige Lösungen anbieten. 
+    Wir wollen befähigen, motivieren und nachhaltige Lösungen schaffen. 
 
     Unsere Mitarbeiter leben, was wir für unsere Kunden erreichen wollen. 
 thesis:
