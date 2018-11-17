@@ -2,28 +2,27 @@
 templateKey: front-page
 title: Start
 claim:
-  heading: Bald steht hier was Nettes
-  linkto: /about
+  heading: Zusammenarbeit und Wirksamkeit in Unternehmen neu gestalten
+  linkto: /blog
   teaser: >-
-    Curabitur blandit mollis lacus. Fusce vel dui. Sed hendrerit.
-
-    Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor,
-    a pretium mi sem ut ipsum. Vestibulum eu odio. Nullam nulla eros, ultricies
-    sit amet, nonummy id, imperdiet feugiat, pede. Nam pretium turpis et arcu.
-    Praesent nonummy mi in odio.
+    Real Experts ermöglichen jedem Unternehmen sein größtmögliches Potential zu
+    entfalten. Wir wollen befähigen, motivieren und nachhaltige Lösungen
+    anbieten. Wir leben vor, was wir für unsere Kunden erreichen wollen. 
 thesis:
   - body: >-
-      Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Phasellus
-      blandit leo ut odio. Suspendisse non nisl sit amet velit hendrerit rutrum.
-      Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim
-      dolor, a pretium mi sem ut ipsum.
-    headline: Curabitur blandit mollis lacus
+      Für unsere Kunden entwickeln wir Strategien und Lösungen für eine neue
+      Form der Zusammenarbeit, Kommunikation und des Miteinanders im
+      Unternehmen. Wir begleiten bei der Konzeption und Umsetzung. Unser Ziel
+      ist ein nachhaltiger Wandel und die Befähigung jedes Kunden.
+    headline: Was wir machen
     highlighted: true
   - body: >-
-      Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien,
-      quis venenatis ante odio sit amet eros. Aliquam erat volutpat. Nam at
-      tortor in tellus interdum sagittis. Nullam vel sem.
-    headline: Vivamus consectetuer hendrerit lacus
+      Wir erschafft eine nie dagewesene Form einer freien, selbstorganisierten
+      und leistungsfähigen Form der Zusammenarbeit in einem skalierbaren
+      Netzwerk. Nur dadurch können individuelle und ganzheitliche Lösungen für
+      den Kunden entstehen. Wir haben die richtigen Experten für die
+      Herausforderungen in Ihrem Unternehmen.
+    headline: Wie wir arbeiten
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
 relatedPosts:
