@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Microsoft Office 365 und Google G Suite im Vergleich – Google Cloud Frühstück
-date: '2018-11-17T15:23:21+01:00'
+date: '2018-05-01T15:23:21+02:00'
 author: Christoph Rauhut
 image: /img/video_office365_vs_gsuite_youtube.png
 description: Microsoft Office 365 und Google G Suite im Vergleich – Google Cloud Frühstück
