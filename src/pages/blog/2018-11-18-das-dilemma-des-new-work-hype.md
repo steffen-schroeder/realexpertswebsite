@@ -11,9 +11,9 @@ description: >-
   in Medien und auf Konferenz verwendet. Doch wie sollen Geschäftsführer,
   Führungskräfte und Mitarbeiter da noch durchsehen und wissen wie man anfängt.
 tags:
-  - Neuen Wirksamkeit
+  - Neue Wirksamkeit
 relatedPosts:
-  - post: Ein Unternehmen hat keine Mitarbeiter
+  - post: 'Entdecke das Potential, der Kern von New Work'
 ---
 Die Herausforderungen in Unternehmen sind vielfältig aber genauso gibt es eine Vielzahl an Möglichkeiten die Dinge neu zu gestalten. Fast schon erschlagend werden Begriff wie New Work, Selbstorganisation, Agilität und Digitalisierung in Medien und auf Konferenz verwendet. Doch wie sollen Geschäftsführer, Führungskräfte und Mitarbeiter da noch durchsehen und wissen wie man anfängt. 
 
