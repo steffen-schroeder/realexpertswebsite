@@ -27,7 +27,8 @@ In vielen Unternehmen oder auch anderen Organisationen wie Behörden, in die wir
 
 Natürlich sind die einzelnen und ganz konkreten Herausforderungen in Unternehmen unterschiedlich und individuell bedingt. Aber sicherlich werden ihnen einige der im Folgenden genannten Beispiele bekannt vorkommen. 
 
-* Ganz klar gibt es die äußeren und sichtbaren Probleme wie:
+Ganz klar gibt es die äußeren und sichtbaren Probleme wie:
+
 * ständige Termine und Abstimmungen - nichts läuft von alleine
 * interne Projekte werden nicht fertig oder immer wieder neue gestartet
 * keiner trifft Entscheidungen bzw. alle warten auf Anweisungen
