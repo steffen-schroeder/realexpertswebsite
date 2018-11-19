@@ -30,8 +30,7 @@ export const BlogPostTemplate = ({
   ));
 
   return (
-    <section className="blog-post"
-             style={{marginBottom: relatedPosts !== null ? '470px' : '40px'}}>
+    <section className={"blog-post " + (relatedPosts !== null ? 'has-related-posts': '')}>
       {helmet || ''}
       {tags && tags.length ? (
         <ul className="taglist divided">
@@ -298,7 +297,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         tags
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD.MM.YYYY")
       }
     }
   }

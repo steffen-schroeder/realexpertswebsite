@@ -29,7 +29,9 @@ export default class BlogPostTeaser extends React.Component {
           <Link to={post.fields.slug}>
             <h4>{post.frontmatter.title}</h4>
           </Link>
-          <p className='post-content-excerpt'>{post.excerpt}</p>
+          { type !== 'related'
+          && <p className='post-content-excerpt'>{post.excerpt}</p>
+          }
           { type === 'featured'
           && <Link className="more" to={post.fields.slug}>Artikel lesen<img className="arrow" src={arrow} alt=""/></Link> }
 
