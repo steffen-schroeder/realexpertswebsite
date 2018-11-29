@@ -18,6 +18,8 @@ relatedPosts:
 ---
 Die Reise von Real Experts ist eine Reise die schon vor einer Weile begonnen hat. Es ist eine Reise in die Zukunft, bei der aktuell noch niemand weiß, wohin diese uns führen wird. Es wird eine Reise mit vielen neue Entdeckungen und spannenden und neuen Zielen sein. Jeder Mitarbeiter, Kunde und Partner wird Teil dieser Reise und gestaltet diese auf individuelle und eigene Art und Weise mit. 
 
+\`video: https://www.youtube.com/embed/2Xc9gXyf2G4\`
+
 ## Wie alles begann.
 
 Ursprünglich startet diese Reise durch mich Christoph Rauhut, dem Initiator von Real Experts. Die allerersten Schritte machte ich im Frühjahr 2017 mit meinen Überlegungen zum Wechsel aus dem Angestelltenverhältnis in die Selbstständigkeit als Berater. Mit knapp 9 Jahren Berufserfahrungen und einem guten Netzwerk im Gepäck wagte ich den Schritt in das Abenteuer der freiberuflichen Selbstständigkeit. Ohne konkrete Ziele aber mit Lust auf spannende Kundenprojekte im Bereich Intranet, digitale Kommunikation und Zusammenarbeit begann dann alles Anfang Juni 2017. Relativ schnell reifte die Erkenntnis wie mächtig und wirksam die Arbeit im Netzwerk mit weiteren Experten sein kann. Gerade im Vergleich zu traditionell aufgestellten Unternehmen. Daraus und mit Blick auf Wünsche und Erwartungen der Kunden wurde klar, dass die freie und vernetzte Zusammenarbeit in Projekten die Zukunft sein wird. Damit war die Idee von Real Experts geboren. 
