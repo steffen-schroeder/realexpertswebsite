@@ -7,8 +7,8 @@ import favicon from "../../img/favicon.ico";
 export default class BlogIndexPage extends React.Component {
   render() {
     const {data} = this.props;
-    // only consider the first three related posts on the front page as top posts
-    const topPosts = data.markdownRemark.fields.relatedPosts.slice(0, 3);
+    // only consider the first four related posts on the front page as top posts
+    const topPosts = data.markdownRemark.fields.relatedPosts.slice(0, 4);
     // exclude posts from `all posts` which are already in top posts
     const posts = data.allMarkdownRemark.edges
       .filter(({node: post}) => {

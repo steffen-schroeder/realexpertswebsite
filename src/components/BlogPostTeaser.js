@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import arrow from "../img/icons/arrow-right.svg";
+import Utils from "../utils/Utils";
+
 export default class BlogPostTeaser extends React.Component {
 
   render() {
@@ -12,16 +14,16 @@ export default class BlogPostTeaser extends React.Component {
     return (
       <div className={`post ${type}`}>
         <div className={`image-type-${type}`}>
-          { post.fields.image &&
+          {post.fields.image &&
           <Link to={post.fields.slug}>
-            <Img sizes={post.fields.image.childImageSharp.sizes} />
+            <Img sizes={post.fields.image.childImageSharp.sizes}/>
           </Link>}
         </div>
         <div className="post-content">
           <ul className='taglist divided'>
             {post.frontmatter.tags.map((tag, key) => (
               <li key={key}>
-                <Link to={`/tags/${tag}`}>{tag}</Link>
+                <Link to={`/tags/${Utils.kebabCase(tag)}`}>{tag}</Link>
               </li>
             ))}
           </ul>
@@ -29,11 +31,12 @@ export default class BlogPostTeaser extends React.Component {
           <Link to={post.fields.slug}>
             <h4>{post.frontmatter.title}</h4>
           </Link>
-          { type !== 'related'
+          {type !== 'related'
           && <p className='post-content-excerpt'>{post.excerpt}</p>
           }
-          { type === 'featured'
-          && <Link className="more" to={post.fields.slug}>Artikel lesen<img className="arrow" src={arrow} alt=""/></Link> }
+          {type === 'featured'
+          &&
+          <Link className="more" to={post.fields.slug}>Artikel lesen<img className="arrow" src={arrow} alt=""/></Link>}
 
         </div>
       </div>
