@@ -126,7 +126,11 @@ class BlogPost extends React.Component {
   render() {
     const {
       settings: {
-        global: {title: siteTitle, url},
+        global: {
+          title: siteTitle,
+          url,
+          defaultTwitterHandle
+        },
         fields: {
           defaultAuthor
         }
@@ -148,7 +152,7 @@ class BlogPost extends React.Component {
       },
     } = this.props.data;
     const postAuthor = author ? author : defaultAuthor;
-
+    const twitterHandle = postAuthor.frontmatter.twitterHandle ? postAuthor.frontmatter.twitterHandle : defaultTwitterHandle;
     const helmet = <Helmet
       title={`${title} | Blog | ${siteTitle}`}
       link={[
@@ -168,7 +172,7 @@ class BlogPost extends React.Component {
         author={postAuthor}
         relatedPosts={relatedPosts}
         socialConfig={{
-          twitterHandle: postAuthor.frontmatter.twitterHandle,
+          twitterHandle: twitterHandle,
           config: {
             url: `${url}${slug}`,
             title: siteTitle,
@@ -202,6 +206,7 @@ export const pageQuery = graphql`
       global {
         title
         url
+        defaultTwitterHandle
       }
       fields {
         defaultAuthor {
