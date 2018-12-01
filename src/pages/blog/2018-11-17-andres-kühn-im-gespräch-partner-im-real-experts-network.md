@@ -13,4 +13,4 @@ relatedPosts:
 ---
 Andres Kühn im Gespräch - Partner im Real Experts Network
 
-\`youtube: 1bsHlkLt3B0\`
+`youtube: 1bsHlkLt3B0`
