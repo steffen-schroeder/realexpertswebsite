@@ -36,9 +36,11 @@ Real Experts steht für eine neue Form der Zusammenarbeit zwischen Menschen. Uns
 
 Die Organisation von Real Experts wird geprägt sein durch eine sinnstiftende Zusammenarbeit, die eine ganzheitlich Sicht vertritt. Wir möchten für Mitarbeiter, Kunden und Partner eine wirkliche menschlichen Bereicherung und damit viel tiefer liegende Begeisterung für das Tun und Handeln zu erzeugen. Dazu gehören auch Werte wie Loyalität, Respekt, Vertrauen, offene Kommunikation und ehrliche Kooperation. 
 
-> Ganz nach dem Motto: 
->
-> **“Du kriegst was Du gibst, wenn Du tust was Du liebst!”**
+
+
+> Ganz nach dem Motto: **“Du kriegst was Du gibst, wenn Du tust was Du liebst!”**
+
+
 
 Real Experts verfolgen den tatsächlichen Sinn hinter der Zusammenarbeit von Menschen, bei der die Basis eine bewusste Beziehungskompetenz ist. Wir glauben daran, dass Menschen viel lieber in eine bewusste Beziehung mit anderen Menschen treten und bei dieser einen guten Zweck sowie eine nachhaltige Kooperation verfolgen wollen. 
 
