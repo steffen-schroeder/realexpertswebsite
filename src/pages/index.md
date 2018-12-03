@@ -21,10 +21,11 @@ thesis:
     highlighted: true
   - body: >-
       Real Experts erschafft eine nie dagewesene Form einer freien,
-      selbstorganisierten und leistungsfähigen Form der Zusammenarbeit in einem
-      skalierbaren Netzwerk. Nur dadurch können individuelle und ganzheitliche
-      Lösungen für den Kunden entstehen. Wir haben die richtigen Experten für
-      die Herausforderungen in Ihrem Unternehmen.
+      selbstorganisierten und leistungsfähigen  Art und Weise der 
+      Zusammenarbeit in einem skalierbaren Netzwerk. Nur dadurch können
+      individuelle und ganzheitliche Lösungen für den Kunden entstehen. Wir
+      haben die richtigen Experten für die Herausforderungen in Ihrem
+      Unternehmen.
     headline: Wie wir arbeiten
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
