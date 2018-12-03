@@ -1,15 +1,23 @@
 ---
 templateKey: blog-post
-title: Intranet mit Linchpin für Confluence - Vorstellung Linchpin von Seibert Media
-date: '2018-11-17T15:18:43+01:00'
+title: Social Intranet mit Linchpin für Confluence
+date: '2018-06-22T15:18:43+02:00'
 author: Christoph Rauhut
 image: /img/video_linchpin_youtube.png
-description: Intranet mit Linchpin für Confluence - Vorstellung Linchpin von Seibert Media
+description: >-
+  Social Intranet ist nicht nur Wissensmanagement! Genau hier setzt Linchpin an.
+  Neben klassischen Wiki-Funktionen will Linchpin den Bedarf der Nutzer nach
+  Mobile First, personalisierten Nachrichten oder Microblogging vollumfänglich
+  abdecken. Im  Videointerview zeigt Adil Nasri von Seibert/Media aus Wiesbaden
+  wie das mit Linchpin-Erweiterungen auf Basis von Atlassian Confluence ein
+  interaktives Intranet realisiert werden kann.
 tags:
   - Technologien
 relatedPosts:
   - post: Intranet mit Coyo - Vorstellung Coyo aus Hamburg
 ---
-Intranet mit Linchpin für Confluence - Vorstellung Linchpin von Seibert Media
+Social Intranet ist nicht nur Wissensmanagement! Genau hier setzt Linchpin an. Neben klassischen Wiki-Funktionen will Linchpin den Bedarf der Nutzer nach Mobile First, personalisierten Nachrichten oder Microblogging vollumfänglich abdecken. Im  Videointerview zeigt Adil Nasri von Seibert/Media aus Wiesbaden wie das mit Linchpin-Erweiterungen auf Basis von Atlassian Confluence ein interaktives Intranet realisiert werden kann.
 
-**hier Video von Youtube einbinden**
+## Youtube - Intranet mit Linchpin für Confluence - Vorstellung Linchpin von Seibert Media
+
+`youtube: https://www.youtube.com/watch?v=M52Io2vzSxQ` 
