@@ -30,8 +30,8 @@ thesis:
 video: 'https://youtu.be/r7wNymK__-s'
 relatedPosts:
   - post: 'Entdecke das Potential, den Kern von New Work'
-  - post: Wie machen wir das bei Real Experts mit dem täglichen Wissensmanagement
   - post: Real Experts - Der Beginn einer Reise
+  - post: Wissensmanagement und Zusammenarbeit bei Real Experts
   - post: Ein Unternehmen hat keine Mitarbeiter
 ---
 
