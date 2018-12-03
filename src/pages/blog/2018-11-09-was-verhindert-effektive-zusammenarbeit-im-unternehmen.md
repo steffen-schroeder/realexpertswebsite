@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Was verhindert effektive Zusammenarbeit im Unternehmen?
 date: '2018-05-07T11:36:11+02:00'
 author: Peggy Kopkow
-image: /img/chemex.jpg
+image: /img/was-verhindert-effektive-zusammenarbeit-in-unternehmen.jpg
 description: >-
   Teamziele werden nicht erreicht. Es gibt deutliche Kommunikationsmängel.
   Aufgaben werden doppelt erledigt und dafür bleiben andere liegen. Jeder
