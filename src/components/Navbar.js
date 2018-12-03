@@ -31,7 +31,7 @@ class Navbar extends React.Component {
            aria-expanded="false"
            onClick={this.toggleClass}>
         </img>
-      <div className={`navigation-bar-menu ${this.state.mobileMenuActive ? 'is-active': 'not-active'}`}>
+        <div className={`navigation-bar-menu ${this.state.mobileMenuActive ? 'is-active': 'not-active'}`}>
           <Link className="navigation-bar-item"
                 activeClassName="is-active"
                 onClick={this.toggleClass}
@@ -40,7 +40,7 @@ class Navbar extends React.Component {
                 activeClassName="is-active"
                 onClick={this.toggleClass}
                 to="/blog"> Blog </Link>
-      </div>
+        </div>
       </nav>
     )
   }
