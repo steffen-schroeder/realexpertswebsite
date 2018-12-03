@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Real Experts - Der Beginn einer Reise
 date: '2018-03-01T09:24:46+01:00'
 author: Christoph Rauhut
-image: /img/statue_schuetze.jpg
+image: /img/der-beginn-einer-reise.jpg
 description: >-
   Die Reise von Real Experts ist eine Reise, die schon vor einer Weile begonnen
   hat. Es ist eine Reise in die Zukunft, bei der aktuell noch niemand weiß,
@@ -38,7 +38,7 @@ Die Organisation von Real Experts wird geprägt sein durch eine sinnstiftende Zu
 
 
 
-> Ganz nach dem Motto: **“Du kriegst was Du gibst, wenn Du tust was Du liebst!”**
+Ganz nach dem Motto: **“Du kriegst was Du gibst, wenn Du tust was Du liebst!”**
 
 
 
