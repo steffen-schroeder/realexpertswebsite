@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Was verhindert effektive Zusammenarbeit im Unternehmen?
+title: Was verhindert effektive Zusammenarbeit im Unternehmen? 2
 date: '2018-05-16T11:36:11+02:00'
 author: Peggy Kopkow
 image: /img/chemex.jpg
