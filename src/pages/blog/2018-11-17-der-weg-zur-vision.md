@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Der Weg zur Vision
 date: '2018-07-04T14:19:34+02:00'
 author: Peggy Kopkow
-image: /img/chemex.jpg
+image: /img/der-weg-zur-vision.jpg
 description: >-
   Vielleicht kennen Sie das. Das Gefühl zu haben: “So wie es jetzt läuft, läuft
   es nicht gut. Das geht besser. Es muss einen anderen Weg geben.”
