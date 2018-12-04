@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Das Why und die Vision von Real Experts - Podacast
+title: Das Why und die Vision von Real Experts - Podcast
 date: '2018-09-17T14:49:51+02:00'
 author: Peggy Kopkow
 image: /img/flavor_wheel.jpg
