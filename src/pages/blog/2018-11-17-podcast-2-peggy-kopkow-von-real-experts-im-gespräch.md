@@ -11,7 +11,7 @@ description: >-
   darüber, wie durch Werte wie Respekt, Loyalität und Vertrauen Synergien für
   eine sinnstiftende Zusammenarbeit freigesetzt werden können. 
 tags:
-  - Mitarbeiter bei Real Experts
+  - Mitarbeiter
 relatedPosts:
   - post: 'Podcast #1 - Das Why und die Vision von Real Experts'
   - post: Real Experts - Der Beginn einer Reise
