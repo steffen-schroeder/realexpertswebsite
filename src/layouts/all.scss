@@ -46,8 +46,14 @@ body {
       display: flex;
       flex-direction: column;
 
-      .post-tags {
-        margin-bottom: 0;
+      .taglist {
+        margin-top: 5px;
+      }
+
+      a {
+        h4 {
+          margin-top: 0;
+        }
       }
     }
 
@@ -130,7 +136,7 @@ body {
 
   h4 {
     font-size: 24px !important;
-    line-height: 26px !important;
+    line-height: 1.8rem !important;
     font-weight: 600 !important;
     color: $primary !important;
   }
@@ -316,6 +322,11 @@ main {
           .post {
             max-width: 32%;
             margin-right: 2%;
+
+            .image-type-top {
+              overflow: hidden;
+            }
+
           }
         }
       }
@@ -384,6 +395,10 @@ main {
           margin-right: 0;
         }
 
+        .image-type-top {
+          overflow: hidden;
+        }
+
       }
 
     }
@@ -391,6 +406,35 @@ main {
     .all-posts {
 
       @extend .vertical-posts-list;
+
+      //.post.normal {
+      //
+      //  position: relative;
+      //
+      //  .post-content {
+      //    position: absolute;
+      //    left: 24%;
+      //    top: 20px;
+      //    right: 0;
+      //    bottom: 18px;
+      //    overflow: hidden;
+      //
+      //    .taglist {
+      //      margin-top: 0;
+      //    }
+      //    a {
+      //      h4 {
+      //        margin-top: 10px;
+      //        margin-bottom: 10px;
+      //      }
+      //    }
+      //    p {
+      //      height: 50px;
+      //      overflow: hidden;
+      //    }
+      //  }
+      //
+      //}
 
     }
 
@@ -477,6 +521,7 @@ main {
 
       p {
         line-height: 28px;
+        margin-bottom: 20px;
       }
 
       h2 {

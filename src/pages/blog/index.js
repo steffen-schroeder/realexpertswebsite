@@ -89,7 +89,7 @@ export const pageQuery = graphql`
         relatedPosts {
           id
           # TODO: Should we use _description_ instead?
-          excerpt(pruneLength: 160)
+          excerpt(pruneLength: 140)
           frontmatter {
             title
             date
@@ -115,7 +115,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 140)
           id
           fields {
             slug

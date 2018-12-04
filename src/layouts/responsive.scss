@@ -5,6 +5,46 @@
 
 @media screen and (min-width: 481px) and (max-width: 1200px) {
 
+  .post-block {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    border-top: none;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+
+    &:last-child {
+      margin: 0 0 0 0;
+    }
+
+    .image-type-normal,
+    .image-type-top {
+      flex: 2;
+      height: auto;
+      margin: 0 0;
+    }
+
+    .post-content {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      padding-left: 25px;
+      margin-top: 10px;
+
+      .taglist {
+        margin: -5px 0 0 -10px;
+      }
+
+      a {
+        h4 {
+          margin-top: -7px;
+        }
+      }
+
+    }
+  }
+
   .content {
     align-items: stretch;
   }
@@ -71,8 +111,12 @@
       padding-top: 40px;
 
       .top-posts {
+
+        flex-direction: column;
+
         .post.featured {
           flex-direction: column;
+          margin-bottom: 30px;
 
           .image-type-featured {
             width: 100%;
@@ -84,71 +128,19 @@
             border-bottom: none;
           }
         }
-      }
-
-      .top-posts {
-
-        flex-direction: column;
 
         .post.top {
-          max-width: 100%;
-          float: left;
-          display: block;
-          margin-right: 0;
-
-          .image-type-top {
-            width: 37%;
-            float: left;
-
-          }
-
-          .post-content {
-            display: flex;
-            flex-direction: column;
-            padding-left: 25px;
-            .taglist {
-              margin: 0;
-            }
-
-            .post-content-excerpt {
-              padding-bottom: 40px;
-            }
-
-          }
+          @extend .post-block;
         }
       }
 
       .all-posts {
 
         flex-direction: column;
+        margin-top: 30px;
 
         .post.normal {
-          max-width: 100%;
-          float: left;
-          display: block;
-          padding: 0;
-          border-top: none;
-
-          .image-type-normal {
-            width: 37%;
-            float: left;
-            margin-right: 0;
-          }
-
-          .post-content {
-            display: flex;
-            flex-direction: column;
-            padding-left: 25px;
-
-            .taglist {
-              margin: 0 0 0 -10px;
-            }
-
-            .post-content-excerpt {
-              padding-bottom: 20px;
-            }
-
-          }
+          @extend .post-block
         }
       }
 
@@ -192,7 +184,7 @@
             .image-type-top {
               width: 37%;
               float: left;
-
+              height: auto;
             }
 
             .post-content {
@@ -345,7 +337,6 @@
 
     .related-posts {
       position: relative;
-      bottom: 0;
       padding: 0;
       box-shadow: none;
 
@@ -505,9 +496,9 @@
         margin-right: -15px;
         background: #0e3f93; /* Old browsers */
         background: -moz-linear-gradient(top, #0e3f93 0%, #2499b1 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #0e3f93 0%,#2499b1 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #0e3f93 0%,#2499b1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e3f93', endColorstr='#2499b1',GradientType=0 ); /* IE6-9 */
+        background: -webkit-linear-gradient(top, #0e3f93 0%, #2499b1 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #0e3f93 0%, #2499b1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e3f93', endColorstr='#2499b1', GradientType=0); /* IE6-9 */
 
         .claim {
 
@@ -516,6 +507,7 @@
 
           h1 {
             margin-bottom: 20px;
+            line-height: 4rem;
           }
         }
 
@@ -555,6 +547,9 @@
               margin-bottom: 40px;
               max-width: 100%;
               width: 100%;
+              .image-type-top {
+                height: auto;
+              }
             }
           }
         }
@@ -575,6 +570,9 @@
             padding: 0;
             .image-type-featured {
               width: 100%;
+            }
+            .image-type-top {
+              height: auto;
             }
             .post-content {
               width: 100%;
