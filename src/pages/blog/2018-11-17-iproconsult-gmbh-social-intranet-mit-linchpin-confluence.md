@@ -14,8 +14,9 @@ description: >-
 tags:
   - Kunden
 relatedPosts:
-  - post: Real Experts - Der Beginn einer Reise
   - post: 'Entdecke das Potential, den Kern von New Work'
+  - post: Das Dilemma des New Work Hype
+  - post: Wissensmanagement und Zusammenarbeit bei Real Experts
 ---
 Als innovativer Partner für die Umsetzung von Bauvorhaben hat die IPROconsult GmbH aus den Dresden den Bedarf Ihrer Mitarbeiterinnen und Mitarbeiter nach effizienterer Zusammenarbeit erkannt und mit Linchpin aus Basis von Confluence ein Social Intranet für 500 Mitarbeiter eingeführt. Christin Löffler, Leiterin der Unternehmenskommunikation, über die Beweggründe, Umsetzung und dem Potential eines Social Intranets.
 
