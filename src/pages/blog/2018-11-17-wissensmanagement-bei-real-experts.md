@@ -38,18 +38,12 @@ Um miteinander zu kommunizieren, Infos auszutauschen, sich abzusprechen und um i
 
 In vielen Unternehmen laufen die Mitarbeiter, aber besonders auch die Führungskräfte von Meeting zu Meeting. Permanente Meetings sind für die Philosophie von Real Experts keine Option. Stattdessen haben wir anfangs regelmäßige Telefontermine zur Absprache genutzt.  Inzwischen bewährt sich eher ein kurzfristig festgelegtes Micromeeting mit klarer Intention. 
 
-
-
 **Unsere Faustregel: Je emotionaler das Thema, desto synchroner die Kommunikation! **
-
-
 
 Ja und dann wäre noch unser tolles Blog. Es ist nicht nur ein Kommunikationsmedium nach innen und nach außen. Wenn Sie unseren Blog verfolgen und lesen, können Sie sozusagen in unsere Real Experts-Mitte schauen und genau sehen, wer wir sind und was uns gerade intensiv beschäftigt. Das Blog dient zur generellen Wissensverteilung, aber besonders auch zur Wissensentwicklung. Einzeln und  im Team. Denn besonders im Schreiben kann man ein Thema, Projekt oder eine Idee nochmal aus ganz anderer Perspektive und in Ruhe betrachten. Es ist eine Art Reflexion oder auch Meditation über das Thema. Und oft kommt man dann auch mit anderen über genau dieses Thema ins Gespräch. 
 
-
-
 Über jeden Mitarbeiter von Real Expert gibt es ein Expertenprofil. Darin steht, was der Experte kann und wo seine Interessen und Schwerpunkte liegen. Bei größerem Netzwerk können durchaus auch wiederkehrende Lerntage im Rahmen eines Storytellings sinnvoll sein. Dadurch werden die Fähigkeiten der Kollegen deutlicher und es können Best Practice Projekte und mögliche Verbesserungsvorschläge als Projektreflexion und zur Wissensverteilung genutzt werden.
 
-
-
 Es gibt viele Möglichkeiten wie man effektiv und modern zusammenarbeiten kann. Neue Technologien und die New Work-Bewegung machen es möglich. Dennoch  sind Vertrauen und Loyalität untereinander die Basis der flexiblen Zusammenarbeit. Außerdem ist es wichtig, dass man selbst ein großes Interesse an seinen Kollegen hat.  Fragen, wie “Was brauchst Du, damit Du auch das machen kannst, was Du hier willst” sollten immer wieder aufgegriffen werden. Es ist das ehrliche Interesse am Unternehmen, an dessen Sinn und an den dazugehörigen Mitgliedern,  die die eigentliche Kraft und den eigentlichen Antrieb  ausmachen. Alles andere, auch das Wissensmanagement, wächst, verändert und entwickelt sich von selbst.
+
+Titelfoto: Sarah Jürgel
