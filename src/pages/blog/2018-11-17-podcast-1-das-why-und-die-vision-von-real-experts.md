@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Das Why und die Vision von Real Experts - Podcast
 date: '2018-09-17T14:49:51+02:00'
 author: Peggy Kopkow
-image: /img/flavor_wheel.jpg
+image: /img/podcast_das_why_und_die_vision.png
 description: >-
   Wie lässt sich Zusammenarbeit und Wirksamkeit in Unternehmen nachhaltig
   gestalten?  Christoph Rauhut, Initiator und Gründer von Real Experts, spricht
