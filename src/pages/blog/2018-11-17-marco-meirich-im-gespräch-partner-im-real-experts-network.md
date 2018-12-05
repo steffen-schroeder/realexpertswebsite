@@ -14,6 +14,7 @@ tags:
 relatedPosts:
   - post: Andres Kühn - Partner im Real Experts Netzwerk
   - post: Jörg Adolphs - Partner im Real Experts Netzwerk
+  - post: Real Experts - Der Beginn einer Reise
 ---
 Design & UX Experte Marco Meirich gehört dem Real Experts Network an und spricht im Interview mit Christoph Rauhut u.a. über die Bedeutung von User Experience (UX) bei der Nutzung eines Social Intranets. Oberstes Gebot: Digitale Lösungen müssen dem Nutzer Spaß und Freude bereiten. 
 
