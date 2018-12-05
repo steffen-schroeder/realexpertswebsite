@@ -14,7 +14,9 @@ description: >
 tags:
   - Mitarbeiter
 relatedPosts:
-  - post: Real Experts - Der Beginn einer Reise
+  - post: Das Why und die Vision von Real Experts - Podcast
+  - post: AUGENHÖHEwegbegleiter - Daniel Trebien im Interview
+  - post: Peggy Kopkow - Warum arbeitest Du für Real Experts?
 ---
 ...sondern die Mitarbeiter sind das Unternehmen! Sonst sprechen wir doch von einem seelenlosen, ausschließlich profitorientierten Unternehmen, das nur von der Führungsetage rumdelegiert wird. Immerzu wird von der Verantwortung der Mitarbeiter gegenüber dem Unternehmen gesprochen. Dabei soll heute die zentrale Frage sein: Was hat ein Unternehmen gegenüber seinen Mitarbeitern für Aufgaben und worin liegt seine Verantwortung?
 
