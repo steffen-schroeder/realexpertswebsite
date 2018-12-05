@@ -16,8 +16,9 @@ description: >-
 tags:
   - Partner
 relatedPosts:
-  - post: Marco Meirich im Gespräch - Partner im Real Experts Network
-  - post: Jörg Adolphs im Gespräch - Partner im Real Experts Network
+  - post: Marco Meirich - Partner im Real Experts Netzwerk
+  - post: Jörg Adolphs - Partner im Real Experts Netzwerk
+  - post: Real Experts - Der Beginn einer Reise
 ---
 Andres Kühn ist ein Pionier, der viele Themen und Möglichkeiten verbindet, um vitale Synergien zu verwirklichen. Dafür baut er Brücken, welche die Vorzüge vieler Weisheitssysteme für aktuelle Herausforderungen nutzbar macht. So eröffnet Andres neue und erstaunlich effiziente Handlungsmöglichkeiten. Zudem ist Andres ein Grenzgänger, der neugierig prüft, welche Perspektiven hinter Glaubenssystemen und Komfortzonen liegen. Individuelle Selbstverwirklichung ist für Andres Herzenssache – damit das Wirklichkeit wird, was tief in jedem Menschen angelegt ist. 
 
