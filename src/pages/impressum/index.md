@@ -1,30 +1,50 @@
 ---
-templateKey: 'simple-page'
-path: /impressum
+templateKey: simple-page
 title: Impressum
 ---
-
 ### Angaben gemäß § 5 TMG:
 
-Real Experts Network GmbH  
-Kraftwerk Mitte 7  
+**Herausgeber:**
+
+Real Experts Network GmbH\
+Kraftwerk Mitte 7\
 01067 Dresden
+
+USt-IdNr: DE316975400\
+Handelsregister HRB 37504 - Dresden
 
 ### Kontakt:
 
-Ansprechparnter: Christoph Rauhut  
-Telefon: +49 (0) 351-41 88 24 11  
-Fax: +49 (0) 351-41 88 24 13  
+Ansprechparnter: Christoph Rauhut\
+Telefon: +49 (0) 351-41 88 24 11\
+Fax: +49 (0) 351-41 88 24 13\
 E-Mail: office@realexperts.de
 
 ### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 
-Christoph Rauhut  
-Kraftwerk Mitte 7  
+Christoph Rauhut\
+Kraftwerk Mitte 7\
 01067 Dresden
 
 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
 Verbraucherschlichtungsstelle teilzunehmen.
+
+### Design und Konzept
+Michaela Wollschläger\
+freiberufliche Designerin\
+Klemmstraße 8 ǀ 04277 Leipzig\
+Telefon +49 (0) 173-5614131\
+michaela@lifeinvanilla.com\
+
+### Umsetzung 
+DeviD GbR\
+Rähnitzgasse 25\
+01097 Dresden\
+Gesellschafter: Jörn Schmidt, Steffen Schröder\
+Tel.: 0351/2131175\
+Fax.: 0351/5014757\
+Email: info@devid.net\
+Web: http:/www.devid.net\
 
 ### Haftung für Inhalte
 
