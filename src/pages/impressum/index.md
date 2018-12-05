@@ -34,7 +34,7 @@ Michaela Wollschläger\
 freiberufliche Designerin\
 Klemmstraße 8 ǀ 04277 Leipzig\
 Telefon +49 (0) 173-5614131\
-michaela@lifeinvanilla.com\
+michaela@lifeinvanilla.com
 
 ### Umsetzung 
 DeviD GbR\
@@ -44,7 +44,7 @@ Gesellschafter: Jörn Schmidt, Steffen Schröder\
 Tel.: 0351/2131175\
 Fax.: 0351/5014757\
 Email: info@devid.net\
-Web: http:/www.devid.net\
+Web: http:/www.devid.net
 
 ### Haftung für Inhalte
 
