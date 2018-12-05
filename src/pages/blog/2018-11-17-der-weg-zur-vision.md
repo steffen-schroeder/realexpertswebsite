@@ -11,6 +11,8 @@ tags:
   - Real Experts
 relatedPosts:
   - post: Real Experts - Der Beginn einer Reise
+  - post: Peggy Kopkow - Warum arbeitest Du für Real Experts?
+  - post: AUGENHÖHEwegbegleiter - Daniel Trebien im Interview
 ---
 Vielleicht kennen Sie das. Das Gefühl zu haben: “So wie es jetzt läuft, läuft es nicht gut. Das geht besser. Es muss einen anderen Weg geben.”
 
