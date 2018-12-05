@@ -33,3 +33,5 @@ Und wenn man als Führungskraft an seine Mitarbeiter glaubt, dann kann man sie a
 ## Welches Unternehmen macht das denn bitte?
 
 Genau das Unternehmen, das Werte wie Loyalität, Vertrauen, Wertschätzung und Achtsamkeit nach innen zu den Mitarbeitern sowie nach außen zu den Kunden lebt. So wird ein Unternehmen immer nur die Mitarbeiter anziehen und halten können, die es sich verdient. Und genauso steht es mit den Kunden. Denn dieser kauft nicht nur die Beratungsleistung, sondern auch den Geist des Unternehmens. Und dieser wird zum größten Teil von den Mitarbeitern gebildet. Förderung, Verantwortung gegenüber den Mitarbeitern, Mitarbeiterbindung, aber auch Erfolg und Gewinn hängen stark miteinander zusammen. Denn Ihnen als Führungskraft kann nichts Besseres passieren, als wenn Ihre Mitarbeiter Ihr Unternehmen mitgestalten wollen.
+
+Foto: Sarah Jürgel
