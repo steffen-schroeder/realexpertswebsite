@@ -14,7 +14,9 @@ description: >-
 tags:
   - Effektive Zusammenarbeit
 relatedPosts:
-  - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
+  - post: 'Entdecke das Potential, den Kern von New Work'
+  - post: IPROconsult GmbH - Moderne Kommunikation und Zusammenarbeit
+  - post: Social Intranet mit Linchpin für Confluence
 ---
 ## Wie machen wir das bei Real Experts mit dem täglichen Wissensmanagement
 
