@@ -14,9 +14,9 @@ description: >-
 tags:
   - Effektive Zusammenarbeit
 relatedPosts:
+  - post: 'Entdecke das Potential, den Kern von New Work'
+  - post: Das Dilemma des New Work Hype
   - post: Wissensmanagement und Zusammenarbeit bei Real Experts
-  - post: Digitale Heimat mit einem Social Intranet von COYO
-  - post: Social Intranet mit Linchpin für Confluence
 ---
 Teamziele werden nicht erreicht. Es gibt deutliche Kommunikationsmängel. Aufgaben werden doppelt erledigt und dafür bleiben andere liegen. Jeder arbeitet für sich und es entsteht zunehmend immer mehr Silodenken. Der Widerstand gegen Veränderungen ist erheblich. Kennen Sie das? Gerade Führungskräfte sind oft betroffen. Denn es gibt einige Gründe, welche effektive Zusammenarbeit verhindern.
 
