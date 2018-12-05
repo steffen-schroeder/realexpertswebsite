@@ -13,8 +13,9 @@ description: >-
 tags:
   - Mitarbeiter
 relatedPosts:
-  - post: 'Podcast #1 - Das Why und die Vision von Real Experts'
+  - post: AUGENHÖHEwegbegleiter - Daniel Trebien im Interview
   - post: Real Experts - Der Beginn einer Reise
+  - post: Ein Unternehmen hat keine Mitarbeiter
 ---
 Arbeit als Mittel zum Zweck? Für Peggy Kopkow ist das weit vom heutigen Zeitgeist entfernt. Im Gespräch mit Real Experts Gründer Christoph Rauhut spricht Sie über Ihre persönliche WHY Entscheidung für Real Experts und darüber, wie durch Werte wie Respekt, Loyalität und Vertrauen Synergien für eine sinnstiftende Zusammenarbeit freigesetzt werden können. 
 
