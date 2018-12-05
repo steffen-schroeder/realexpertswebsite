@@ -22,4 +22,4 @@ Als innovativer Partner für die Umsetzung von Bauvorhaben hat die IPROconsult G
 
 ## Youtube - IPROconsult GmbH - Social Intranet mit Linchpin Confluence
 
-`youtube: https://www.youtube.com/watch?v=hrPdzhdRRXo&showsearch=0rel=0&showinfo=0?controls=0` 
+`youtube: https://www.youtube.com/watch?v=hrPdzhdRRXo&showsearch=0&rel=0&showinfo=0&controls=0` 
