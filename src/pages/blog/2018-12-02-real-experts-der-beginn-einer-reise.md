@@ -14,7 +14,9 @@ description: >-
 tags:
   - Real Experts
 relatedPosts:
-  - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
+  - post: Das Why und die Vision von Real Experts - Podcast
+  - post: AUGENHÖHEwegbegleiter - Daniel Trebien im Interview
+  - post: Der Weg zur Vision
 ---
 Die Reise von Real Experts ist eine Reise, die schon vor einer Weile begonnen hat. Es ist eine Reise in die Zukunft, bei der aktuell noch niemand weiß, wohin diese uns führen wird. Es wird eine Reise mit vielen neue Entdeckungen und spannenden  neuen Zielen sein. Jeder Mitarbeiter, Kunde und Partner wird Teil dieser Reise und gestaltet diese auf individuelle und eigene Art und Weise mit. 
 
