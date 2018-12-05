@@ -23,6 +23,6 @@ Microsoft Office 365 oder vielleicht Google G Suite? Diese Frage beschäftigt ni
 
 Achtung Spoiler: G Suite ist ein innovativer Herausforderer für den bis Dato vorherrschenden Platzhirsch Office 365.
 
-## Youtube - Microsoft Office 365 und Google G Suite im Vergleich – Google Cloud Frühstück
+### Microsoft Office 365 und Google G Suite im Vergleich – Google Cloud Frühstück
 
 `youtube: https://www.youtube.com/watch?v=sC2XCxBErnc`
