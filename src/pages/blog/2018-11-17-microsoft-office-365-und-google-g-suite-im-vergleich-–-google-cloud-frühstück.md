@@ -15,10 +15,9 @@ description: >-
 tags:
   - Technologien
 relatedPosts:
-  - post: Intranet mit Coyo - Vorstellung Coyo aus Hamburg
-  - post: >-
-      Intranet mit Linchpin für Confluence - Vorstellung Linchpin von Seibert
-      Media
+  - post: 'Entdecke das Potential, den Kern von New Work'
+  - post: Digitale Heimat mit einem Social Intranet von COYO
+  - post: Social Intranet mit Linchpin für Confluence
 ---
 Microsoft Office 365 oder vielleicht Google G Suite? Diese Frage beschäftigt nicht minder viele Unternehmen und hat sich quasi zu einer Art von unternehmerischen Politikum entwickelt. Christoph Rauhut setzt sich beim Google Cloud Frühstück mit beiden Suiten auseinander und beleuchtet insbesondere einzelne Funktionen sowie Vor- und Nachteile bei der Nutzung von Google G Suite. 
 
