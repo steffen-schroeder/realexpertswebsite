@@ -14,7 +14,11 @@ description: >-
 tags:
   - Technologien
 relatedPosts:
-  - post: Intranet mit Coyo - Vorstellung Coyo aus Hamburg
+  - post: Wissensmanagement und Zusammenarbeit bei Real Experts
+  - post: >-
+      Kampf der Giganten - Microsoft Office 365 und Google G Suite im
+      Vergleich  
+  - post: Digitale Heimat mit einem Social Intranet von COYO
 ---
 Social Intranet ist nicht nur Wissensmanagement! Genau hier setzt Linchpin an. Neben klassischen Wiki-Funktionen will Linchpin den Bedarf der Nutzer nach Mobile First, personalisierten Nachrichten oder Microblogging vollumfänglich abdecken. Im  Videointerview zeigt Adil Nasri von Seibert/Media aus Wiesbaden wie das mit Linchpin-Erweiterungen auf Basis von Atlassian Confluence ein interaktives Intranet realisiert werden kann.
 
