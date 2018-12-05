@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Ein Unternehmen hat keine Mitarbeiter
 date: '2018-09-05T14:31:41+02:00'
 author: Peggy Kopkow
-image: /img/ein-unternehmen-hat-keine-mitarbeiter.jpg
+image: /img/ein-unternehmen-hat-keine-mitarbeiter-2.png
 description: >
   ...sondern die Mitarbeiter sind das Unternehmen! Sonst sprechen wir doch von
   einem seelenlosen, ausschließlich profitorientierten Unternehmen, das nur von
