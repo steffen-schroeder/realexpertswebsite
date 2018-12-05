@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Digitale Heimat mit einem Social Intranet von COYO
 date: '2018-07-06T15:16:30+02:00'
 author: Christoph Rauhut
-image: /img/video_coyo_youtube.png
+image: /img/video_eine_digitale_heimat_mit_einem_social_intranet_von_coyo.png
 description: >-
   Im Video-Interview zeigt Leonard Zenouzi von COYO aus Hamburg wie mit der
   gleichnamigen Social-Software-Lösung eine digitale Heimat für Mitarbeiter
@@ -15,8 +15,8 @@ description: >-
 tags:
   - Technologien
 relatedPosts:
-  - post: Wissensmanagement und Zusammenarbeit bei Real Experts
   - post: Social Intranet mit Linchpin für Confluence
+  - post: Wissensmanagement und Zusammenarbeit bei Real Experts
   - post: >-
       Kampf der Giganten - Microsoft Office 365 und Google G Suite im
       Vergleich
