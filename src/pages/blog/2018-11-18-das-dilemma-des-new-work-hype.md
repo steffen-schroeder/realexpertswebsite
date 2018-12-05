@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Das Dilemma des New Work Hype
 date: '2018-11-17T10:32:18+01:00'
 author: Christoph Rauhut
-image: /img/das-dilemma-des-new-work-hype.jpg
+image: /img/das-dilemma-des-new-work-hype.png
 description: >-
   Die Herausforderungen in Unternehmen sind vielfältig aber genauso gibt es eine
   Vielzahl an Möglichkeiten die Dinge neu zu gestalten. Fast schon erschlagend
