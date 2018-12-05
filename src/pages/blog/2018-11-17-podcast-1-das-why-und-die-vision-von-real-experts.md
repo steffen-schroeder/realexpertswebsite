@@ -15,7 +15,8 @@ tags:
   - Real Experts
 relatedPosts:
   - post: Real Experts - Der Beginn einer Reise
-  - {}
+  - post: Ein Unternehmen hat keine Mitarbeiter
+  - post: AUGENHÖHEwegbegleiter - Daniel Trebien im Interview
 ---
 Wie lässt sich Zusammenarbeit und Wirksamkeit in Unternehmen nachhaltig gestalten?  Christoph Rauhut, Initiator und Gründer von Real Experts, spricht über sein persönliches WHY für eine Unternehmensgründung und die Vision eines leistungsfähigen Netzwerkes aus selbstbestimmten und eigenmotivierten Mitarbeitern, die Unternehmen dabei helfen ihr größtmögliches Potential zu entfalten.
 
