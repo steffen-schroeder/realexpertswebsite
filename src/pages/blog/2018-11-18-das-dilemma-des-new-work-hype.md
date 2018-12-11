@@ -17,7 +17,7 @@ relatedPosts:
   - post: IPROconsult GmbH - Moderne Kommunikation und Zusammenarbeit
   - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
 ---
-Die Herausforderungen in Unternehmen sind vielfältig aber genauso gibt es eine Vielzahl an Möglichkeiten die Dinge neu zu gestalten. Fast schon erschlagend werden Begriffe wie New Work, Selbstorganisation, Agilität und Digitalisierung in Medien und auf Konferenz verwendet. Doch wie sollen Geschäftsführer, Führungskräfte und Mitarbeiter da noch durchsehen und wissen, wie man anfängt?
+Die Herausforderungen in Unternehmen sind vielfältig aber genauso gibt es eine Vielzahl an Möglichkeiten die Dinge neu zu gestalten. Fast schon erschlagend werden Begriffe wie New Work, Selbstorganisation, Agilität und Digitalisierung in Medien und auf Konferenzen verwendet. Doch wie sollen Geschäftsführer, Führungskräfte und Mitarbeiter da noch durchsehen und wissen, wie man anfängt?
 
 Das, was wir in unserer täglichen Arbeit sehen und was auf der anderen Seite durch die digitalen Kanäle läuft, scheint häufig wenig miteinander zu tun zu haben. Man möchte fast sagen, dass sich da draußen eine Art Blase entwickelt, in der sich viele Berater und große Unternehmen selbst beweihräuchern und hypen. Das Problem daran ist, dass es gerade viele kleine und mittelständige Unternehmen gibt, die da nicht mitkommen. Die Gründe dafür sind durchaus vielfältig. Aber dazu später.
 
