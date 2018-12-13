@@ -2,8 +2,8 @@
   "id": "general-settings",
   "global": {
     "title": "Real Experts Network GmbH",
-    "url": "https://realexperts.de",
-    "defaultTwitterHandle": "@hut1315"
+    "url": "https://www.realexperts.de",
+    "defaultTwitterHandle": "@realxperts"
   },
   "apiKeys": {
     "googleMaps": "AIzaSyC1JdUj68GPbsuqrE3MFC_HAOZD4dVC7SI"
