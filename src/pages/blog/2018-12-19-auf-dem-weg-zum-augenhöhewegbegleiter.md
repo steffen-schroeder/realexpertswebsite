@@ -31,3 +31,7 @@ Es ist alles schon da. In mir entsteht das Bild einer Tomatenpflanze. In jeder T
 Was brauchst du, damit du tun kannst, was du willst? Eine Frage, die mir nach diesen ersten drei Tagen mehr denn je am Herzen liegt. Jeder Mitarbeiter sollte diese Frage gestellt bekommen und sich selbst stellen. Was wäre, wenn genau das der Schlüssel für ein erfolgreiches Unternehmen ist? Utopisch? Zu einfach? Nein, ich glaube fest daran, dass eine Organisation erst richtig in ihre Kraft kommen kann, wenn jeder einzelne Mitarbeiter die Möglichkeit hat, sein ganzes Potential zu entfalten. 
 
 “Wir sind diejenigen, auf die wir immer gewartet haben.” Medizinmann der Navajo
+
+### AUGENHÖHEwegbegleiter - Daniel Trebien im Interview
+
+`youtube: https://www.youtube.com/watch?v=j0S-uY-AV6A` 
