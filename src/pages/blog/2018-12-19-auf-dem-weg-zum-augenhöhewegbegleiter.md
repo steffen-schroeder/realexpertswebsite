@@ -10,7 +10,7 @@ description: >-
   mit Blick aus der Heckscheibe. Der beste Weg, um die Zukunft vorherzusagen,
   besteht darin, sie zu schaffen.
 tags:
-  - Real Experts
+  - Augenhöhe
 relatedPosts:
   - post: AUGENHÖHEwegbegleiter - Daniel Trebien im Interview
   - post: Ein Unternehmen hat keine Mitarbeiter
