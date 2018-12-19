@@ -30,9 +30,9 @@ thesis:
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
 relatedPosts:
-  - post: Real Experts - Der Beginn einer Reise
-  - post: Das Dilemma des New Work Hype
-  - post: Peggy Kopkow - Warum arbeitest Du für Real Experts?
+  - post: 'Was brauchst Du, um das zu machen, was Du willst?'
   - post: Das Why und die Vision von Real Experts - Podcast
+  - post: Peggy Kopkow - Warum arbeitest Du für Real Experts?
+  - post: 'Entdecke das Potential, den Kern von New Work'
 ---
 
