@@ -12,7 +12,7 @@ description: >-
   Résumé: Es gibt keinen Grund es nicht zu tun. Darum werden auch wir von Real
   Experts an diesem Entwicklungsprogramm teilnehmen!
 tags:
-  - Real Experts
+  - Augenhöhe
 relatedPosts:
   - post: Real Experts - Der Beginn einer Reise
   - post: Ein Unternehmen hat keine Mitarbeiter
