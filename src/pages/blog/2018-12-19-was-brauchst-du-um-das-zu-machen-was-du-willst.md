@@ -33,3 +33,5 @@ Meiner Meinung nach lautet deshalb eine der wichtigsten Fragen gegenüber Mitarb
 6. Wertschätzung verbindet. Seinen Mitarbeitern diese Frage zu stellen ist wertschätzend und bindet den Mitarbeiter an Sie und ihr Unternehmen.
 
 Also fragen Sie doch einfach mal morgen einen ihrer Mitarbeiter, was er den braucht, um das zu machen, was er will. Sie werden erstaunt sein, wie seine Antwort ausfällt. Und was diese einfache Frage bewirken kann. Mit Ihnen, Ihrem Mitarbeiter und dem Unternehmen.
+
+Foto: Sarah Jürgel
