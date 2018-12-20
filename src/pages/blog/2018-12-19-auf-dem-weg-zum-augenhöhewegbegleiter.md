@@ -35,3 +35,5 @@ Was brauchst du, damit du tun kannst, was du willst? Eine Frage, die mir nach di
 ### AUGENHÖHEwegbegleiter - Daniel Trebien im Interview
 
 `youtube: https://www.youtube.com/watch?v=j0S-uY-AV6A` 
+
+Foto: Sarah Jürgel
