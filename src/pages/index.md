@@ -31,7 +31,7 @@ thesis:
 video: 'https://youtu.be/r7wNymK__-s'
 relatedPosts:
   - post: 'Was brauchst Du, um das zu machen, was Du willst?'
-  - post: Das Why und die Vision von Real Experts - Podcast
+  - post: Digital Workplace - Schreckgespenst oder Lichtgestalt?
   - post: Peggy Kopkow - Warum arbeitest Du für Real Experts?
   - post: 'Entdecke das Potential, den Kern von New Work'
 ---
