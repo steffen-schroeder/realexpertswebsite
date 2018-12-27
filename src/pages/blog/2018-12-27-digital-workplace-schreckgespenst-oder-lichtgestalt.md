@@ -17,7 +17,7 @@ relatedPosts:
   - post: Social Intranet mit Linchpin für Confluence
   - post: Digitale Heimat mit einem Social Intranet von COYO
 ---
-Cyber-physische-Systeme (CPS), Internet of Things (IoT), Künstliche Intelligenz (KI) oder Cloud Computing. Was zunächst alles ein bisschen nach Science-Fiction klingt, ist längst Realität und stellt nur einen Bruchteil populärer Buzzwörter dar, die mit einem digitalen Arbeitsplatz oder auch Digital Workplace in Verbindung gebracht werden. Aber ganz ehrlich: Wie soll man eigentlich als Unternehmen oder Mitarbeiter  bei der Fülle an viral postulierten und doch so “überlebenswichtigen” Maßnahmen rund um die Entwicklungen und Trends eine technologisch-geprägten Arbeitsplatzes noch den Überblick behalten? 
+Cyber-physische-Systeme (CPS), Internet of Things (IoT), Künstliche Intelligenz (KI) oder Cloud Computing. Was zunächst alles ein bisschen nach Science-Fiction klingt, ist längst Realität und stellt nur einen Bruchteil populärer Buzzwörter dar, die mit einem digitalen Arbeitsplatz oder auch Digital Workplace in Verbindung gebracht werden. Aber ganz ehrlich: Wie soll man eigentlich als Unternehmen oder Mitarbeiter  bei der Fülle an viral postulierten und doch so “überlebenswichtigen” Maßnahmen rund um die Entwicklungen und Trends eines technologisch-geprägten Arbeitsplatzes noch den Überblick behalten? 
 
 ### Weniger Buzzwords, mehr Hintergründe und praxisnahe Inhalte
 
@@ -42,7 +42,7 @@ Gerade beim Austausch mit Mitarbeitern aus kleinen und mittelständischen Untern
 
 …oder auch mangelnder Wille der Führungsebene für Veränderungen. Aber was genau müssen Unternehmen beachten, damit Mitarbeiter für die Nutzung von digitalen Technologien am Arbeitsplatz befähigt werden? 
 
-### Wie wird der Digital Workplace zu einer Art Lichtgestalt? 
+### Wie wird der Digital Workplace zu einer Art Lichtgestalt?
 
 Keine Frage, die Einführung und Etablierung digitaler Lösungen in Unternehmen erfordert Know-how und Planung. Dennoch gibt es einige zentrale Bausteine, die bei der Ausgestaltung eines digitalen Arbeitsplatzes beachtet werden sollten. Damit das Potential digitaler Technologien für Unternehmen und Mitarbeiter nutzbar gemacht werden kann, sollten folgende Dinge beachtet werden: 
 
@@ -54,6 +54,6 @@ Keine Frage, die Einführung und Etablierung digitaler Lösungen in Unternehmen 
 
 ...und am wichtigsten ist das ENABLING der Mitarbeiter. Es reicht nicht nur digitale Technologien bereitzustellen. Man muss die Mitarbeiter auch zum Umgang mit digitalen Lösungen befähigen. Dafür können beispielsweise Schulungen stattfinden.
 
-### Fazit: Technologien am Arbeitsplatz sind kein Selbstläufer 
+### Fazit: Technologien am Arbeitsplatz sind kein Selbstläufer
 
 Die fortschreitende Digitalisierung ist der Treiber dafür, dass mittlerweile nahezu jede Erwerbstätigkeit durch den Einsatz technologischer Hilfsmittel vollzogen wird. In der Folge hat sich nicht nur die Art und Weise, wie Arbeit verrichtet wird, vollkommen verändert, sondern auch das Arbeitsumfeld der Mitarbeiter. Mitarbeiter erhalten durch die Einführung digitaler Technologien die Möglichlichkeit ortsunabhängig zu kommunizieren oder zusammenzuarbeiten. Der Digital Workplace stellt dabei ein Ansatz für Umsetzung dieser Möglichkeiten dar. Damit sich die Wirksamkeit von digitalen Technologien am Arbeitsplatz jedoch optimal entfalten kann, bedarf es eine am Mitarbeiter ausgerichtete IT-Strategie. Nur so wird ein Digital Workplace zur Lichtgestalt für ihr Unternehmen.
