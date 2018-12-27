@@ -57,3 +57,5 @@ Keine Frage, die Einführung und Etablierung digitaler Lösungen in Unternehmen 
 ### Fazit: Technologien am Arbeitsplatz sind kein Selbstläufer
 
 Die fortschreitende Digitalisierung ist der Treiber dafür, dass mittlerweile nahezu jede Erwerbstätigkeit durch den Einsatz technologischer Hilfsmittel vollzogen wird. In der Folge hat sich nicht nur die Art und Weise, wie Arbeit verrichtet wird, vollkommen verändert, sondern auch das Arbeitsumfeld der Mitarbeiter. Mitarbeiter erhalten durch die Einführung digitaler Technologien die Möglichlichkeit ortsunabhängig zu kommunizieren oder zusammenzuarbeiten. Der Digital Workplace stellt dabei ein Ansatz für Umsetzung dieser Möglichkeiten dar. Damit sich die Wirksamkeit von digitalen Technologien am Arbeitsplatz jedoch optimal entfalten kann, bedarf es eine am Mitarbeiter ausgerichtete IT-Strategie. Nur so wird ein Digital Workplace zur Lichtgestalt für ihr Unternehmen.
+
+Foto: Sarah Jürgel
