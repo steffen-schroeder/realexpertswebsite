@@ -31,7 +31,7 @@ thesis:
 video: 'https://youtu.be/r7wNymK__-s'
 relatedPosts:
   - post: 'Was brauchst Du, um das zu machen, was Du willst?'
-  - post: Digital Workplace - Schreckgespenst oder Lichtgestalt?
+  - post: Digital Workplace - vom Schreckgespenst zur Lichtgestalt
   - post: Das Dilemma des New Work Hype
   - post: 'Entdecke das Potential, den Kern von New Work'
 ---
