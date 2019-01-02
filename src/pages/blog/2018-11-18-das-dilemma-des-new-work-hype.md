@@ -14,7 +14,7 @@ tags:
   - Neue Wirksamkeit
 relatedPosts:
   - post: 'Entdecke das Potential, den Kern von New Work'
-  - post: IPROconsult GmbH - Moderne Kommunikation und Zusammenarbeit
+  - post: 'Neues Arbeiten - Geht nicht, gibt es nicht.'
   - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
 ---
 Die Herausforderungen in Unternehmen sind vielfältig aber genauso gibt es eine Vielzahl an Möglichkeiten die Dinge neu zu gestalten. Fast schon erschlagend werden Begriffe wie New Work, Selbstorganisation, Agilität und Digitalisierung in Medien und auf Konferenzen verwendet. Doch wie sollen Geschäftsführer, Führungskräfte und Mitarbeiter da noch durchsehen und wissen, wie man anfängt?
