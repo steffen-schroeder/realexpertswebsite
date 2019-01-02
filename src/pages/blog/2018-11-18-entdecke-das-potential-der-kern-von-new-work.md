@@ -15,8 +15,8 @@ description: >-
 tags:
   - Neue Wirksamkeit
 relatedPosts:
+  - post: 'Neues Arbeiten - Geht nicht, gibt es nicht.'
   - post: Das Dilemma des New Work Hype
-  - post: Wissensmanagement und Zusammenarbeit bei Real Experts
   - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
 ---
 Viele Unternehmen mit denen wir in Kontakt stehen, befinden sich gerade auf der Suche nach neuen und modernen Wegen der Zusammenarbeit und des Miteinanders. Inspiriert von den vielen gehypten und diskutierten Themen da draußen wie New Work, Agilität, Digitalisierung, Selbstorganisation und gefordert von Innen durch die Mitarbeiter. Doch was genau bedeutet eine neue Art der Zusammenarbeit und der Wirksamkeit in Unternehmen? Darauf haben viele keine Antwort. 
