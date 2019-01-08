@@ -515,11 +515,18 @@ main {
         font-weight: 600;
       }
 
+      ul, ol {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      ol {
+        margin-left: 20px;
+      }
+
       ul {
         list-style-type: disc;
         margin-left: 40px;
-        margin-top: 10px;
-        margin-bottom: 10px;
       }
 
     }
