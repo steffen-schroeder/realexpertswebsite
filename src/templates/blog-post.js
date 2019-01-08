@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {kebabCase} from 'lodash';
+import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import BlogPostTeaser from '../components/BlogPostTeaser';
-import Content, {HTMLContent} from '../components/Content';
+import Content, { HTMLContent } from '../components/Content';
 import SocialButtons from '../components/SocialButtons';
 
 import favicon from '../img/favicon.ico';
-import arrowLeft from "../img/icons/arrow-left-bold-circle.svg";
+import arrowLeft from '../img/icons/arrow-left-bold-circle.svg';
 
 export const BlogPostTemplate = ({
                                    content,
@@ -30,7 +30,7 @@ export const BlogPostTemplate = ({
   ));
 
   return (
-    <section className={"blog-post " + (relatedPosts !== null ? 'has-related-posts': '')}>
+    <section className={'blog-post ' + (relatedPosts !== null ? 'has-related-posts' : '')}>
       {helmet || ''}
       {tags && tags.length ? (
         <ul className="taglist divided">
@@ -72,23 +72,25 @@ export const BlogPostTemplate = ({
         </div>
       ) : null}
       <Link className="overview-link" to={`/blog/`}>
-        <img src={arrowLeft} alt="Real Experts" style={{maxHeight: '75px'}}/>
+        <img src={arrowLeft} alt="Real Experts" style={{ maxHeight: '75px' }}/>
         ZUR ARTIKELÜBERSICHT
       </Link>
       {relatedPosts &&
       <div className="related-posts">
         <div className="related-posts-wrapper">
-          <h3>Relevante Artikel</h3>
-          <div className="related-posts-list-wrapper">
-            <div className="related-posts-list">
-              {relatedPostsContent}
+          <div className="related-posts-wrapper-inner">
+            <h3>Relevante Artikel</h3>
+            <div className="related-posts-list-wrapper">
+              <div className="related-posts-list">
+                {relatedPostsContent}
+              </div>
             </div>
           </div>
         </div>
       </div>
       }
     </section>
-  )
+  );
 };
 
 BlogPostTemplate.propTypes = {
@@ -156,7 +158,7 @@ class BlogPost extends React.Component {
     const helmet = <Helmet
       title={`${title} | Blog | ${siteTitle}`}
       link={[
-        {rel: 'shortcut icon', type: 'image/ico', href: `${favicon}`}
+        { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
       ]}/>;
 
     return (
@@ -306,4 +308,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

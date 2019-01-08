@@ -594,52 +594,58 @@ main {
 
         max-width: 1600px;
         padding: 0 160px;
-        width: 100%;
         position: relative;
 
-        h3 {
-          font-size: 20px !important;
-          text-transform: uppercase;
-          font-weight: 600 !important;
-        }
+        .related-posts-wrapper-inner {
 
-        .related-posts-list-wrapper {
+          margin: 0 13%;
 
-          overflow: hidden;
+          h3 {
+            font-size: 20px !important;
+            text-transform: uppercase;
+            font-weight: 600 !important;
+          }
 
-          .related-posts-list {
+          .related-posts-list-wrapper {
 
-            display: flex;
-            flex-direction: row;
-            margin-top: 30px;
+            overflow: hidden;
 
-            transition: all 0.4s;
+            .related-posts-list {
 
-            .post.related {
-              width: 350px;
-              padding: 0 45px;
-              border-right: 1px solid #e4e4e4;
+              display: flex;
+              flex-direction: row;
+              margin-top: 30px;
 
-              &:first-child {
-                border-left: 1px solid #e4e4e4;
+              transition: all 0.4s;
+
+              .post.related {
+                flex: 1;
+                padding: 0 45px;
+                border-right: 1px solid #e4e4e4;
+
+                &:first-child {
+                  border-left: 1px solid #e4e4e4;
+                }
+
+                h4 {
+                  font-size: 20px !important;
+                }
+
+                .image-type-related {
+                  width: 160px;
+                  height: auto;
+                }
+
+                .post-content-excerpt {
+                  display: none;
+                }
+
               }
-
-              h4 {
-                font-size: 20px !important;
-              }
-
-              .image-type-related {
-                width: 160px;
-                height: auto;
-              }
-
-              .post-content-excerpt {
-                display: none;
-              }
-
             }
           }
+
         }
+
       }
     }
   }

@@ -289,24 +289,30 @@
 
       .related-posts {
 
+        //bottom: auto;
+
         .related-posts-wrapper {
 
           padding: 0 30px;
 
-          .related-posts-list-wrapper {
+          .related-posts-wrapper-inner {
+            margin: 0 0;
 
-            .related-posts-list {
-              .post.related {
-                width: 35%;
+            .related-posts-list-wrapper {
 
-                &:first-child {
-                  padding-left: 0;
-                  border-left: none;
-                }
+              .related-posts-list {
+                .post.related {
+                  width: 35%;
 
-                &:nth-child(3) {
-                  border-right: none;
-                  padding-right: 0;
+                  &:first-child {
+                    padding-left: 0;
+                    border-left: none;
+                  }
+
+                  &:nth-child(3) {
+                    border-right: none;
+                    padding-right: 0;
+                  }
                 }
               }
             }
@@ -323,6 +329,7 @@
 
     .footer-container {
       width: 100%;
+      padding: 0 0;
     }
   }
 }
@@ -345,39 +352,45 @@
         width: 100%;
         padding: 0;
 
-        h3 {
-          padding-top: 30px;
-          font-size: 22px !important;
-        }
+        .related-posts-wrapper-inner {
+          margin: 0 0;
 
-        .related-posts-list-wrapper {
+          h3 {
+            padding-top: 30px;
+            font-size: 22px !important;
+          }
 
-          width: auto;
+          .related-posts-list-wrapper {
 
-          .related-posts-list {
             width: auto;
-            flex-direction: column;
-            .post.related {
-              padding: 0;
-              margin-bottom: 40px;
-              border-right: none;
+
+            .related-posts-list {
               width: auto;
-              &:first-child {
-                border-left: none;
-              }
-
-              .image-type-related {
+              flex-direction: column;
+              .post.related {
+                padding: 0;
+                margin-bottom: 40px;
+                border-right: none;
                 width: auto;
-              }
-              .post-content {
-                .post-content-excerpt {
-                  display: block;
+                &:first-child {
+                  border-left: none;
                 }
-              }
 
+                .image-type-related {
+                  width: auto;
+                }
+                .post-content {
+                  .post-content-excerpt {
+                    display: block;
+                  }
+                }
+
+              }
             }
           }
+
         }
+
       }
     }
 
@@ -387,6 +400,7 @@
 
     .footer-container {
       width: 100%;
+      padding: 0 0;
       max-width: 100%;
       flex-direction: column-reverse;
 
@@ -656,6 +670,14 @@
         .overview-link {
           margin-left: 0;
           margin-bottom: 30px;
+        }
+
+        .related-posts {
+          //bottom: auto;
+
+          .related-posts-wrapper-inner {
+            margin: 0 0;
+          }
         }
 
       }
