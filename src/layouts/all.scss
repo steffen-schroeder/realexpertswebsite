@@ -481,6 +481,12 @@ main {
         margin-bottom: 0;
       }
 
+      .position {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+      }
+
       p.company {
         margin-top: 20px;
         font-size: 14px;
