@@ -15,7 +15,7 @@ relatedPosts:
   - post: Digital Workplace - vom Schreckgespenst zur Lichtgestalt
   - post: Digitale Heimat mit einem Social Intranet von COYO
 ---
-Weiter geht unsere DigitalWorkplace Blogreihe mit dem Trendthema “Intranet”. Ich weiß, beim Intranet im Jahr 2019 von einem Trendthema zu sprechen, ist natürlich eine wirklich gewagte These zum Start. Deshalb aufgepasst: Next Generation **“Front-Door-Intranet”**. Dazu gleich mehr! Zunächst eine kurze Rückblende. In unserem letzten Blogbeitrag wurde erklärt, dass die Etablierung eines Digital Workplace eine mitarbeiterorientierte Strategie der Unternehmen darstellt, um die Wirksamkeit digitaler Technologien für Unternehmen und Mitarbeiter zu nutzen. Da stellt sich natürlich die Frage, was das eigentlich in der Umsetzung bedeutet? Was hat es mit Wirksamkeit auf sich bzw. in welchem Zusammenhang steht das mit unserem heutigen Blogbeitrag zum Thema Intranet im Jahr 2019?
+Weiter geht unsere Digital Workplace Blogreihe mit dem Trendthema “Intranet”. Ich weiß, beim Intranet im Jahr 2019 von einem Trendthema zu sprechen, ist natürlich eine wirklich gewagte These zum Start. Deshalb aufgepasst: Next Generation **“Front-Door-Intranet”**. Dazu gleich mehr! Zunächst eine kurze Rückblende. In unserem letzten Blogbeitrag wurde erklärt, dass die Etablierung eines Digital Workplace eine mitarbeiterorientierte Strategie der Unternehmen darstellt, um die Wirksamkeit digitaler Technologien für Unternehmen und Mitarbeiter zu nutzen. Da stellt sich natürlich die Frage, was das eigentlich in der Umsetzung bedeutet? Was hat es mit Wirksamkeit auf sich bzw. in welchem Zusammenhang steht das mit unserem heutigen Blogbeitrag zum Thema Intranet im Jahr 2019?
 
 ### Das Intranet als Multifunktionswerkzeug im Digital Workplace
 
@@ -29,7 +29,7 @@ Was braucht man dafür? Eigentlich nur digitale Werkzeuge zum Kommunizieren, Inf
 
 Der Eine oder Andere wird hier trotzdem Einwände anbringen. Intranet und neu? Ich sage mal ‘JEIN’! Keine Frage, das Thema Intranet hat bereits mit Beginn der 2000er Jahre im unternehmerischen Umfeld seinen Ursprung. Das spricht nicht unbedingt für eine Innovation im Jahr 2019. Was also spricht dafür? Eindeutig die funktionale Ausgestaltung und das Verständnis eines leistungsfähigen Intranets. Das hat sich in den vergangenen 20 Jahren sukzessive weiterentwickelt bzw. angepasst. Die Intranet-Evolution lässt sich deshalb zunächst in drei Phasen darstellen: 
 
-1. Generation – die statische interne Webseite (Schwerpunkt: Darstellung von Unternehmensinformationen)
+1. Generation – die statische interne Webseite (Schwerpunkt: Darstellung von Unternehmensinformationen)                                                                                                                                              
 2. Generation – das Portal für Mitarbeiter (Schwerpunkt: Integrationen von Self-Service-Desk-Funktionen z.B. Anträge für Urlaub; Gehaltsabrechnung)                                                    
 3. Generation – das Social Intranet (Schwerpunkt Kommunikation, Information und Zusammenarbeit)
 
