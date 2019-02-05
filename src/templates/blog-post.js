@@ -139,6 +139,7 @@ class BlogPost extends React.Component {
       },
       post: {
         html,
+        excerpt,
         frontmatter: {
           description,
           tags,
@@ -153,13 +154,27 @@ class BlogPost extends React.Component {
         }
       },
     } = this.props.data;
+
+    console.log(this.props.data.post);
+
     const postAuthor = author ? author : defaultAuthor;
     const twitterHandle = postAuthor.frontmatter.twitterHandle ? postAuthor.frontmatter.twitterHandle : defaultTwitterHandle;
     const helmet = <Helmet
       title={`${title} | Blog | ${siteTitle}`}
       link={[
         { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
-      ]}/>;
+      ]}
+      meta={[
+        { name: 'og:site_name', content: siteTitle },
+        { name: 'og:type', content: 'blog' },
+        { name: 'og:url', content: slug },
+        { name: 'og:title', content: title },
+        { name: 'og:description', description },
+        { name: 'og:image', content: image.publicURL},
+        { name: 'og:image:alt', content: title },
+        { name: 'og:image:type', content: 'image/jpeg' }
+      ]}
+    />;
 
     return (
       <BlogPostTemplate
@@ -214,6 +229,7 @@ export const pageQuery = graphql`
         defaultAuthor {
           fields {
             image {
+              publicURL
               childImageSharp {
                 sizes (maxWidth: 100, maxHeight: 100) {
                   ...GatsbyImageSharpSizes
@@ -235,6 +251,7 @@ export const pageQuery = graphql`
       fields {
         slug
         image {
+          publicURL
           childImageSharp {
             sizes(maxWidth: 1280, quality: 80) {
               ...GatsbyImageSharpSizes
@@ -245,6 +262,7 @@ export const pageQuery = graphql`
           fields {
             image {
               id
+              publicURL
               childImageSharp {
                 sizes (maxWidth: 100, maxHeight: 100) {
                   ...GatsbyImageSharpSizes
@@ -276,6 +294,7 @@ export const pageQuery = graphql`
             author {
               fields {
                 image {
+                  publicURL
                   childImageSharp {
                     sizes (maxWidth: 100, maxHeight: 100) {
                       ...GatsbyImageSharpSizes
@@ -292,6 +311,7 @@ export const pageQuery = graphql`
             }
             image {
               id
+              publicURL
               childImageSharp {
                 sizes (maxWidth: 160) {
                   ...GatsbyImageSharpSizes
@@ -303,6 +323,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        description
         tags
         date(formatString: "DD.MM.YYYY")
       }
