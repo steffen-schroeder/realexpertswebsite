@@ -65,6 +65,18 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        headers: {
+          "/*": [
+            "X-Frame-Options: ALLOW-FROM https://www.itsax.de",
+            "X-XSS-Protection: 1; mode=block",
+            "X-Content-Type-Options: nosniff"
+          ]
+        },
+        mergeSecurityHeaders: false
+      }
+    }
   ],
 };
