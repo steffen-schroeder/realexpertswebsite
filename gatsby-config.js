@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Real Experts',
     twitterHandle: '@hut1315',
-    url: 'https://www.realexperts.de/',
+    siteUrl: 'https://www.realexperts.de'
   },
   mapping: {
     "MarkdownRemark.fields.relatedPosts": "MarkdownRemark",
@@ -10,6 +10,7 @@ module.exports = {
     "SettingsJson.fields.defaultAuthor": "MarkdownRemark",
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
