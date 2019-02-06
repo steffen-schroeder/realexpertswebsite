@@ -176,8 +176,8 @@ class BlogPost extends React.Component {
         { name: 'twitter:site', content: defaultTwitterHandle},
         { name: 'twitter:title', content: title},
         { name: 'twitter:description', content: description.substring(0,157)+'...'},
-        { name: 'twitter:creator', content: postAuthor.twitterHandle},
-        { name: 'twitter:image', content: image.publicURL}
+        { name: 'twitter:creator', content: "@"+twitterHandle},
+        { name: 'twitter:image', content: url+image.publicURL}
 
       ]}
     />;
