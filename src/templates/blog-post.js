@@ -155,8 +155,6 @@ class BlogPost extends React.Component {
       },
     } = this.props.data;
 
-    console.log(this.props.data.post);
-
     const postAuthor = author ? author : defaultAuthor;
     const twitterHandle = postAuthor.frontmatter.twitterHandle ? postAuthor.frontmatter.twitterHandle : defaultTwitterHandle;
     const helmet = <Helmet
@@ -172,7 +170,15 @@ class BlogPost extends React.Component {
         { name: 'og:description', description },
         { name: 'og:image', content: image.publicURL},
         { name: 'og:image:alt', content: title },
-        { name: 'og:image:type', content: 'image/jpeg' }
+        { name: 'og:image:type', content: 'image/jpeg' },
+
+        { name: 'twitter:card', content: "summary"},
+        { name: 'twitter:site', content: defaultTwitterHandle},
+        { name: 'twitter:title', content: title},
+        { name: 'twitter:description', content: description.substring(0,157)+'...'},
+        { name: 'twitter:creator', content: postAuthor.twitterHandle},
+        { name: 'twitter:image', content: image.publicURL}
+
       ]}
     />;
 
