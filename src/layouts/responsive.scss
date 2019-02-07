@@ -396,6 +396,21 @@
 
   }
 
+  .contact {
+    .contact-content {
+
+      flex-direction: column;
+
+      .contact-information {
+        margin-top: 20px;
+      }
+
+      .contact-map {
+        margin-top: 20px;
+      }
+    }
+  }
+
   .footer {
 
     .footer-container {

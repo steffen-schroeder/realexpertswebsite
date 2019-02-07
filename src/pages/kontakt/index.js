@@ -2,21 +2,21 @@ import React from 'react'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types';
-import Script from 'react-load-script'
-
+import Map from '../../components/Map'
 
 class ContactPage extends React.Component {
 
   constructor(props) {
     super(props);
-  }
 
-  handleScriptLoad() {
-    const s2 = document.createElement('script');
-    s2.type = 'text/javascript';
-    s2.innerHTML = "hbspt.forms.create({portalId: '3217061',formId: 'cae0b9cf-f2bc-4a3f-950b-99ddeeff88c8'});";
-    s2.async = true;
-    this.content.appendChild(s2);
+    if (typeof window !== 'undefined') {
+      window.initMap = function() {
+        new window.google.maps.Map(document.getElementById('map'), {
+          center: { lat: 40, lng: 10 },
+          zoom: 5,
+        })
+      }
+    }
   }
 
   render() {
@@ -24,19 +24,47 @@ class ContactPage extends React.Component {
     const {
       settings: {
         global: {
-          title: title,
+          title,
+        },
+        apiKeys: {
+          googleMaps,
+        },
+        contactInfo: {
+          title: contactTitle,
+          content,
+          street,
+          zip,
+          phone,
+          fax,
+          email,
+          location: {
+            latitude,
+            longitude,
+          }
         },
       },
     } = this.props.data;
 
     return (
-      <section className="section tags">
-        <Script
-          url="https://js.hsforms.net/forms/shell.js"
-          onLoad={this.handleScriptLoad.bind(this)}
-        />
-        <Helmet title={`Tags | ${title}`}/>
-        <div className="container content" ref={el => (this.content=el)}>
+      <section className="section contact">
+        <Helmet title={`Kontakt | ${title}`}/>
+        <h2 className="contact-title">{contactTitle}</h2>
+        <div className="contact-content">
+          <div className="contact-information">
+            <div className="contact-title">{title}</div>
+            <div className="contact-address">
+              <p>{street}</p>
+              <p>{zip}</p>
+              <br/>
+              <p>{phone}</p>
+              <p>{fax}</p>
+            </div>
+            <div className="contact-email"><span className="label">E-Mail: </span><a
+              href={`mailto:${email}`}>{email}</a></div>
+          </div>
+          <div className="contact-map">
+            <Map latitude={latitude} longitude={longitude} googleMaps={googleMaps}/>
+          </div>
         </div>
       </section>
     );
@@ -49,6 +77,18 @@ ContactPage.propTypes = {
       global: PropTypes.shape({
         title: PropTypes.string,
       }),
+      apiKeys: PropTypes.shape({
+        googleMaps: PropTypes.string,
+      }),
+      contactInfo: PropTypes.shape({
+        title: PropTypes.string,
+        content: PropTypes.string,
+        address: PropTypes.string,
+        location: PropTypes.shape({
+          latitude: PropTypes.number,
+          longitude: PropTypes.number,
+        })
+      }),
     }).isRequired,
   }),
 };
@@ -60,6 +100,22 @@ export const contactPageQuery = graphql`
     settings: settingsJson {
       global {
         title
+      }
+      apiKeys {
+        googleMaps
+      }
+      contactInfo {
+        title
+        content
+        street
+        zip
+        phone
+        fax
+        email
+        location {
+          latitude
+          longitude
+        }
       }
     }
   }

@@ -15,7 +15,7 @@ const Footer = () => (
       </div>
       <nav>
         <ul>
-          {/*<li><Link to="/kontakt">Kontakt</Link></li>*/}
+          <li><Link to="/kontakt">Kontakt</Link></li>
           <li><Link to="/jobs">Jobs</Link></li>
           <li><Link to="/impressum">Impressum</Link></li>
           <li><Link to="/datenschutz">Datenschutzerklärung</Link></li>

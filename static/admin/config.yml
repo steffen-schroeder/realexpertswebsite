@@ -104,7 +104,11 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Content", name: "content", widget: "markdown" }
-              - {label: "Address & Co", name: "address", widget: "markdown", buttons: ["bold", "italic", "link"] }
+              - {label: "Street & Number", name: "street", widget: "string"}
+              - {label: "Zip & City", name: "zip", widget: "string"}
+              - {label: "Phone", name: "phone", widget: "string"}
+              - {label: "Fax", name: "fax", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
               - label: "Location position"
                 name: "location"
                 widget: "object"

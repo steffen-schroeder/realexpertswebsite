@@ -656,6 +656,57 @@ main {
       align-items: flex-start;
     }
   }
+  .contact {
+
+    h2 {
+      margin-bottom: 50px;
+    }
+
+    .contact-content {
+
+      width: 100%;
+      display: flex;
+
+      .contact-information {
+        flex: 4;
+        padding-right: 30px;
+        color: $primary;
+
+        .contact-title {
+          font-weight: bold;
+          font-family: 'Changa', sans-serif;
+          margin-bottom: 20px;
+          font-size: 1.2rem;
+        }
+
+        .contact-address {
+          margin-bottom: 20px;
+        }
+
+        .contact-email {
+          font-weight: bold;
+
+          .label {
+            font-weight: normal;
+            float: left;
+            margin-right: 5px;
+            color: $primary;
+          }
+
+          a {
+            color: $primary;
+          }
+        }
+      }
+
+      .contact-map {
+        flex: 6;
+        width: 100%;
+        height: 400px;
+      }
+    }
+  }
+
 }
 
 .post {
