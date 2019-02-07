@@ -156,7 +156,8 @@ class BlogPost extends React.Component {
     } = this.props.data;
 
     const postAuthor = author ? author : defaultAuthor;
-    const twitterHandle = postAuthor.frontmatter.twitterHandle ? postAuthor.frontmatter.twitterHandle : defaultTwitterHandle;
+    let twitterHandle = postAuthor.frontmatter.twitterHandle ? postAuthor.frontmatter.twitterHandle : defaultTwitterHandle;
+    if (twitterHandle.indexOf('@') === -1) twitterHandle = '@'+twitterHandle;
     const helmet = <Helmet
       title={`${title} | Blog | ${siteTitle}`}
       link={[
@@ -176,7 +177,7 @@ class BlogPost extends React.Component {
         { name: 'twitter:site', content: defaultTwitterHandle},
         { name: 'twitter:title', content: title},
         { name: 'twitter:description', content: description.substring(0,157)+'...'},
-        { name: 'twitter:creator', content: "@"+twitterHandle},
+        { name: 'twitter:creator', content: twitterHandle},
         { name: 'twitter:image', content: url+image.publicURL}
 
       ]}
