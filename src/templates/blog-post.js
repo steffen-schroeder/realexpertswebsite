@@ -170,9 +170,9 @@ class BlogPost extends React.Component {
         { name: 'og:description', description },
         { name: 'og:image', content: image.publicURL},
         { name: 'og:image:alt', content: title },
-        { name: 'og:image:type', content: 'image/jpeg' },
+        { name: 'og:image:type', content: 'image/png' },
 
-        { name: 'twitter:card', content: "summary"},
+        { name: 'twitter:card', content: "summary_large_image"},
         { name: 'twitter:site', content: defaultTwitterHandle},
         { name: 'twitter:title', content: title},
         { name: 'twitter:description', content: description.substring(0,157)+'...'},
