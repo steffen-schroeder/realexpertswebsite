@@ -719,6 +719,42 @@ main {
 
 }
 
+.pagination {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-family: 'Changa', sans-serif;
+  border-top: 1px $primary solid;
+  margin-top: 60px;
+  padding: 0 50px;
+  font-size: 1.2rem;
+
+  .pagination-prev,
+  .pagination-next {
+    color: $primary;
+    padding-top: 6px;
+  }
+
+  .pagination-item {
+
+    margin: 10px;
+
+    .pagination-item-link {
+
+      color: $primary;
+      &.active {
+        font-weight: bold;
+      }
+
+    }
+  }
+
+}
+
 .footer {
 
   padding: 2rem 0;
