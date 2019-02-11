@@ -116,16 +116,21 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
       // Create blog post list pages
       const postsPerPage = 6;
+      const extraArticlesOnStartPage = 4;
       const blogArticles = pages.filter(page => page.node.frontmatter.templateKey === "blog-post")
-      const numPages = Math.ceil(blogArticles.length / postsPerPage);
+      const numPages = Math.ceil((blogArticles.length-extraArticlesOnStartPage) / postsPerPage);
 
       Array.from({ length: numPages }).forEach((_, i) => {
+
+        let numShown = i === 0 ? postsPerPage + extraArticlesOnStartPage : postsPerPage;
+        let numSkip = i === 0 ? 0 : extraArticlesOnStartPage + i * postsPerPage;
+
         createPage({
           path: i === 0 ? `/blog/` : `/blog/${i + 1}`,
           component: path.resolve('./src/templates/blog.js'),
           context: {
-            limit: postsPerPage,
-            skip: i * postsPerPage,
+            limit: numShown,
+            skip: numSkip,
             numPages,
             currentPage: i + 1
           },

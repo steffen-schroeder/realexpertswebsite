@@ -35,14 +35,19 @@ export default class BlogIndexPage extends React.Component {
           link={[
             { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
           ]}/>
+        { isFirst &&
+          <div>
         <h2>Top Beiträge</h2>
-        <div className="top-posts">
+          <div className="top-posts">
           {topPosts.map((topPost, key) => (
             <BlogPostTeaser key={topPost.id}
                             post={topPost}
                             type={key === 0 ? 'featured' : 'top'}/>
           ))}
-        </div>
+          </div>
+          </div>
+        }
+
         <h2>Alle Beiträge</h2>
         <div className="all-posts">
           {posts.map(({node: post}) => (
