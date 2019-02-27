@@ -17,7 +17,7 @@ relatedPosts:
   - post: Social Intranet mit Linchpin für Confluence
   - {}
 ---
-_Linchpin ist eine Social Intranet Technologie vom deutschen Atlassian Partner //SEIBERT/MEDIA, welche 2014 offiziell auf der Atlassian Summit vorgestellt wurde. Seit der Markteinführung wurde Linchpin kontinuierlich weiterentwickelt und hat sich als attraktiver Intranet-Anbieter am Puls der Zeit behaupten können. Ein Grund mehr sich genauer mit der Technologie auseinanderzusetzen. In einem ausführlichen Interview berichtet Matthias Rauer von //SEIBERT/MEDIA u.a. darüber, wie es überhaupt zu Linchpin kam und welche Use Cases ein leistungsfähiges Intranet wie Linchpin abbildet. 
+_Linchpin ist eine Social Intranet Technologie vom deutschen Atlassian Partner //SEIBERT/MEDIA, welche 2014 offiziell auf der Atlassian Summit vorgestellt wurde. Seit der Markteinführung wurde Linchpin kontinuierlich weiterentwickelt und hat sich als attraktiver Intranet-Anbieter am Puls der Zeit behaupten können. Ein Grund mehr sich genauer mit der Technologie auseinanderzusetzen. In einem ausführlichen Interview berichtet Matthias Rauer von //SEIBERT/MEDIA u.a. darüber, wie es überhaupt zu Linchpin kam und welche Use Cases ein leistungsfähiges Intranet wie Linchpin abbildet._ 
 _
 
 **Hi Matthias. Schön, dass wir heute über eure Social Intranet Technologie “Linchpin” sprechen. Zum Einstieg: Auf eurer Webseite wird Linchpin als "Confluence Based" Intranet beschrieben. Erwähnt werden sollte daher, dass Confluence selber eine eigenständige Technologie darstellt. Das ist für viele Leser sicherlich verwirrend. Daher, wie kam es eigentlich zu der Idee ein Intranet auf Basis von Confluence zu entwickeln und wie kann man sich diese Verbindung vorstellen?**
@@ -68,7 +68,7 @@ Durch persönliche Relevanz. Wenn eine Unternehmens-Software mir hilft, meine Ar
 
 Klar spielen für die Mitarbeiteraktivierung auch Usability-Aspekte eine Rolle, und ein Intranet muss visuell das Erscheinungsbild des Unternehmens widerspiegeln. Eine gute interne Rollout-Kampagne kann ebenfalls viel bewirken. Andererseits haben wir teils uralte Intranet-Tools kennengelernt - furchtbar zu bedienen, nicht gewartet, technologisch aus dem digitalen Mittelalter, offiziell sogar “verboten” :-). Und viele Leute haben das System trotzdem genutzt, obwohl sie es eigentlich gar nicht sollten, weil es eine sehr wichtige Funktion hatte, die ihnen (trotz aller sonstigen Nachteile des Tools) die tägliche Arbeit erleichtert hat. Es ist interessant, dass eine einzelne “Killer-Applikation” im Intranet so viel Relevanz schaffen kann, dass dieses Legacy-System am Leben bleibt.
 
-_**Personalisierung als Schlüssel zur Mitarbeiteraktivierung**_
+**_Personalisierung als Schlüssel zur Mitarbeiteraktivierung_**
 
 Wenn es um moderne Social Intranets geht, sehen wir eine möglichst umfangreiche Personalisierung als den Schlüssel zur Mitarbeiteraktivierung. News per Gießkanne für alle interessieren am Ende niemanden. Ein Navigationsmenü für sämtliche Nutzer wird im Endeffekt viele Punkte haben, die für die meisten Leute unwichtig sind. Und zur Personalisierung gehört letztlich auch die Konsequenz, Dinge wegzulassen und beispielsweise bestimmten Nutzergruppen bestimmte Funktionen gar nicht anzubieten; für andere User werden sie wiederum eingeblendet. 
 
@@ -78,7 +78,7 @@ Außerdem wird die individuelle Relevanz von mehreren nicht-funktionellen Faktor
 
 Wir erleben, dass das Konzept “All in one” für viele Kunden nach wie vor der gängige Ansatz ist. Das Intranet-Evaluationsteam hat eine lange Feature-Checkliste mit allen möglichen funktionellen Anforderungen und arbeitet die ab. Das Pareto-Prinzip besagt, dass auf 20 Prozent der Kernfunktionen 80 Prozent des Nutzungsvolumens entfallen. Im Widerspruch dazu wird bei solchen Evaluationen die Quantität massiv überbetont. Schließlich läuft es darauf hinaus, dass in Evaluationsprozessen dieser Art häufig ein All-in-one-Paket als die beste Wahl erscheint - bis im produktiven Einsatz der “Fluch des Generalisten” zum Tragen kommt: Es kann alles, aber nichts davon richtig.
 
-**_Mit etwas Halbgaren sollten und können sich Kunden nicht zufriedengeben_**
+_**Mit etwas Halbgaren sollten und können sich Kunden nicht zufriedengeben**_
 
 Muss ein Intranet zum Beispiel nativ Gruppenchat und Instant Messaging können? Wir sagen Nein! Wozu denn? Es gibt sehr ausgereifte Speziallösungen für diesen Use Case. Will man etwa Slack oder Hangouts Chat nachbauen? Viel Spaß dabei - ein solches Vorhaben hat niemand Geringeres als Atlassian letztens abgeblasen. Und mit etwas Halbgaren sollten und können sich Kunden nicht zufriedengeben. 
 
