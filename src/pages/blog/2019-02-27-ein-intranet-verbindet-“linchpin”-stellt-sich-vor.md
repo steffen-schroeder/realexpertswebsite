@@ -15,7 +15,7 @@ tags:
 relatedPosts:
   - post: 'Das Intranet als zentrales Portal für einen wirksamen Digital Workplace '
   - post: Social Intranet mit Linchpin für Confluence
-  - {}
+  - post: Digital Workplace - vom Schreckgespenst zur Lichtgestalt
 ---
 _Linchpin ist eine Social Intranet Technologie vom deutschen Atlassian Partner //SEIBERT/MEDIA, welche 2014 offiziell auf der Atlassian Summit vorgestellt wurde. Seit der Markteinführung wurde Linchpin kontinuierlich weiterentwickelt und hat sich als attraktiver Intranet-Anbieter am Puls der Zeit behaupten können. Ein Grund mehr sich genauer mit der Technologie auseinanderzusetzen. In einem ausführlichen Interview berichtet Matthias Rauer von //SEIBERT/MEDIA u.a. darüber, wie es überhaupt zu Linchpin kam und welche Use Cases ein leistungsfähiges Intranet wie Linchpin abbildet._ 
 _
