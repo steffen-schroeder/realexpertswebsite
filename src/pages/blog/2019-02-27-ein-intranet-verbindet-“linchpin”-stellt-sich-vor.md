@@ -44,7 +44,7 @@ Ein Wertversprechen von Linchpin besteht darin, dass es beide Welten verbindet -
 
 Neue Kommunikationskonzepte haben natürlich längst ihren Platz in den Unternehmen - denk an Gruppenchat und Instant Messaging. Diese Entwicklung sollte und darf vor einem Intranet nicht Halt machen, finde ich. Ich kann dir ein Beispiel dafür geben, wie technische Entwicklungen aus dem Privatkontext einfließen: Wir haben in Linchpin ein cooles Community-Modul, das sich teils an Timelines a la Facebook und Twitter orientiert. Den Grundstein dafür haben ein paar Kollegen vor vier, fünf Jahren bei einem internen Hackathon gelegt: So etwas gibt es für Confluence nicht, aber wir denken, dass es spannend und sinnvoll ist, solche Kommunikationsformen ins Unternehmensumfeld zu holen. Beim internen “Dogfooding” - also der internen Ausrollung neuer Linchpin-Funktionen - wurde das Tool schnell angenommen. Seitdem entwickeln wir die Linchpin für verschiedene Anwendungsfälle weiter. 
 
-_**Ein schnelles Feedback zu einer Idee per Like ist besser als gar keine Rückmeldung zu einer Idee**_
+**Ein schnelles Feedback zu einer Idee per Like ist besser als gar keine Rückmeldung zu einer Idee**
 
 Es ist auch keine Spielerei, sondern ein ziemlich effizienter Kommunikationskanal, sonst würden im Privaten ja nicht alle texten und Facebook nutzen, sondern Mails schreiben oder anrufen. Nur in den Unternehmen machen wir das weiterhin... Ein schnelles Feedback zu einem Community-Post per Like ist erstmal besser als gar keine Rückmeldung zu einer Idee. Und wenn sogar wirklich gute Diskussionen entstehen, ist das toll! Und nicht zuletzt bringen solche Funktionen in einem Intranet auch den Vorteil, dass vor allem jüngere Leute sich gleich heimisch fühlen und es gerne nutzen. Dafür gibt es im Usability-Bereich den Begriff “Nutzungsfreude”. Im Hinblick auf die Mitarbeiterakzeptanz eines Software-Systems sollte man diesen Aspekt nicht unterschätzen.
 
@@ -68,7 +68,7 @@ Durch persönliche Relevanz. Wenn eine Unternehmens-Software mir hilft, meine Ar
 
 Klar spielen für die Mitarbeiteraktivierung auch Usability-Aspekte eine Rolle, und ein Intranet muss visuell das Erscheinungsbild des Unternehmens widerspiegeln. Eine gute interne Rollout-Kampagne kann ebenfalls viel bewirken. Andererseits haben wir teils uralte Intranet-Tools kennengelernt - furchtbar zu bedienen, nicht gewartet, technologisch aus dem digitalen Mittelalter, offiziell sogar “verboten” :-). Und viele Leute haben das System trotzdem genutzt, obwohl sie es eigentlich gar nicht sollten, weil es eine sehr wichtige Funktion hatte, die ihnen (trotz aller sonstigen Nachteile des Tools) die tägliche Arbeit erleichtert hat. Es ist interessant, dass eine einzelne “Killer-Applikation” im Intranet so viel Relevanz schaffen kann, dass dieses Legacy-System am Leben bleibt.
 
-**_Personalisierung als Schlüssel zur Mitarbeiteraktivierung_**
+_**Personalisierung als Schlüssel zur Mitarbeiteraktivierung**_
 
 Wenn es um moderne Social Intranets geht, sehen wir eine möglichst umfangreiche Personalisierung als den Schlüssel zur Mitarbeiteraktivierung. News per Gießkanne für alle interessieren am Ende niemanden. Ein Navigationsmenü für sämtliche Nutzer wird im Endeffekt viele Punkte haben, die für die meisten Leute unwichtig sind. Und zur Personalisierung gehört letztlich auch die Konsequenz, Dinge wegzulassen und beispielsweise bestimmten Nutzergruppen bestimmte Funktionen gar nicht anzubieten; für andere User werden sie wiederum eingeblendet. 
 
@@ -78,7 +78,7 @@ Außerdem wird die individuelle Relevanz von mehreren nicht-funktionellen Faktor
 
 Wir erleben, dass das Konzept “All in one” für viele Kunden nach wie vor der gängige Ansatz ist. Das Intranet-Evaluationsteam hat eine lange Feature-Checkliste mit allen möglichen funktionellen Anforderungen und arbeitet die ab. Das Pareto-Prinzip besagt, dass auf 20 Prozent der Kernfunktionen 80 Prozent des Nutzungsvolumens entfallen. Im Widerspruch dazu wird bei solchen Evaluationen die Quantität massiv überbetont. Schließlich läuft es darauf hinaus, dass in Evaluationsprozessen dieser Art häufig ein All-in-one-Paket als die beste Wahl erscheint - bis im produktiven Einsatz der “Fluch des Generalisten” zum Tragen kommt: Es kann alles, aber nichts davon richtig.
 
-_**Mit etwas Halbgaren sollten und können sich Kunden nicht zufriedengeben**_
+**_Mit etwas Halbgaren sollten und können sich Kunden nicht zufriedengeben_**
 
 Muss ein Intranet zum Beispiel nativ Gruppenchat und Instant Messaging können? Wir sagen Nein! Wozu denn? Es gibt sehr ausgereifte Speziallösungen für diesen Use Case. Will man etwa Slack oder Hangouts Chat nachbauen? Viel Spaß dabei - ein solches Vorhaben hat niemand Geringeres als Atlassian letztens abgeblasen. Und mit etwas Halbgaren sollten und können sich Kunden nicht zufriedengeben. 
 
@@ -86,7 +86,7 @@ Ein modernes Intranet hat bestimmte Kernanforderungen, die erfüllt sein müssen
 
 Wir kommunizieren Linchpin gerne als Cockpit für die tägliche Arbeit. Wobei: Wenn man an ein Cockpit denkt, hat man eher komplizierte Pulte mit zahllosen Knöpfen und Funktionen vor Augen, oder? Das leichtgewichtige, anpassungsfähige Eingangstor ist vielleicht das bessere Bild. Der modulare Aufbau von Linchpin erlaubt es sogar, dedizierte Drittlösungen für spezielle Nutzungsszenarien, die von Drittanbietern entwickelt werden, direkt zu integrieren. Aber eben nur dann, wenn die Mitarbeiter sie auch wirklich wollen und brauchen, und nicht im Rahmen eines All-in-one-Pakets.
 
-**Abschließend noch eine heikle Frage. Unternehmen schöpfen mehr und mehr nach Effizienz und wollen ihre Kosten durch schnellere Prozesse optimieren. Die Mehrwerte eines Intranets lassen sich dagegen schlecht quantifizieren. Wie entgegnest du einem Kunden, der eine Plattform wie Linchpin als “Spielerei” oder zusätzlichen Kostenfaktor betitelt? **
+**Abschließend noch eine heikle Frage. Unternehmen schöpfen mehr und mehr nach Effizienz und wollen ihre Kosten durch schnellere Prozesse optimieren. Die Mehrwerte eines Intranets lassen sich dagegen schlecht quantifizieren. Wie entgegnest du einem Kunden, der eine Plattform wie Linchpin als “Spielerei” oder zusätzlichen Kostenfaktor betitelt?**
 
 Es würde naheliegen, mal eine ROI-Tabellen zu erstellen. Zum Beispiel könnte man sagen: Überschlagen Sie mal, was es bringen würde, wenn jeder Büromitarbeiter im Unternehmen täglich soundso viele Minuten weniger mit E-Mails verplempern würde, weil die Kommunikation zentral dokumentiert im Intranet stattfindet und Informationen dort auffindbar sind. Aber so etwas läuft schnell auf Zahlenmagie hinaus.
 
