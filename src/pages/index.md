@@ -30,9 +30,9 @@ thesis:
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
 relatedPosts:
+  - post: 'Ein Intranet verbindet - “Linchpin” stellt sich vor '
   - post: 'Das Intranet als zentrales Portal für einen wirksamen Digital Workplace '
   - post: Digital Workplace - vom Schreckgespenst zur Lichtgestalt
   - post: 'Neues Arbeiten - Geht nicht, gibt es nicht.'
-  - post: 'Was brauchst Du, um das zu machen, was Du willst?'
 ---
 
