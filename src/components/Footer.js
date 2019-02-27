@@ -7,7 +7,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer-container">
       <div className="footer-logo">
-        <img src={logo} alt="Real Experts" style={{ maxHeight: '75px' }} />
+        <img src={logo} alt="Real Experts" style={{ height: '75px', width: '53px' }} />
         <div className="footer-powered-by">
           Powered by Real Experts<br/>
           Network GmbH
