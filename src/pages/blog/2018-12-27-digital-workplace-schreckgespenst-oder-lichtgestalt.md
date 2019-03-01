@@ -35,9 +35,9 @@ Der Digital Workplace stellt demnach eine mitarbeiterorientierte Strategie der U
 
 Doch unsere Erfahrung zeigt, dass es bei Etablierung eines Digital Workplace oftmals hapert. Woran liegt das?
 
-### Darum wird der Digital Workplace schnell zum Schreckgespenst
+### Darum wird der Digital Workplace zum Schreckgespenst
 
-Gerade beim Austausch mit Mitarbeitern aus kleinen und mittelständischen Unternehmen erfahren wir täglich, dass sich die ständig aktualisierenden Begriffe aus der digitalen Arbeitswelt negativ auf die Mitarbeiter und Unternehmen auswirken können. Diese können im schlimmsten Fall als eine Art digitales Himmelfahrtskommando wahrgenommen werden. Zugegeben, das ist jetzt etwas zugespitzt formuliert, aber oftmals hören wir Sätze wie: “Wir wollen SCRUM einführen, das machen jetzt alle”! Ohne dieses Projektmanagement Tool jetzt weiter auszuführen muss klar gesagt werden: dem technologischen Schreckgespenst wurde soeben Einlass in das Unternehmen gewährt! Methoden der digitalen Arbeitswelt sollten niemals Selbstzweck sein und immer nach Bedarf eingesetzt werden. Wird von den Mitarbeitern kein konkreter Mehrwert erkannt, so wecken digitale Technologien eher Unsicherheiten und Ängste. Gründe dafür, dass Themen rund um den Digital Workplace schnell zum Schreckgespenst werden sind: 
+Gerade beim Austausch mit Mitarbeitern aus kleinen und mittelständischen Unternehmen erfahren wir täglich, dass sich die ständig aktualisierenden Begriffe aus der digitalen Arbeitswelt negativ auf die Mitarbeiter und Unternehmen auswirken können. Diese können im schlimmsten Fall als eine Art digitales Himmelfahrtskommando wahrgenommen werden. Zugegeben, das ist jetzt etwas zugespitzt formuliert, aber oftmals hören wir Sätze wie: “Wir wollen SCRUM einführen, das machen jetzt alle”! Ohne dieses Projektmanagement Tool jetzt weiter auszuführen muss klar gesagt werden: dem technologischen Schreckgespenst wurde soeben Einlass in das Unternehmen gewährt! Methoden der digitalen Arbeitswelt sollten niemals Selbstzweck sein und immer nach Bedarf eingesetzt werden. Wird von den Mitarbeitern kein konkreter Mehrwert erkannt, so wecken digitale Technologien eher Unsicherheiten und Ängste. Gründe dafür, warum Themen rund um den Digital Workplace schnell zum Schreckgespenst werden sind: 
 
 * digitale Technologien werden von Unternehmen als Selbstzweck betrachtet
 * Mehrwerte digitaler Technologien werden nicht an Mitarbeiter kommuniziert
@@ -61,5 +61,13 @@ Keine Frage, die Einführung und Etablierung digitaler Lösungen in Unternehmen 
 ### Fazit: Technologien am Arbeitsplatz sind kein Selbstläufer
 
 Die fortschreitende Digitalisierung ist der Treiber dafür, dass mittlerweile nahezu jede Erwerbstätigkeit durch den Einsatz technologischer Hilfsmittel vollzogen wird. In der Folge hat sich nicht nur die Art und Weise wie Arbeit verrichtet wird vollkommen verändert, sondern auch das Arbeitsumfeld der Mitarbeiter. Mitarbeiter erhalten durch die Einführung digitaler Technologien die Möglichkeit ortsunabhängig zu kommunizieren oder zusammenzuarbeiten. Der Digital Workplace stellt dafür ein Ansatz für die Umsetzung dieser Möglichkeiten dar. Damit sich die Wirksamkeit von digitalen Technologien am Arbeitsplatz jedoch optimal entfalten kann, bedarf es eine am Mitarbeiter ausgerichtete IT-Strategie. Nur so wird ein Digital Workplace zur Lichtgestalt für ihr Unternehmen.
+
+
+
+**Fortsetzung der Reihe:**
+
+Das Intranet als zentrales Portal für einen wirksamen Digital Workplace 
+
+
 
 Foto: Sarah Jürgel
