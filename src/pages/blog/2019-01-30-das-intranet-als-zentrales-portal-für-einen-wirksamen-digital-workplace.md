@@ -58,3 +58,7 @@ Gerade im Bereich Zusammenarbeit legt das Front-Door-Intranet den Fokus auf die 
 ### Fazit: Die Zeiten von großen “All-in-One” Lösungen sind vorbei
 
 Der Trend hin zu einem wirksamen Digital Workplace sollte bei jedem Unternehmen im Jahr 2019 und in den folgenden Jahren ganz oben auf der Liste stehen. Das Intranet nimmt dort eine zentrale Rolle als Eingangstor in die digitale Unternehmenswelt ein. Das Intranet selber sollte sich aber auf seinen ursprünglichen Gedanken einer reichweitenstarken Kommunikations- und Informationsfunktion fokussieren. Der Community-Ansatz eines klassischen Social Intranets zum Austausch untereinander bleibt natürlich erhalten. Die wichtigste Veränderung liegt in der Entkopplung von Kommunikation/Information und Zusammenarbeit. Werkzeuge der Zusammenarbeit werden aufgrund ihrer Vielfältigkeit aus dem Intranet in spezifische und extra dafür entwickelte Anwendungen wie Jira verlagert. Das ist auch nicht weiter schlimm. Durch einen leistungsfähigen Front-Door-Ansatz ist die Anwendung im besten Fall integriert und nur einen Klick entfernt. Einer wirklich wirksamen Vernetzung von Kommunikation, Information und Zusammenarbeit steht durch ein leistungsfähiges und intelligentes Intranet nichts mehr im Wege.
+
+**Fortsetzung der Reihe:**
+
+Ein Intranet verbindet - "Linchpin" stellt sich vor
