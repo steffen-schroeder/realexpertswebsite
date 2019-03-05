@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 'Ein Intranet verbindet - “Linchpin” stellt sich vor '
 date: '2019-02-27T09:14:37+01:00'
 author: Oliver Reithage
-image: /img/realexperts-technologien-linchpin.jpg
+image: /img/realexperts-technologien-linchpin.png
 description: >
   Linchpin ist eine Social Intranet Technologie vom deutschen Atlassian Partner
   //SEIBERT/MEDIA, welche 2014 offiziell auf der Atlassian Summit vorgestellt
@@ -23,7 +23,9 @@ _Linchpin ist eine Social Intranet Technologie vom deutschen Atlassian Partner /
 
 Linchpin ist aus einem konkreten Projekt heraus entstanden: Für B. Braun Melsungen, einen weltweiten Konzern mit über 50.000 Leuten in über 60 Ländern, haben wir das neue Intranet “B. Braun Knowledge Center” konzipiert und entwickelt. Der Kunde wollte weg von seinem bestehenden Redaktionssystem hin zu einem offenen Kollaborationssystem mit Intranet-Funktionen. Und Confluence war schon im Einsatz. So kam die Frage auf: Kann man so etwas mit Confluence machen? Kann man, haben unsere Experten gesagt, wir müssen mal schauen, wie wir das machen, aber die Confluence-Technologie ist auf jeden Fall offen genug dafür. So wurde Linchpin geboren und seitdem kontinuierlich weiterentwickelt. 
 
-![Dashboard - Personalisierte Kommunikationszentrale für News, Menüs, Events und Apps](/img/01_startseite_.jpg)
+![Dashboard - Personalisierte Kommunikationszentrale für News, Events, Menüs & Apps](/img/01_startseite_.jpg)
+
+
 
 **Interessant. Das spiegelt auch einen Trend in der Produktentwicklung wider, welcher mehr auf Weiterentwicklung als auf ein disruptives vorgehen - also dem ersetzen bestehender Technologien - setzt. Aber was heißt das konkret für Unternehmen? Entsteht durch die Verbindung von Linchpin mit Confluence ein konkreter Mehrwert oder ist es vielleicht nicht sogar ein Nachteil gegenüber Wettbewerbern die technologie-unabhängige Intranet-Lösungen auf dem Markt bringen? Stichwort doppelte Lizenzkosten!?**
 
