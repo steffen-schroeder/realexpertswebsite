@@ -25,8 +25,6 @@ Linchpin ist aus einem konkreten Projekt heraus entstanden: Für B. Braun Melsun
 
 ![](/img/dash.jpg)
 
-_Bild: Dashboard - Personalisierte Kommunikationszentrale für News, Events, Menüs & Apps_
-
 **Interessant. Das spiegelt auch einen Trend in der Produktentwicklung wider, welcher mehr auf Weiterentwicklung als auf ein disruptives vorgehen - also dem ersetzen bestehender Technologien - setzt. Aber was heißt das konkret für Unternehmen? Entsteht durch die Verbindung von Linchpin mit Confluence ein konkreter Mehrwert oder ist es vielleicht nicht sogar ein Nachteil gegenüber Wettbewerbern die technologie-unabhängige Intranet-Lösungen auf dem Markt bringen? Stichwort doppelte Lizenzkosten!?**
 
 Der Mehrwert entsteht aus der Kombination von moderner Zusammenarbeit auf Teamebene und Konzern-Anforderungen an ein modernes Intranet. Im Bereich der Teamzusammenarbeit an Inhalten ist Confluence wirklich stark. Es ist das marktführende kommerzielle Wiki- und Collaboration-System für Unternehmen und mit Abstand die beste Lösung am Markt. Warum soll man darauf nicht aufbauen, wenn die Basislösung es erlaubt? Viele der klassischen Intranet-Anforderungen kann Confluence dagegen nicht erfüllen - und will es auch gar nicht: News-Konzept und Steuerung der offiziellen Kommunikation an die Mitarbeiter, Personalisierung, anpassbare Navigationsmenüs, Profile, Mehrsprachigkeit, Corporate-Design-Anpassung. Linchpin fügt diese Module hinzu. 
