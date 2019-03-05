@@ -23,7 +23,7 @@ _Linchpin ist eine Social Intranet Technologie vom deutschen Atlassian Partner /
 
 Linchpin ist aus einem konkreten Projekt heraus entstanden: Für B. Braun Melsungen, einen weltweiten Konzern mit über 50.000 Leuten in über 60 Ländern, haben wir das neue Intranet “B. Braun Knowledge Center” konzipiert und entwickelt. Der Kunde wollte weg von seinem bestehenden Redaktionssystem hin zu einem offenen Kollaborationssystem mit Intranet-Funktionen. Und Confluence war schon im Einsatz. So kam die Frage auf: Kann man so etwas mit Confluence machen? Kann man, haben unsere Experten gesagt, wir müssen mal schauen, wie wir das machen, aber die Confluence-Technologie ist auf jeden Fall offen genug dafür. So wurde Linchpin geboren und seitdem kontinuierlich weiterentwickelt. 
 
-![](/img/01_startseite_.jpg)
+![](/img/dash.jpg)
 
 _Bild: Dashboard - Personalisierte Kommunikationszentrale für News, Events, Menüs & Apps_
 
@@ -46,6 +46,8 @@ Ein Wertversprechen von Linchpin besteht darin, dass es beide Welten verbindet -
 **Wo wird gerade bei dem Wort “Social” sind. Welche Rolle spielt der Begriff Social in Linchpin? Ich denke da an den privaten Bereich, in dem eine Vielzahl von Social-Tools wie Facebook, WhatsApp etc. heutzutage unverzichtbar geworden sind. Gibt es da eine Verbindung zu modernen Intranets?!?**
 
 Neue Kommunikationskonzepte haben natürlich längst ihren Platz in den Unternehmen - denk an Gruppenchat und Instant Messaging. Diese Entwicklung sollte und darf vor einem Intranet nicht Halt machen, finde ich. Ich kann dir ein Beispiel dafür geben, wie technische Entwicklungen aus dem Privatkontext einfließen: Wir haben in Linchpin ein cooles Community-Modul, das sich teils an Timelines a la Facebook und Twitter orientiert. Den Grundstein dafür haben ein paar Kollegen vor vier, fünf Jahren bei einem internen Hackathon gelegt: So etwas gibt es für Confluence nicht, aber wir denken, dass es spannend und sinnvoll ist, solche Kommunikationsformen ins Unternehmensumfeld zu holen. Beim internen “Dogfooding” - also der internen Ausrollung neuer Linchpin-Funktionen - wurde das Tool schnell angenommen. Seitdem entwickeln wir die Linchpin für verschiedene Anwendungsfälle weiter. 
+
+![](/img/side-2-.jpg)
 
 **_Ein schnelles Feedback zu einer Idee per Like ist besser als gar keine Rückmeldung zu einer Idee_**
 
@@ -76,6 +78,8 @@ Klar spielen für die Mitarbeiteraktivierung auch Usability-Aspekte eine Rolle, 
 Wenn es um moderne Social Intranets geht, sehen wir eine möglichst umfangreiche Personalisierung als den Schlüssel zur Mitarbeiteraktivierung. News per Gießkanne für alle interessieren am Ende niemanden. Ein Navigationsmenü für sämtliche Nutzer wird im Endeffekt viele Punkte haben, die für die meisten Leute unwichtig sind. Und zur Personalisierung gehört letztlich auch die Konsequenz, Dinge wegzulassen und beispielsweise bestimmten Nutzergruppen bestimmte Funktionen gar nicht anzubieten; für andere User werden sie wiederum eingeblendet. 
 
 Außerdem wird die individuelle Relevanz von mehreren nicht-funktionellen Faktoren beeinflusst. Gibt es zum Beispiel restriktive Freigabeprozesse für die Erstellung von Intranet-Inhalten? Dann sinkt die Relevanz: Wenn ich nicht ohne Weiteres tun kann, was ich tun möchte, dann lasse ich es vielleicht lieber bleiben. Oder muss ich beim Anlegen einer Intranet-Seite erstmal eine lange Operationalisierungs-Checkliste beachten? Bürokratie ist Gift. Als Voraussetzungen für die Herstellung von Relevanz spielen also auch Offenheit und Fehlertoleranz eine Rolle.
+
+![](/img/personal.jpg)
 
 **In unserem Blogbeitrag haben wir die These aufgestellt, dass die Zeiten von großen All-in-One Intranet-Lösungen vorbei sind? Dazu ein Buzzword: Front-Door-Intranet. Wie positioniert sich Linchpin hier?**
 
