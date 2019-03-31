@@ -30,9 +30,9 @@ thesis:
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
 relatedPosts:
+  - post: 'Führen und führen lassen auf Augenhöhe '
+  - post: Tipps für eine erfolgreiche Intranet-Einführung
   - post: 'Ein Intranet verbindet - “Linchpin” stellt sich vor '
-  - post: 'Das Intranet als zentrales Portal für einen wirksamen Digital Workplace '
-  - post: Digital Workplace - vom Schreckgespenst zur Lichtgestalt
   - post: 'Neues Arbeiten - Geht nicht, gibt es nicht.'
 ---
 
