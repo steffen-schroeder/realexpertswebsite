@@ -12,6 +12,7 @@ description: >
 tags:
   - Augenhöhe
 relatedPosts:
+  - post: 'Neues Arbeiten - Geht nicht, gibt es nicht.'
   - post: Auf dem Weg zum AUGENHÖHEwegbegleiter
   - post: AUGENHÖHEwegbegleiter - Daniel Trebien im Interview
 ---
