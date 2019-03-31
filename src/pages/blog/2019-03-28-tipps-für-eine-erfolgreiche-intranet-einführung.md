@@ -13,7 +13,6 @@ tags:
   - Digital Workplace
 relatedPosts:
   - post: 'Das Intranet als zentrales Portal für einen wirksamen Digital Workplace '
-  - post: Social Intranet mit Linchpin für Confluence
   - post: 'Ein Intranet verbindet - “Linchpin” stellt sich vor '
   - post: Digitale Heimat mit einem Social Intranet von COYO
 ---
