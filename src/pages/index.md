@@ -33,6 +33,6 @@ relatedPosts:
   - post: 'Führen und führen lassen auf Augenhöhe '
   - post: Tipps für eine erfolgreiche Intranet-Einführung
   - post: 'Ein Intranet verbindet - “Linchpin” stellt sich vor '
-  - post: 'Neues Arbeiten - Geht nicht, gibt es nicht.'
+  - post: Der Weg zur Neuen Wirksamkeit im Unternehmen
 ---
 
