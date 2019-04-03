@@ -163,22 +163,18 @@ class BlogPost extends React.Component {
         { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
       ]}
       meta={[
-        { name: 'og:site_name', content: siteTitle },
-        { name: 'og:type', content: 'blog' },
-        { name: 'og:url', content: slug },
-        { name: 'og:title', content: title },
-        { name: 'og:description', description },
-        { name: 'og:image', content: image.publicURL},
-        { name: 'og:image:alt', content: title },
-        { name: 'og:image:type', content: 'image/jpeg' },
-
+        { property: 'og:site_name', content: siteTitle },
+        { property: 'og:type', content: 'blog' },
+        { property: 'og:url', content: slug },
+        { property: 'og:title', content: title },
+        { property: 'og:description', description },
+        { property: 'og:image', content: image.publicURL},
         { name: 'twitter:card', content: "summary"},
         { name: 'twitter:site', content: defaultTwitterHandle},
         { name: 'twitter:title', content: title},
         { name: 'twitter:description', content: description.substring(0,157)+'...'},
         { name: 'twitter:creator', content: twitterHandle},
         { name: 'twitter:image', content: url+image.publicURL}
-
       ]}
     />;
 
