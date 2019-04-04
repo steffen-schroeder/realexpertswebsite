@@ -164,11 +164,10 @@ class BlogPost extends React.Component {
       ]}
       meta={[
         { property: 'og:site_name', content: siteTitle },
-        { property: 'og:type', content: 'blog' },
-        { property: 'og:url', content: slug },
+        { property: 'og:url', content: url+slug },
         { property: 'og:title', content: title },
         { property: 'og:description', description },
-        { property: 'og:image', content: image.publicURL},
+        { property: 'og:image', content: url+image.publicURL},
         { name: 'twitter:card', content: "summary"},
         { name: 'twitter:site', content: defaultTwitterHandle},
         { name: 'twitter:title', content: title},
