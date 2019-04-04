@@ -167,13 +167,13 @@ class BlogPost extends React.Component {
         { property: 'og:url', content: url+slug },
         { property: 'og:title', content: title },
         { property: 'og:description', description },
-        { property: 'og:image', content: url+image.publicURL},
+        { property: 'og:image', content: url+image.childImageSharp.sizes.src},
         { name: 'twitter:card', content: "summary"},
         { name: 'twitter:site', content: defaultTwitterHandle},
         { name: 'twitter:title', content: title},
         { name: 'twitter:description', content: description.substring(0,157)+'...'},
         { name: 'twitter:creator', content: twitterHandle},
-        { name: 'twitter:image', content: url+image.publicURL}
+        { name: 'twitter:image', content: url+image.childImageSharp.sizes.src}
       ]}
     />;
 
