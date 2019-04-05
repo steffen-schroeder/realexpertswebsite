@@ -11,9 +11,9 @@ description: >-
 tags:
   - Neue Wirksamkeit
 relatedPosts:
-  - post: 'Neues Arbeiten - Geht nicht, gibt es nicht.'
+  - post: Die Folgen einer neuen Wirksamkeit
   - post: 'Entdecke das Potential, den Kern von New Work'
-  - post: Das Dilemma des New Work Hype
+  - post: 'Neues Arbeiten - Geht nicht, gibt es nicht.'
 ---
 Eine wirkliche Veränderung im Unternehmen,  welche insbesondere die Menschen und deren Persönlichkeiten betrifft, ist keine triviale Aufgabe. Gerade wenn es Dinge gibt, die bisher keiner kannte oder je so gemacht wurden. Sobald das Bewusstsein geschaffen und Mitstreiter gefunden wurden, stellt sich die Frage wie eine Veränderung stattfinden kann!? Wo fängt man an, wie gestaltet man den Veränderungsprozess und wann ist man damit fertig?
 
