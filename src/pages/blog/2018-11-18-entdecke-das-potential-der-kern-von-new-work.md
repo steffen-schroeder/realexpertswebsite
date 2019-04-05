@@ -16,8 +16,8 @@ tags:
   - Neue Wirksamkeit
 relatedPosts:
   - post: 'Neues Arbeiten - Geht nicht, gibt es nicht.'
-  - post: Das Dilemma des New Work Hype
-  - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
+  - post: Die Folgen einer neuen Wirksamkeit
+  - post: Der Weg zur Vision
 ---
 Viele Unternehmen mit denen wir in Kontakt stehen, befinden sich gerade auf der Suche nach neuen und modernen Wegen der Zusammenarbeit und des Miteinanders. Inspiriert von den vielen gehypten und diskutierten Themen da draußen wie New Work, Agilität, Digitalisierung, Selbstorganisation und gefordert von Innen durch die Mitarbeiter. Doch was genau bedeutet eine neue Art der Zusammenarbeit und der Wirksamkeit in Unternehmen? Darauf haben viele keine Antwort. 
 
@@ -31,7 +31,7 @@ So einfach können viele diese Frage nicht beantworten. Warum überlegen Unterne
 
 Aber genau diese Fragen sollte man sich im Unternehmen beantworten können. Wie soll jemand davon überzeugt werden mitzumachen, wenn man nicht erklären kann wozu und wofür dieser Aufwand nützlich ist. Mit dem Versuch zu wagen, all die möglichen Ziele auf den Kern herunterzubrechen, kommen wir immer wieder zu einem grundlegenden Ziel. 
 
-**_Das volle Potential von Mitarbeitern und dem Unternehmen entfalten._**
+_**Das volle Potential von Mitarbeitern und dem Unternehmen entfalten.**_
 
 Wir wollen die Art der Zusammenarbeit und der Wirksamkeit von Arbeit und Abläufen so verbessern, dass alle im Unternehmen ihre ganze Leistungsfähigkeit entwickeln und einbringen können. Nur somit kann das Potential einer Unternehmung mit all den verschiedenen Kompetenzen und Fähigkeiten voll entfaltet werden und zur Wirkung kommen. So einfach und banal ist es tatsächlich! Dass daran weitere Ziele anknüpfen wie bessere Innovationsfähigkeit, höhere Mitarbeiterzufriedenheit, sinkende Kosten etc. ist klar. Aber das sind die Ergebnisse, die entstehen können, wenn sich das Potential im Unternehmen und bei den Mitarbeitern entfaltet. 
 
@@ -70,5 +70,3 @@ Aber warten sie mal. Haben wir nicht eine Dimension vergessen? Was ist denn mit 
 Eine Kultur ist nichts was man entwickeln kann. Eine Kultur ist etwas, das von sich aus entsteht. Sie kann nicht vorgegeben werden. Man kann lediglich die Art und Weise der Kommunikation und entsprechender Formate in Unternehmen etablieren, mit denen man versucht, ein Mindset zu vermitteln. Aber was daraus entsteht, entwickelt sich autonom durch alle Mitarbeiter im Unternehmen. Im Zweifel haben sie keinen Einfluss darauf. Nur wenn sie Mitarbeiter mit einem bestimmten Kulturverständnis kündigen bzw. nicht einstellen. 
 
 Wenn sie sich bisher gefragt haben warum man diesem New Work Trend folgen sollte, dann machen sie sich zunächst bewusst, worum es geht. Um die Entfaltung von den Potentialen, die im Unternehmen also in den Mitarbeitern stecken. Und wenn sie sich fragen, wie man das macht, dann geht es darum, die Zusammenarbeit, das Miteinander und die Beziehungen zwischen den Mitarbeitern, mit Kunden und Partnern so zu gestalten und zu verbessern, dass eine neue echte Wirksamkeit entstehen kann. Dazu können die einzelnen Methoden beitragen. Aber lassen sie sich nicht vom Marketing-Sprech blenden, sondern machen sie sich immer wieder den Kern von New Work bewusst und nutzen sie die vier Dimension zur Einordnung.
-
-Foto: Sarah Jürgel
