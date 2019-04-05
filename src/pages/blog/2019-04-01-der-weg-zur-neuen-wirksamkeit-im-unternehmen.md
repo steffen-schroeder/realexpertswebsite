@@ -27,7 +27,7 @@ Bevor ich Ihnen **10 Punkte** an die Hand gebe, die aus meiner Sicht und unseren
 
 Diese grundlegenden Voraussetzungen sollten sie jederzeit prüfen und sich fragen, ob diese so gegeben sind. Nur dann entsteht eine Plattform auf der Veränderung stattfinden kann. 
 
-Jetzt zu den, aus meiner Sicht, wichtigsten 10 Punkten, wie sie in ihrem Unternehmen eine Veränderung hin zu einer neuen Wirksamkeit gestalten können. Nachdem sie für sich die _**Potentiale und Ziele**_ einer neuen Wirksamkeit entdeckt, das Bewusstsein geschaffen und Mitstreiter gefunden haben, kann die Veränderung beginnen. 
+Jetzt zu den, aus meiner Sicht, wichtigsten 10 Punkten, wie sie in ihrem Unternehmen eine Veränderung hin zu einer neuen Wirksamkeit gestalten können. Nachdem sie für sich die [**_Potentiale und Ziele_**](https://www.realexperts.de/blog/2018-11-18-entdecke-das-potential-der-kern-von-new-work/) einer neuen Wirksamkeit entdeckt, das Bewusstsein geschaffen und Mitstreiter gefunden haben, kann die Veränderung beginnen. 
 
 Die folgenden Punkte geben ihnen eine gute Richtlinie für die Gestaltung der Veränderung in ihrem Unternehmen. Mit Sicherheit gehören mehr als diese 10 Punkte dazu. Diese erscheinen mir aber als essenziell. 
 
@@ -42,7 +42,10 @@ Die folgenden Punkte geben ihnen eine gute Richtlinie für die Gestaltung der Ve
 9. **Reflexion** - Nichts und niemand ist ohne Fehler. Auch in ihrem Unternehmen werden Fehler passieren. Daher braucht die Veränderung einen stetige und bewusste Reflexion. Schau sie sich an was erreicht worden ist, wie die Menschen im Unternehmen reagieren, wo es Widerstände gibt, wie die weitere Planung aussieht usw. Aus den Erkenntnissen einer Reflexion müssen sie ableiten, was das für den weiteren Veränderungsprozess bedeutet. Wenn sie immer in eine Richtung weitermachen, ohne mal innezuhalten und sich zu hinterfragen, besteht die Gefahr Menschen dabei zu “verlieren”. Was für den einen richtig erscheint, kann für den anderen ganz anders wirken. 
 10. **Impulse** - Von Zeit zu Zeit ist es ratsam sich neue Impuls und frische Ideen von außen zu holen. Möglichkeiten sich inspirieren zu lassen gibt es viele. Medien, Konferenzen und Experten bieten dafür eine gute Möglichkeit. Die Methoden, Werkzeuge und Erkenntnisse ändern und entwickeln sich ständig weiter. Auch der Erfahrungsaustausch mit anderen Unternehmen kann sinnvoll sein. Ihre Mitarbeiter haben ständig die Augen und Ohren offen, was da draußen in der Welt vor sich geht. Nutzen sie diese Impulse als Bereicherung für ihren Veränderungsprozess, aber seien sie auch kritisch. Nicht alles ist Gold, was glänzt. 
 
-\    “_Die reinste Form des Wahnsinns ist es, alles beim Alten _\
-_\    zu belassen und zu hoffen, dass sich etwas ändert._” (Albert Einstein)
+> “
+>
+> _Die reinste Form des Wahnsinns ist es, alles beim Alten zu belassen und zu hoffen, dass sich etwas ändert._
+>
+> ” (Albert Einstein)
 
 Die Veränderung ist ein Weg zur Erneuerung eines jeden Unternehmen. Der Bedarf dafür wird immer größer. Machen sie sich auf den Weg und finden sie ihren eigenen Weg, um die Veränderung erfolgreich zu gestalten. Lassen sie sich davon nicht abbringen und beginnen sie jetzt. Viel Erfolg!
