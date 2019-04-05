@@ -16,8 +16,8 @@ tags:
   - Neue Wirksamkeit
 relatedPosts:
   - post: 'Entdecke das Potential, den Kern von New Work'
-  - post: Das Dilemma des New Work Hype
-  - post: Ein Unternehmen hat keine Mitarbeiter
+  - post: Der Weg zur Neuen Wirksamkeit im Unternehmen
+  - post: Die Folgen einer neuen Wirksamkeit
 ---
 > “Es ist so schwer”. “Bei uns geht das nicht”. “Die da oben wollen das nicht”. 
 
