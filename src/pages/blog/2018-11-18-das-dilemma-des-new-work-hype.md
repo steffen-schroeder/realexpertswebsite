@@ -70,5 +70,3 @@ Abseits davon gibt es einige weitere Gründe, die wir immer wieder sehen:
 … oder auch ganz einfach kein Wille zur Veränderung. Warum soll man auch was verändern, wenn es noch gut genug läuft?!
 
 Wir sprechen hier von einem Dilemma. Auf der einen Seiten gibt es die vielen guten Ansätze, die wirklich eine Verbesserung der Zusammenarbeit und Wirksamkeit von Menschen im Unternehmen bringen können. Auf der anderen Seite sind diese neuen Themen häufig sehr weit von der Realität der Unternehmen entfernt.
-
-Foto: Sarah Jürgel
