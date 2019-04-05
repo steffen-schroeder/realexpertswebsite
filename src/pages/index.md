@@ -30,9 +30,9 @@ thesis:
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
 relatedPosts:
-  - post: 'Führen und führen lassen auf Augenhöhe '
-  - post: Tipps für eine erfolgreiche Intranet-Einführung
-  - post: 'Ein Intranet verbindet - “Linchpin” stellt sich vor '
   - post: Der Weg zur Neuen Wirksamkeit im Unternehmen
+  - post: 'Führen und führen lassen auf Augenhöhe '
+  - post: Das Dilemma des New Work Hype
+  - post: Tipps für eine erfolgreiche Intranet-Einführung
 ---
 
