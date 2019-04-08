@@ -84,6 +84,22 @@ module.exports = {
         },
         mergeSecurityHeaders: false
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-41878870-2",
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Enables Google Optimize using your container Id
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "realexperts.de",
+      },
     }
   ],
 };
