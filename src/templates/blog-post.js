@@ -169,6 +169,7 @@ class BlogPost extends React.Component {
         title,
       } }}
       postImage= {url + image.publicURL}
+      author= {postAuthor.frontmatter.title}
       />;
 
       console.log(helmet);

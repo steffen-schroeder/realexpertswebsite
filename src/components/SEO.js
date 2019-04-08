@@ -72,14 +72,14 @@ const getSchemaOrgJSONLD = ({
         : schemaOrgJSONLD;
 };
 
-const SEO = ({ postData, postImage, isBlogPost }) => {
+const SEO = ({ postData, postImage, isBlogPost, author }) => {
     const postMeta = postData || {};
 
     const title = postMeta.title || config.title || postMeta.frontmatter.title;
     console.log(title);
     const description =
         postMeta.description || postData.excerpt || postData.frontmatter.description || config.description;
-    const image = `${config.url}${postImage}` || config.image;
+    const image = `${postImage}` || config.image;
     const slug = postMeta.slug;
     const url = postMeta.slug
         ? `${config.url}${postMeta.slug}`
@@ -115,7 +115,7 @@ const SEO = ({ postData, postImage, isBlogPost }) => {
 
             {/* Twitter Card tags */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:creator" content={config.twitter} />
+            <meta name="twitter:creator" content={author} /> //TO-DO wenn kein blog post author= Christoph
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={image} />
@@ -130,6 +130,7 @@ SEO.propTypes = {
         excerpt: PropTypes.any,
     }).isRequired,
     postImage: PropTypes.string,
+    author: PropTypes.string,
 };
 
 SEO.defaultProps = {
