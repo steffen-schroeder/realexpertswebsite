@@ -18,7 +18,7 @@ const getSchemaOrgJSONLD = ({
             '@type': 'WebSite',
             url,
             name: title,
-            alternateName: config.siteMetadata.title.siteMetadata.title,
+            alternateName: config.siteMetadata.title,
         },
     ];
 
@@ -26,7 +26,7 @@ const getSchemaOrgJSONLD = ({
         ? [
             ...schemaOrgJSONLD,
             {
-                '@context': 'https://khalilstemmler.com',
+                '@context': 'https://www.realexperts.de/',
                 '@type': 'BreadcrumbList',
                 itemListElement: [
                     {
@@ -41,7 +41,7 @@ const getSchemaOrgJSONLD = ({
                 ],
             },
             {
-                '@context': 'https://khalilstemmler.com',
+                '@context': 'https://www.realexperts.de/',
                 '@type': 'BlogPosting',
                 url,
                 name: title,
@@ -54,17 +54,17 @@ const getSchemaOrgJSONLD = ({
                 description,
                 author: {
                     '@type': 'Person',
-                    name: 'Khalil Stemmler',
+                    name: 'Christoph Rauhut',
                 },
                 publisher: {
                     '@type': 'Organization',
-                    url: 'https://khalilstemmler.com',
+                    url: 'https://www.realexperts.de/',
                     logo: config.siteMetadata.logo,
                     name: 'Christoph Rauhut',
                 },
                 mainEntityOfPage: {
                     '@type': 'WebSite',
-                    '@id': config.url,
+                    '@id': config.siteMetadata.url,
                 },
                 datePublished,
             },

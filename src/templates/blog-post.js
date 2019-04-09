@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
-import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import BlogPostTeaser from '../components/BlogPostTeaser';
@@ -19,7 +18,7 @@ export const BlogPostTemplate = ({
   tags,
   title,
   date,
-  helmet,
+  seoTags,
   featuredImage,
   author,
   relatedPosts,
@@ -32,7 +31,7 @@ export const BlogPostTemplate = ({
 
   return (
     <section className={'blog-post ' + (relatedPosts !== null ? 'has-related-posts' : '')}>
-    {helmet || ''}
+    {seoTags || ''}
     {tags && tags.length ? (
       <ul className="taglist divided">
       {tags.map(tag => (
@@ -100,7 +99,7 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  helmet: PropTypes.object,
+  seoTags: PropTypes.object,
   featuredImage: PropTypes.object,
   author: PropTypes.shape({
     fields: PropTypes.shape({
@@ -158,10 +157,11 @@ class BlogPost extends React.Component {
 
     const postAuthor = author ? author : defaultAuthor;
     const twitterHandle = postAuthor.frontmatter.twitterHandle ? postAuthor.frontmatter.twitterHandle : defaultTwitterHandle;
-    const helmet =
+    const seoTags =
     <SEO
     isBlogPost= {true}
-    postData= {{ excerpt: excerpt,
+    postData= {{
+      excerpt: excerpt,
       frontmatter: {
         description,
         tags,
@@ -174,14 +174,13 @@ class BlogPost extends React.Component {
       author= {postAuthor.frontmatter.title}
       />;
 
-      console.log(helmet);
 
       return (
         <BlogPostTemplate
         content={html}
         contentComponent={HTMLContent}
         description={description}
-        helmet={helmet}
+        seoTags={seoTags}
         tags={tags}
         title={title}
         date={date}
