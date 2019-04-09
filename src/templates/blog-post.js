@@ -167,7 +167,9 @@ class BlogPost extends React.Component {
         tags,
         date,
         title,
-      } }}
+      },
+      slug,
+    }}
       postImage= {url + image.publicURL}
       author= {postAuthor.frontmatter.title}
       />;

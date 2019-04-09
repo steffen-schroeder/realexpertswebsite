@@ -82,8 +82,8 @@ const SEO = ({ postData, postImage, isBlogPost, author }) => {
     const image = `${postImage}` || config.image;
     const slug = postMeta.slug;
     const url = postMeta.slug
-        ? `${config.url}${postMeta.slug}`
-        : config.url;
+        ? `${config.siteMetadata.siteUrl}${postMeta.slug}`
+        : config.siteMetadata.siteUrl;
     const datePublished = isBlogPost ? postMeta.date : false;
 
     const schemaOrgJSONLD = getSchemaOrgJSONLD({
