@@ -3,6 +3,7 @@ module.exports = {
     title: 'Real Experts',
     twitterHandle: '@hut1315',
     siteUrl: 'https://www.realexperts.de'
+    // TODO Logo
   },
   mapping: {
     "MarkdownRemark.fields.relatedPosts": "MarkdownRemark",

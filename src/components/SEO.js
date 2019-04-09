@@ -18,7 +18,7 @@ const getSchemaOrgJSONLD = ({
             '@type': 'WebSite',
             url,
             name: title,
-            alternateName: config.title,
+            alternateName: config.siteMetadata.title.siteMetadata.title,
         },
     ];
 
@@ -45,7 +45,7 @@ const getSchemaOrgJSONLD = ({
                 '@type': 'BlogPosting',
                 url,
                 name: title,
-                alternateName: config.title,
+                alternateName: config.siteMetadata.title,
                 headline: title,
                 image: {
                     '@type': 'ImageObject',
@@ -59,8 +59,8 @@ const getSchemaOrgJSONLD = ({
                 publisher: {
                     '@type': 'Organization',
                     url: 'https://khalilstemmler.com',
-                    logo: config.logo,
-                    name: 'Khalil Stemmler',
+                    logo: config.siteMetadata.logo,
+                    name: 'Christoph Rauhut',
                 },
                 mainEntityOfPage: {
                     '@type': 'WebSite',
@@ -75,7 +75,7 @@ const getSchemaOrgJSONLD = ({
 const SEO = ({ postData, postImage, isBlogPost, author }) => {
     const postMeta = postData || {};
 
-    const title = postMeta.title || config.title || postMeta.frontmatter.title;
+    const title = postMeta.title || config.siteMetadata.title || postMeta.frontmatter.title;
     console.log(title);
     const description =
         postMeta.description || postData.excerpt || postData.frontmatter.description || config.description;

@@ -15,7 +15,7 @@ Handelsregister HRB 37504 - Dresden
 
 ### Kontakt:
 
-Ansprechparnter: Christoph Rauhut\
+Ansprechpartner: Christoph Rauhut\
 Telefon: +49 (0) 351-41 88 24 11\
 Fax: +49 (0) 351-41 88 24 13\
 E-Mail: office@realexperts.de
@@ -36,7 +36,7 @@ Klemmstraße 8 ǀ 04277 Leipzig\
 Telefon +49 (0) 173-5614131\
 michaela@lifeinvanilla.com
 
-### Umsetzung 
+### Umsetzung
 DeviD GbR\
 Rähnitzgasse 25\
 01097 Dresden\
