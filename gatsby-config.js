@@ -3,7 +3,6 @@ module.exports = {
     title: 'Real Experts',
     twitterHandle: '@hut1315',
     siteUrl: 'https://www.realexperts.de'
-    // TODO Logo
   },
   mapping: {
     "MarkdownRemark.fields.relatedPosts": "MarkdownRemark",
@@ -89,7 +88,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-41878870-2",
+        trackingId: " UA-125646585-1",
         // Puts tracking script in the head instead of the body
         head: false,
         // Setting this parameter is optional
