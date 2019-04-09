@@ -8,7 +8,6 @@ const getSchemaOrgJSONLD = ({
                                 isBlogPost,
                                 url,
                                 title,
-                                image,
                                 description,
                                 datePublished,
                             }) => {
@@ -35,7 +34,6 @@ const getSchemaOrgJSONLD = ({
                         item: {
                             '@id': url,
                             name: title,
-                            image,
                         },
                     },
                 ],
@@ -47,10 +45,6 @@ const getSchemaOrgJSONLD = ({
                 name: title,
                 alternateName: config.siteMetadata.title,
                 headline: title,
-                image: {
-                    '@type': 'ImageObject',
-                    url: image,
-                },
                 description,
                 author: {
                     '@type': 'Person',
@@ -115,7 +109,7 @@ const SEO = ({ postData, postImage, isBlogPost, author }) => {
 
             {/* Twitter Card tags */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:creator" content={author} /> //TO-DO wenn kein blog post author= Christoph
+            <meta name="twitter:creator" content={author} />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={image} />
