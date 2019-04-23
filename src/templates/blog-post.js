@@ -10,6 +10,7 @@ import SocialButtons from '../components/SocialButtons';
 
 import favicon from '../img/favicon.ico';
 import arrowLeft from '../img/icons/arrow-left-bold-circle.svg';
+import Utils from '../utils/Utils';
 
 export const BlogPostTemplate = ({
                                    content,
@@ -36,7 +37,7 @@ export const BlogPostTemplate = ({
         <ul className="taglist divided">
           {tags.map(tag => (
             <li key={tag + `-tag`}>
-              <Link to={`/tags/${kebabCase(tag)}/`}>{tag.toUpperCase()}</Link>
+              <Link to={`/tags/${Utils.removeUmlaut(kebabCase(tag))}/`}>{tag.toUpperCase()}</Link>
             </li>
           ))}
         </ul>

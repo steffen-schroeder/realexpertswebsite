@@ -23,7 +23,7 @@ export default class BlogPostTeaser extends React.Component {
           <ul className='taglist divided'>
             {post.frontmatter.tags.map((tag, key) => (
               <li key={key}>
-                <Link to={`/tags/${Utils.kebabCase(tag)}`}>{tag}</Link>
+                <Link to={`/tags/${Utils.removeUmlaut(Utils.kebabCase(tag))}`}>{tag}</Link>
               </li>
             ))}
           </ul>
