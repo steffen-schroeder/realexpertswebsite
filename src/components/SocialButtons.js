@@ -8,27 +8,26 @@ import {
   TwitterShareButton,
   TwitterIcon,
 } from 'react-share';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const SocialButtons = ({ socialConfig, tags }) => (
   <div className="post-social">
-    <FacebookShareButton url={socialConfig.config.url} className="facebook" >
-      <FacebookIcon size={48}
-                    round={false}
-                    iconBgStyle={{ fill: '#879fc9' }}
-                    logoFillColor='white' />
-    </FacebookShareButton>
-    <TwitterShareButton url={socialConfig.config.url} className="twitter" title={socialConfig.config.title} via={socialConfig.twitterHandle.split('@').join('')} hashtags={tags} >
-      <TwitterIcon size={48}
-                   round={false}
-                   iconBgStyle={{ fill: '#879fc9' }}
-                   logoFillColor='white' />
-    </TwitterShareButton>
-    <GooglePlusShareButton url={socialConfig.config.url} className="googleplus" >
-      <GooglePlusIcon size={48}
+    <OutboundLink href={socialConfig.config.url}>
+      <FacebookShareButton url={socialConfig.config.url} className="facebook" >
+        <FacebookIcon size={48}
                       round={false}
                       iconBgStyle={{ fill: '#879fc9' }}
                       logoFillColor='white' />
-    </GooglePlusShareButton>
+      </FacebookShareButton>
+    </OutboundLink>
+    <OutboundLink href={socialConfig.config.url}>
+      <TwitterShareButton url={socialConfig.config.url} className="twitter" title={socialConfig.config.title} via={socialConfig.twitterHandle.split('@').join('')} hashtags={tags} >
+        <TwitterIcon size={48}
+                     round={false}
+                     iconBgStyle={{ fill: '#879fc9' }}
+                     logoFillColor='white' />
+      </TwitterShareButton>
+    </OutboundLink>
   </div>
 );
 

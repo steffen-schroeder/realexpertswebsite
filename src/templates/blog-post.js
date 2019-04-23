@@ -1,30 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
-import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import BlogPostTeaser from '../components/BlogPostTeaser';
 import Content, { HTMLContent } from '../components/Content';
 import SocialButtons from '../components/SocialButtons';
+import SEO from '../components/SEO';
 
 import favicon from '../img/favicon.ico';
 import arrowLeft from '../img/icons/arrow-left-bold-circle.svg';
 import Utils from '../utils/Utils';
 
 export const BlogPostTemplate = ({
-                                   content,
-                                   contentComponent,
-                                   description,
-                                   tags,
-                                   title,
-                                   date,
-                                   helmet,
-                                   featuredImage,
-                                   author,
-                                   relatedPosts,
-                                   socialConfig,
-                                 }) => {
+  content,
+  contentComponent,
+  description,
+  tags,
+  title,
+  date,
+  seoTags,
+  featuredImage,
+  author,
+  relatedPosts,
+  socialConfig,
+}) => {
   const PostContent = contentComponent || Content;
   const relatedPostsContent = !relatedPosts ? null : relatedPosts.map(post => (
     <BlogPostTeaser post={post} type='related' key={post.id}/>
@@ -32,64 +32,64 @@ export const BlogPostTemplate = ({
 
   return (
     <section className={'blog-post ' + (relatedPosts !== null ? 'has-related-posts' : '')}>
-      {helmet || ''}
-      {tags && tags.length ? (
-        <ul className="taglist divided">
-          {tags.map(tag => (
-            <li key={tag + `-tag`}>
-              <Link to={`/tags/${Utils.removeUmlaut(kebabCase(tag))}/`}>{tag.toUpperCase()}</Link>
-            </li>
-          ))}
-        </ul>
-      ) : null}
-      <h1>{title}</h1>
-      <div className="image-type-featured">
-        {featuredImage && <Img sizes={featuredImage.childImageSharp.sizes}/>}
+    {seoTags || ''}
+    {tags && tags.length ? (
+      <ul className="taglist divided">
+      {tags.map(tag => (
+        <li key={tag + `-tag`}>
+        <Link to={`/tags/${Utils.removeUmlaut(kebabCase(tag))}/`}>{tag.toUpperCase()}</Link>
+        </li>
+      ))}
+      </ul>
+    ) : null}
+    <h1>{title}</h1>
+    <div className="image-type-featured">
+    {featuredImage && <Img sizes={featuredImage.childImageSharp.sizes}/>}
+    </div>
+    <div className="blog-post-author">
+    {author.fields.image && <Img sizes={author.fields.image.childImageSharp.sizes}/>}
+    <div className="wrapper-for-tablet">
+    <div className="blog-author-info">
+    <h5 className="title">{author.frontmatter.title}</h5>
+    <small className="position">{author.frontmatter.position}</small>
+    <p className="company">{author.frontmatter.company}</p>
+    </div>
+    <p className="release-date">Veröffentlicht am {date}</p>
+    </div>
+    </div>
+    {/*<p className="description">{description}</p>*/}
+    <PostContent className="content" content={content}/>
+    <SocialButtons socialConfig={socialConfig} tags={tags}/>
+    {tags && tags.length ? (
+      <div className="post-category">
+      <span>Kategorie:</span>
+      <ul className="taglist divided">
+      {tags.map(tag => (
+        <li key={tag + `-tag`}>
+        <Link to={`/tags/${kebabCase(tag)}/`}>{tag.toUpperCase()}</Link>
+        </li>
+      ))}
+      </ul>
       </div>
-      <div className="blog-post-author">
-        {author.fields.image && <Img sizes={author.fields.image.childImageSharp.sizes}/>}
-        <div className="wrapper-for-tablet">
-          <div className="blog-author-info">
-            <h5 className="title">{author.frontmatter.title}</h5>
-            <small className="position">{author.frontmatter.position}</small>
-            <p className="company">{author.frontmatter.company}</p>
-          </div>
-          <p className="release-date">Veröffentlicht am {date}</p>
-        </div>
-      </div>
-      {/*<p className="description">{description}</p>*/}
-      <PostContent className="content" content={content}/>
-      <SocialButtons socialConfig={socialConfig} tags={tags}/>
-      {tags && tags.length ? (
-        <div className="post-category">
-          <span>Kategorie:</span>
-          <ul className="taglist divided">
-            {tags.map(tag => (
-              <li key={tag + `-tag`}>
-                <Link to={`/tags/${kebabCase(tag)}/`}>{tag.toUpperCase()}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
-      <Link className="overview-link" to={`/blog/`}>
-        <img src={arrowLeft} alt="Real Experts" style={{ maxHeight: '75px' }}/>
-        ZUR ARTIKELÜBERSICHT
-      </Link>
-      {relatedPosts &&
+    ) : null}
+    <Link className="overview-link" to={`/blog/`}>
+    <img src={arrowLeft} alt="Real Experts" style={{ maxHeight: '75px' }}/>
+    ZUR ARTIKELÜBERSICHT
+    </Link>
+    {relatedPosts &&
       <div className="related-posts">
-        <div className="related-posts-wrapper">
-          <div className="related-posts-wrapper-inner">
-            <h3>Relevante Artikel</h3>
-            <div className="related-posts-list-wrapper">
-              <div className="related-posts-list">
-                {relatedPostsContent}
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="related-posts-wrapper">
+      <div className="related-posts-wrapper-inner">
+      <h3>Relevante Artikel</h3>
+      <div className="related-posts-list-wrapper">
+      <div className="related-posts-list">
+      {relatedPostsContent}
       </div>
-      }
+      </div>
+      </div>
+      </div>
+      </div>
+    }
     </section>
   );
 };
@@ -100,7 +100,7 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  helmet: PropTypes.instanceOf(Helmet),
+  seoTags: PropTypes.object,
   featuredImage: PropTypes.object,
   author: PropTypes.shape({
     fields: PropTypes.shape({
@@ -158,32 +158,30 @@ class BlogPost extends React.Component {
 
     const postAuthor = author ? author : defaultAuthor;
     const twitterHandle = postAuthor.frontmatter.twitterHandle ? postAuthor.frontmatter.twitterHandle : defaultTwitterHandle;
-    const helmet = <Helmet
-      title={`${title} | Blog | ${siteTitle}`}
-      link={[
-        { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
-      ]}
-      meta={[
-        { property: 'og:site_name', content: siteTitle },
-        { property: 'og:url', content: url+slug },
-        { property: 'og:title', content: title },
-        { property: 'og:description', description },
-        { property: 'og:image', content: url+image.childImageSharp.sizes.src},
-        { name: 'twitter:card', content: "summary"},
-        { name: 'twitter:site', content: defaultTwitterHandle},
-        { name: 'twitter:title', content: title},
-        { name: 'twitter:description', content: description.substring(0,157)+'...'},
-        { name: 'twitter:creator', content: twitterHandle},
-        { name: 'twitter:image', content: url+image.childImageSharp.sizes.src}
-      ]}
-    />;
+    const seoTags =
+    <SEO
+    isBlogPost= {true}
+    postData= {{
+      excerpt: excerpt,
+      frontmatter: {
+        description,
+        tags,
+        date,
+        title,
+      },
+      slug,
+    }}
+      postImage= {url + image.publicURL}
+      author= {postAuthor.frontmatter.title}
+      />;
 
-    return (
-      <BlogPostTemplate
+
+      return (
+        <BlogPostTemplate
         content={html}
         contentComponent={HTMLContent}
         description={description}
-        helmet={helmet}
+        seoTags={seoTags}
         tags={tags}
         title={title}
         date={date}
@@ -197,29 +195,29 @@ class BlogPost extends React.Component {
             title: siteTitle,
           },
         }}
-      />
-    );
+        />
+      );
+    }
   }
-}
 
-BlogPost.propTypes = {
-  data: PropTypes.shape({
-    settings: PropTypes.shape({
-      global: PropTypes.shape({
-        title: PropTypes.string,
-        url: PropTypes.string,
-      }),
-      fields: PropTypes.shape({
-        defaultAuthor: PropTypes.object,
-      }),
-    }).isRequired,
-    post: PropTypes.object,
-  }),
-};
+  BlogPost.propTypes = {
+    data: PropTypes.shape({
+      settings: PropTypes.shape({
+        global: PropTypes.shape({
+          title: PropTypes.string,
+          url: PropTypes.string,
+        }),
+        fields: PropTypes.shape({
+          defaultAuthor: PropTypes.object,
+        }),
+      }).isRequired,
+      post: PropTypes.object,
+    }),
+  };
 
-export default BlogPost;
+  export default BlogPost;
 
-export const pageQuery = graphql`
+  export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
     settings: settingsJson {
       global {
@@ -331,4 +329,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+  `;
