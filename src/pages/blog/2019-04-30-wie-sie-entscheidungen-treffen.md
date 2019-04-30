@@ -17,8 +17,7 @@ relatedPosts:
   - post: Auf dem Weg zum AUGENHÖHEwegbegleiter
   - post: AUGENHÖHEwegbegleiter - Daniel Trebien im Interview
 ---
-\    „_Es ist gut, etwas Langsames zu tun, bevor man im Leben eine wichtige Entscheidung trifft_.“ \
-                                                                         (Paulo Coelho)
+ „_Es ist gut, etwas Langsames zu tun, bevor man im Leben eine wichtige Entscheidung trifft_.“ (Paulo Coelho)
 
 Wie treffen Sie eigentlich Entscheidungen? Treffen sie Entscheidungen im privaten Kontext anders als im beruflichen? Haben Sie bestimmte Methoden an der Hand, die Ihnen beim Entscheiden helfen oder treffen Sie Ihre Entscheidungen eher aus dem Bauch heraus? Wie stehen Sie oder ihr Unternehmen zu Fehlentscheidungen? Werden diese kommuniziert? 
 
@@ -30,7 +29,7 @@ Ein Hilfsmittel, um den Entscheidungsraum zu vergrößern, hat mich in seiner In
 
 Exemplarisch kann es wie folgt durchgeführt werden: Angenommen, sie, ihr Team oder neue gute Bewerber fordern immer mehr Homeoffice-Phasen ein. Sie sind jedoch ein Befürworter von Anwesenheit im Büro. Das hat jahrelang gut funktioniert? Verweigern sie die Homeoffice-Zeit, hat das seinen Preis - Mitarbeiter fühlen sich unwohl, verlassen ihr Team oder sie bekommen keine guten Bewerber mehr.  Lassen sie es zu, so hat das auch seinen Preis - vermeintlich weniger Kontrolle, Mitarbeiter sehen sich zu wenig, Teamspirit nimmt ab, Ansprechbarkeit der Mitarbeiter wird weniger. 
 
-**Das Tetralemma: **
+**Das Tetralemma:**
 
 * Erste Position: Entweder das eine oder das andere
 
