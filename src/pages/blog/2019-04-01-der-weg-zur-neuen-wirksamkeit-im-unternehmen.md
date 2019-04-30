@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Der Weg zur Neuen Wirksamkeit im Unternehmen
 date: '2019-04-01T13:41:51+02:00'
 author: Christoph Rauhut
-image: /img/der-weg-zur-neuen-wirksamkeit-im-unternehmen.png
+image: /img/der-weg-zur-neuen-wirksamkeit-in-unternehmen.png
 description: >-
   Eine wirkliche Veränderung im Unternehmen,  welche insbesondere die Menschen
   und deren Persönlichkeiten betrifft, ist keine triviale Aufgabe. Gerade wenn
