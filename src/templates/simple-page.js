@@ -33,7 +33,7 @@ const SimplePage = ({ data }) => {
   return (
     <SimplePageTemplate
       contentComponent={HTMLContent}
-      title={`${post.frontmatter.title} | ${data.settings.global.title}`}
+      title={`${post.frontmatter.title}`}
       content={post.html}
     />
   )
