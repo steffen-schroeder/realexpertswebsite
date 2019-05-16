@@ -40,6 +40,24 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/digitalisierung-arbeitsplatz/index.md"
+        label: "Digitalisierung & Arbeitsplatz"
+        name: "digitalisierung-arbeitsplatz"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/mitarbeiter-fuehrung/index.md"
+        label: "Mitarbeiter & Führung"
+        name: "mitarbeiter-fuehrung"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/realexperts-team/index.md"
+        label: "Team Real Experts"
+        name: "realexperts-team"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/impressum/index.md"
         label: "Impressum"
         name: "imprint"
