@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Digital Workplace - vom Schreckgespenst zur Lichtgestalt
 date: '2018-12-27T10:56:48+01:00'
 author: Oliver Reithage
-image: /img/digital-workplace-schreckgespenst-oder-lichtgestalt-2.png
+image: /img/digital-workplace-vom-schreckgespenst-zur-lichtgestalt-2-.png
 description: >-
   Cyber-physische-Systeme (CPS), Internet of Things (IoT), Künstliche
   Intelligenz (KI) oder Cloud Computing. Was zunächst alles ein bisschen nach

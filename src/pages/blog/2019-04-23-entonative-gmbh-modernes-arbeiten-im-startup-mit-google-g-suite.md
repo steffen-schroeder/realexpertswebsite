@@ -12,6 +12,10 @@ tags:
   - Kunden
 relatedPosts:
   - post: IPROconsult GmbH - Moderne Kommunikation und Zusammenarbeit
+  - post: Digital Workplace - vom Schreckgespenst zur Lichtgestalt
+  - post: >-
+      Kampf der Giganten - Microsoft Office 365 und Google G Suite im
+      Vergleich
 ---
 TeneTrio stellt sich vor. Das junge Startup produziert alternative Nahrungsmittel für Hunde, welche auf Insektenbasis hergestellt werden um Nachhaltigkeit zu gewährleisten. Um den Arbeitsalltag im Unternehmen zu erleichtern haben sie sich dazu entschlossen die Google G Suite einzuführen. Welche Vorteile die Nutzung mit sich bringt und wie die Implementierung bei den Mitarbeitern ablief berichten Dr. Ina Henkel und Sabrina Jaap im Interview.
 

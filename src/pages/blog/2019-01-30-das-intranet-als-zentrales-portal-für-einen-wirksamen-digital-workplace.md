@@ -3,7 +3,8 @@ templateKey: blog-post
 title: 'Das Intranet als zentrales Portal für einen wirksamen Digital Workplace '
 date: '2019-01-30T12:05:33+01:00'
 author: Oliver Reithage
-image: /img/das-intranet-als-zentrales-portal.png
+image: >-
+  /img/das-intranet-als-zentrales-portal-für-einen-wirksamen-digital-workplace-2-.png
 description: >-
   Weiter geht unsere #DigitalWorkplace Blogreihe mit dem Trendthema “Intranet”.
   Ich weiß, beim Intranet im Jahr 2019 von einem Trendthema zu sprechen, ist

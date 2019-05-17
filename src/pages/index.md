@@ -30,9 +30,9 @@ thesis:
     highlighted: true
 video: 'https://youtu.be/r7wNymK__-s'
 relatedPosts:
+  - post: EntoNative GmbH - Modernes Arbeiten im Startup mit Google G Suite
+  - post: Tipps für eine erfolgreiche Intranet-Einführung
   - post: Der Weg zur Neuen Wirksamkeit im Unternehmen
   - post: 'Führen und führen lassen auf Augenhöhe '
-  - post: Das Dilemma des New Work Hype
-  - post: Tipps für eine erfolgreiche Intranet-Einführung
 ---
 

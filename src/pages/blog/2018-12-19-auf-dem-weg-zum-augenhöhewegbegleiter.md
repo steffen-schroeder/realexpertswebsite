@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Auf dem Weg zum AUGENHÖHEwegbegleiter
 date: '2018-12-19T19:11:56+01:00'
 author: Peggy Kopkow
-image: /img/auf-dem-weg-zum-augenhöhewegbegleiter.png
+image: /img/auf-dem-weg-zum-augenhöhewegbegleiter-2-.png
 description: >-
   Über die Zukunft wissen wir nur, dass sie anders sein wird. Der Versuch, die
   Zukunft vorherzusagen, ist wie das Fahren auf einer Landstraße ohne Licht und
