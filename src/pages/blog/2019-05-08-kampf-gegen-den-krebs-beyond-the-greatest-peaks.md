@@ -13,7 +13,6 @@ relatedPosts:
   - post: Andres Kühn - Partner im Real Experts Netzwerk
   - post: Dr. Jenny Meyer - Partnerin im Real Experts Network
   - post: Marco Meirich - Partner im Real Experts Netzwerk
-  - post: Jörg Adolphs - Partner im Real Experts Netzwerk
 ---
 Philipp Markgraf startete am 27.03.2019 zu seiner 1-jährigen Radreise nach Indien, welche unter dem Motto “**BEYOND THE GREATEST PEAKS**” steht. Damit hat er eine Spendenaktion verbunden, über die Gelder für den Sonnenstrahl e.V. Dresden, einer Kinderkrebshilfe, gesammelt werden sollen. Wir von Real Experts unterstützen ihn dabei.
 
