@@ -11,8 +11,8 @@ description: >-
 tags:
   - Kunden
 relatedPosts:
-  - post: IPROconsult GmbH - Moderne Kommunikation und Zusammenarbeit
-  - post: Digital Workplace - vom Schreckgespenst zur Lichtgestalt
+  - post: Ein Jahr Social Intranet bei der IPROconsult GmbH
+  - post: Tipps für eine erfolgreiche Intranet-Einführung
   - post: >-
       Kampf der Giganten - Microsoft Office 365 und Google G Suite im
       Vergleich
