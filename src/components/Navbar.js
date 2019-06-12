@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 
 import logo from '../img/realexperts-textual.svg'
 import menu from '../img/icons/menu.svg'
@@ -26,10 +26,11 @@ class Navbar extends React.Component {
         </Link>
         <img role="button"
              src={menu}
-           className="navigation-bar-burger"
-           aria-label="menu"
-           aria-expanded="false"
-           onClick={this.toggleClass}>
+             alt=""
+             className="navigation-bar-burger"
+             aria-label="menu"
+             aria-expanded="false"
+             onClick={this.toggleClass}>
         </img>
         <div className={`navigation-bar-menu ${this.state.mobileMenuActive ? 'is-active': 'not-active'}`}>
           <Link className="navigation-bar-item"

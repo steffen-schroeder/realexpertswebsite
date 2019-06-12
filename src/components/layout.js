@@ -1,19 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import CookieConsent from "react-cookie-consent"
 import 'typeface-changa'
-import './all.scss'
+import '../layouts/all.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div className="content">
     <Helmet title="Home | Gatsby + Netlify CMS" />
     <header id="header-main"><Navbar /></header>
-    <main>{children()}</main>
+    <main>{children}</main>
     <Footer />
     <CookieConsent
       buttonText="Verstanden"
@@ -24,10 +24,10 @@ const TemplateWrapper = ({ children }) => (
       Mehr zu <Link to="/datenschutz">Datenschutz</Link>.
     </CookieConsent>
   </div>
-)
+);
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
+  children: PropTypes.object,
+};
 
 export default TemplateWrapper

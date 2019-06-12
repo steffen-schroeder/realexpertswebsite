@@ -1,24 +1,25 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Content, { HTMLContent } from '../components/Content'
-import favicon from "../img/favicon.ico";
-import Helmet from "react-helmet";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Content, { HTMLContent } from '../components/Content';
+import favicon from '../img/favicon.ico';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
 
-export const SimplePageTemplate = ({ title, content, contentComponent }) => {
+export const SimplePageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className='simple'>
-      <Helmet
-        title={title}
-        link={[
-          { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
-        ]}
-      />
-      <h2>{title}</h2>
-      <PageContent className="content" content={content} />
-    </section>
-  )
+    <Layout>
+      <section className='simple'>
+        <Helmet title={title} link={[
+          {rel: 'shortcut icon', type: 'image/ico', href: `${favicon}`},
+        ]}/>
+        <h2>{title}</h2>
+        <PageContent className="content" content={content}/>
+      </section>
+    </Layout>
+  );
 };
 
 SimplePageTemplate.propTypes = {
@@ -27,16 +28,12 @@ SimplePageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 };
 
-const SimplePage = ({ data }) => {
-  const { markdownRemark: post } = data;
+const SimplePage = ({data}) => {
+  const {markdownRemark: post} = data;
 
   return (
-    <SimplePageTemplate
-      contentComponent={HTMLContent}
-      title={`${post.frontmatter.title}`}
-      content={post.html}
-    />
-  )
+    <SimplePageTemplate contentComponent={HTMLContent} title={`${post.frontmatter.title}`} content={post.html}/>
+  );
 };
 
 SimplePage.propTypes = {

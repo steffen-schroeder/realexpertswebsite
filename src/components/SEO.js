@@ -78,7 +78,6 @@ const SEO = ({ postData, postImage, isBlogPost, author }) => {
   const description =
     postMeta.description || postData.excerpt || postData.frontmatter.description || config.description;
   const image = `${postImage}` || config.image;
-  const slug = postMeta.slug;
   const url = postMeta.slug
     ? `${config.siteMetadata.siteUrl}${postMeta.slug}`
     : config.siteMetadata.siteUrl;

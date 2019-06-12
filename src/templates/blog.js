@@ -1,11 +1,12 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import BlogPostTeaser from '../components/BlogPostTeaser';
-import favicon from "../img/favicon.ico";
+import favicon from '../img/favicon.ico';
 import arrowLeft from '../img/icons/arrow-left.svg';
 import arrowRight from '../img/icons/arrow-right.svg';
+import Layout from '../components/layout';
 
 export default class BlogIndexPage extends React.Component {
   render() {
@@ -19,72 +20,54 @@ export default class BlogIndexPage extends React.Component {
         return !topPosts.find(topPost => topPost.id === post.id);
       });
 
-    console.log(this.props.pathContext.currentPage)
+    console.log(this.props.pageContext.currentPage);
 
-    const { currentPage, numPages } = this.props.pathContext
-    const isFirst = currentPage === 1
-    const isLast = currentPage === numPages
-    const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
-    const nextPage = (currentPage + 1).toString()
-
+    const {currentPage, numPages} = this.props.pageContext;
+    const isFirst = currentPage === 1;
+    const isLast = currentPage === numPages;
+    const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString();
+    const nextPage = (currentPage + 1).toString();
 
     return (
-      <section className="blog">
-        <Helmet
-          title={`Blog | ${data.settings.global.title}`}
-          link={[
-            { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
-          ]}/>
-        { isFirst &&
-          <div>
-        <h2>Top Beiträge</h2>
+      <Layout>
+        <section className="blog">
+          <Helmet title={`Blog | ${data.settings.global.title}`} link={[
+            {rel: 'shortcut icon', type: 'image/ico', href: `${favicon}`},
+          ]}/> {isFirst &&
+        <div>
+          <h2>Top Beiträge</h2>
           <div className="top-posts">
-          {topPosts.map((topPost, key) => (
-            <BlogPostTeaser key={topPost.id}
-                            post={topPost}
-                            type={key === 0 ? 'featured' : 'top'}/>
-          ))}
+            {topPosts.map((topPost, key) => (
+              <BlogPostTeaser key={topPost.id} post={topPost} type={key === 0 ? 'featured' : 'top'}/>
+            ))}
           </div>
-          </div>
+        </div>
         }
 
-        <h2>Alle Beiträge</h2>
-        <div className="all-posts">
-          {posts.map(({node: post}) => (
-            <BlogPostTeaser key={post.id}
-                            post={post}
-                            type='normal'/>
-          ))}
-        </div>
-        <ul className="pagination">
-          {!isFirst && (
-            <Link to={prevPage} rel="prev" className="pagination-prev">
-              <img src={arrowLeft} alt="Previous"/>
-            </Link>
-          )}
-          {Array.from({ length: numPages }, (_, i) => (
-            <li
-              className="pagination-item"
-              key={`pagination-number${i + 1}`}
-            >
-              <Link
-                to={`/blog/${i === 0 ? '' : i + 1}`}
-                className={i + 1 === currentPage ? 'pagination-item-link active' : 'pagination-item-link'}
-              >
+          <h2>Alle Beiträge</h2>
+          <div className="all-posts">
+            {posts.map(({node: post}) => (
+              <BlogPostTeaser key={post.id} post={post} type='normal'/>
+            ))}
+          </div>
+          <ul className="pagination">
+            {!isFirst && (
+              <Link to={prevPage} rel="prev" className="pagination-prev"> <img src={arrowLeft} alt="Previous"/> </Link>
+            )} {Array.from({length: numPages}, (_, i) => (
+            <li className="pagination-item" key={`pagination-number${i + 1}`}>
+              <Link to={`/blog/${i === 0 ? '' : i + 1}`} className={i + 1 === currentPage
+                ? 'pagination-item-link active'
+                : 'pagination-item-link'}>
                 {i + 1}
               </Link>
             </li>
-          ))}
-          {!isLast && (
-            <Link
-              className="pagination-next"
-              to={nextPage} rel="next">
-              <img src={arrowRight} alt="Next"/>
-            </Link>
+          ))} {!isLast && (
+            <Link className="pagination-next" to={nextPage} rel="next"> <img src={arrowRight} alt="Next"/> </Link>
           )}
-        </ul>
-      </section>
-    )
+          </ul>
+        </section>
+      </Layout>
+    );
   }
 }
 
@@ -145,8 +128,8 @@ export const pageQuery = graphql`
             image {
               id
               childImageSharp {
-                sizes (maxWidth: 850) {
-                  ...GatsbyImageSharpSizes
+                fluid (maxWidth: 850) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -168,8 +151,8 @@ export const pageQuery = graphql`
             slug
             image {
               childImageSharp {
-                sizes(maxWidth: 630) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 630) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

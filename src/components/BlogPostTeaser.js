@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+import { Link } from "gatsby"
 import Img from 'gatsby-image';
 import arrow from "../img/icons/arrow-right.svg";
 import Utils from "../utils/Utils";
@@ -16,7 +16,7 @@ export default class BlogPostTeaser extends React.Component {
         <div className={`image-type-${type}`}>
           {post.fields.image &&
           <Link to={post.fields.slug}>
-            <Img sizes={post.fields.image.childImageSharp.sizes}/>
+            <Img fluid={post.fields.image.childImageSharp.fluid}/>
           </Link>}
         </div>
         <div className="post-content">
