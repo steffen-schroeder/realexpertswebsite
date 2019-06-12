@@ -11,6 +11,7 @@ body {
     header {
       background: none;
     }
+
     main {
       section {
         margin-top: 0;
@@ -103,6 +104,7 @@ body {
       &:first-child {
         padding-left: 0;
       }
+
       a {
         color: $secondary;
         font-family: 'Changa', sans-serif;
@@ -122,6 +124,7 @@ body {
 
         padding: 0 10px;
         border-right: 2px solid $secondary;
+
         &:last-child {
           border: none;
         }
@@ -215,6 +218,7 @@ header {
         margin-left: 40px;
       }
     }
+
     .navigation-bar-item {
       align-items: center;
       display: flex;
@@ -231,7 +235,7 @@ main {
 
   max-width: 1600px;
   width: 100%;
-  
+
   section {
 
     display: flex;
@@ -570,6 +574,7 @@ main {
       margin-top: 20px;
       margin-left: 13%;
       width: 74%;
+
       img {
         margin-right: 10px;
       }
@@ -649,12 +654,15 @@ main {
       }
     }
   }
+
   .simple {
     padding-top: 40px;
+
     .content {
       align-items: flex-start;
     }
   }
+
   .contact {
 
     h2 {
@@ -703,6 +711,7 @@ main {
         width: 100%;
         height: 400px;
       }
+
     }
   }
 
@@ -745,12 +754,76 @@ main {
     .pagination-item-link {
 
       color: $primary;
+
       &.active {
         font-weight: bold;
       }
 
     }
   }
+
+}
+
+.contact-form-footer {
+
+  background: white url("../img/realexperts-bg-02-links.png") top left no-repeat;
+  overflow: hidden;
+  max-width: 1600px;
+  width: 100%;
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 160px 40px;
+
+    .contact-content {
+      display: flex;
+
+      .contact-information {
+        flex: 1;
+        padding: 0 30px 0 0;
+      }
+
+      .contact-form {
+        flex: 1;
+        width: 100%;
+        height: 320px;
+        background: white;
+        padding: 30px;
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(173, 173, 173, 1);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(173, 173, 173, 1);
+        box-shadow: 0px 0px 40px 0px rgba(173, 173, 173, 1);
+
+        .contact-form-wrapper {
+          .contact-form-name,
+          .contact-form-email {
+            width: 50%;
+            padding: 0 20px 0 0;
+            display: inline-block;
+          }
+
+          .contact-form-message {
+            width: 100%;
+            padding: 0 20px 0 0;
+            margin-top: 30px;
+          }
+
+          label {
+            display: block;
+            font-size: 14px;
+            color: $cyan;
+          }
+
+          input, textarea {
+            width: 100%;
+          }
+        }
+      }
+
+    }
+
+  }
+
 
 }
 
