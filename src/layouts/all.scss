@@ -7,12 +7,6 @@
 
 body {
 
-  #___gatsby {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   &.front-page {
     header {
       background: none;
@@ -334,6 +328,11 @@ main {
 
         .featured-video {
           width: 800px;
+
+          iframe {
+            height: 100% !important;
+          }
+
         }
 
       }

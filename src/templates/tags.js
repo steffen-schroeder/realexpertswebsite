@@ -1,39 +1,36 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import React from 'react';
+import Helmet from 'react-helmet';
+import { graphql, Link } from 'gatsby';
 import BlogPostTeaser from '../components/BlogPostTeaser';
-import favicon from "../img/favicon.ico";
+import favicon from '../img/favicon.ico';
+import Layout from '../components/layout';
 
 export default class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
-    const tag = this.props.pathContext.tag;
+    const tag = this.props.pageContext.tag;
     const title = this.props.data.site.siteMetadata.title;
     const totalCount = this.props.data.allMarkdownRemark.totalCount;
-    const tagHeader = `${totalCount} ${
-      totalCount === 1 ? 'Beitrag' : 'Beiträge'
-    } in Kategorie “${tag}”`;
 
     return (
-      <section className="section blogs-by-tag">
+      <Layout>
+        <section className="section blogs-by-tag">
 
-        <Helmet
-          title={`${tag} | ${title}`}
-          link={[
-            { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
-          ]}
-          />
-        <h2>Alle Beiträge in <strong>{tag}</strong> ({totalCount})</h2>
-        <div className="all-posts">
-        {posts.map(({ node: post}) => (
-          <BlogPostTeaser post={post} type='normal' key={post.id} />
-        ))}
-        </div>
-        <p>
-          <Link to="/tags/">Alle Kategorien</Link>
-        </p>
-      </section>
-    )
+          <Helmet title={`${tag} | ${title}`} link={[
+            {rel: 'shortcut icon', type: 'image/ico', href: `${favicon}`},
+          ]}/>
+          <h2>Alle Beiträge in <strong>{tag}</strong> ({totalCount})</h2>
+          <div className="all-posts">
+            {posts.map(({node: post}) => (
+              <BlogPostTeaser post={post} type='normal' key={post.id}/>
+            ))}
+          </div>
+          <p>
+            <Link to="/tags/">Alle Kategorien</Link>
+          </p>
+        </section>
+      </Layout>
+    );
   }
 }
 
@@ -58,8 +55,8 @@ export const tagPageQuery = graphql`
             slug
             image {
               childImageSharp {
-                sizes(maxWidth: 630) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 630) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

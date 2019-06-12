@@ -1,8 +1,9 @@
-import React from 'react'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
-import Map from '../../components/Map'
+import Map from '../../components/Map';
+import { graphql } from 'gatsby';
+import Layout from '../../components/layout';
 
 class ContactPage extends React.Component {
 
@@ -10,12 +11,12 @@ class ContactPage extends React.Component {
     super(props);
 
     if (typeof window !== 'undefined') {
-      window.initMap = function() {
+      window.initMap = function () {
         new window.google.maps.Map(document.getElementById('map'), {
-          center: { lat: 40, lng: 10 },
+          center: {lat: 40, lng: 10},
           zoom: 5,
-        })
-      }
+        });
+      };
     }
   }
 
@@ -31,7 +32,6 @@ class ContactPage extends React.Component {
         },
         contactInfo: {
           title: contactTitle,
-          content,
           street,
           zip,
           phone,
@@ -40,33 +40,34 @@ class ContactPage extends React.Component {
           location: {
             latitude,
             longitude,
-          }
+          },
         },
       },
     } = this.props.data;
 
     return (
-      <section className="section contact">
-        <Helmet title={`Kontakt | ${title}`}/>
-        <h2 className="contact-title">{contactTitle}</h2>
-        <div className="contact-content">
-          <div className="contact-information">
-            <div className="contact-title">{title}</div>
-            <div className="contact-address">
-              <p>{street}</p>
-              <p>{zip}</p>
-              <br/>
-              <p>{phone}</p>
-              <p>{fax}</p>
+      <Layout>
+        <section className="section contact">
+          <Helmet title={`Kontakt | ${title}`}/>
+          <h2 className="contact-title">{contactTitle}</h2>
+          <div className="contact-content">
+            <div className="contact-information">
+              <div className="contact-title">{title}</div>
+              <div className="contact-address">
+                <p>{street}</p>
+                <p>{zip}</p><br/>
+                <p>{phone}</p>
+                <p>{fax}</p>
+              </div>
+              <div className="contact-email">
+                <span className="label">E-Mail: </span><a href={`mailto:${email}`}>{email}</a></div>
             </div>
-            <div className="contact-email"><span className="label">E-Mail: </span><a
-              href={`mailto:${email}`}>{email}</a></div>
+            <div className="contact-map">
+              <Map latitude={latitude} longitude={longitude} googleMaps={googleMaps}/>
+            </div>
           </div>
-          <div className="contact-map">
-            <Map latitude={latitude} longitude={longitude} googleMaps={googleMaps}/>
-          </div>
-        </div>
-      </section>
+        </section>
+      </Layout>
     );
   }
 }
@@ -87,13 +88,13 @@ ContactPage.propTypes = {
         location: PropTypes.shape({
           latitude: PropTypes.number,
           longitude: PropTypes.number,
-        })
+        }),
       }),
     }).isRequired,
   }),
 };
 
-export default ContactPage
+export default ContactPage;
 
 export const contactPageQuery = graphql`
   query ContactPageQuery {
@@ -119,4 +120,4 @@ export const contactPageQuery = graphql`
       }
     }
   }
-`
+`;
