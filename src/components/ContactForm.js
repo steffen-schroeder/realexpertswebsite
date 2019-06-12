@@ -1,30 +1,62 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import PropTypes from 'prop-types';
+import { useContactData } from '../hooks/use-contact-data';
+import { FacebookIcon, FacebookShareButton, TwitterIcon, TwitterShareButton, } from 'react-share';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
-export default class ContactForm extends React.Component {
+const ContactForm = () => {
 
-  render() {
+  const {
+    global: {
+      url,
+      defaultTwitterHandle
+    },
+    contactInfo: {
+      title,
+      content,
+    },
+  } = useContactData();
 
-    console.log(this.props);
-
-    return (
-
-      <section className="section contact">
-        {/*<Helmet title={`Kontakt | ${title}`}/>*/} {/*<h2 className="contact-title">{contactTitle}</h2>*/}
+  return (
+    <div className="contact-form-footer">
+      <section className="section">
         <div className="contact-content">
-          {/*<div className="contact-information">*/} {/*  <div className="contact-title">{title}</div>*/} {/*  <div className="contact-address">*/} {/*    <p>{street}</p>*/} {/*    <p>{zip}</p><br/>*/} {/*    <p>{phone}</p>*/} {/*    <p>{fax}</p>*/} {/*  </div>*/} {/*  <div className="contact-email">*/} {/*    <span className="label">E-Mail: </span><a href={`mailto:${email}`}>{email}</a></div>*/} {/*</div>*/}
+          <div className="contact-information">
+            <h3 className="contact-title">{title}</h3>
+            <div className="contact-content">
+              <p>{content}</p>
+            </div>
+            <div>
+              <OutboundLink href={url}>
+                <FacebookShareButton url={url} className="facebook">
+                  <FacebookIcon size={48}
+                                round={false}
+                                iconBgStyle={{ fill: '#879fc9' }}
+                                logoFillColor='white'/>
+                </FacebookShareButton>
+              </OutboundLink>
+              <OutboundLink href={url}>
+                <TwitterShareButton url={url} className="twitter" title={title}
+                                    via={defaultTwitterHandle.split('@').join('')}>
+                  <TwitterIcon size={48}
+                               round={false}
+                               iconBgStyle={{ fill: '#879fc9' }}
+                               logoFillColor='white'/>
+                </TwitterShareButton>
+              </OutboundLink>
+            </div>
+          </div>
           <div className="contact-form">
             <form name="contact" method="POST" data-netlify="true">
-              <div className="row">
-                <div className="col-md-6">
+              <div className="contact-form-wrapper">
+                <div className="contact-form-name">
                   <label htmlFor="name">Name</label> <input type="text" name="name"/>
                 </div>
-                <div className="col-md-6">
+                <div className="contact-form-email">
                   <label htmlFor="email">Email-Adresse</label> <input type="email" name="email"/>
                 </div>
-                <div className="col-md-12">
-                  <label htmlFor="message">Ihre Nachricht</label> <textarea name="message" rows={5}/>
+                <div className="contact-form-message">
+                  <label htmlFor="message">Ihre Nachricht</label> <textarea name="message" rows={8}/>
                 </div>
               </div>
               <p>
@@ -37,27 +69,9 @@ export default class ContactForm extends React.Component {
           </div>
         </div>
       </section>
-
-    );
-  }
-}
-
-ContactForm.propTypes = {
-  data: PropTypes.shape({
-    settings: PropTypes.shape({
-      global: PropTypes.shape({
-        title: PropTypes.string,
-      }),
-      contactInfo: PropTypes.shape({
-        title: PropTypes.string,
-        content: PropTypes.string,
-        address: PropTypes.string,
-        location: PropTypes.shape({
-          latitude: PropTypes.number,
-          longitude: PropTypes.number,
-        }),
-      }),
-    }).isRequired,
-  }),
+    </div>
+  );
 };
+
+export default ContactForm;
 
