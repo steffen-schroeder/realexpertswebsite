@@ -8,12 +8,14 @@ import Footer from '../components/Footer'
 import CookieConsent from "react-cookie-consent"
 import 'typeface-changa'
 import '../layouts/all.scss'
+import ContactForm from '../components/ContactForm';
 
 const TemplateWrapper = ({ children }) => (
   <div className="content">
     <Helmet title="Home | Gatsby + Netlify CMS" />
     <header id="header-main"><Navbar /></header>
     <main>{children}</main>
+    <ContactForm />
     <Footer />
     <CookieConsent
       buttonText="Verstanden"
