@@ -40,7 +40,7 @@ export const FrontPageTemplate = ({
           <div className="claim">
             <h1>{claim.heading}</h1>
             <p>{claim.teaser}</p>
-            <Link to={claim.linkto}>Mehr erfahren</Link>
+            <Link to={claim.linkto} className="button-round-blue">Mehr erfahren</Link>
           </div>
         </div>
         <div className="page-content">

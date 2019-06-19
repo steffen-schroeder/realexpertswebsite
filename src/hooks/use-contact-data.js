@@ -13,6 +13,14 @@ export const useContactData = () => {
           contactInfo {
             title
             content
+            socialMedia {
+              facebook
+              instagram
+              linkin
+              twitter
+              xing
+              youtube
+            }
           }
         }
       }
