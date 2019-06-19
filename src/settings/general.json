@@ -19,6 +19,14 @@
     "location": {
       "latitude": 51.052266,
       "longitude": 13.7214423
+    },
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/realexpertsnetwork/",
+      "instagram": "https://www.instagram.com/real_experts_network/",
+      "linkin": "https://www.linkedin.com/company/real-experts-network-gmbh/?originalSubdomain=de",
+      "twitter": "https://twitter.com/realxperts",
+      "xing": "https://www.xing.com/companies/realexpertsnetworkgmbh",
+      "youtube": "https://www.youtube.com/channel/UCKz6nXZObvjqr9G9uS4PamQ"
     }
   },
   "posts": {

@@ -1,0 +1,15 @@
+@import "./variables";
+
+.button-round-blue {
+  font-weight: bold;
+  color: #FFF;
+  font-size: 18px;
+  background-color: $secondary;
+  padding: 10px 20px;
+  border-radius: 100px;
+
+  &:hover {
+    cursor: pointer;
+    color: $grey-darker;
+  }
+}

@@ -1,19 +1,30 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { useContactData } from '../hooks/use-contact-data';
-import { FacebookIcon, FacebookShareButton, TwitterIcon, TwitterShareButton, } from 'react-share';
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn,
+  faTwitter,
+  faXing,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 
 const ContactForm = () => {
 
   const {
-    global: {
-      url,
-      defaultTwitterHandle
-    },
     contactInfo: {
       title,
       content,
+      socialMedia: {
+        facebook,
+        instagram,
+        linkin,
+        twitter,
+        xing,
+        youtube,
+      },
     },
   } = useContactData();
 
@@ -26,28 +37,24 @@ const ContactForm = () => {
             <div className="contact-content">
               <p>{content}</p>
             </div>
-            <div>
-              <OutboundLink href={url}>
-                <FacebookShareButton url={url} className="facebook">
-                  <FacebookIcon size={48}
-                                round={false}
-                                iconBgStyle={{ fill: '#879fc9' }}
-                                logoFillColor='white'/>
-                </FacebookShareButton>
-              </OutboundLink>
-              <OutboundLink href={url}>
-                <TwitterShareButton url={url} className="twitter" title={title}
-                                    via={defaultTwitterHandle.split('@').join('')}>
-                  <TwitterIcon size={48}
-                               round={false}
-                               iconBgStyle={{ fill: '#879fc9' }}
-                               logoFillColor='white'/>
-                </TwitterShareButton>
-              </OutboundLink>
+            <div className="contact-social-media-container">
+              <a href={facebook} className="contact-social-media-link">
+                <FontAwesomeIcon icon={faFacebookF} color="#00ACE9" size="2x"/> </a>
+              <a href={instagram} className="contact-social-media-link">
+                <FontAwesomeIcon icon={faInstagram} color="#00ACE9" size="2x"/> </a>
+              <a href={linkin} className="contact-social-media-link">
+                <FontAwesomeIcon icon={faLinkedinIn} color="#00ACE9" size="2x"/> </a>
+              <a href={twitter} className="contact-social-media-link">
+                <FontAwesomeIcon icon={faTwitter} color="#00ACE9" size="2x"/> </a>
+              <a href={xing} className="contact-social-media-link">
+                <FontAwesomeIcon icon={faXing} color="#00ACE9" size="2x"/> </a>
+              <a href={youtube} className="contact-social-media-link">
+                <FontAwesomeIcon icon={faYoutube} color="#00ACE9" size="2x"/> </a>
             </div>
           </div>
           <div className="contact-form">
             <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="contact-form-wrapper">
                 <div className="contact-form-name">
                   <label htmlFor="name">Name</label> <input type="text" name="name"/>
@@ -59,12 +66,8 @@ const ContactForm = () => {
                   <label htmlFor="message">Ihre Nachricht</label> <textarea name="message" rows={8}/>
                 </div>
               </div>
-              <p>
-                <Link to="/datenschutz">Datenschutzrichtlinie</Link>
-              </p>
-              <p>
-                <button type="submit">Absenden</button>
-              </p>
+              <Link to="/datenschutz" className="contact-privacy-policy-link">Datenschutzrichtlinie</Link>
+              <button type="submit" className="button-round-blue">Absenden</button>
             </form>
           </div>
         </div>

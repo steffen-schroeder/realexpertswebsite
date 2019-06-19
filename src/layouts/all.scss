@@ -1,5 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables";
 @import "./variables";
+@import "./components";
 
 .heading-blue {
   color: $primary;
@@ -279,14 +280,6 @@ main {
           margin-bottom: 40px;
         }
 
-        a {
-          font-weight: bold;
-          color: #FFF;
-          font-size: 18px;
-          background-color: #00ACE9;
-          padding: 10px 20px;
-          border-radius: 100px;
-        }
       }
 
     }
@@ -780,14 +773,23 @@ main {
       display: flex;
 
       .contact-information {
-        flex: 1;
+        flex: 2;
         padding: 0 30px 0 0;
+
+        .contact-social-media-container {
+          margin: 20px 0 0 0;
+          text-align: center;
+
+          .contact-social-media-link {
+            margin: 0 15px;
+            display: inline-block;
+          }
+        }
       }
 
       .contact-form {
-        flex: 1;
+        flex: 3;
         width: 100%;
-        height: 320px;
         background: white;
         padding: 30px;
         -webkit-box-shadow: 0px 0px 40px 0px rgba(173, 173, 173, 1);
@@ -811,13 +813,28 @@ main {
           label {
             display: block;
             font-size: 14px;
-            color: $cyan;
+            color: $secondary;
           }
 
           input, textarea {
             width: 100%;
+            font-size: 16px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid $grey-light;
+            margin-top: 5px;
           }
+
         }
+
+        .contact-privacy-policy-link {
+          display: block;
+          font-size: 12px;
+          color: $secondary;
+          margin: 10px 0 30px 0;
+          text-decoration: underline;
+        }
+
       }
 
     }
