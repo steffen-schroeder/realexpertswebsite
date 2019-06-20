@@ -28,7 +28,7 @@ thesis:
       Unternehmen.
     headline: Wie wir arbeiten
     highlighted: true
-video: 'https://youtu.be/Kiha0b5F-Yg'
+video: 'https://youtu.be/FX6LBcsT9IQ'
 relatedPosts:
   - post: EntoNative GmbH - Modernes Arbeiten im Startup mit Google G Suite
   - post: Tipps für eine erfolgreiche Intranet-Einführung
