@@ -25,7 +25,7 @@ export default class BlogIndexPage extends React.Component {
     const {currentPage, numPages} = this.props.pageContext;
     const isFirst = currentPage === 1;
     const isLast = currentPage === numPages;
-    const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString();
+    const prevPage = currentPage - 1 === 1 ? '' : (currentPage - 1).toString();
     const nextPage = (currentPage + 1).toString();
 
     return (
@@ -52,7 +52,7 @@ export default class BlogIndexPage extends React.Component {
           </div>
           <ul className="pagination">
             {!isFirst && (
-              <Link to={prevPage} rel="prev" className="pagination-prev"> <img src={arrowLeft} alt="Previous"/> </Link>
+              <Link to={`/blog/${prevPage}`} rel="prev" className="pagination-prev"> <img src={arrowLeft} alt="Previous"/> </Link>
             )} {Array.from({length: numPages}, (_, i) => (
             <li className="pagination-item" key={`pagination-number${i + 1}`}>
               <Link to={`/blog/${i === 0 ? '' : i + 1}`} className={i + 1 === currentPage
@@ -62,7 +62,7 @@ export default class BlogIndexPage extends React.Component {
               </Link>
             </li>
           ))} {!isLast && (
-            <Link className="pagination-next" to={nextPage} rel="next"> <img src={arrowRight} alt="Next"/> </Link>
+            <Link className="pagination-next" to={`/blog/${nextPage}`} rel="next"> <img src={arrowRight} alt="Next"/> </Link>
           )}
           </ul>
         </section>
