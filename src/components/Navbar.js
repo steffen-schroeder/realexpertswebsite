@@ -1,15 +1,19 @@
-import React from 'react'
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import logo from '../img/realexperts-textual.svg'
-import menu from '../img/icons/menu.svg'
+import logo from '../img/realexperts-bildmarke.svg';
+import menu from '../img/icons/menu.svg';
+import { useMainMenu } from '../hooks/use-main-menu';
 
-class Navbar extends React.Component {
+class NavbarComponent extends React.Component {
+
   constructor(props) {
     super(props);
     this.toggleClass= this.toggleClass.bind(this);
+
     this.state = {
       mobileMenuActive: false,
+      menuItems: props.children
     };
   }
   toggleClass(newState) {
@@ -33,18 +37,31 @@ class Navbar extends React.Component {
              onClick={this.toggleClass}>
         </img>
         <div className={`navigation-bar-menu ${this.state.mobileMenuActive ? 'is-active': 'not-active'}`}>
-          <Link className="navigation-bar-item"
-                activeClassName="is-active"
-                onClick={this.toggleClass}
-                to="/"> Start </Link>
-          <Link className="navigation-bar-item"
-                activeClassName="is-active"
-                onClick={this.toggleClass}
-                to="/blog"> Blog </Link>
+          {this.state.menuItems}
         </div>
       </nav>
     )
   }
 }
 
+const Navbar = () => {
+
+  const {
+    mainMenu
+  } = useMainMenu();
+
+  const menuItems = mainMenu.map((item, key)=> (
+    <Link to={item.link}
+          key={key}
+          className="navigation-bar-item"
+          activeClassName="is-active">{item.title}</Link>
+  ));
+
+  return(
+    <NavbarComponent children={menuItems}/>
+  )
+
+};
+
 export default Navbar
+

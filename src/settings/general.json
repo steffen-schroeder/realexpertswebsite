@@ -120,4 +120,23 @@
       ]
     }
   ]
+  },
+  "mainMenu": [
+    {
+      "title": "Organisation & Innovation",
+      "link": ""
+    },
+    {
+      "title": "Mitarbeiter & Führung",
+      "link": ""
+    },
+    {
+      "title": "Digitalisierung & Arbeitsplatz",
+      "link": ""
+    },
+    {
+      "title": "@Real Experts",
+      "link": ""
+    }
+  ]
 }
