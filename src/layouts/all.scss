@@ -839,6 +839,33 @@ main {
   }
 }
 
+.footer-links {
+  max-width: 1600px;
+  width: 100%;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 160px 40px;
+
+    .footer-links-content {
+      display: flex;
+
+      .footer-links-menu-column {
+        flex: 1;
+
+        h4 {
+          height: 70px;
+        }
+
+        li {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}
+
 .footer {
 
   padding: 2rem 0;

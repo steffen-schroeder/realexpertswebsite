@@ -9,6 +9,7 @@ import CookieConsent from 'react-cookie-consent';
 import 'typeface-changa';
 import '../layouts/all.scss';
 import ContactForm from '../components/ContactForm';
+import FooterLinks from './FooterLinks';
 
 const TemplateWrapper = ({children}) => (
   <div className="content">
@@ -18,12 +19,14 @@ const TemplateWrapper = ({children}) => (
       {children}
     </main>
     <ContactForm/>
+    <FooterLinks/>
     <Footer/>
-    <CookieConsent buttonText="Verstanden" cookieName="reCoockieConsent" style={{background: '#40A6B9'}} buttonStyle={{
-      background: '#FFF',
-      color: '#0E3F93',
-      fontSize: '13px',
-    }}> Wir verwenden Cookies, um Ihnen einen optimalen Service zu bieten. Wenn Sie auf dieser Seite weitersurfen, stimmen Sie der Verwendung von Cookies zu. Mehr zu <Link to="/datenschutz">Datenschutz</Link>.
+    <CookieConsent
+      buttonText="Verstanden"
+      cookieName="reCoockieConsent"
+      style={{background: '#40A6B9'}}
+      buttonStyle={{background: '#FFF', color: '#0E3F93', fontSize: '13px',}}>
+      Wir verwenden Cookies, um Ihnen einen optimalen Service zu bieten. Wenn Sie auf dieser Seite weitersurfen, stimmen Sie der Verwendung von Cookies zu. Mehr zu <Link to="/datenschutz">Datenschutz</Link>.
     </CookieConsent>
   </div>
 );

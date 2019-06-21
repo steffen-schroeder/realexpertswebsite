@@ -32,5 +32,92 @@
   "posts": {
     "frontLimit": "3",
     "defaultAuthor": "Christoph Rauhut"
-  }
+  },
+  "footerlinks": [
+    {
+      "menutitle": "Organisation & Innovation",
+      "links": [
+        {
+          "linktitle": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "linktitle": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "linktitle": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "menutitle": "Mitarbeiter & Innovation",
+      "links": [
+        {
+          "linktitle": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "linktitle": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "linktitle": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "menutitle": "Digitalisierung & Arbeitsplatz",
+      "links": [
+        {
+          "linktitle": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "linktitle": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "linktitle": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "menutitle": "@RealExperts",
+      "links": [
+        {
+          "linktitle": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "linktitle": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "linktitle": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "menutitle": "Unternehmen",
+      "links": [
+        {
+          "linktitle": "Über uns",
+          "link": "/"
+        },
+        {
+          "linktitle": "Jobs",
+          "link": "/jobs"
+        },
+        {
+          "linktitle": "Blog",
+          "link": "/blog"
+        }
+      ]
+    }
+  ]
 }
