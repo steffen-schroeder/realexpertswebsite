@@ -20,8 +20,6 @@ export default class BlogIndexPage extends React.Component {
         return !topPosts.find(topPost => topPost.id === post.id);
       });
 
-    console.log(this.props.pageContext.currentPage);
-
     const {currentPage, numPages} = this.props.pageContext;
     const isFirst = currentPage === 1;
     const isLast = currentPage === numPages;
@@ -43,7 +41,6 @@ export default class BlogIndexPage extends React.Component {
           </div>
         </div>
         }
-
           <h2>Alle Beiträge</h2>
           <div className="all-posts">
             {posts.map(({node: post}) => (
