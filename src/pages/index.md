@@ -28,11 +28,11 @@ thesis:
       Unternehmen.
     headline: Wie wir arbeiten
     highlighted: true
-video: 'https://youtu.be/FX6LBcsT9IQ'
+video: 'https://youtu.be/Kiha0b5F-Yg'
 relatedPosts:
-  - post: Wie Sie Entscheidungen treffen
+  - post: Tipps für eine erfolgreiche Intranet-Einführung
   - post: COYO - Das Social Intranet von E.ON
-  - post: Die Folgen einer neuen Wirksamkeit
-  - post: 'Das Intranet als zentrales Portal für einen wirksamen Digital Workplace '
+  - post: EntoNative GmbH - Modernes Arbeiten im Startup mit Google G Suite
+  - post: Ein Jahr Social Intranet bei der IPROconsult GmbH
 ---
 
