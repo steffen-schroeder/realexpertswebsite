@@ -1,15 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { useContactData } from '../hooks/use-contact-data';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faFacebookF,
-  faInstagram,
-  faLinkedinIn,
-  faTwitter,
-  faXing,
-  faYoutube,
-} from '@fortawesome/free-brands-svg-icons';
 
 const ContactForm = () => {
 
