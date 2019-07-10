@@ -30,9 +30,9 @@ thesis:
     highlighted: true
 video: 'https://youtu.be/Kiha0b5F-Yg'
 relatedPosts:
+  - post: Wie Sie Entscheidungen treffen
+  - post: Die Folgen einer neuen Wirksamkeit
   - post: Tipps für eine erfolgreiche Intranet-Einführung
-  - post: COYO - Das Social Intranet von E.ON
-  - post: EntoNative GmbH - Modernes Arbeiten im Startup mit Google G Suite
-  - post: Ein Jahr Social Intranet bei der IPROconsult GmbH
+  - post: IPROconsult GmbH - Moderne Kommunikation und Zusammenarbeit
 ---
 
