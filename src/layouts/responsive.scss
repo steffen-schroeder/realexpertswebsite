@@ -192,7 +192,7 @@
               flex-direction: column;
               padding-left: 25px;
               .taglist {
-                margin: 0px;
+                margin: 0;
               }
 
               .post-content-excerpt {
@@ -206,7 +206,7 @@
         .featured-video-wrapper {
           margin-left: -40px;
           margin-right: -40px;
-          padding: 40px 0px;
+          padding: 40px 0;
           .featured-video {
             width: 90%;
             margin-left: auto;
@@ -327,6 +327,28 @@
     .section {
       display: block;
       margin: 30px;
+    }
+  }
+
+  .footer-links {
+
+    section {
+      display: block;
+      margin: 30px;
+
+      .footer-links-content {
+        display: block;
+
+        .footer-links-menu-column {
+          display: inline-block;
+          width: 50%;
+          margin-bottom: 30px;
+
+          .footer-links-menu-title {
+            height: auto;
+          }
+        }
+      }
     }
   }
 
@@ -463,6 +485,13 @@
           }
         }
       }
+    }
+  }
+
+  .footer-links {
+    section {
+      display: block;
+      margin: 20px;
     }
   }
 
@@ -754,6 +783,35 @@
 
     }
 
+  }
+
+  .footer-links {
+
+    section {
+      display: block;
+      margin: 30px;
+
+      .footer-links-content {
+        display: block;
+
+        .footer-links-menu-column {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 30px;
+
+          .footer-links-menu-title {
+            height: auto;
+          }
+        }
+      }
+
+      .footer-links-logo-esf-smartphone {
+        display: block;
+      }
+      .footer-links-logo-esf {
+        display: none;
+      }
+    }
   }
 
 }

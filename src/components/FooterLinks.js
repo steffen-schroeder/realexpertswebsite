@@ -12,7 +12,7 @@ const FooterLink = ({data}) => {
 
 const FooterLinkSection = ({data}) => {
   const links = data.links.map((item, key) => (
-    <FooterLink data={item}/>
+    <FooterLink data={item} key={key}/>
   ));
 
   return (
@@ -25,13 +25,15 @@ const FooterLinkSection = ({data}) => {
 const FooterLinks = () => {
 
   const {
-    footerlinks,
+    settings,
+    mobileImage,
+    desktopImage
   } = useFooterLinks();
 
-  const linkSections = footerlinks.map((item, key) => (
-    <div className="footer-links-menu-column">
-      <h4>{item.menutitle}</h4>
-      <FooterLinkSection data={item} />
+  const linkSections = settings.footerlinks.map((item, key) => (
+    <div className="footer-links-menu-column" key={key}>
+      <span className="footer-links-menu-title">{item.menutitle}</span>
+      <FooterLinkSection data={item}/>
     </div>
   ));
 
@@ -40,6 +42,14 @@ const FooterLinks = () => {
       <section>
         <div className="footer-links-content">
           {linkSections}
+        </div>
+        <div>
+          <a href="http://www.strukturfonds.sachsen.de/europaeischer-sozialfonds-esf.html" className="footer-links-logo-esf-smartphone">
+            <img src={mobileImage.childImageSharp.fluid.src} alt="Logo ESF Sachsen mobil" />
+          </a>
+          <a href="http://www.strukturfonds.sachsen.de/europaeischer-sozialfonds-esf.html" className="footer-links-logo-esf">
+            <img src={desktopImage.childImageSharp.fluid.src} alt="Logo ESF Sachsen" />
+          </a>
         </div>
       </section>
     </div>
