@@ -322,6 +322,14 @@
     }
   }
 
+  .contact-form-footer {
+
+    .section {
+      display: block;
+      margin: 30px;
+    }
+  }
+
   .footer {
 
     width: 100%;
@@ -407,6 +415,53 @@
 
       .contact-map {
         margin-top: 20px;
+      }
+    }
+  }
+
+  .contact-form-footer {
+
+    .section {
+      display: block;
+      margin: 20px;
+
+      .contact-content {
+        display: block;
+
+        .contact-information {
+          padding: 0;
+
+          h3 {
+            text-align: center;
+          }
+
+          .contact-content {
+            text-align: center;
+          }
+
+          .contact-social-media-container {
+
+            .contact-social-media-link {
+              display: inline-block;
+            }
+          }
+        }
+
+        .contact-form {
+          width: 100%;
+          margin-top: 30px;
+
+          .contact-form-wrapper {
+            .contact-form-name,
+            .contact-form-email {
+              width: 100%;
+            }
+
+            .contact-form-email {
+              margin-top: 30px;
+            }
+          }
+        }
       }
     }
   }
