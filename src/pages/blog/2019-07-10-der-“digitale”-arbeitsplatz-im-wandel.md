@@ -30,7 +30,7 @@ Wie im Schaubild dargestellt, fokussieren sich moderne Formen von Arbeitsplatzko
 
 ![Alter vs neuer digitaler Arbeitsplatz - Digital Workplace](/img/alter-vs.-neuer-arbeitsplatz-.pptx-1-.png)
 
-\    (Schaublild: Alter vs. neuer Arbeitsplatz)
+**(Schaubild: Alter vs. neuer Arbeitsplatz)**
 
 ### Fazit: Mit klarem Zielbild zum wirksamen Digital Workplace
 
