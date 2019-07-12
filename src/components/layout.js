@@ -6,6 +6,7 @@ import { Link } from 'gatsby';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CookieConsent from 'react-cookie-consent';
+import 'typeface-open-sans';
 import 'typeface-changa';
 import '../layouts/all.scss';
 import ContactForm from '../components/ContactForm';

@@ -39,6 +39,7 @@
     "recompose": "^0.30.0",
     "sharp": "^0.22.1",
     "typeface-changa": "^0.0.61",
+    "typeface-open-sans": "^0.0.54",
     "typography": "^0.16.19",
     "uuid": "^3.3.2"
   },

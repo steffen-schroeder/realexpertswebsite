@@ -54,6 +54,7 @@
     nav {
 
       height: 60px;
+
       .navigation-bar-logo {
         figure {
           padding: 20px 20px;
@@ -191,6 +192,7 @@
               display: flex;
               flex-direction: column;
               padding-left: 25px;
+
               .taglist {
                 margin: 0;
               }
@@ -207,6 +209,7 @@
           margin-left: -40px;
           margin-right: -40px;
           padding: 40px 0;
+
           .featured-video {
             width: 90%;
             margin-left: auto;
@@ -269,9 +272,11 @@
         width: auto;
         padding-bottom: 20px;
         margin-top: 60px;
+
         .SocialMediaShareButton {
           margin-right: 10px;
         }
+
         border-bottom: #CCC solid 1px;
       }
 
@@ -397,11 +402,13 @@
             .related-posts-list {
               width: auto;
               flex-direction: column;
+
               .post.related {
                 padding: 0;
                 margin-bottom: 40px;
                 border-right: none;
                 width: auto;
+
                 &:first-child {
                   border-left: none;
                 }
@@ -409,6 +416,7 @@
                 .image-type-related {
                   width: auto;
                 }
+
                 .post-content {
                   .post-content-excerpt {
                     display: block;
@@ -469,18 +477,22 @@
           }
         }
 
-        .contact-form {
-          width: 100%;
+        .contact-form-wrapper {
+          padding-right: 0;
           margin-top: 30px;
 
-          .contact-form-wrapper {
-            .contact-form-name,
-            .contact-form-email {
-              width: 100%;
-            }
+          .contact-form {
+            width: 100%;
 
-            .contact-form-email {
-              margin-top: 30px;
+            .contact-form-wrapper {
+              .contact-form-name,
+              .contact-form-email {
+                width: 100%;
+              }
+
+              .contact-form-email {
+                margin-top: 30px;
+              }
             }
           }
         }
@@ -549,6 +561,7 @@
     nav {
 
       height: 60px;
+
       .navigation-bar-logo {
         figure {
           padding: 20px 20px;
@@ -587,6 +600,7 @@
           text-align: center;
           padding: 10px;
           color: $primary;
+          top: 0;
         }
       }
     }
@@ -607,20 +621,21 @@
         height: auto;
         margin-left: -15px;
         margin-right: -15px;
-        background: #0e3f93; /* Old browsers */
-        background: -moz-linear-gradient(top, #0e3f93 0%, #2499b1 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #0e3f93 0%, #2499b1 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #0e3f93 0%, #2499b1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e3f93', endColorstr='#2499b1', GradientType=0); /* IE6-9 */
 
         .claim {
 
           width: 100%;
           padding: 80px 40px 40px;
+          margin-top: 80px;
 
           h1 {
             margin-bottom: 20px;
             line-height: 4rem;
+          }
+
+          p {
+            font-size: 26px !important;
+            line-height: 40px;
           }
         }
 
@@ -631,13 +646,16 @@
 
         .thesis-wrapper {
           flex-direction: column;
+
           .thesis {
             margin-top: 40px;
+
             &:first-child {
               margin-right: 0;
             }
           }
         }
+
         .featured-video-wrapper {
           display: flex;
           align-items: center;
@@ -651,15 +669,19 @@
           }
 
         }
+
         .posts {
           margin-top: 20px;
+
           .top-posts {
             flex-direction: column;
             margin-top: 0;
+
             .post.top {
               margin-bottom: 40px;
               max-width: 100%;
               width: 100%;
+
               .image-type-top {
                 height: auto;
               }
@@ -681,12 +703,15 @@
             min-height: 280px;
             flex-direction: column;
             padding: 0;
+
             .image-type-featured {
               width: 100%;
             }
+
             .image-type-top {
               height: auto;
             }
+
             .post-content {
               width: 100%;
               margin-left: 0;
@@ -808,6 +833,7 @@
       .footer-links-logo-esf-smartphone {
         display: block;
       }
+
       .footer-links-logo-esf {
         display: none;
       }

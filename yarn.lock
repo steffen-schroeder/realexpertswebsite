@@ -11535,6 +11535,10 @@ typeface-changa@^0.0.61:
   version "0.0.61"
   resolved "https://registry.yarnpkg.com/typeface-changa/-/typeface-changa-0.0.61.tgz#e975db6c2d13eb5a4e16d597400dd798761da84e"
 
+typeface-open-sans@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.54.tgz#20f5b5ea5c7f95d89dc1f8b2d2b1457680129cee"
+
 typography-normalize@^0.16.19:
   version "0.16.19"
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.16.19.tgz#58e0cf12466870c5b27006daa051fe7307780660"

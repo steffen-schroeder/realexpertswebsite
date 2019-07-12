@@ -24,9 +24,12 @@ export const FrontPageTemplate = ({
   ));
 
   // show the first three related posts as top posts
-  const topPosts = relatedPosts.slice(0, 3).map((post) => (
-    <BlogPostTeaser key={post.id} type='top' post={post}/>
-  ));
+  let topPosts = [];
+  if(relatedPosts){
+    topPosts = relatedPosts.slice(0, 3).map((post) => (
+      <BlogPostTeaser key={post.id} type='top' post={post}/>
+    ));
+  }
 
   return (
     <Layout>
@@ -38,9 +41,8 @@ export const FrontPageTemplate = ({
         }}/>
         <div className="hero">
           <div className="claim">
-            <h1>{claim.heading}</h1>
             <p>{claim.teaser}</p>
-            <Link to={claim.linkto} className="button-round-blue">Mehr erfahren</Link>
+            <Link to={claim.linkto} className="button-round-red">Mehr erfahren</Link>
           </div>
         </div>
         <div className="page-content">
@@ -85,7 +87,6 @@ FrontPageTemplate.propTypes = {
   }),
   title: PropTypes.string.isRequired,
   claim: PropTypes.shape({
-    heading: PropTypes.string.isRequired,
     teaser: PropTypes.string,
     linkto: PropTypes.string,
   }),
@@ -147,7 +148,6 @@ export const frontPageQuery = graphql`
       frontmatter {
         title
         claim {
-          heading
           teaser
           linkto
         }
