@@ -16,7 +16,7 @@ export const useContactData = () => {
             socialMedia {
               facebook
               instagram
-              linkin
+              linkedin
               twitter
               xing
               youtube

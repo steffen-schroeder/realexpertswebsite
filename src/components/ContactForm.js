@@ -1,6 +1,12 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { useContactData } from '../hooks/use-contact-data';
+import facebookIcon from '../img/icons/social/facebook.svg';
+import instagramIcon from '../img/icons/social/instagram.svg';
+import linkedinIcon from '../img/icons/social/linkedin.svg';
+import twitterIcon from '../img/icons/social/twitter.svg';
+import xingIcon from '../img/icons/social/xing.svg';
+import youtubeIcon from '../img/icons/social/youtube.svg';
 
 const ContactForm = () => {
 
@@ -11,7 +17,7 @@ const ContactForm = () => {
       socialMedia: {
         facebook,
         instagram,
-        linkin,
+        linkedin,
         twitter,
         xing,
         youtube,
@@ -30,17 +36,23 @@ const ContactForm = () => {
             </div>
             <div className="contact-social-media-container">
               <a href={facebook} className="contact-social-media-link">
-                <FontAwesomeIcon icon={faFacebookF} color="#00ACE9" size="2x"/> </a>
+                <img src={facebookIcon} alt="Facebook"/>
+              </a>
               <a href={instagram} className="contact-social-media-link">
-                <FontAwesomeIcon icon={faInstagram} color="#00ACE9" size="2x"/> </a>
-              <a href={linkin} className="contact-social-media-link">
-                <FontAwesomeIcon icon={faLinkedinIn} color="#00ACE9" size="2x"/> </a>
+                <img src={instagramIcon} alt="Instagramm"/>
+              </a>
+              <a href={linkedin} className="contact-social-media-link">
+                <img src={linkedinIcon} alt="Linkedin"/>
+              </a>
               <a href={twitter} className="contact-social-media-link">
-                <FontAwesomeIcon icon={faTwitter} color="#00ACE9" size="2x"/> </a>
+                <img src={twitterIcon} alt="Twitter"/>
+              </a>
               <a href={xing} className="contact-social-media-link">
-                <FontAwesomeIcon icon={faXing} color="#00ACE9" size="2x"/> </a>
+                <img src={xingIcon} alt="Xing"/>
+              </a>
               <a href={youtube} className="contact-social-media-link">
-                <FontAwesomeIcon icon={faYoutube} color="#00ACE9" size="2x"/> </a>
+                <img src={youtubeIcon} alt="Youtube"/>
+              </a>
             </div>
           </div>
           <div className="contact-form">

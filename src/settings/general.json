@@ -10,7 +10,7 @@
   },
   "contactInfo": {
     "title": "Nehmen Sie Kontakt zu uns auf",
-    "content": "Hier könnte allerhand hilfreiches stehen, wie Tipps zur Anfahrt oder warum das Büro rostet.\n\nNulla facilisi. **Praesent nonummy mi in odio.** Vivamus aliquet elit ac nisl. Nullam tincidunt adipiscing enim. Nulla facilisi.\n\n* Praesent nonummy mi in odio. \n* Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. \n* In dui magna, posuere eget, vestibulum et, tempor auctor, justo. \n* Nam adipiscing. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.\n\nDonec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Ut id nisl quis enim dignissim sagittis. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Aenean vulputate eleifend tellus. Fusce fermentum odio nec arcu.",
+    "content": "Hier könnte allerhand hilfreiches stehen, wie Tipps zur Anfahrt oder warum das Büro rostet.\n\nNulla facilisi. **Praesent nonummy mi in odio.** ",
     "street": "Kraftwerk Mitte 7, Heizzentrale",
     "zip": "01067 Dresden",
     "phone": "Telefon: +49 (0) 351-41 88 24 11",
@@ -23,7 +23,7 @@
     "socialMedia": {
       "facebook": "https://www.facebook.com/realexpertsnetwork/",
       "instagram": "https://www.instagram.com/real_experts_network/",
-      "linkin": "https://www.linkedin.com/company/real-experts-network-gmbh/?originalSubdomain=de",
+      "linkedin": "https://www.linkedin.com/company/real-experts-network-gmbh/?originalSubdomain=de",
       "twitter": "https://twitter.com/realxperts",
       "xing": "https://www.xing.com/companies/realexpertsnetworkgmbh",
       "youtube": "https://www.youtube.com/channel/UCKz6nXZObvjqr9G9uS4PamQ"
