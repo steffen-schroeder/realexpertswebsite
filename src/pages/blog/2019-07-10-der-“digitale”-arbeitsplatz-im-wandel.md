@@ -30,6 +30,8 @@ Wie im Schaubild dargestellt, fokussieren sich moderne Formen von Arbeitsplatzko
 
 ![Alter vs neuer digitaler Arbeitsplatz - Digital Workplace](/img/alter-vs.-neuer-arbeitsplatz-.pptx-1-.png)
 
+\    (Schaublild: Alter vs. neuer Arbeitsplatz)
+
 ### Fazit: Mit klarem Zielbild zum wirksamen Digital Workplace
 
 Digitale Technologien werden nicht selten in den Mittelpunkt des modernen Arbeitsplatzes der Zukunft gestellt. Ein Aspekt der nicht zu kurz kommen darf, ist die Kommunikation der Unternehmen an die Mitarbeiter darüber, warum technologische Veränderungen am Arbeitsplatz der Mitarbeiter durchgeführt werden. Ein Weg besteht darin, den Mitarbeitern ein klares Zielbild zu vermitteln. Konkret: Wie will das Unternehmen zukünftig arbeiten? Welche Rolle spielen hierbei digitale Technologien um diese Vision umzusetzen? Nur so kann die Etablierung eines wirksamen Digital Workplace nachhaltig gelingen.
