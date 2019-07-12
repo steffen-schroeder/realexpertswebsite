@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 
 const SocialButtons = ({ socialConfig, tags }) => (
   <div className="post-social">
-    <Link href={socialConfig.config.url}>
+    <Link to={socialConfig.config.url}>
       <FacebookShareButton url={socialConfig.config.url} className="facebook">
         <FacebookIcon size={48}
                       round={false}
@@ -13,7 +13,7 @@ const SocialButtons = ({ socialConfig, tags }) => (
                       logoFillColor='white'/>
       </FacebookShareButton>
     </Link>
-    <Link href={socialConfig.config.url}>
+    <Link to={socialConfig.config.url}>
       <TwitterShareButton url={socialConfig.config.url} className="twitter" title={socialConfig.config.title}
                           via={socialConfig.twitterHandle.split('@').join('')} hashtags={tags}>
         <TwitterIcon size={48}
