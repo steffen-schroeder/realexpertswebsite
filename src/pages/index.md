@@ -31,8 +31,8 @@ thesis:
 video: 'https://youtu.be/Kiha0b5F-Yg'
 relatedPosts:
   - post: Wie Sie Entscheidungen treffen
-  - post: Die Folgen einer neuen Wirksamkeit
   - post: Tipps für eine erfolgreiche Intranet-Einführung
   - post: IPROconsult GmbH - Moderne Kommunikation und Zusammenarbeit
+  - post: 'Der “digitale” Arbeitsplatz im Wandel '
 ---
 
