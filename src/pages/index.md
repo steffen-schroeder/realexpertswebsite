@@ -30,9 +30,9 @@ thesis:
     highlighted: true
 video: 'https://youtu.be/Kiha0b5F-Yg'
 relatedPosts:
-  - post: Wie Sie Entscheidungen treffen
-  - post: Tipps für eine erfolgreiche Intranet-Einführung
-  - post: IPROconsult GmbH - Moderne Kommunikation und Zusammenarbeit
   - post: 'Der “digitale” Arbeitsplatz im Wandel '
+  - post: Wie Sie Entscheidungen treffen
+  - post: Ein Jahr Social Intranet bei der IPROconsult GmbH
+  - post: Die Folgen einer neuen Wirksamkeit
 ---
 
