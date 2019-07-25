@@ -4,7 +4,7 @@ export const useMainMenu = () => {
   const {settings} = useStaticQuery(
     graphql`
       query {
-        settings: settingsJson {
+        settings: settingsJson(id: {eq: "menu-settings"}) {
           mainMenu {
             link
             title

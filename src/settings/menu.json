@@ -20,7 +20,7 @@
   ],
   "footerMenu": [
     {
-      "menutitle": "Organisation & Innovation",
+      "menuTitle": "Organisation & Innovation",
       "links": [
         {
           "title": "Lorem ipsum 1",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "menutitle": "Mitarbeiter & Innovation",
+      "menuTitle": "Mitarbeiter & Innovation",
       "links": [
         {
           "title": "Lorem ipsum 1",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "menutitle": "Digitalisierung & Arbeitsplatz",
+      "menuTitle": "Digitalisierung & Arbeitsplatz",
       "links": [
         {
           "title": "Lorem ipsum 1",
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "menutitle": "@RealExperts",
+      "menuTitle": "@RealExperts",
       "links": [
         {
           "title": "Lorem ipsum 1",
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "menutitle": "Unternehmen",
+      "menuTitle": "Unternehmen",
       "links": [
         {
           "title": "Über uns",

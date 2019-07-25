@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 const FooterLink = ({data}) => {
   return (
     <li>
-      <Link to={data.link}>{data.linktitle}</Link>
+      <Link to={data.link}>{data.title}</Link>
     </li>
   );
 };
@@ -29,10 +29,10 @@ const FooterLinks = () => {
     mobileImage,
     desktopImage
   } = useFooterLinks();
-
-  const linkSections = settings.footerlinks.map((item, key) => (
+  
+  const linkSections = settings.footerMenu.map((item, key) => (
     <div className="footer-links-menu-column" key={key}>
-      <span className="footer-links-menu-title">{item.menutitle}</span>
+      <span className="footer-links-menu-title">{item.menuTitle}</span>
       <FooterLinkSection data={item}/>
     </div>
   ));
