@@ -29,7 +29,7 @@ const FooterLinks = () => {
     mobileImage,
     desktopImage
   } = useFooterLinks();
-  
+
   const linkSections = settings.footerMenu.map((item, key) => (
     <div className="footer-links-menu-column" key={key}>
       <span className="footer-links-menu-title">{item.menuTitle}</span>

@@ -4,7 +4,7 @@ export const useContactData = () => {
   const {settings} = useStaticQuery(
     graphql`
       query {
-        settings: settingsJson {
+        settings: settingsJson(id: {eq: "general-settings"}) {
           global {
             title
             url
