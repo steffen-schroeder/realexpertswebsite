@@ -1,5 +1,3 @@
-const fileSystemAPI = require('./src/cms/file-system-api-plugin/fs-express-api');
-
 module.exports = {
   siteMetadata: {
     title: 'Real Experts',
@@ -88,5 +86,4 @@ module.exports = {
       },
     },
   ],
-  developMiddleware: fileSystemAPI,
 };
