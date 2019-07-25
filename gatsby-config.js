@@ -1,21 +1,23 @@
+const fileSystemAPI = require('./src/cms/file-system-api-plugin/fs-express-api');
+
 module.exports = {
   siteMetadata: {
     title: 'Real Experts',
     twitterHandle: '@hut1315',
-    siteUrl: 'https://www.realexperts.de'
+    siteUrl: 'https://www.realexperts.de',
   },
   mapping: {
-    "MarkdownRemark.fields.relatedPosts": "MarkdownRemark",
-    "MarkdownRemark.fields.author": "MarkdownRemark",
-    "SettingsJson.fields.defaultAuthor": "MarkdownRemark",
+    'MarkdownRemark.fields.relatedPosts': 'MarkdownRemark',
+    'MarkdownRemark.fields.author': 'MarkdownRemark',
+    'SettingsJson.fields.defaultAuthor': 'MarkdownRemark',
   },
   plugins: [
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        configFile: 'robots-txt.config.js'
-      }
+        configFile: 'robots-txt.config.js',
+      },
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
@@ -55,12 +57,12 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-embed-video",
+            resolve: 'gatsby-remark-embed-video',
             options: {
               ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
               related: false, // Optional: Will remove related videos from the end of an embedded YouTube video.
-              noIframeBorder: true //Optional: Disable insertion of <style> border: 0
-            }
+              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+            },
           },
           'gatsby-remark-responsive-iframe',
         ],
@@ -76,14 +78,15 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify',
       options: {
         headers: {
-          "/*": [
-            "X-Frame-Options: ALLOW-FROM https://www.itsax.de",
-            "X-XSS-Protection: 1; mode=block",
-            "X-Content-Type-Options: nosniff"
-          ]
+          '/*': [
+            'X-Frame-Options: ALLOW-FROM https://www.itsax.de',
+            'X-XSS-Protection: 1; mode=block',
+            'X-Content-Type-Options: nosniff',
+          ],
         },
-        mergeSecurityHeaders: false
-      }
-    }
+        mergeSecurityHeaders: false,
+      },
+    },
   ],
+  developMiddleware: fileSystemAPI,
 };

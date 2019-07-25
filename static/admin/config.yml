@@ -23,6 +23,29 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Related Posts", name: "relatedPosts", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}]}
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "src/pages/portfolio"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio-page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Post", name: "featuredPost", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}
+      - {label: "Categories", name: "portfolioCategories", widget: "list", fields: [{name: "category", label: "Category", widget: "relation", collection: "category", searchFields: [name, title], valueField: title}]}
+      - {label: "Top Posts", name: "relatedPosts", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: [name, title], valueField: title}]}
+  - name: "category"
+    label: "Category"
+    folder: "src/pages/category"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "category-page"}
+      - {label: "Title", name: "title", widget: "string"}
   - name: "pages"
     label: "Pages"
     files:
