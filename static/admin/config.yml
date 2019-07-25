@@ -172,3 +172,21 @@ collections:
             fields:
               - {label: "Number of posts on frontpage", name: "frontLimit", widget: "number"}
               - {label: "Default Author", name: "defaultAuthor", widget: "relation", collection: "authors", searchFields: ["title", "position", "company"], valueField: "title"}
+      - name: "menu"
+        label: "Menu"
+        file: "src/settings/menu.json"
+        description: "Menu settings"
+        fields:
+          - {label: "ID (to query for)", name: "id", widget: "hidden", default: "menu-settings"}
+          - label: "Main menu"
+            name: "mainMenu"
+            widget: "list"
+            fields:
+              - {name: "title", label: "Title", widget: "string"}
+              - {name: "link", label: "Link", widget: "relation", collection: "portfolio", searchFields: ["title"], valueField: "title"}
+          - label: "Footer menu"
+            name: "footerMenu"
+            widget: "list"
+              fields:
+                - {name: "menutitle", label: "Menu title", widget: "string"}
+                - {name: "links", label: "Links", widget: "list", fields: [{name: "title", label: "Title", widget: "string"},{name: "link", label: "Link", widget: "relation", collection: "pages", searchFields: ["title"], valueField: "title"}]}

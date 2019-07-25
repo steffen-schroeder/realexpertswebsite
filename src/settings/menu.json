@@ -1,0 +1,108 @@
+{
+  "id": "menu-settings",
+  "mainMenu": [
+    {
+      "title": "Organisation & Innovation",
+      "link": ""
+    },
+    {
+      "title": "Mitarbeiter & Führung",
+      "link": ""
+    },
+    {
+      "title": "Digitalisierung & Arbeitsplatz",
+      "link": ""
+    },
+    {
+      "title": "@Real Experts",
+      "link": ""
+    }
+  ],
+  "footerMenu": [
+    {
+      "menutitle": "Organisation & Innovation",
+      "links": [
+        {
+          "title": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "title": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "title": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "menutitle": "Mitarbeiter & Innovation",
+      "links": [
+        {
+          "title": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "title": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "title": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "menutitle": "Digitalisierung & Arbeitsplatz",
+      "links": [
+        {
+          "title": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "title": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "title": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "menutitle": "@RealExperts",
+      "links": [
+        {
+          "title": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "title": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "title": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "menutitle": "Unternehmen",
+      "links": [
+        {
+          "title": "Über uns",
+          "link": "/"
+        },
+        {
+          "title": "Jobs",
+          "link": "/jobs"
+        },
+        {
+          "title": "Blog",
+          "link": "/blog"
+        }
+      ]
+    }
+  ]
+}
