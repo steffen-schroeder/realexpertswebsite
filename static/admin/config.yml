@@ -187,9 +187,17 @@ collections:
           - label: "Main menu"
             name: "mainMenu"
             widget: "list"
-            fields:
-              - {name: "title", label: "Title", widget: "string"}
-              - {name: "link", label: "Link", widget: "relation", collection: "portfolio", searchFields: ["title"], valueField: "title"}
+            fields: [{name: "title", label: "Title", widget: "string"}, {name: "link", label: "Link", widget: "relation", collection: "portfolio", searchFields: ["title"], valueField: "title"}]
+      - name: "footerLinksSettings"
+        label: "Footer links"
+        file: "src/settings/footer-links.json"
+        description: "Footer links settings"
+        fields:
+          - {label: "ID (to query for)", name: "id", widget: "hidden", default: "footer-links-settings"}
+          - label: "Footer links"
+            name: "footerLinks"
+            widget: "list"
+            fields: [{name: "title", label: "Section title", widget: "string"},{name: "links", label: "Links", widget: "list", fields: [{name: "title", label: "Title", widget: "string"},{name: "link", label: "Link", widget: "relation", collection: "pages", searchFields: ["title"], valueField: "title"}]}]
       - name: "footerMenuSettings"
         label: "Footer menu"
         file: "src/settings/footer-menu.json"
@@ -199,6 +207,4 @@ collections:
           - label: "Footer menu"
             name: "footerMenu"
             widget: "list"
-            fields:
-              - {name: "menuTitle", label: "Menu title", widget: "string"}
-              - {name: "links", label: "Links", widget: "list", fields: [{name: "title", label: "Title", widget: "string"},{name: "link", label: "Link", widget: "relation", collection: "pages", searchFields: ["title"], valueField: "title"}]}
+            fields:[{name: "title", label: "Menu title", widget: "string"}, {name: "link", label: "Link", widget: "relation", collection: "pages", searchFields: ["title"], valueField: "title"}]

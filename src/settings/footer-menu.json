@@ -2,89 +2,20 @@
   "id": "footer-menu-settings",
   "footerMenu": [
     {
-      "menuTitle": "Organisation & Innovation",
-      "links": [
-        {
-          "title": "Lorem ipsum 1",
-          "link": "/link1"
-        },
-        {
-          "title": "Lorem ipsum 2",
-          "link": "/link2"
-        },
-        {
-          "title": "Lorem ipsum 3",
-          "link": "/link3"
-        }
-      ]
+      "title": "Kontakt",
+      "link": ""
     },
     {
-      "menuTitle": "Mitarbeiter & Innovation",
-      "links": [
-        {
-          "title": "Lorem ipsum 1",
-          "link": "/link1"
-        },
-        {
-          "title": "Lorem ipsum 2",
-          "link": "/link2"
-        },
-        {
-          "title": "Lorem ipsum 3",
-          "link": "/link3"
-        }
-      ]
+      "title": "Jobs",
+      "link": ""
     },
     {
-      "menuTitle": "Digitalisierung & Arbeitsplatz",
-      "links": [
-        {
-          "title": "Lorem ipsum 1",
-          "link": "/link1"
-        },
-        {
-          "title": "Lorem ipsum 2",
-          "link": "/link2"
-        },
-        {
-          "title": "Lorem ipsum 3",
-          "link": "/link3"
-        }
-      ]
+      "title": "Impressum",
+      "link": ""
     },
     {
-      "menuTitle": "@RealExperts",
-      "links": [
-        {
-          "title": "Lorem ipsum 1",
-          "link": "/link1"
-        },
-        {
-          "title": "Lorem ipsum 2",
-          "link": "/link2"
-        },
-        {
-          "title": "Lorem ipsum 3",
-          "link": "/link3"
-        }
-      ]
-    },
-    {
-      "menuTitle": "Unternehmen",
-      "links": [
-        {
-          "title": "Über uns",
-          "link": "/"
-        },
-        {
-          "title": "Jobs",
-          "link": "/jobs"
-        },
-        {
-          "title": "Blog",
-          "link": "/blog"
-        }
-      ]
+      "title": "Datenschutzerklärung",
+      "link": ""
     }
   ]
 }

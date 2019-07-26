@@ -1,0 +1,90 @@
+{
+  "id": "footer-links-settings",
+  "footerLinks": [
+    {
+      "title": "Organisation & Innovation",
+      "links": [
+        {
+          "title": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "title": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "title": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "title": "Mitarbeiter & Innovation",
+      "links": [
+        {
+          "title": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "title": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "title": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "title": "Digitalisierung & Arbeitsplatz",
+      "links": [
+        {
+          "title": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "title": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "title": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "title": "@RealExperts",
+      "links": [
+        {
+          "title": "Lorem ipsum 1",
+          "link": "/link1"
+        },
+        {
+          "title": "Lorem ipsum 2",
+          "link": "/link2"
+        },
+        {
+          "title": "Lorem ipsum 3",
+          "link": "/link3"
+        }
+      ]
+    },
+    {
+      "title": "Unternehmen",
+      "links": [
+        {
+          "title": "Über uns",
+          "link": "/"
+        },
+        {
+          "title": "Jobs",
+          "link": "/jobs"
+        },
+        {
+          "title": "Blog",
+          "link": "/blog"
+        }
+      ]
+    }
+  ]
+}
