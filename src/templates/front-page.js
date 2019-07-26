@@ -116,7 +116,7 @@ export default FrontPage;
 
 export const frontPageQuery = graphql`
   query FrontPage($id: String!) {
-    settings: settingsJson {
+    settings: settingsJson(id: {eq: "general-settings"}) {
       global {
         title
         url

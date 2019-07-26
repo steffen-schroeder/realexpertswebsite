@@ -4,9 +4,9 @@ export const useFooterLinks = () => {
   const {settings, mobileImage, desktopImage} = useStaticQuery(
     graphql`
       query {
-        settings: settingsJson {
+        settings: settingsJson(id: {eq: "menu-settings"}) {
           footerMenu {
-            menutitle
+            menuTitle
             links {
               link
               title

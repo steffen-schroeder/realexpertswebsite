@@ -98,7 +98,7 @@ export default ContactPage;
 
 export const contactPageQuery = graphql`
   query ContactPageQuery {
-    settings: settingsJson {
+    settings: settingsJson(id: {eq: "general-settings"}) {
       global {
         title
       }

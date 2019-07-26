@@ -44,7 +44,7 @@ export default SimplePage;
 
 export const simplePageQuery = graphql`
   query SimplePage($id: String!) {
-    settings: settingsJson {
+    settings: settingsJson(id: {eq: "general-settings"}) {
       global {
         title
         url

@@ -196,7 +196,7 @@ export default BlogPost;
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
-    settings: settingsJson {
+    settings: settingsJson(id: {eq: "general-settings"}) {
       global {
         title
         url

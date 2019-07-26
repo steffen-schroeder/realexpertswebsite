@@ -101,7 +101,7 @@ BlogIndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query BlogIndexQuery($skip: Int!, $limit: Int!) {
-    settings: settingsJson {
+    settings: settingsJson(id: {eq: "general-settings"}) {
       global {
         title
         url

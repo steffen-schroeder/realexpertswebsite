@@ -183,10 +183,8 @@ collections:
             widget: "list"
             fields:
               - {name: "title", label: "Title", widget: "string"}
-              - {name: "link", label: "Link", widget: "relation", collection: "portfolio", searchFields: ["title"], valueField: "title"}
           - label: "Footer menu"
             name: "footerMenu"
             widget: "list"
-              fields:
-                - {name: "menutitle", label: "Menu title", widget: "string"}
-                - {name: "links", label: "Links", widget: "list", fields: [{name: "title", label: "Title", widget: "string"},{name: "link", label: "Link", widget: "relation", collection: "pages", searchFields: ["title"], valueField: "title"}]}
+            fields:
+              - {name: "menuTitle", label: "Menu title", widget: "string"}
