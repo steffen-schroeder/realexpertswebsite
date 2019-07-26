@@ -178,18 +178,24 @@ collections:
     editor:
       preview: false
     files:
-      - name: "menuSettings"
-        label: "Menu"
-        file: "src/settings/menu.json"
-        description: "Menu settings"
+      - name: "mainMenuSettings"
+        label: "Main menu"
+        file: "src/settings/main-menu.json"
+        description: "Main menu settings"
         fields:
-          - {label: "ID (to query for)", name: "id", widget: "hidden", default: "menu-settings"}
+          - {label: "ID (to query for)", name: "id", widget: "hidden", default: "main-menu-settings"}
           - label: "Main menu"
             name: "mainMenu"
             widget: "list"
             fields:
               - {name: "title", label: "Title", widget: "string"}
               - {name: "link", label: "Link", widget: "relation", collection: "portfolio", searchFields: ["title"], valueField: "title"}
+      - name: "footerMenuSettings"
+        label: "Footer menu"
+        file: "src/settings/footer-menu.json"
+        description: "Footer menu settings"
+        fields:
+          - {label: "ID (to query for)", name: "id", widget: "hidden", default: "footer-menu-settings"}
           - label: "Footer menu"
             name: "footerMenu"
             widget: "list"
