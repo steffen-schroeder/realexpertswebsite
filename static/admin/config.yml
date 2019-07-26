@@ -3,7 +3,7 @@
 
 backend:
   name: git-gateway
-  branch: master
+  branch: develop
 
 media_folder: static/img
 public_folder: /img
@@ -216,4 +216,4 @@ collections:
             widget: "list"
             fields:
               - {name: "title", label: "Menu title", widget: "string"}
-              - {name: "link", label: "Link", widget: "relation", collection: "pages", searchFields: ["title"], valueField: "title"}
+              - {name: "link", label: "Link", widget: "string"}
