@@ -1,3 +1,6 @@
+#backend:
+#  name: test-repo
+
 backend:
   name: git-gateway
   branch: master
@@ -178,7 +181,7 @@ collections:
     editor:
       preview: false
     files:
-      - name: "mainmenusettings"
+      - name: "mainMenuSettings"
         label: "Main menu"
         file: "src/settings/main-menu.json"
         description: "Main menu settings"
@@ -188,8 +191,9 @@ collections:
             name: "mainMenu"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-      - name: "footerlinkssettings"
+              - {name: "title", label: "Title", widget: "string"}
+              - {name: "link", label: "Link", widget: "relation", collection: "portfolio", searchFields: ["title"], valueField: "title"}
+      - name: "footerLinksSettings"
         label: "Footer links"
         file: "src/settings/footer-links.json"
         description: "Footer links settings"
@@ -199,8 +203,9 @@ collections:
             name: "footerLinks"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-      - name: "footermenusettings"
+              - {name: "title", label: "Section title", widget: "string"}
+              - {name: "links", label: "Links", widget: "list", fields: [{name: "title", label: "Title", widget: "string"},{name: "link", label: "Link", widget: "relation", collection: "pages", searchFields: ["title"], valueField: "title"}]}
+      - name: "footerMenuSettings"
         label: "Footer menu"
         file: "src/settings/footer-menu.json"
         description: "Footer menu settings"
@@ -210,4 +215,5 @@ collections:
             name: "footerMenu"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
+              - {name: "title", label: "Menu title", widget: "string"}
+              - {name: "link", label: "Link", widget: "relation", collection: "pages", searchFields: ["title"], valueField: "title"}
