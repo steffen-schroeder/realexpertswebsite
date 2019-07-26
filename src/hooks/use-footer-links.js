@@ -5,11 +5,11 @@ export const useFooterLinks = () => {
     graphql`
       query {
         settings: settingsJson {
-          footerlinks {
+          footerMenu {
             menutitle
             links {
               link
-              linktitle
+              title
             }
           }
         }
