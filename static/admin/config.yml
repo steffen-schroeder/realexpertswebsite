@@ -1,9 +1,9 @@
-#backend:
-#  name: test-repo
-
 backend:
-  name: git-gateway
-  branch: develop
+  name: test-repo
+
+#backend:
+#  name: git-gateway
+#  branch: develop
 
 media_folder: static/img
 public_folder: /img
@@ -17,15 +17,15 @@ collections:
       preview: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Author", name: "author", widget: "relation", collection: "authors", searchFields: ["name", "title"], valueField: "title"}
-      - {label: "Featured Image", name: "image", widget: "image"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Related Posts", name: "relatedPosts", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}]}
+      - {label: "Template Key",   name: "templateKey",  widget: "hidden", default: "blog-post"}
+      - {label: "Title",          name: "title",        widget: "string"}
+      - {label: "Publish Date",   name: "date",         widget: "datetime"}
+      - {label: "Author",         name: "author",       widget: "relation", collection: "authors", searchFields: ["name", "title"], valueField: "title"}
+      - {label: "Featured Image", name: "image",        widget: "image"}
+      - {label: "Description",    name: "description",  widget: "text"}
+      - {label: "Body",           name: "body",         widget: "markdown"}
+      - {label: "Tags",           name: "tags",         widget: "list"}
+      - {label: "Related Posts",  name: "relatedPosts", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}]}
   - name: "portfolio"
     label: "Portfolio"
     folder: "src/pages/portfolio"
@@ -33,13 +33,13 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio-page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "image", widget: "image"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredPost", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}
-      - {label: "Categories", name: "portfolioCategories", widget: "list", fields: [{name: "category", label: "Category", widget: "relation", collection: "category", searchFields: [name, title], valueField: title}]}
-      - {label: "Top Posts", name: "relatedPosts", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: [name, title], valueField: title}]}
+      - {label: "Template Key",   name: "templateKey",  widget: "hidden", default: "portfolio-page"}
+      - {label: "Title",          name: "title",        widget: "string"}
+      - {label: "Featured Image", name: "image",        widget: "image"}
+      - {label: "Description",    name: "description",  widget: "text"}
+      - {label: "Featured Post",  name: "featuredPost", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}
+      - {label: "Categories",     name: "categories",   widget: "list",     fields: [{name: "category", label: "Category", widget: "relation", collection: "category", searchFields: [name, title], valueField: title}, {label: "Category Image", name: "categoryI  mage", widget: "image"}]}
+      - {label: "Top Posts",      name: "relatedPosts", widget: "list",     fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: [name, title], valueField: title}]}
   - name: "category"
     label: "Category"
     folder: "src/pages/category"
@@ -47,8 +47,17 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "category-page"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Template Key",   name: "templateKey",    widget: "hidden", default: "category-page"}
+      - {label: "Name",           name: "name",           widget: "string"}
+      - {label: "Title",          name: "title",          widget: "string"}
+      - {label: "Featured Image", name: "image",          widget: "image"}
+      - {label: "Description",    name: "description",    widget: "text"}
+      - {label: "Thesis",         name: "thesis",         widget: "list",   fields: [{label: "Headline",  name: "headline", widget: "string"}, {label: "Highlight", name: "highlighted", widget: "boolean"}, {label: "Body", name: "body", widget: "markdown"}]}
+      - {label: "Featured video", name: "video",          widget: "string"}
+      - {label: "Success stories",name: "successStories", widget: "list",   fields: [{label: "Post",      name: "post",     widget: "relation", collection: "blog", searchFields: [name, title], valueField: title}, {label: "Name",  name: "customerName", widget: "string"}, {label: "Story Image",  name: "storyImage", widget: "image"}]}
+      - {label: "Info Box",       name: "infoBox",        widget: "object", fields: [{label: "Headline",  name: "headline", widget: "string"}, {label: "Body",  name: "body", widget: "markdown"}, {label: "Image",  name: "image", widget: "image"}]}
+      - {label: "Statements",     name: "statements",     widget: "list",   fields: [{label: "Image",  name: "image", widget: "image"}, {label: "Name", name: "name", widget: "string"}, {label: "Body", name: "body", widget: "markdown"}]}
+      - {label: "Top Posts",      name: "relatedPosts", widget: "list",     fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: [name, title], valueField: title}]}
   - name: "pages"
     label: "Pages"
     files:
@@ -56,61 +65,61 @@ collections:
         label: "Jobs"
         name: "jobs"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template Key", name: "templateKey",  widget: "hidden", default: "simple-page"}
+          - {label: "Title",        name: "title",        widget: "string"}
+          - {label: "Body",         name: "body",         widget: "markdown"}
       - file: "src/pages/organisation-innovation/index.md"
         label: "Organisation & Innovation"
         name: "organisation-innovation"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template Key", name: "templateKey",  widget: "hidden", default: "simple-page"}
+          - {label: "Title",        name: "title",        widget: "string"}
+          - {label: "Body",         name: "body",         widget: "markdown"}
       - file: "src/pages/digitalisierung-arbeitsplatz/index.md"
         label: "Digitalisierung & Arbeitsplatz"
         name: "digitalisierung-arbeitsplatz"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template Key", name: "templateKey",  widget: "hidden", default: "simple-page"}
+          - {label: "Title",        name: "title",        widget: "string"}
+          - {label: "Body",         name: "body",         widget: "markdown"}
       - file: "src/pages/mitarbeiter-fuehrung/index.md"
         label: "Mitarbeiter & Führung"
         name: "mitarbeiter-fuehrung"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template Key", name: "templateKey",  widget: "hidden", default: "simple-page"}
+          - {label: "Title",        name: "title",        widget: "string"}
+          - {label: "Body",         name: "body",         widget: "markdown"}
       - file: "src/pages/realexperts-team/index.md"
         label: "Team Real Experts"
         name: "realexperts-team"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template Key", name: "templateKey",  widget: "hidden", default: "simple-page"}
+          - {label: "Title",        name: "title",        widget: "string"}
+          - {label: "Body",         name: "body",         widget: "markdown"}
       - file: "src/pages/impressum/index.md"
         label: "Impressum"
         name: "imprint"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template Key", name: "templateKey",  widget: "hidden", default: "simple-page"}
+          - {label: "Title",        name: "title",        widget: "string"}
+          - {label: "Body",         name: "body",         widget: "markdown"}
       - file: "src/pages/datenschutz/index.md"
         label: "Datenschutzerklärung"
         name: "dataPrivacy"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template Key", name: "templateKey",  widget: "hidden", default: "simple-page"}
+          - {label: "Title",        name: "title",        widget: "string"}
+          - {label: "Body",         name: "body",         widget: "markdown"}
       - file: "src/pages/index.md"
         label: "Frontpage"
         name: "frontpage"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "front-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Claim", name: "claim", widget: "object", fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Teaser text", name: "teaser", widget: "text"}, {label: "Link to", name: "linkto", widget: "relation", collection: "pages", searchFields: [name, path, title], valueField: "path"}]}
-          - {label: "Thesis", name: "thesis", widget: "list", fields: [{label: "Headline", name: "headline", widget: "string"}, {label: "Highlight", name: "highlighted", widget: "boolean"}, {label: "Body", name: "body", widget: "markdown"}]}
-          - {label: "Featured video", name: "video", widget: string}
-          - {label: "Top Posts", name: "relatedPosts", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: [name, title], valueField: title}]}
+          - {label: "Template Key",   name: "templateKey",  widget: "hidden", default: "front-page"}
+          - {label: "Title",          name: "title",        widget: "string"}
+          - {label: "Claim",          name: "claim",        widget: "object", fields: [{label: "Heading",   name: "heading",  widget: "string"}, {label: "Teaser text", name: "teaser", widget: "text"}, {label: "Link to", name: "linkto", widget: "relation", collection: "pages", searchFields: [name, path, title], valueField: "path"}]}
+          - {label: "Thesis",         name: "thesis",       widget: "list",   fields: [{label: "Headline",  name: "headline", widget: "string"}, {label: "Highlight", name: "highlighted", widget: "boolean"}, {label: "Body", name: "body", widget: "markdown"}]}
+          - {label: "Featured video", name: "video",        widget: "string"}
+          - {label: "Top Posts",      name: "relatedPosts", widget: "list",   fields: [{label: "Post",      name: "post",     widget: "relation", collection: "blog", searchFields: [name, title], valueField: title}]}
   - name: "authors"
     label: "Authors"
     editor:
@@ -119,15 +128,15 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
-      - {label: "Content type", name: "contentType", widget: "hidden", default: "author"}
-      - {label: "Name", name: "title", widget: "string"}
-      - {label: "Position", name: "position", widget: "string"}
-      - {label: "Company", name: "company", widget: "string"}
-      - {label: "Email", name: "email", widget: "string"}
-      - {label: "Twitter handle", name: "twitterHandle", widget: "string", required: false}
-      - {label: "Profile Image", name: "image", widget: "image"}
-      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Template Key",   name: "templateKey",  widget: "hidden", default: "simple-page"}
+      - {label: "Content type",   name: "contentType",  widget: "hidden", default: "author"}
+      - {label: "Name",           name: "title",        widget: "string"}
+      - {label: "Position",       name: "position",     widget: "string"}
+      - {label: "Company",        name: "company",      widget: "string"}
+      - {label: "Email",          name: "email",        widget: "string"}
+      - {label: "Twitter handle", name: "twitterHandle",widget: "string", required: false}
+      - {label: "Profile Image",  name: "image",        widget: "image"}
+      - {label: "Description",    name: "description",  widget: "markdown"}
   - name: "settings"
     label: "Settings"
     delete: false
@@ -192,6 +201,7 @@ collections:
             widget: "list"
             fields:
               - {name: "title", label: "Title", widget: "string"}
+              - {name: "url", label: "Url", widget: "string"}
               - {name: "link", label: "Link", widget: "relation", collection: "portfolio", searchFields: ["title"], valueField: "title"}
       - name: "footerLinksSettings"
         label: "Footer links"
@@ -204,7 +214,7 @@ collections:
             widget: "list"
             fields:
               - {name: "title", label: "Section title", widget: "string"}
-              - {name: "links", label: "Links", widget: "list", fields: [{name: "title", label: "Title", widget: "string"},{name: "link", label: "Link", widget: "relation", collection: "pages", searchFields: ["title"], valueField: "title"}]}
+              - {name: "links", label: "Links", widget: "list", fields: [{name: "title", label: "Title", widget: "string"},{name: "url", label: "Url", widget: "string"},{name: "link", label: "Link", widget: "relation", collection: "pages", searchFields: ["title"], valueField: "title"}]}
       - name: "footerMenuSettings"
         label: "Footer menu"
         file: "src/settings/footer-menu.json"
@@ -216,4 +226,5 @@ collections:
             widget: "list"
             fields:
               - {name: "title", label: "Menu title", widget: "string"}
-              - {name: "link", label: "Link", widget: "string"}
+              - {name: "url", label: "Url", widget: "string"}
+              - {name: "link", label: "Link", widget: "relation", collection: "pages", searchFields: ["title"], valueField: "title"}
