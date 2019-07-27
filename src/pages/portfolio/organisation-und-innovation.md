@@ -8,8 +8,8 @@ description: >-
   vero eos et accusam et justo duo dolores et ea rebum.
 featuredPost: 'Ein Intranet verbindet - “Linchpin” stellt sich vor '
 categories:
-  - category: 'Hier steht eine Headline, die über zwei Zeilen gehen kann wenn sie will.'
-    categoryI  mage: /img/realexperts-bildsprache-v1-art-01.png
+  - category: 'Kategorie 1'
+    categoryImage: /img/realexperts-bildsprache-v1-art-01.png
 relatedPosts:
   - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
   - post: Andres Kühn - Partner im Real Experts Netzwerk
