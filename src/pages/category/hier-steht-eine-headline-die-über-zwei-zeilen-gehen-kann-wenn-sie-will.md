@@ -1,6 +1,6 @@
 ---
 templateKey: category-page
-name: Kategorie 1
+categoryName: Kategorie 1
 title: 'Hier steht eine Headline, die über zwei Zeilen gehen kann wenn sie will.'
 image: /img/real-experts-header-kategorie.png
 description: >-
@@ -27,7 +27,7 @@ video: 'https://youtu.be/Kiha0b5F-Yg'
 successStories:
   - customerName: Kunde 1
     post: Was verhindert effektive Zusammenarbeit im Unternehmen?
-    storyImage: /img/realexperts-bildsprache-v1-art-01.png
+    image: /img/realexperts-bildsprache-v1-art-01.png
 infoBox:
   body: >-
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -48,7 +48,7 @@ statements:
       amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
       diam voluptua.
-    name: 'Vorname Name, Unternehmen'
+    author: 'Vorname Name, Unternehmen'
     image: /img/der-beginn-einer-reise-a5440b7a0bf73b3b61b33201dbd00c36-21464.png
 relatedPosts:
   - post: Andres Kühn - Partner im Real Experts Netzwerk

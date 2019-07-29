@@ -6,11 +6,18 @@ module.exports = {
   },
   mapping: {
     'MarkdownRemark.fields.relatedPosts': 'MarkdownRemark',
+    'MarkdownRemark.fields.categories': 'MarkdownRemark',
+    'MarkdownRemark.fields.successStories': 'MarkdownRemark',
+    'MarkdownRemark.fields.infoBox': 'MarkdownRemark',
+    'MarkdownRemark.fields.statements': 'MarkdownRemark',
     'MarkdownRemark.fields.author': 'MarkdownRemark',
     'SettingsJson.fields.defaultAuthor': 'MarkdownRemark',
   },
   plugins: [
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-transformer-json',
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -47,9 +54,6 @@ module.exports = {
         path: `${__dirname}/static/img`,
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-transformer-json',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
