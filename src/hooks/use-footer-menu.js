@@ -1,17 +1,30 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-export const useMainMenu = () => {
-  const {settings} = useStaticQuery(
+export const useFooterMenu = () => {
+  const {settings, slugs} = useStaticQuery(
     graphql`
-      query {
-        settings: settingsJson(id: {eq: "footer-menu-settings"}) {
-          footerMenu {
-            link
-            title
-          }
+        query {
+            settings: settingsJson(id: {eq: "footer-menu-settings"}) {
+                footerMenu {
+                    link
+                    url
+                    title
+                }
+            }
+            slugs: allMarkdownRemark {
+                edges {
+                    node {
+                        fields {
+                            slug
+                        }
+                        frontmatter {
+                            title
+                        }
+                    }
+                }
+            }
         }
-      }
     `,
   );
-  return settings;
+  return {settings, slugs};
 };

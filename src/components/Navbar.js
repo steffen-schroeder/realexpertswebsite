@@ -47,15 +47,32 @@ class NavbarComponent extends React.Component {
 const Navbar = () => {
 
   const {
-    mainMenu
+    settings,
+    slugs,
   } = useMainMenu();
 
-  const menuItems = mainMenu.map((item, key)=> (
-    <Link to={item.link}
-          key={key}
-          className="navigation-bar-item"
-          activeClassName="is-active">{item.title}</Link>
-  ));
+  const menuItems = settings.mainMenu.map((item, key) => {
+    let link = '/';
+    if (item.url) {
+      link = item.url;
+    } else {
+      const edge = slugs.edges.find((slugItem) => {
+        return slugItem.node.frontmatter.title === item.link;
+      });
+
+      if (edge) {
+        link = edge.node.fields.slug;
+      }
+    }
+
+    return (
+      <Link to={link}
+            key={key}
+            className="navigation-bar-item"
+            activeClassName="is-active">{item.title}
+      </Link>
+    );
+  });
 
   return(
     <NavbarComponent children={menuItems}/>

@@ -3,8 +3,8 @@ const path = require('path');
 const {createFilePath} = require('gatsby-source-filesystem');
 
 
-exports.sourceNodes = ({boundActionCreators, getNodes, getNode}) => {
-    const {createNodeField} = boundActionCreators;
+exports.sourceNodes = ({actions, getNodes, getNode}) => {
+    const {createNodeField} = actions;
     const allNodes = getNodes();
 
     // Print some debug information on what nodes are actually there because
@@ -62,9 +62,8 @@ exports.sourceNodes = ({boundActionCreators, getNodes, getNode}) => {
                 const resolvedCategories = [];
                 node.frontmatter.categories.map(category => {
                     const postNode = allNodes.find(someNode => {
-                            console.log(someNode.name, category.post);
                             return someNode.internal.type === "MarkdownRemark" &&
-                                someNode.frontmatter.name === category.post
+                                someNode.frontmatter.title === category.category
                         }
                     );
                     if (postNode) {
@@ -160,7 +159,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
             // Create blog post list pages
             const postsPerPage = 6;
             const extraArticlesOnStartPage = 4;
-            const blogArticles = pages.filter(page => page.node.frontmatter.templateKey === "blog-post")
+            const blogArticles = pages.filter(page => page.node.frontmatter.templateKey === "blog-post");
             const numPages = Math.ceil((blogArticles.length - extraArticlesOnStartPage) / postsPerPage);
 
             Array.from({length: numPages}).forEach((_, i) => {
@@ -227,11 +226,21 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
         // path was defined in.
         if (node.frontmatter.image) {
             let imagePath = node.frontmatter.image;
-            console.log('img', node.frontmatter.title, node.frontmatter.image);
             if (node.frontmatter.image.startsWith('/img/')) {
                 imagePath = `../../../static${node.frontmatter.image}`;
                 createNodeField({
                     name: `image`,
+                    node,
+                    value: imagePath,
+                });
+            }
+        }
+        if (node.frontmatter.thumbnail) {
+            let imagePath = node.frontmatter.thumbnail;
+            if (node.frontmatter.thumbnail.startsWith('/img/')) {
+                imagePath = `../../../static${node.frontmatter.thumbnail}`;
+                createNodeField({
+                    name: `thumbnail`,
                     node,
                     value: imagePath,
                 });

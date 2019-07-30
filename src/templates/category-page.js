@@ -49,8 +49,8 @@ export const CategoryPageTemplate = ({data}) => {
                                      }}
                                      fluid={data.fields.image.childImageSharp.fluid}>
                         <div className="claim">
-                            <h3>{data.frontmatter.categoryName}</h3>
-                            <h2>{data.frontmatter.title}</h2>
+                            <h3>{data.frontmatter.title}</h3>
+                            <h2>{data.frontmatter.contentTitle}</h2>
                             <p>{data.frontmatter.description}</p>
                         </div>
                     </BackgroundImage>
@@ -102,8 +102,8 @@ export const CategoryPageTemplate = ({data}) => {
 };
 
 CategoryPageTemplate.propTypes = {
-    categoryName: PropTypes.string,
     title: PropTypes.string,
+    contentTitle: PropTypes.string,
     description: PropTypes.string,
     thesis: PropTypes.arrayOf(PropTypes.shape({
         headline: PropTypes.string,
@@ -181,8 +181,8 @@ export const categoryPageQuery = graphql`
         }
       }
       frontmatter {
-        categoryName
         title
+        contentTitle
         image
         description
         thesis {

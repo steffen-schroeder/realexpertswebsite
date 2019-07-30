@@ -38,7 +38,7 @@ collections:
       - {label: "Featured Image", name: "image",        widget: "image"}
       - {label: "Description",    name: "description",  widget: "text"}
       - {label: "Featured Post",  name: "featuredPost", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}
-      - {label: "Categories",     name: "categories",   widget: "list",     fields: [{name: "category", label: "Category", widget: "relation", collection: "category", searchFields: ["name", "title"], valueField: "name"}, {label: "Category Image", name: "categoryImage", widget: "image"}]}
+      - {label: "Categories",     name: "categories",   widget: "list",     fields: [{name: "category", label: "Category", widget: "relation", collection: "category", searchFields: ["name", "title"], valueField: "name"}, {label: "Category Image", name: "image", widget: "image"}]}
       - {label: "Top Posts",      name: "relatedPosts", widget: "list",     fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}]}
   - name: "category"
     label: "Category"
@@ -48,10 +48,11 @@ collections:
       preview: false
     fields:
       - {label: "Template Key",   name: "templateKey",    widget: "hidden", default: "category-page"}
-      - {label: "Name",           name: "categoryName",   widget: "string"}
-      - {label: "Title",          name: "title",          widget: "string"}
+      - {label: "title",          name: "title",          widget: "string"}
+      - {label: "Content Title",  name: "contentTitle",   widget: "string"}
       - {label: "Featured Image", name: "image",          widget: "image"}
       - {label: "Description",    name: "description",    widget: "text"}
+      - {label: "Thumbnail Image",name: "thumbnail",      widget: "image"}
       - {label: "Thesis",         name: "thesis",         widget: "list",   fields: [{label: "Headline",  name: "headline", widget: "string"}, {label: "Highlight", name: "highlighted", widget: "boolean", default: "false"}, {label: "Body", name: "body", widget: "markdown"}]}
       - {label: "Featured video", name: "video",          widget: "string"}
       - {label: "Success stories",name: "successStories", widget: "list",   fields: [{label: "Post",      name: "post",     widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}, {label: "Name",  name: "customerName", widget: "string"}, {label: "Story Image",  name: "image", widget: "image"}]}

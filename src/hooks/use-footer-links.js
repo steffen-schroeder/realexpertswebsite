@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 export const useFooterLinks = () => {
-  const {settings, mobileImage, desktopImage} = useStaticQuery(
+  const {settings, slugs, mobileImage, desktopImage} = useStaticQuery(
     graphql`
       query {
         settings: settingsJson(id: {eq: "footer-links-settings"}) {
@@ -13,6 +13,18 @@ export const useFooterLinks = () => {
             }
           }
         }
+        slugs: allMarkdownRemark {
+            edges {
+                node {
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        title
+                    }
+                }
+            }
+        }  
         mobileImage:file(relativePath: { eq: "logo_esf_sachsen_smartphone.png" }) {
           childImageSharp {
             fluid(maxWidth: 480, quality: 100) {
@@ -30,5 +42,5 @@ export const useFooterLinks = () => {
       }
     `,
   );
-  return {settings, mobileImage, desktopImage};
+  return {settings, slugs, mobileImage, desktopImage};
 };

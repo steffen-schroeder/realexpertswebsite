@@ -1,12 +1,13 @@
 ---
 templateKey: category-page
-categoryName: Kategorie 1
-title: 'Hier steht eine Headline, die über zwei Zeilen gehen kann wenn sie will.'
+title: Kategorie 1
+contentTitle: 'Hier steht eine Headline, die über zwei Zeilen gehen kann wenn sie will.'
 image: /img/real-experts-header-kategorie.png
 description: >-
   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy irmod
   tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
   vero eos et accusam et justo duo dolores et ea rebum.
+thumbnail: /img/realexperts-bildsprache-v1-art-01.png
 thesis:
   - body: >-
       Für unsere Kunden entwickeln wir Strategien und Lösungen für eine neue

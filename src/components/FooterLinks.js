@@ -2,18 +2,32 @@ import React from 'react';
 import { useFooterLinks } from '../hooks/use-footer-links';
 import { Link } from 'gatsby';
 
-const FooterLink = ({data}) => {
+const FooterLink = ({title, link}) => {
   return (
     <li>
-      <Link to={data.link}>{data.title}</Link>
+      <Link to={link}>{title}</Link>
     </li>
   );
 };
 
-const FooterLinkSection = ({data}) => {
-  const links = data.links.map((item, key) => (
-    <FooterLink data={item} key={key}/>
-  ));
+const FooterLinkSection = ({data, slugs}) => {
+  const links = data.links.map((item, key) => {
+    let link = "/";
+    if (item.url) {
+      link = item.url;
+    } else {
+      const edge = slugs.edges.find((slugItem) => {
+        return slugItem.node.frontmatter.title === item.link;
+      });
+
+      if (edge) {
+        link = edge.node.fields.slug;
+      }
+    }
+    return (
+      <FooterLink title={item.title} link={link} key={key}/>
+    )}
+  );
 
   return (
     <ul>
@@ -26,6 +40,7 @@ const FooterLinks = () => {
 
   const {
     settings,
+    slugs,
     mobileImage,
     desktopImage
   } = useFooterLinks();
@@ -33,7 +48,7 @@ const FooterLinks = () => {
   const linkSections = settings.footerLinks.map((item, key) => (
     <div className="footer-links-menu-column" key={key}>
       <span className="footer-links-menu-title">{item.title}</span>
-      <FooterLinkSection data={item}/>
+      <FooterLinkSection data={item} slugs={slugs}/>
     </div>
   ));
 

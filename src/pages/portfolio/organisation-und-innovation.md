@@ -9,7 +9,6 @@ description: >-
 featuredPost: 'Ein Intranet verbindet - “Linchpin” stellt sich vor '
 categories:
   - category: 'Kategorie 1'
-    categoryImage: /img/realexperts-bildsprache-v1-art-01.png
 relatedPosts:
   - post: Was verhindert effektive Zusammenarbeit im Unternehmen?
   - post: Andres Kühn - Partner im Real Experts Netzwerk

@@ -53,6 +53,7 @@
   "scripts": {
     "start": "npm run develop",
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "develop": "gatsby develop --no-cache",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
