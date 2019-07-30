@@ -38,7 +38,7 @@ collections:
       - {label: "Featured Image", name: "image",        widget: "image"}
       - {label: "Description",    name: "description",  widget: "text"}
       - {label: "Featured Post",  name: "featuredPost", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}
-      - {label: "Categories",     name: "categories",   widget: "list",     fields: [{name: "category", label: "Category", widget: "relation", collection: "category", searchFields: ["titel"], valueField: "title"}, {label: "Category Image", name: "image", widget: "image"}]}
+      - {label: "Categories",     name: "categories",   widget: "list",     fields: [{name: "category", label: "Category", widget: "relation", collection: "category", searchFields: ["titel"], valueField: "title"}]}
       - {label: "Top Posts",      name: "relatedPosts", widget: "list",     fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}]}
   - name: "category"
     label: "Category"
