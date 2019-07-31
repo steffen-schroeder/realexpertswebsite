@@ -24,6 +24,7 @@ collections:
       - {label: "Featured Image", name: "image",        widget: "image"}
       - {label: "Description",    name: "description",  widget: "text"}
       - {label: "Body",           name: "body",         widget: "markdown"}
+      - {label: "Category",       name: "category",     widget: "relation", collection: "category", searchFields: ["titel"], valueField: "title"}
       - {label: "Tags",           name: "tags",         widget: "list"}
       - {label: "Related Posts",  name: "relatedPosts", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}]}
   - name: "portfolio"
@@ -35,7 +36,7 @@ collections:
     fields:
       - {label: "Template Key",   name: "templateKey",  widget: "hidden", default: "portfolio-page"}
       - {label: "Title",          name: "title",        widget: "string"}
-      - {label: "Featured Image", name: "image",        widget: "image"}
+      - {label: "Header Image",   name: "headerImage",  widget: "image"}
       - {label: "Description",    name: "description",  widget: "text"}
       - {label: "Featured Post",  name: "featuredPost", widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: "title"}
       - {label: "Categories",     name: "categories",   widget: "list",     fields: [{name: "category", label: "Category", widget: "relation", collection: "category", searchFields: ["titel"], valueField: "title"}]}
@@ -50,7 +51,7 @@ collections:
       - {label: "Template Key",   name: "templateKey",    widget: "hidden", default: "category-page"}
       - {label: "title",          name: "title",          widget: "string"}
       - {label: "Content Title",  name: "contentTitle",   widget: "string"}
-      - {label: "Featured Image", name: "image",          widget: "image"}
+      - {label: "Header Image",   name: "headerImage",    widget: "image"}
       - {label: "Description",    name: "description",    widget: "text"}
       - {label: "Thumbnail Image",name: "thumbnail",      widget: "image"}
       - {label: "Thesis",         name: "thesis",         widget: "list",   fields: [{label: "Headline",  name: "headline", widget: "string"}, {label: "Highlight", name: "highlighted", widget: "boolean", default: "false"}, {label: "Body", name: "body", widget: "markdown"}]}
@@ -117,6 +118,7 @@ collections:
         fields:
           - {label: "Template Key",   name: "templateKey",  widget: "hidden", default: "front-page"}
           - {label: "Title",          name: "title",        widget: "string"}
+          - {label: "Header Image",   name: "headerImage",  widget: "image"}
           - {label: "Claim",          name: "claim",        widget: "object", fields: [{label: "Heading",   name: "heading",  widget: "string"}, {label: "Teaser text", name: "teaser", widget: "text"}, {label: "Link to", name: "linkto", widget: "relation", collection: "pages", searchFields: [name, path, title], valueField: "path"}]}
           - {label: "Thesis",         name: "thesis",       widget: "list",   fields: [{label: "Headline",  name: "headline", widget: "string"}, {label: "Highlight", name: "highlighted", widget: "boolean"}, {label: "Body", name: "body", widget: "markdown"}]}
           - {label: "Featured video", name: "video",        widget: "string"}

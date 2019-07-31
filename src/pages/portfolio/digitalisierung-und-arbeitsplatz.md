@@ -1,7 +1,7 @@
 ---
 templateKey: portfolio-page
 title: Digitalisierung und Arbeitsplatz
-image: /img/real-experts-header-portfolio.png
+headerImage: /img/real-experts-header-portfolio.png
 description: f sdf sdf dsf sd fsdf sd
 featuredPost: Jörg Adolphs - Partner im Real Experts Netzwerk
 categories:

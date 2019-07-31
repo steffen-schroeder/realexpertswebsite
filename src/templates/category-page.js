@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../components/layout';
-import {graphql} from "gatsby";
-import {HTMLContent} from "../components/Content";
-import Helmet from "react-helmet";
-import favicon from "../img/favicon.ico";
-import PropTypes from "prop-types";
-import ReactPlayer from "react-player";
-import BlogPostTeaser from "../components/BlogPostTeaser";
+import { graphql, Link } from 'gatsby';
+import { HTMLContent } from '../components/Content';
+import Helmet from 'react-helmet';
+import favicon from '../img/favicon.ico';
+import PropTypes from 'prop-types';
+import ReactPlayer from 'react-player';
+import BlogPostTeaser from '../components/BlogPostTeaser';
 import BackgroundImage from 'gatsby-background-image';
 import Img from 'gatsby-image';
 
@@ -22,9 +22,13 @@ export const CategoryPageTemplate = ({data}) => {
     let successStories = [];
     if (data.fields.successStories) {
         successStories = data.fields.successStories.map((successStory, key) => (
-            <div key={key}>
+            <div key={key} className="success-story">
+              <Link to={successStory.fields.slug}>
                 <Img fluid={successStory.fields.image.childImageSharp.fluid}/>
-                <p>{data.frontmatter.successStories[key].customerName}</p>
+              </Link>
+              <Link to={successStory.fields.slug}>
+                {data.frontmatter.successStories[key].customerName}
+              </Link>
             </div>
         ));
     }
@@ -42,15 +46,15 @@ export const CategoryPageTemplate = ({data}) => {
                 <Helmet title={data.name} link={[
                     {rel: 'shortcut icon', type: 'image/ico', href: `${favicon}`},
                 ]}/>
-                <div>
+                <div className="hero">
                     <BackgroundImage Tag="div"
                                      style={{
                                          backgroundPosition: 'top left',
                                      }}
-                                     fluid={data.fields.image.childImageSharp.fluid}>
+                                     fluid={data.frontmatter.headerImage.childImageSharp.fluid}>
                         <div className="claim">
                             <h3>{data.frontmatter.title}</h3>
-                            <h2>{data.frontmatter.contentTitle}</h2>
+                            <h1>{data.frontmatter.contentTitle}</h1>
                             <p>{data.frontmatter.description}</p>
                         </div>
                     </BackgroundImage>
@@ -60,7 +64,7 @@ export const CategoryPageTemplate = ({data}) => {
                         {thesisElements}
                     </div>
 
-                    <div className="featured-video-wrapper">
+                    <div className="featured-video-wrapper category-video-wrapper">
                         <div className='featured-video'>
                             <div style={{
                                 position: 'relative',
@@ -85,8 +89,11 @@ export const CategoryPageTemplate = ({data}) => {
                                              />
                             </div>
                         </div>
-                        <div>
+                        <div className="success-stories-wrapper">
+                          <h2>Erfolgsgeschichten</h2>
+                          <div className="success-stories">
                             {successStories}
+                          </div>
                         </div>
                     </div>
                     <div className="posts">
@@ -132,84 +139,84 @@ CategoryPage.propTypes = {
 export default CategoryPage;
 
 export const categoryPageQuery = graphql`
-  query CategoryPage($id: String!) {
-    settings: settingsJson(id: {eq: "general-settings"}) {
-      global {
-        title
-        url
-      }
-    }
-    markdownRemark(id: { eq: $id }) {
-      fields {
-        relatedPosts {
-          excerpt(pruneLength: 400)
-          id
-          fields {
-            slug
-            image {
-              childImageSharp {
-                fluid(maxWidth: 630) {
-                  ...GatsbyImageSharpFluid
+    query CategoryPage($id: String!) {
+        settings: settingsJson(id: {eq: "general-settings"}) {
+            global {
+                title
+                url
+            }
+        }
+        markdownRemark(id: { eq: $id }) {
+            fields {
+                relatedPosts {
+                    excerpt(pruneLength: 400)
+                    id
+                    fields {
+                        slug
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 630) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                    frontmatter {
+                        title
+                        templateKey
+                        tags
+                        date(formatString: "MMMM DD, YYYY")
+                    }
                 }
-              }
-            }
-          }
-          frontmatter {
-            title
-            templateKey
-            tags
-            date(formatString: "MMMM DD, YYYY")
-          }
-        }
-        image {
-          childImageSharp {
-            fluid(maxWidth: 630) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        successStories {
-          fields {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 630) {
-                  ...GatsbyImageSharpFluid
+                successStories {
+                    fields {
+                        slug
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 630) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
                 }
-              }
             }
-          }
+            frontmatter {
+                title
+                contentTitle
+                headerImage {
+                    childImageSharp {
+                        fluid(maxWidth: 630) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
+                description
+                thesis {
+                    headline
+                    highlighted
+                    body
+                }
+                video
+                successStories {
+                    post
+                    customerName
+                    image
+                }
+                infoBox {
+                    headline
+                    body
+                    image
+                }
+                statements {
+                    author
+                    image
+                    body
+                }
+                relatedPosts {
+                    post
+                }
+            }
         }
-      }
-      frontmatter {
-        title
-        contentTitle
-        image
-        description
-        thesis {
-          headline
-          highlighted
-          body
-        }
-        video
-        successStories {
-            post
-            customerName
-            image
-        }
-        infoBox {
-            headline
-            body
-            image
-        }
-        statements {
-            author
-            image
-            body
-        }
-        relatedPosts {
-          post
-        }
-      }
     }
-  }
 `;

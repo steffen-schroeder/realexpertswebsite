@@ -1,7 +1,7 @@
 ---
 templateKey: portfolio-page
 title: Mitarbeiter und Führung
-image: /img/real-experts-header-portfolio.png
+headerImage: /img/real-experts-header-portfolio.png
 description: asda asdas as das d
 featuredPost: Der Weg zur Vision
 categories:

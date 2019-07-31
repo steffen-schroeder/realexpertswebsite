@@ -8,6 +8,7 @@ import BlogPostTeaser from '../components/BlogPostTeaser';
 import Helmet from 'react-helmet';
 import favicon from '../img/favicon.ico';
 import BackgroundImage from 'gatsby-background-image';
+import FeaturedBlogPost from '../components/FeaturedBlogPost';
 
 export const PortfolioPageTemplate = ({data}) => {
   console.log(data);
@@ -32,22 +33,27 @@ export const PortfolioPageTemplate = ({data}) => {
         <Helmet title={data.name} link={[
           {rel: 'shortcut icon', type: 'image/ico', href: `${favicon}`},
         ]}/>
-        <div>
+        <div className="hero">
           <BackgroundImage Tag="div" style={{
             backgroundPosition: 'top left',
-          }} fluid={data.fields.image.childImageSharp.fluid}>
+          }} fluid={data.frontmatter.headerImage.childImageSharp.fluid}>
             <div className="claim">
-              <h2>{data.frontmatter.title}</h2>
+              <h1>{data.frontmatter.title}</h1>
               <p>{data.frontmatter.description}</p>
             </div>
           </BackgroundImage>
         </div>
         <div className="page-content">
-          <div className="posts">
+          <div className="featured-blog-post-wrapper">
+            <FeaturedBlogPost post={data.fields.featuredPost} />
+          </div>
+          <div className="portfolio-categories-wrapper">
             <h2>Unsere Themen</h2>
             <div className="portfolio-categories">
               {categories}
             </div>
+          </div>
+          <div className="posts">
             <h2>Top Beiträge</h2>
             <div className="top-posts">
               {topPosts}
@@ -90,6 +96,31 @@ export const portfolioPageQuery = graphql`
         }
         markdownRemark(id: { eq: $id }) {
             fields {
+                featuredPost {
+                    excerpt(pruneLength: 400)
+                    fields {
+                        slug
+                        category {
+                            fields {
+                                slug
+                            }
+                            frontmatter {
+                                title
+                            }
+                        }
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 850) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                    frontmatter {
+                        title
+                        category
+                    }
+                }
                 relatedPosts {
                     excerpt(pruneLength: 400)
                     id
@@ -110,13 +141,6 @@ export const portfolioPageQuery = graphql`
                         date(formatString: "MMMM DD, YYYY")
                     }
                 }
-                image {
-                    childImageSharp {
-                        fluid(maxWidth: 630) {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
                 categories {
                     fields {
                         slug
@@ -135,7 +159,13 @@ export const portfolioPageQuery = graphql`
             }
             frontmatter {
                 title
-                image
+                headerImage {
+                    childImageSharp {
+                        fluid(maxWidth: 630) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
                 description
                 featuredPost
                 categories {

@@ -2,7 +2,7 @@
 templateKey: category-page
 title: Kategorie 1
 contentTitle: 'Hier steht eine Headline, die über zwei Zeilen gehen kann wenn sie will.'
-image: /img/real-experts-header-kategorie.png
+headerImage: /img/real-experts-header-kategorie.png
 description: >-
   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy irmod
   tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
@@ -29,6 +29,18 @@ successStories:
   - customerName: Kunde 1
     post: Was verhindert effektive Zusammenarbeit im Unternehmen?
     image: /img/realexperts-bildsprache-v1-art-01.png
+  - customerName: Kunde 2
+    post: Was verhindert effektive Zusammenarbeit im Unternehmen?
+    image: /img/realexperts-bildsprache-v1-art-01.png
+  - customerName: Kunde 3
+    post: Was verhindert effektive Zusammenarbeit im Unternehmen?
+    image: /img/realexperts-bildsprache-v1-art-01.png
+  - customerName: Kunde 4
+    post: Was verhindert effektive Zusammenarbeit im Unternehmen?
+    image: /img/realexperts-bildsprache-v1-art-01.png
+  - customerName: Kunde 5
+    post: Was verhindert effektive Zusammenarbeit im Unternehmen?
+    image: /img/realexperts-bildsprache-v1-art-01.png      
 infoBox:
   body: >-
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy

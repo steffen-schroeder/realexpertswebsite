@@ -1,8 +1,8 @@
 ---
 templateKey: category-page
-title: Kategorie  2
+title: Kategorie 2
 contentTitle: Titel Kategorie 2
-image: /img/real-experts-header-kategorie.png
+headerImage: /img/real-experts-header-kategorie.png
 description: asdasdasdsadsd
 thumbnail: /img/entdecke-das-potential-den-kern-von-new-work-2-.png
 thesis: []

@@ -297,11 +297,17 @@ export const pageQuery = graphql`
             }
           }
         }
+        category {
+            frontmatter {
+                title
+            }
+        }
       }
       frontmatter {
         title
         description
         tags
+        category
         date(formatString: "DD.MM.YYYY")
       }
     }

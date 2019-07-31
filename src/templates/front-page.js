@@ -7,6 +7,7 @@ import BlogPostTeaser from '../components/BlogPostTeaser';
 import Layout from '../components/layout';
 
 import favicon from '../img/favicon.ico';
+import BackgroundImage from 'gatsby-background-image';
 
 export const FrontPageTemplate = ({
   title,
@@ -14,8 +15,10 @@ export const FrontPageTemplate = ({
   thesis,
   video,
   relatedPosts,
+  data
 }) => {
 
+  console.log(data);
   const thesisElements = thesis.map((thesisElement, key) => (
     <div key={key} className={`thesis ${thesisElement.highlighted ? 'highlighted' : 'normal'}`}>
       <h3>{thesisElement.headline}</h3>
@@ -40,10 +43,14 @@ export const FrontPageTemplate = ({
           class: 'front-page',
         }}/>
         <div className="hero">
-          <div className="claim">
-            <p>{claim.teaser}</p>
-            <Link to={claim.linkto} className="button-round-red">Mehr erfahren</Link>
-          </div>
+          <BackgroundImage Tag="div" style={{
+            backgroundPosition: 'top left',
+          }} fluid={data.frontmatter.headerImage.childImageSharp.fluid}>
+            <div className="claim">
+              <p>{claim.teaser}</p>
+              <Link to={claim.linkto} className="button-round-red">Mehr erfahren</Link>
+            </div>
+          </BackgroundImage>
         </div>
         <div className="page-content">
           <div className="thesis-wrapper">
@@ -104,7 +111,7 @@ const FrontPage = ({data}) => {
   const {markdownRemark: post} = data;
 
   return (
-    <FrontPageTemplate title={`${post.frontmatter.title} | ${data.settings.global.title}`} claim={post.frontmatter.claim} thesis={post.frontmatter.thesis} video={post.frontmatter.video} relatedPosts={post.fields.relatedPosts}/>
+    <FrontPageTemplate data={post} title={`${post.frontmatter.title} | ${data.settings.global.title}`} claim={post.frontmatter.claim} thesis={post.frontmatter.thesis} video={post.frontmatter.video} relatedPosts={post.fields.relatedPosts}/>
   );
 };
 
@@ -115,52 +122,59 @@ FrontPage.propTypes = {
 export default FrontPage;
 
 export const frontPageQuery = graphql`
-  query FrontPage($id: String!) {
-    settings: settingsJson(id: {eq: "general-settings"}) {
-      global {
-        title
-        url
-      }
-    }
-    markdownRemark(id: { eq: $id }) {
-      fields {
-        relatedPosts {
-          excerpt(pruneLength: 400)
-          id
-          fields {
-            slug
-            image {
-              childImageSharp {
-                fluid(maxWidth: 630) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+    query FrontPage($id: String!) {
+        settings: settingsJson(id: {eq: "general-settings"}) {
+            global {
+                title
+                url
             }
-          }
-          frontmatter {
-            title
-            templateKey
-            tags
-            date(formatString: "MMMM DD, YYYY")
-          }
         }
-      }
-      frontmatter {
-        title
-        claim {
-          teaser
-          linkto
+        markdownRemark(id: { eq: $id }) {
+            fields {
+                relatedPosts {
+                    excerpt(pruneLength: 400)
+                    id
+                    fields {
+                        slug
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 630) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                    frontmatter {
+                        title
+                        templateKey
+                        tags
+                        date(formatString: "MMMM DD, YYYY")
+                    }
+                }
+            }
+            frontmatter {
+                title
+                headerImage {
+                    childImageSharp {
+                        fluid(maxWidth: 630) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
+                claim {
+                    teaser
+                    linkto
+                }
+                thesis {
+                    headline
+                    highlighted
+                    body
+                }
+                video
+                relatedPosts {
+                    post
+                }
+            }
         }
-        thesis {
-          headline
-          highlighted
-          body
-        }
-        video
-        relatedPosts {
-          post
-        }
-      }
     }
-  }
 `;

@@ -10,17 +10,17 @@ body {
 
   font-family: 'Open Sans', sans-serif !important;
 
-  &.front-page {
-    header {
-      background: none;
-    }
-
-    main {
-      section {
-        margin-top: 0;
-      }
-    }
-  }
+  //&.front-page {
+  //  header {
+  //    background: none;
+  //  }
+  //
+  //  main {
+  //    section {
+  //      margin-top: 0;
+  //    }
+  //  }
+  //}
 }
 
 .vertical-posts-list {
@@ -139,32 +139,41 @@ body {
 
   h1 {
     font-family: 'Changa', sans-serif !important;
-    font-size: 65px !important;
-    font-weight: 600 !important;
+    font-size: 65px;
+    font-weight: 600;
   }
 
   h2 {
     font-family: 'Changa', sans-serif !important;
-    font-size: 30px !important;
-    font-weight: 600 !important;
-    color: $primary !important;
-    margin-top: 40px !important;
-    text-transform: uppercase !important;
+    font-size: 36px;
+    font-weight: 600;
+    color: $primary;
+    margin-top: 40px;
+    text-transform: uppercase;
   }
 
   h3 {
-    font-family: 'Changa', sans-serif !important;
-    font-size: 30px !important;
-    font-weight: normal !important;
-    color: $primary !important;
-    margin-bottom: 10px !important;
+    font-family: 'Changa', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: $primary;
+    margin-bottom: 10px;
   }
 
   h4 {
-    font-size: 24px !important;
-    line-height: 1.8rem !important;
-    font-weight: 600 !important;
-    color: $primary !important;
+    font-family: 'Changa', sans-serif;
+    font-size: 24px;
+    line-height: 1.8rem;
+    font-weight: 600;
+    color: $primary;
+  }
+
+  h5 {
+    font-family: 'Changa', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $secondary;
   }
 }
 
@@ -175,7 +184,7 @@ header {
   width: 100%;
   //align-self: stretch;
   max-width: 1280px;
-  background-color: $primary;
+  z-index: 10;
 
   nav {
     height: 80px;
@@ -241,38 +250,46 @@ main {
 
     display: flex;
     flex-direction: column;
-    margin: 80px 0 40px;
+    margin: 0 0 40px;
 
     .hero {
 
-      height: 1080px;
       margin-left: -160px;
       margin-right: -160px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      background-size: cover;
-      background-image: url('../img/realexperts-header-home.png');
-      background-position-x: center;
 
-      .claim {
+      .gatsby-image-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
-        width: 800px;
-        align-self: center;
+        .claim {
 
-        h1 {
-          color: #FFF;
-          margin-bottom: 0;
-          line-height: 5rem;
-          margin-top: 30px;
-        }
+          width: 800px;
+          align-self: center;
+          margin: 150px 0 70px 0;
 
-        p {
-          color: #FFF;
-          font-size: 36px;
-          font-weight: 600;
-          line-height: 56px;
-          margin-bottom: 40px;
+          h1 {
+            color: #FFF;
+            font-size: 40px;
+            margin-bottom: 20px;
+            line-height: 50px;
+            text-align: center;
+          }
+
+          h3 {
+            color: $secondary;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+
+          p {
+            color: #FFF;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+          }
+
         }
 
       }
@@ -318,6 +335,11 @@ main {
         background: white url("../img/realexperts-bg-rechts.png") top right no-repeat;
         overflow: hidden;
 
+        &.category-video-wrapper {
+          background: white url("../img/realexperts-bg-kategorien-rechts.png") top right no-repeat;
+          background-size: contain;
+        }
+
         .featured-video {
           width: 800px;
 
@@ -327,6 +349,110 @@ main {
 
         }
 
+      }
+
+      .success-stories-wrapper {
+        width: 100%;
+        max-width: 1280px;
+
+        h2 {
+          margin: 45px 0 15px 0;
+        }
+
+        .success-stories {
+          margin: 0 -14px;
+
+
+          .success-story {
+            width: 25%;
+            display: inline-block;
+            padding: 0 14px;
+            margin-bottom: 30px;
+
+            .gatsby-image-wrapper {
+              margin-bottom: 15px;
+            }
+
+            a {
+              font-size: 24px;
+              font-weight: 700;
+              color: $primary;
+            }
+          }
+        }
+      }
+
+      .portfolio-categories-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 65px;
+        padding: 65px 0;
+        margin-left: -160px;
+        margin-right: -160px;
+        background: white url("../img/realexperts-bg-rechts.png") top right no-repeat;
+        overflow: hidden;
+
+        h2 {
+          margin: 0 0 15px 0;
+          width: 100%;
+          max-width: 1280px;
+        }
+
+        .portfolio-categories {
+          width: 100%;
+          max-width: 1280px;
+          display: flex;
+
+          .category-teaser {
+            max-width: 32%;
+            margin-right: 2%;
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+
+            &:nth-child(n+3) {
+              margin-right: 0;
+            }
+
+            .gatsby-image-wrapper {
+              margin-bottom: 15px;
+            }
+
+            a {
+              font-size: 24px;
+              font-weight: 700;
+              color: $primary;
+            }
+          }
+        }
+      }
+
+      .featured-blog-post-wrapper {
+        max-width: 1280px;
+        margin-top: 25px;
+        align-self: center;
+
+        .featured-blog-post {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .blog-post-image {
+            flex: 2;
+          }
+
+          .post-content {
+            flex: 1;
+            padding-left: 28px;
+
+            h4 {
+              margin: 15px 0;
+            }
+
+          }
+
+        }
       }
 
       .posts {
@@ -339,6 +465,32 @@ main {
           @extend .horzontal-three-posts-list;
 
         }
+      }
+
+    }
+
+  }
+
+  .front {
+
+    .hero {
+      height: 1080px;
+
+      .gatsby-image-wrapper {
+        height: 100%;
+
+        .claim {
+
+          p {
+            text-align: left;
+            font-size: 36px;
+            line-height: 56px;
+            font-weight: 600;
+            margin-bottom: 50px;
+          }
+
+        }
+
       }
 
     }
@@ -382,16 +534,6 @@ main {
             margin-bottom: 20px;
           }
 
-          a.more {
-            color: $primary;
-            font-weight: 600;
-            text-transform: uppercase;
-
-            .arrow {
-              margin-bottom: -5px;
-              margin-left: 10px;
-            }
-          }
         }
       }
 
@@ -712,6 +854,19 @@ main {
     margin-top: 10px;
   }
 
+}
+
+a.more {
+  color: $primary;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 15px 0;
+  display: block;
+
+  .arrow {
+    margin-bottom: -5px;
+    margin-left: 10px;
+  }
 }
 
 .pagination {

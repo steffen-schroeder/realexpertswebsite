@@ -10,6 +10,7 @@ description: >
   wurde. Seit der Markteinführung wurde Linchpin kontinuierlich weiterentwickelt
   und hat sich als attraktiver Intranet-Anbieter am Puls der Zeit behaupten
   können. Ein Grund mehr sich genauer mit der Technologie auseinanderzusetzen.
+category: 'Kategorie 1'
 tags:
   - Digital Workplace
 relatedPosts:

@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: 'https://www.realexperts.de',
   },
   mapping: {
+    'MarkdownRemark.fields.featuredPost': 'MarkdownRemark',
     'MarkdownRemark.fields.relatedPosts': 'MarkdownRemark',
     'MarkdownRemark.fields.category': 'MarkdownRemark',
     'MarkdownRemark.fields.categories': 'MarkdownRemark',
