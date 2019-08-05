@@ -11,8 +11,6 @@ import BackgroundImage from 'gatsby-background-image';
 import FeaturedBlogPost from '../components/FeaturedBlogPost';
 
 export const PortfolioPageTemplate = ({data}) => {
-  console.log(data);
-
   let categories = [];
   if(data.fields.categories){
     categories = data.fields.categories.map((category, index) => (
@@ -45,7 +43,9 @@ export const PortfolioPageTemplate = ({data}) => {
         </div>
         <div className="page-content">
           <div className="featured-blog-post-wrapper">
-            <FeaturedBlogPost post={data.fields.featuredPost} />
+            {data.fields.featuredPost && (
+              <FeaturedBlogPost post={data.fields.featuredPost} />
+            )}
           </div>
           <div className="portfolio-categories-wrapper">
             <h2>Unsere Themen</h2>

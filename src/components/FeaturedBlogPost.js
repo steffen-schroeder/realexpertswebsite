@@ -18,9 +18,11 @@ export default class FeaturedBlogPost extends React.Component {
           </Link>}
         </div>
         <div className="post-content">
-          <Link to={post.fields.category.fields.slug}>
-            <h5>{post.fields.category.frontmatter.title}</h5>
-          </Link>
+          {post.fields.category && (
+            <Link to={post.fields.category.fields.slug}>
+              <h5>{post.fields.category.frontmatter.title}</h5>
+            </Link>
+          )}
           <Link to={post.fields.slug}>
             <h4>{post.frontmatter.title}</h4>
           </Link>
