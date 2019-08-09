@@ -17,7 +17,7 @@ relatedPosts:
   - post: Der Weg zur Neuen Wirksamkeit im Unternehmen
   - post: Die Folgen einer neuen Wirksamkeit
 ---
-Die Herausforderungen in Unternehmen sind vielfältig aber genauso gibt es eine Vielzahl an Möglichkeiten die Dinge neu zu gestalten. Fast schon erschlagend werden Begriffe wie New Work, Selbstorganisation, Agilität und Digitalisierung in Medien und auf Konferenzen verwendet. Doch wie sollen Geschäftsführer, Führungskräfte und Mitarbeiter da noch durchsehen und wissen, wie man anfängt?
+Die Herausforderungen in Unternehmen sind vielfältig, aber genauso gibt es eine Vielzahl an Möglichkeiten die Dinge neu zu gestalten. Fast schon erschlagend werden Begriffe wie New Work, Selbstorganisation, Agilität und Digitalisierung in Medien und auf Konferenzen verwendet. Doch wie sollen Geschäftsführer, Führungskräfte und Mitarbeiter da noch durchsehen und wissen, wie man anfängt?
 
 Das, was wir in unserer täglichen Arbeit sehen und was auf der anderen Seite durch die digitalen Kanäle läuft, scheint häufig wenig miteinander zu tun zu haben. Man möchte fast sagen, dass sich da draußen eine Art Blase entwickelt, in der sich viele Berater und große Unternehmen selbst beweihräuchern und hypen. Das Problem daran ist, dass es gerade viele kleine und mittelständige Unternehmen gibt, die da nicht mitkommen. Die Gründe dafür sind durchaus vielfältig. Aber dazu später.
 
@@ -27,7 +27,7 @@ In vielen Unternehmen oder auch anderen Organisationen wie Behörden, in die wir
 
 ## Welchen Herausforderungen begegnen Unternehmen?
 
-Natürlich sind die einzelnen und ganz konkreten Herausforderungen in Unternehmen unterschiedlich und individuell bedingt. Aber sicherlich werden ihnen einige der im folgenden genannten Beispiele bekannt vorkommen. 
+Natürlich sind die einzelnen und ganz konkreten Herausforderungen in Unternehmen unterschiedlich und individuell bedingt. Aber sicherlich werden Ihnen einige der im folgenden genannten Beispiele bekannt vorkommen. 
 
 Ganz klar gibt es die äußeren und sichtbaren Probleme wie:
 
@@ -57,7 +57,7 @@ Als wenn all diese Probleme noch nicht reichen, gibt es noch eine zusätzliche E
 
 ## Was macht den Weg zur Veränderung so schwer?
 
-Aber was genau ist denn eigentlich so schwierig daran, etwas zu verändern? Wirtschaftlich sind viele Unternehmen sehr gut aufgestellt, um sich Veränderung leisten zu können. Aber dennoch bewegt sich nichts. Entweder weil das aktuelle Geschäftsmodell noch zu gut funktioniert oder der Schmerz der Organisation noch nicht groß genug ist. 
+Aber was genau ist denn eigentlich so schwierig daran, etwas zu verändern? Wirtschaftlich sind viele Unternehmen sehr gut aufgestellt, um sich Veränderung leisten zu können, aber dennoch bewegt sich nichts. Entweder weil das aktuelle Geschäftsmodell noch zu gut funktioniert oder der Schmerz der Organisation noch nicht groß genug ist. 
 
 Abseits davon gibt es einige weitere Gründe, die wir immer wieder sehen:
 
@@ -67,6 +67,6 @@ Abseits davon gibt es einige weitere Gründe, die wir immer wieder sehen:
 * keine Affinität und Empfänglichkeit für die Art und Weise des neuen Arbeitens
 * zu stark gewachsene Strukturen und Muster, die nur schwer durchbrochen werden können
 
-… oder auch ganz einfach kein Wille zur Veränderung. Warum soll man auch was verändern, wenn es noch gut genug läuft?!
+… oder auch ganz einfach kein Wille zur Veränderung. Warum soll man auch etwas verändern, wenn es noch gut genug läuft?!
 
 Wir sprechen hier von einem Dilemma. Auf der einen Seiten gibt es die vielen guten Ansätze, die wirklich eine Verbesserung der Zusammenarbeit und Wirksamkeit von Menschen im Unternehmen bringen können. Auf der anderen Seite sind diese neuen Themen häufig sehr weit von der Realität der Unternehmen entfernt.
