@@ -31,57 +31,63 @@ export const BlogPostTemplate = ({
   return (
     <Layout>
       <section className={'blog-post ' + (relatedPosts !== null ? 'has-related-posts' : '')}>
-        {seoTags || ''} {tags && tags.length ? (
-        <ul className="taglist divided">
-          {tags.map(tag => (
-            <li key={tag + `-tag`}>
-              <Link to={`/tags/${Utils.removeUmlaut(Utils.kebabCase(tag))}/`}>{tag.toUpperCase()}</Link>
-            </li>
-          ))}
-        </ul>
-      ) : null}<h1>{title}</h1>
-        <div className="image-type-featured">
-          {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid}/>}
-        </div>
-        <div className="blog-post-author">
-          {author.fields.image && <Img fluid={author.fields.image.childImageSharp.fluid}/>}
-          <div className="wrapper-for-tablet">
-            <div className="blog-author-info">
-              <h5 className="title">{author.frontmatter.title}</h5>
-              <small className="position">{author.frontmatter.position}</small>
-              <p className="company">{author.frontmatter.company}</p>
-            </div>
-            <p className="release-date">Veröffentlicht am {date}</p>
-          </div>
-        </div>
-        {/*<p className="description">{description}</p>*/} <PostContent className="content" content={content}/>
-        <SocialButtons socialConfig={socialConfig} tags={tags}/> {tags && tags.length ? (
-        <div className="post-category">
-          <span>Kategorie:</span>
-          <ul className="taglist divided">
-            {tags.map(tag => (
-              <li key={tag + `-tag`}>
-                <Link to={`/tags/${Utils.removeUmlaut(Utils.kebabCase(tag))}/`}>{tag.toUpperCase()}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null} <Link className="overview-link" to={`/blog/`}>
-        <img src={arrowLeft} alt="Real Experts" style={{maxHeight: '75px'}}/> ZUR ARTIKELÜBERSICHT
-      </Link> {relatedPosts &&
-      <div className="related-posts">
-        <div className="related-posts-wrapper">
-          <div className="related-posts-wrapper-inner">
-            <h3>Relevante Artikel</h3>
-            <div className="related-posts-list-wrapper">
-              <div className="related-posts-list">
-                {relatedPostsContent}
+        <div className="page-content">
+          <div className="content-block-wrapper">
+            <div className="content-block">
+              {seoTags || ''} {tags && tags.length ? (
+              <ul className="taglist divided">
+                {tags.map(tag => (
+                  <li key={tag + `-tag`}>
+                    <Link to={`/tags/${Utils.removeUmlaut(Utils.kebabCase(tag))}/`}>{tag.toUpperCase()}</Link>
+                  </li>
+                ))}
+              </ul>
+            ) : null}<h1>{title}</h1>
+              <div className="image-type-featured">
+                {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid}/>}
+              </div>
+              <div className="blog-post-author">
+                {author.fields.image && <Img fluid={author.fields.image.childImageSharp.fluid}/>}
+                <div className="wrapper-for-tablet">
+                  <div className="blog-author-info">
+                    <h5 className="title">{author.frontmatter.title}</h5>
+                    <small className="position">{author.frontmatter.position}</small>
+                    <p className="company">{author.frontmatter.company}</p>
+                  </div>
+                  <p className="release-date">Veröffentlicht am {date}</p>
+                </div>
+              </div>
+              {/*<p className="description">{description}</p>*/} <PostContent className="content" content={content}/>
+              <SocialButtons socialConfig={socialConfig} tags={tags}/> {tags && tags.length ? (
+              <div className="post-category">
+                <span>Kategorie:</span>
+                <ul className="taglist divided">
+                  {tags.map(tag => (
+                    <li key={tag + `-tag`}>
+                      <Link to={`/tags/${Utils.removeUmlaut(Utils.kebabCase(tag))}/`}>{tag.toUpperCase()}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null} <Link className="overview-link" to={`/blog/`}>
+              <img src={arrowLeft} alt="Real Experts" style={{maxHeight: '75px'}}/> ZUR ARTIKELÜBERSICHT
+            </Link> {relatedPosts &&
+            <div className="related-posts">
+              <div className="related-posts-wrapper">
+                <div className="related-posts-wrapper-inner">
+                  <h3>Relevante Artikel</h3>
+                  <div className="related-posts-list-wrapper">
+                    <div className="related-posts-list">
+                      {relatedPostsContent}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            }
+            </div>
           </div>
         </div>
-      </div>
-      }
       </section>
     </Layout>
   );

@@ -6,15 +6,15 @@
       "links": [
         {
           "title": "Über uns",
-          "link": "Team Real Experts"
+          "url": "/"
         },
         {
           "title": "Jobs",
-          "link": "Jobs"
+          "url": "/jobs"
         },
         {
           "title": "Blog",
-          "link": "Datenschutzerklärung"
+          "url": "/blog"
         }
       ]
     }

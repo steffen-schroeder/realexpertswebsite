@@ -7,25 +7,11 @@ const Footer = () => {
 
   const {
     settings,
-    slugs,
   } = useFooterMenu();
 
   const menuLinks = settings.footerMenu.map((item, key) => {
-    let link = '/';
-    if (item.url) {
-      link = item.url;
-    } else {
-      const edge = slugs.edges.find((slugItem) => {
-        return slugItem.node.frontmatter.title === item.link;
-      });
-
-      if (edge) {
-        link = edge.node.fields.slug;
-      }
-    }
-
     return (
-      <li key={key}><Link to={link}>{item.title}</Link></li>
+      <li key={key}><Link to={item.url}>{item.title}</Link></li>
     )
   });
 

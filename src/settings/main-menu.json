@@ -3,23 +3,19 @@
   "mainMenu": [
     {
       "title": "Organisation & Innovation",
-      "url": "",
-      "link": "Organisation und Innovation"
+      "url": "/portfolio/organisation-und-innovation"
     },
     {
       "title": "Mitarbeiter & Führung",
-      "url": "",
-      "link": "Mitarbeiter und Führung"
+      "url": "/portfolio/mitarbeiter-und-führung"
     },
     {
       "title": "Digitalisierung & Arbeitsplatz",
-      "url": "",
-      "link": "Digitalisierung und Arbeitsplatz"
+      "url": "/portfolio/digitalisierung-und-arbeitsplatz"
     },
     {
       "title": "@Real Experts",
-      "url": "",
-      "link": ""
+      "url": ""
     }
   ]
 }

@@ -178,20 +178,27 @@ body {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   display: flex !important;
   flex-direction: column;
   width: 100%;
   //align-self: stretch;
-  max-width: 1280px;
-  z-index: 10;
+  //max-width: 1280px;
+  z-index: 100;
 
-  nav {
-    height: 80px;
-    align-self: center;
-    width: 100%;
+  .navbar-wrapper {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+
+    nav {
+      max-width: 1280px;
+      height: 80px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  .navbar-at-top nav {
 
     .navigation-bar-logo {
       display: flex;
@@ -239,6 +246,70 @@ header {
 
   }
 
+  .navbar-scrolled {
+    transition: background-color 0.5s ease;
+    background-color: $primary;
+
+    nav {
+      transition: padding-bottom 0.5s ease;
+      padding-bottom: 100px;
+
+      .navigation-bar-logo {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: auto;
+        align-items: stretch;
+
+        figure {
+          padding: 10px 0;
+          transition-duration: 500ms;
+          transform: scale(0.7);
+        }
+
+      }
+
+      .navigation-bar-burger {
+        display: none;
+      }
+
+      .navigation-bar-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: stretch;
+        margin-left: auto;
+        margin-right: 0;
+
+        a {
+          color: #FFF;
+          font-size: 18px;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-left: 57px;
+          top: 30px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .navigation-bar-item {
+        align-items: center;
+        display: flex;
+        line-height: 1.5;
+        padding: 20px 0;
+        position: relative;
+      }
+
+      .navigation-bar-item:last-child {
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+header:has(.navbar-scrolled) {
+  max-width: none;
 }
 
 main {
@@ -302,24 +373,23 @@ main {
       justify-content: center;
       flex-direction: column;
 
-      .thesis-wrapper {
+      .content-block-wrapper {
+        width: 100%;
         max-width: 1280px;
         display: flex;
         flex-direction: row;
         align-self: center;
 
-        .thesis {
+        .content-block {
+          width: 100%;
+        }
 
+        .thesis {
           flex: 1;
 
           &:first-child {
             margin-right: 40px;
           }
-
-          h3 {
-
-          }
-
         }
 
       }
@@ -564,11 +634,6 @@ main {
   }
 
   .blog-post {
-
-    padding-top: 40px;
-    margin-bottom: 370px;
-    display: flex;
-    flex-flow: wrap;
 
     &.has-related-posts {
       margin-bottom: 500px;
@@ -874,7 +939,7 @@ a.more {
   align-self: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   list-style: none;
   font-family: 'Changa', sans-serif;

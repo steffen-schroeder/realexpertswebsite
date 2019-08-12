@@ -31,37 +31,46 @@ export default class BlogIndexPage extends React.Component {
         <section className="blog">
           <Helmet title={`Blog | ${data.settings.global.title}`} link={[
             {rel: 'shortcut icon', type: 'image/ico', href: `${favicon}`},
-          ]}/> {isFirst &&
-        <div>
-          <h2>Top Beiträge</h2>
-          <div className="top-posts">
-            {topPosts.map((topPost, key) => (
-              <BlogPostTeaser key={topPost.id} post={topPost} type={key === 0 ? 'featured' : 'top'}/>
-            ))}
+          ]}/>
+          <div className="page-content">
+            {isFirst &&
+            <div className="content-block-wrapper">
+              <div className="content-block">
+                <h2>Top Beiträge</h2>
+                <div className="top-posts">
+                  {topPosts.map((topPost, key) => (
+                    <BlogPostTeaser key={topPost.id} post={topPost} type={key === 0 ? 'featured' : 'top'}/>
+                  ))}
+                </div>
+              </div>
+            </div>
+            }
+            <div className="content-block-wrapper">
+              <div className="content-block">
+                <h2>Alle Beiträge</h2>
+                <div className="all-posts">
+                  {posts.map(({node: post}) => (
+                    <BlogPostTeaser key={post.id} post={post} type='normal'/>
+                  ))}
+                </div>
+                <ul className="pagination">
+                  {!isFirst && (
+                    <Link to={`/blog/${prevPage}`} rel="prev" className="pagination-prev"> <img src={arrowLeft} alt="Previous"/> </Link>
+                  )} {Array.from({length: numPages}, (_, i) => (
+                  <li className="pagination-item" key={`pagination-number${i + 1}`}>
+                    <Link to={`/blog/${i === 0 ? '' : i + 1}`} className={i + 1 === currentPage
+                      ? 'pagination-item-link active'
+                      : 'pagination-item-link'}>
+                      {i + 1}
+                    </Link>
+                  </li>
+                ))} {!isLast && (
+                  <Link className="pagination-next" to={`/blog/${nextPage}`} rel="next"> <img src={arrowRight} alt="Next"/> </Link>
+                )}
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        }
-          <h2>Alle Beiträge</h2>
-          <div className="all-posts">
-            {posts.map(({node: post}) => (
-              <BlogPostTeaser key={post.id} post={post} type='normal'/>
-            ))}
-          </div>
-          <ul className="pagination">
-            {!isFirst && (
-              <Link to={`/blog/${prevPage}`} rel="prev" className="pagination-prev"> <img src={arrowLeft} alt="Previous"/> </Link>
-            )} {Array.from({length: numPages}, (_, i) => (
-            <li className="pagination-item" key={`pagination-number${i + 1}`}>
-              <Link to={`/blog/${i === 0 ? '' : i + 1}`} className={i + 1 === currentPage
-                ? 'pagination-item-link active'
-                : 'pagination-item-link'}>
-                {i + 1}
-              </Link>
-            </li>
-          ))} {!isLast && (
-            <Link className="pagination-next" to={`/blog/${nextPage}`} rel="next"> <img src={arrowRight} alt="Next"/> </Link>
-          )}
-          </ul>
         </section>
       </Layout>
     );

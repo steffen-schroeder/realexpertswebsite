@@ -8,18 +8,15 @@
     },
     {
       "title": "Jobs",
-      "url": "",
-      "link": "Jobs"
+      "url": "/jobs"
     },
     {
       "title": "Impressum",
-      "url": "",
-      "link": "Impressum"
+      "url": "/impressum"
     },
     {
       "title": "Datenschutzerklärung",
-      "url": "",
-      "link": "Datenschutzerklärung"
+      "url": "datenschutz"
     }
   ]
 }

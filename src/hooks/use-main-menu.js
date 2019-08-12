@@ -6,21 +6,8 @@ export const useMainMenu = () => {
         query {
             settings: settingsJson(id: {eq: "main-menu-settings"}) {
                 mainMenu {
-                    link
                     url
                     title
-                }
-            }
-            slugs: allMarkdownRemark {
-                edges {
-                    node {
-                        fields {
-                            slug
-                        }
-                        frontmatter {
-                            title
-                        }
-                    }
                 }
             }
         }

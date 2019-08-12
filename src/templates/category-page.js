@@ -60,7 +60,7 @@ export const CategoryPageTemplate = ({data}) => {
                     </BackgroundImage>
                 </div>
                 <div className="page-content">
-                    <div className="thesis-wrapper">
+                    <div className="content-block-wrapper">
                         {thesisElements}
                     </div>
 

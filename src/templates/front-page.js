@@ -53,8 +53,8 @@ export const FrontPageTemplate = ({
           </BackgroundImage>
         </div>
         <div className="page-content">
-          <div className="thesis-wrapper">
-            {thesisElements}
+          <div className="content-block-wrapper">
+              {thesisElements}
           </div>
 
           <div className="featured-video-wrapper">

@@ -6,21 +6,8 @@ export const useFooterMenu = () => {
         query {
             settings: settingsJson(id: {eq: "footer-menu-settings"}) {
                 footerMenu {
-                    link
                     url
                     title
-                }
-            }
-            slugs: allMarkdownRemark {
-                edges {
-                    node {
-                        fields {
-                            slug
-                        }
-                        frontmatter {
-                            title
-                        }
-                    }
                 }
             }
         }
