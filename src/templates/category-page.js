@@ -126,7 +126,7 @@ CategoryPageTemplate.propTypes = {
 
 const CategoryPage = ({data}) => {
     const {markdownRemark: post} = data;
-    console.log(data);
+
     return (
         <CategoryPageTemplate contentComponent={HTMLContent} data={post}/>
     );

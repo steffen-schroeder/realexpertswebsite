@@ -18,7 +18,6 @@ export const FrontPageTemplate = ({
   data
 }) => {
 
-  console.log(data);
   const thesisElements = thesis.map((thesisElement, key) => (
     <div key={key} className={`thesis ${thesisElement.highlighted ? 'highlighted' : 'normal'}`}>
       <h3>{thesisElement.headline}</h3>
@@ -107,7 +106,7 @@ FrontPageTemplate.propTypes = {
 };
 
 const FrontPage = ({data}) => {
-console.log(data);
+
   const {markdownRemark: post} = data;
 
   return (

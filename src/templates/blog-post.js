@@ -172,8 +172,6 @@ class BlogPost extends React.Component {
       },
     } = this.props.data;
 
-    console.log(this.props.data);
-
     const postAuthor = author ? author : defaultAuthor;
     const twitterHandle = postAuthor.frontmatter.twitterHandle
       ? postAuthor.frontmatter.twitterHandle

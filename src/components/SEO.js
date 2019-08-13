@@ -74,7 +74,6 @@ const SEO = ({ postData, postImage, isBlogPost, author }) => {
     title = postMeta.title || (config.siteMetadata.title + " - " + postMeta.frontmatter.title)
   }
 
-  console.log(title);
   const description =
     postMeta.description || postData.excerpt || postData.frontmatter.description || config.description;
   const image = `${postImage}` || config.image;
