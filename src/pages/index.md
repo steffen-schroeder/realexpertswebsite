@@ -29,5 +29,5 @@ relatedPosts:
   - post: 'Der “digitale” Arbeitsplatz im Wandel '
   - post: Wie Sie Entscheidungen treffen
   - post: Ein Jahr Social Intranet bei der IPROconsult GmbH
-  - post: Die Folgen einer neuen Wirksamkeit
+  - post: 'Warum sich digitale Arbeitsplatzkonzepte nicht übertragen lassen '
 ---
