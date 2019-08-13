@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link } from "gatsby"
 import Img from 'gatsby-image';
 import arrow from "../img/icons/arrow-right.svg";
-import Utils from "../utils/Utils";
 
 export default class BlogPostTeaser extends React.Component {
 
@@ -20,14 +19,11 @@ export default class BlogPostTeaser extends React.Component {
           </Link>}
         </div>
         <div className="post-content">
-          <ul className='taglist divided'>
-            {post.frontmatter.tags.map((tag, key) => (
-              <li key={key}>
-                <Link to={`/tags/${Utils.removeUmlaut(Utils.kebabCase(tag))}`}>{tag}</Link>
-              </li>
-            ))}
-          </ul>
-          {/*<small>{post.frontmatter.date}</small>*/}
+          {post.fields.category && (
+            <Link to={post.fields.category.fields.slug}>
+              <h5>{post.fields.category.frontmatter.title}</h5>
+            </Link>
+          )}
           <Link to={post.fields.slug}>
             <h4>{post.frontmatter.title}</h4>
           </Link>
@@ -37,7 +33,6 @@ export default class BlogPostTeaser extends React.Component {
           {type === 'featured'
           &&
           <Link className="more" to={post.fields.slug}>Artikel lesen<img className="arrow" src={arrow} alt=""/></Link>}
-
         </div>
       </div>
     )

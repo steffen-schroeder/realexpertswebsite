@@ -10,13 +10,17 @@ export const SimplePageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <Layout>
+    <Layout noHeader={true}>
       <section className='simple'>
         <Helmet title={title} link={[
           {rel: 'shortcut icon', type: 'image/ico', href: `${favicon}`},
         ]}/>
-        <h2>{title}</h2>
-        <PageContent className="content" content={content}/>
+        <div className="page-content">
+          <h2>{title}</h2>
+          <div className="content-block-wrapper">
+            <PageContent className="content" content={content}/>
+          </div>
+        </div>
       </section>
     </Layout>
   );

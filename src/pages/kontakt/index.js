@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Map from '../../components/Map';
 import { graphql } from 'gatsby';
 import Layout from '../../components/layout';
+import ContactForm from '../../components/ContactForm';
 
 class ContactPage extends React.Component {
 
@@ -32,6 +33,7 @@ class ContactPage extends React.Component {
         },
         contactInfo: {
           title: contactTitle,
+          content,
           street,
           zip,
           phone,
@@ -46,24 +48,35 @@ class ContactPage extends React.Component {
     } = this.props.data;
 
     return (
-      <Layout>
+      <Layout noHeader={true}>
         <section className="section contact">
           <Helmet title={`Kontakt | ${title}`}/>
-          <h2 className="contact-title">{contactTitle}</h2>
-          <div className="contact-content">
-            <div className="contact-information">
-              <div className="contact-title">{title}</div>
-              <div className="contact-address">
-                <p>{street}</p>
-                <p>{zip}</p><br/>
-                <p>{phone}</p>
-                <p>{fax}</p>
+          <div className="page-content">
+            <h2 className="contact-title">{contactTitle}</h2>
+            <div className="content-block-wrapper">
+              <div className="contact-content">
+                <div className="contact-information">
+                  <p>
+                    {content}<br/>
+                    <br/>
+                    <strong>{title}</strong><br/>
+                    {street}<br/>
+                    {zip}<br/>
+                    <br/>
+                    {phone}<br/>
+                    {fax}<br/>
+                    E-Mail: <a href={`mailto:${email}`}>{email}</a>
+                  </p>
+                </div>
+                <div className="contact-form-block">
+                  <ContactForm/>
+                </div>
               </div>
-              <div className="contact-email">
-                <span className="label">E-Mail: </span><a href={`mailto:${email}`}>{email}</a></div>
             </div>
-            <div className="contact-map">
-              <Map latitude={latitude} longitude={longitude} googleMaps={googleMaps}/>
+            <div className="content-block-wrapper">
+              <div className="contact-map">
+                <Map latitude={latitude} longitude={longitude} googleMaps={googleMaps}/>
+              </div>
             </div>
           </div>
         </section>

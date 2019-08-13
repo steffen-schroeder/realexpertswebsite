@@ -27,7 +27,7 @@ export default class BlogIndexPage extends React.Component {
     const nextPage = (currentPage + 1).toString();
 
     return (
-      <Layout>
+      <Layout noHeader={true}>
         <section className="blog">
           <Helmet title={`Blog | ${data.settings.global.title}`} link={[
             {rel: 'shortcut icon', type: 'image/ico', href: `${favicon}`},

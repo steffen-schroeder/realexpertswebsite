@@ -12,7 +12,7 @@ export const useContactData = () => {
           }
           contactInfo {
             title
-            content
+            footerContent
             socialMedia {
               facebook
               instagram

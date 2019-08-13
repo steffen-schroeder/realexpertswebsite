@@ -107,7 +107,7 @@ FrontPageTemplate.propTypes = {
 };
 
 const FrontPage = ({data}) => {
-
+console.log(data);
   const {markdownRemark: post} = data;
 
   return (
@@ -141,6 +141,14 @@ export const frontPageQuery = graphql`
                                 fluid(maxWidth: 630) {
                                     ...GatsbyImageSharpFluid
                                 }
+                            }
+                        }
+                        category {
+                            fields {
+                                slug
+                            }
+                            frontmatter {
+                                title
                             }
                         }
                     }

@@ -7,7 +7,6 @@ import Content, { HTMLContent } from '../components/Content';
 import SocialButtons from '../components/SocialButtons';
 import SEO from '../components/SEO';
 import arrowLeft from '../img/icons/arrow-left-bold-circle.svg';
-import Utils from '../utils/Utils';
 import Layout from '../components/layout';
 
 export const BlogPostTemplate = ({
@@ -22,6 +21,7 @@ export const BlogPostTemplate = ({
   author,
   relatedPosts,
   socialConfig,
+  category
 }) => {
   const PostContent = contentComponent || Content;
   const relatedPostsContent = !relatedPosts ? null : relatedPosts.map(post => (
@@ -29,64 +29,70 @@ export const BlogPostTemplate = ({
   ));
 
   return (
-    <Layout>
+    <Layout noHeader={true}>
       <section className={'blog-post ' + (relatedPosts !== null ? 'has-related-posts' : '')}>
         <div className="page-content">
           <div className="content-block-wrapper">
             <div className="content-block">
-              {seoTags || ''} {tags && tags.length ? (
-              <ul className="taglist divided">
-                {tags.map(tag => (
-                  <li key={tag + `-tag`}>
-                    <Link to={`/tags/${Utils.removeUmlaut(Utils.kebabCase(tag))}/`}>{tag.toUpperCase()}</Link>
-                  </li>
-                ))}
-              </ul>
-            ) : null}<h1>{title}</h1>
+              {category && category.fields && category.fields.slug &&
+              <Link to={category.fields.slug}>
+                <h5>{category.frontmatter.title}</h5>
+              </Link>}
+              <h1>{title}</h1>
               <div className="image-type-featured">
                 {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid}/>}
               </div>
-              <div className="blog-post-author">
-                {author.fields.image && <Img fluid={author.fields.image.childImageSharp.fluid}/>}
-                <div className="wrapper-for-tablet">
-                  <div className="blog-author-info">
-                    <h5 className="title">{author.frontmatter.title}</h5>
-                    <small className="position">{author.frontmatter.position}</small>
-                    <p className="company">{author.frontmatter.company}</p>
-                  </div>
-                  <p className="release-date">Veröffentlicht am {date}</p>
-                </div>
-              </div>
-              {/*<p className="description">{description}</p>*/} <PostContent className="content" content={content}/>
-              <SocialButtons socialConfig={socialConfig} tags={tags}/> {tags && tags.length ? (
-              <div className="post-category">
-                <span>Kategorie:</span>
-                <ul className="taglist divided">
-                  {tags.map(tag => (
-                    <li key={tag + `-tag`}>
-                      <Link to={`/tags/${Utils.removeUmlaut(Utils.kebabCase(tag))}/`}>{tag.toUpperCase()}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null} <Link className="overview-link" to={`/blog/`}>
-              <img src={arrowLeft} alt="Real Experts" style={{maxHeight: '75px'}}/> ZUR ARTIKELÜBERSICHT
-            </Link> {relatedPosts &&
-            <div className="related-posts">
-              <div className="related-posts-wrapper">
-                <div className="related-posts-wrapper-inner">
-                  <h3>Relevante Artikel</h3>
-                  <div className="related-posts-list-wrapper">
-                    <div className="related-posts-list">
-                      {relatedPostsContent}
+              <div className="blog-post-content">
+                <div className="blog-post-author">
+                  {author.fields.image && <Img fluid={author.fields.image.childImageSharp.fluid}/>}
+                  <div className="wrapper-for-tablet">
+                    <div className="blog-author-info">
+                      <h5 className="title">{author.frontmatter.title}</h5>
+                      <small className="position">{author.frontmatter.position}</small>
+                      <p className="company">{author.frontmatter.company}</p>
                     </div>
+                    <p className="release-date">Veröffentlicht am {date}</p>
                   </div>
                 </div>
+                <div className="content">
+                  <PostContent content={content}/>
+                  <Link className="overview-link" to={`/blog/`}>
+                    <img src={arrowLeft} alt="Real Experts" style={{maxHeight: '75px'}}/> Zur Blogübersicht
+                  </Link>
+                </div>
+                <SocialButtons socialConfig={socialConfig} tags={tags}/>
               </div>
-            </div>
-            }
+              <div className="blog-post-category">
+                  {category && category.fields && category.fields.slug &&
+                  <Link to={category.fields.slug}>
+                    <h5>{category.frontmatter.title}</h5>
+                  </Link>}
+                {category && category.frontmatter.contentTitle &&
+                  <h3>{category.frontmatter.contentTitle}</h3>
+                  }
+                {category && category.frontmatter.description &&
+                <p>{category.frontmatter.description}</p>
+                }
+                {category && category.fields && category.fields.slug &&
+                <Link to={category.fields.slug} className="button-round-blue">Mehr erfahren</Link>
+                }
+              </div>
             </div>
           </div>
+          {relatedPosts &&
+        <div className="related-posts">
+          <div className="related-posts-wrapper">
+            <div className="related-posts-wrapper-inner">
+              <h3>Relevante Artikel</h3>
+              <div className="related-posts-list-wrapper">
+                <div className="related-posts-list">
+                  {relatedPostsContent}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        }
         </div>
       </section>
     </Layout>
@@ -111,6 +117,16 @@ BlogPostTemplate.propTypes = {
       company: PropTypes.string,
       email: PropTypes.string,
       twitterHandle: PropTypes.string,
+    }),
+  }),
+  category: PropTypes.shape({
+    fields: PropTypes.shape({
+      slug: PropTypes.string,
+    }),
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string,
+      contentTitle: PropTypes.string,
+      description: PropTypes.string,
     }),
   }),
   relatedPosts: PropTypes.arrayOf(PropTypes.object),
@@ -151,9 +167,12 @@ class BlogPost extends React.Component {
           relatedPosts,
           slug,
           author,
+          category,
         },
       },
     } = this.props.data;
+
+    console.log(this.props.data);
 
     const postAuthor = author ? author : defaultAuthor;
     const twitterHandle = postAuthor.frontmatter.twitterHandle
@@ -172,13 +191,25 @@ class BlogPost extends React.Component {
       }} postImage={url + image.publicURL} author={postAuthor.frontmatter.title}/>;
 
     return (
-      <BlogPostTemplate content={html} contentComponent={HTMLContent} description={description} seoTags={seoTags} tags={tags} title={title} date={date} featuredImage={image} author={postAuthor} relatedPosts={relatedPosts} socialConfig={{
-        twitterHandle: twitterHandle,
-        config: {
-          url: `${url}${slug}`,
-          title: siteTitle,
-        },
-      }}/>
+      <BlogPostTemplate content={html}
+                        contentComponent={HTMLContent}
+                        description={description}
+                        seoTags={seoTags}
+                        tags={tags}
+                        title={title}
+                        date={date}
+                        featuredImage={image}
+                        author={postAuthor}
+                        relatedPosts={relatedPosts}
+                        socialConfig={{
+                          twitterHandle: twitterHandle,
+                          config: {
+                            url: `${url}${slug}`,
+                            title: siteTitle,
+                          },
+                        }}
+                        category={category}
+                        />
     );
   }
 }
@@ -304,8 +335,13 @@ export const pageQuery = graphql`
           }
         }
         category {
+            fields {
+                slug
+            }
             frontmatter {
                 title
+                contentTitle
+                description
             }
         }
       }

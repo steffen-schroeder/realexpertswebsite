@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import logo from '../img/realexperts-bildmarke.svg';
+import logoScrolling from '../img/realexperts-logo-scrolling.svg';
 import menu from '../img/icons/menu.svg';
 import { useMainMenu } from '../hooks/use-main-menu';
 
@@ -47,6 +48,9 @@ class NavbarComponent extends React.Component {
           <Link to="/" className="navigation-bar-logo">
             <figure className="image-top">
               <img src={logo} alt="Real Experts GmbH"/>
+            </figure>
+            <figure className="image-top-scrolling">
+              <img src={logoScrolling} alt="Real Experts GmbH"/>
             </figure>
           </Link>
           <img role="button"
