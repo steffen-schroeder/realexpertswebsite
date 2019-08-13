@@ -21,8 +21,8 @@ relatedPosts:
       Kampf der Giganten - Microsoft Office 365 und Google G Suite im
       Vergleich
 ---
-Im Video-Interview zeigt Leonard Zenouzi von COYO aus Hamburg wie mit der gleichnamigen Social-Software-Lösung eine digitale Heimat für Mitarbeiter realisiert werden kann, die dem heutigen Zeitgeist entspricht.Neben Möglichkeiten zur klassischen Top-Down Kommunikation bietet COYO u.a. virtuelle Arbeits- und Projekträume sowie weitere nützliche Features wie Feeds,Wikis und Optionen zur Aufgabenverwaltung. Unser Resume von Real Experts: Design trifft Usability! 
+Im Video-Interview zeigt Leonard Zenouzi von COYO aus Hamburg wie mit der gleichnamigen Social-Software-Lösung eine digitale Heimat für Mitarbeiter realisiert werden kann, die dem heutigen Zeitgeist entspricht. Neben Möglichkeiten zur klassischen Top-Down Kommunikation bietet COYO u.a. virtuelle Arbeits- und Projekträume sowie weitere nützliche Features wie Feeds, Wikis und Optionen zur Aufgabenverwaltung. Unser Resume von Real Experts: Design trifft Usability! 
 
 ### Intranet mit Coyo - Vorstellung von Coyo aus Hamburg
 
-`youtube: https://www.youtube.com/watch?v=5eP2VAWtvpY` 
+`youtube: https://www.youtube.com/watch?v=5eP2VAWtvpY`
