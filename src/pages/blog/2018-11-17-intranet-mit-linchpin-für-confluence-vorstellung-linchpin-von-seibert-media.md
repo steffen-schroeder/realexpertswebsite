@@ -20,8 +20,8 @@ relatedPosts:
       Vergleich  
   - post: Digitale Heimat mit einem Social Intranet von COYO
 ---
-Social Intranet ist nicht nur Wissensmanagement! Genau hier setzt Linchpin an. Neben klassischen Wiki-Funktionen will Linchpin den Bedarf der Nutzer nach Mobile First, personalisierten Nachrichten oder Microblogging vollumfänglich abdecken. Im  Videointerview zeigt Adil Nasri von Seibert/Media aus Wiesbaden wie das mit Linchpin-Erweiterungen auf Basis von Atlassian Confluence ein interaktives Intranet realisiert werden kann.
+Social Intranet ist nicht nur Wissensmanagement! Genau hier setzt Linchpin an. Neben klassischen Wiki-Funktionen will Linchpin den Bedarf der Nutzer nach Mobile First, personalisierten Nachrichten oder Microblogging vollumfänglich abdecken. Im Videointerview zeigt Adil Nasri von Seibert/Media aus Wiesbaden wie das mit Linchpin-Erweiterungen auf Basis von Atlassian Confluence ein interaktives Intranet realisiert werden kann.
 
 ### Intranet mit Linchpin für Confluence - Vorstellung Linchpin von Seibert Media
 
-`youtube: https://www.youtube.com/watch?v=M52Io2vzSxQ` 
+`youtube: https://www.youtube.com/watch?v=M52Io2vzSxQ`
