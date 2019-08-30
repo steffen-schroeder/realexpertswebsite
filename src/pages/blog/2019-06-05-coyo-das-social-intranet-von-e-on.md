@@ -3,7 +3,7 @@ templateKey: blog-post
 title: COYO - Das Social Intranet von E.ON
 date: '2019-06-05T10:35:36+02:00'
 author: Christoph Rauhut
-image: /img/vortrag-pia-sondermann-eon-2.png
+image: /img/vortrag-pia-sondermann-eon-2-neu.png
 description: >
 
   Bei unserem Meetup in Hamburg, welches am 17.04.2019 in Zusammenarbeit mit
