@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Dr. Jenny Meyer - Partnerin im Real Experts Network
 date: '2019-04-15T18:03:32+02:00'
 author: Christoph Rauhut
-image: /img/dr.-jenny-meyer-im-gespräch-partnerin-im-real-experts-network.png
+image: /img/dr.-jenny-meyer-im-gespräch-partnerin-im-real-experts-network-neu.png
 description: >-
   Dr. Jenny Meyer ist Digital Workplace Consultant und Partner im Real Expert
   Netzwerk und unterstützt dabei Unternehmen bei der Einführung digitaler
