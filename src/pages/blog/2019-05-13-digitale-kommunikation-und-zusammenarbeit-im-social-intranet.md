@@ -17,6 +17,6 @@ relatedPosts:
   - post: Tipps für eine erfolgreiche Intranet-Einführung
   - post: Digital Workplace - vom Schreckgespenst zur Lichtgestalt
 ---
-In seinem Impulsvortrag bei unserem Meetup am 07.02.2019 beschäftigt sich unser Experte Oliver Reithage mit effektiver Kommunikation und Zusammenarbeit im Unternehmen und stellt dafür zunächst in Frage, warum diese Thematik heutzutage so wichtig ist und wie relevant auch die jeweiligen persönlichen Vorstellungen der Mitarbeiter dazu sind. Gleichzeitig geht er dabei auch auf die in diesem Zusammenhang entstehende Bedeutung des Social Intranet ein, welche durch eine immer komplexer werdende Vernetzung innerhalb der Unternehmen stetig zunimmt.
+In seinem Impulsvortrag bei unserem Meetup am 07.02.2019 beschäftigt sich unser Experte Oliver Reithage mit effektiver Kommunikation und Zusammenarbeit im Unternehmen und stellt dafür zunächst in Frage, warum diese Thematik heutzutage so wichtig ist und wie relevant auch die jeweiligen persönlichen Vorstellungen der Mitarbeiter dazu sind. Gleichzeitig geht er dabei auch auf die, in diesem Zusammenhang entstehende Bedeutung, des Social Intranet ein, welche durch eine immer komplexer werdende Vernetzung innerhalb der Unternehmen stetig zunimmt.
 
 `youtube: https://www.youtube.com/watch?v=_XrDchYeuwc&t=6s`
