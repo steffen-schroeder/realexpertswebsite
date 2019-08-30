@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Digitale Kommunikation und Zusammenarbeit im Social Intranet
+title: Digitale Kommunikation und Zusammenarbeit im Social Intranet - Meetup Dresden
 date: '2019-05-13T11:11:30+02:00'
 author: Oliver Reithage
 image: /img/vortrag-olli-meetup-hamburg.png
