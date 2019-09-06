@@ -44,7 +44,7 @@ Gerade beim Austausch mit Mitarbeitern aus kleinen und mittelständischen Untern
 * es gibt keine Multiplikatoren für digitale Themen in Unternehmen
 * Angst der Mitarbeiter vor Veränderungen am Arbeitsplatz (Überforderung) 
 
-…oder auch  ein mangelnder Wille der Führungsebene für Veränderungen. Aber was genau müssen Unternehmen beachten, damit Mitarbeiter für die Nutzung von digitalen Technologien am Arbeitsplatz befähigt werden? 
+…oder auch ein mangelnder Wille der Führungsebene für Veränderungen. Aber was genau müssen Unternehmen beachten, damit Mitarbeiter für die Nutzung von digitalen Technologien am Arbeitsplatz befähigt werden? 
 
 ### Wie wird der Digital Workplace zu einer Art Lichtgestalt?
 
@@ -62,12 +62,8 @@ Keine Frage, die Einführung und Etablierung digitaler Lösungen in Unternehmen 
 
 Die fortschreitende Digitalisierung ist der Treiber dafür, dass mittlerweile nahezu jede Erwerbstätigkeit durch den Einsatz technologischer Hilfsmittel vollzogen wird. In der Folge hat sich nicht nur die Art und Weise wie Arbeit verrichtet wird vollkommen verändert, sondern auch das Arbeitsumfeld der Mitarbeiter. Mitarbeiter erhalten durch die Einführung digitaler Technologien die Möglichkeit ortsunabhängig zu kommunizieren oder zusammenzuarbeiten. Der Digital Workplace stellt dafür ein Ansatz für die Umsetzung dieser Möglichkeiten dar. Damit sich die Wirksamkeit von digitalen Technologien am Arbeitsplatz jedoch optimal entfalten kann, bedarf es eine am Mitarbeiter ausgerichtete IT-Strategie. Nur so wird ein Digital Workplace zur Lichtgestalt für ihr Unternehmen.
 
-
-
 **Fortsetzung der Reihe:**
 
 Das Intranet als zentrales Portal für einen wirksamen Digital Workplace 
-
-
 
 Foto: Sarah Jürgel

@@ -19,7 +19,7 @@ relatedPosts:
 ---
  „_Es ist gut, etwas Langsames zu tun, bevor man im Leben eine wichtige Entscheidung trifft_.“ (Paulo Coelho)
 
-Wie treffen Sie eigentlich Entscheidungen? Treffen sie Entscheidungen im privaten Kontext anders als im beruflichen? Haben Sie bestimmte Methoden an der Hand, die Ihnen beim Entscheiden helfen oder treffen Sie Ihre Entscheidungen eher aus dem Bauch heraus? Wie stehen Sie oder ihr Unternehmen zu Fehlentscheidungen? Werden diese kommuniziert? 
+Wie treffen Sie eigentlich Entscheidungen? Treffen Sie Entscheidungen im privaten Kontext anders als im beruflichen? Haben Sie bestimmte Methoden an der Hand, die Ihnen beim Entscheiden helfen oder treffen Sie Ihre Entscheidungen eher aus dem Bauch heraus? Wie stehen Sie oder Ihr Unternehmen zu Fehlentscheidungen? Werden diese kommuniziert? 
 
 Es ist wieder so weit. Ich bin auf dem Weg zum AugenhöheWegbegleiter in den Odenwald. Und es soll um Entscheidungen in der Selbstorganisation gehen. Als ich an der Gepäckausgabe im Frankfurter Flughafen stehe, das Band stoppt und mein Koffer nicht da ist, weiß ich eins: Die Entscheidung mit mehr als Handgepäck zu fliegen war keine gute Idee. Und meinen Laptop nicht ins Handgepäck zu legen war sogar eine schlechte. Aber vorweg: die Geschichte geht gut aus. Der Koffer samt Inhalt fand den darauffolgenden Tag seinen Weg zu mir. Was ich daraus gelernt habe? Laptop gehört ins Handgepäck und die Lufthansa hat ein verdammt gutes Notfallkit :).
 
@@ -27,7 +27,7 @@ In Unternehmen gehören Entscheidungen zu den Kernprozessen. In Zeiten des Wande
 
 Ein Hilfsmittel, um den Entscheidungsraum zu vergrößern, hat mich in seiner Intensität überrascht - das Tetralemma. Bei einem klassischen Dilemma ist der Handlungsraum sehr eng. Wir können uns entscheiden. Entweder für das eine oder für das andere. Es kann jedoch bei unternehmenskritischen Entscheidungen spannend sein, genau diesen Entscheidungsraum zu vergrößern. Das Dilemma wird zu einem Tetralemma erweitert. 
 
-Exemplarisch kann es wie folgt durchgeführt werden: Angenommen, sie, ihr Team oder neue gute Bewerber fordern immer mehr Homeoffice-Phasen ein. Sie sind jedoch ein Befürworter von Anwesenheit im Büro. Das hat jahrelang gut funktioniert? Verweigern sie die Homeoffice-Zeit, hat das seinen Preis - Mitarbeiter fühlen sich unwohl, verlassen ihr Team oder sie bekommen keine guten Bewerber mehr.  Lassen sie es zu, so hat das auch seinen Preis - vermeintlich weniger Kontrolle, Mitarbeiter sehen sich zu wenig, Teamspirit nimmt ab, Ansprechbarkeit der Mitarbeiter wird weniger. 
+Exemplarisch kann es wie folgt durchgeführt werden: Angenommen, Sie, Ihr Team oder neue gute Bewerber fordern immer mehr Homeoffice-Phasen ein. Sie sind jedoch ein Befürworter von Anwesenheit im Büro. Das hat jahrelang gut funktioniert? Verweigern sie die Homeoffice-Zeit, hat das seinen Preis - Mitarbeiter fühlen sich unwohl, verlassen Ihr Team oder Sie bekommen keine guten Bewerber mehr.  Lassen Sie es zu, so hat das auch seinen Preis - vermeintlich weniger Kontrolle, Mitarbeiter sehen sich zu wenig, Teamspirit nimmt ab, Ansprechbarkeit der Mitarbeiter wird weniger. 
 
 **Das Tetralemma:**
 

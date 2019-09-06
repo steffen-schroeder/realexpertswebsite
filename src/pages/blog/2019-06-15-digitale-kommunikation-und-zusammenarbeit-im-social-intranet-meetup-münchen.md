@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Digitale Kommunikation und Zusammenarbeit im Social Intranet - Meetup München
 date: '2019-06-15T13:48:35+02:00'
 author: Oliver Reithage
-image: /img/meetup-olli-münchrn.png
+image: /img/meetup-olli-münchrn-neu.png
 description: >-
   Den Auftakt unseres Meetups in München machte Olli mit einem Impulsvortrag
   über Digitale 
