@@ -37,10 +37,7 @@ successStories:
     image: /img/realexperts-bildsprache-v1-art-01.png
   - customerName: Kunde 4
     post: Was verhindert effektive Zusammenarbeit im Unternehmen?
-    image: /img/realexperts-bildsprache-v1-art-01.png
-  - customerName: Kunde 5
-    post: Was verhindert effektive Zusammenarbeit im Unternehmen?
-    image: /img/realexperts-bildsprache-v1-art-01.png      
+    image: /img/realexperts-bildsprache-v1-art-01.png   
 infoBox:
   body: >-
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -56,12 +53,12 @@ statements:
   - body: >-
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-      diam voluptua.
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
     author: 'Vorname Name, Unternehmen'
+    image: /img/der-beginn-einer-reise-a5440b7a0bf73b3b61b33201dbd00c36-21464.png
+  - body: >-
+      At vero eos et accusam et justo duo dolores et ea rebum.
+    author: 'Vorname2 Name2, Unternehmen2'
     image: /img/der-beginn-einer-reise-a5440b7a0bf73b3b61b33201dbd00c36-21464.png
 relatedPosts:
   - post: Andres Kühn - Partner im Real Experts Netzwerk

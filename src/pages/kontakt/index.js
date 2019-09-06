@@ -5,6 +5,12 @@ import Map from '../../components/Map';
 import { graphql } from 'gatsby';
 import Layout from '../../components/layout';
 import ContactForm from '../../components/ContactForm';
+import facebookIcon from '../../img/icons/social/facebook.svg';
+import instagramIcon from '../../img/icons/social/instagram.svg';
+import linkedinIcon from '../../img/icons/social/linkedin.svg';
+import twitterIcon from '../../img/icons/social/twitter.svg';
+import xingIcon from '../../img/icons/social/xing.svg';
+import youtubeIcon from '../../img/icons/social/youtube.svg';
 
 class ContactPage extends React.Component {
 
@@ -43,6 +49,14 @@ class ContactPage extends React.Component {
             latitude,
             longitude,
           },
+          socialMedia: {
+            facebook,
+            instagram,
+            linkedin,
+            twitter,
+            xing,
+            youtube
+          }
         },
       },
     } = this.props.data;
@@ -67,6 +81,26 @@ class ContactPage extends React.Component {
                     {fax}<br/>
                     E-Mail: <a href={`mailto:${email}`}>{email}</a>
                   </p>
+                  <div className="contact-social-media-container">
+                    <a href={facebook} className="contact-social-media-link">
+                      <img src={facebookIcon} alt="Facebook"/>
+                    </a>
+                    <a href={instagram} className="contact-social-media-link">
+                      <img src={instagramIcon} alt="Instagramm"/>
+                    </a>
+                    <a href={linkedin} className="contact-social-media-link">
+                      <img src={linkedinIcon} alt="Linkedin"/>
+                    </a>
+                    <a href={twitter} className="contact-social-media-link">
+                      <img src={twitterIcon} alt="Twitter"/>
+                    </a>
+                    <a href={xing} className="contact-social-media-link">
+                      <img src={xingIcon} alt="Xing"/>
+                    </a>
+                    <a href={youtube} className="contact-social-media-link">
+                      <img src={youtubeIcon} alt="Youtube"/>
+                    </a>
+                  </div>
                 </div>
                 <div className="contact-form-block">
                   <ContactForm/>
@@ -130,6 +164,14 @@ export const contactPageQuery = graphql`
           latitude
           longitude
         }
+        socialMedia {
+            facebook
+            instagram
+            linkedin
+            twitter
+            xing
+            youtube
+        }  
       }
     }
   }

@@ -9,6 +9,10 @@ import ReactPlayer from 'react-player';
 import BlogPostTeaser from '../components/BlogPostTeaser';
 import BackgroundImage from 'gatsby-background-image';
 import Img from 'gatsby-image';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import sliderRight from "../img/icons/slider-right.svg";
+import sliderLeft from "../img/icons/slider-left.svg";
 
 export const CategoryPageTemplate = ({data}) => {
 
@@ -27,9 +31,26 @@ export const CategoryPageTemplate = ({data}) => {
                 <Img fluid={successStory.fields.image.childImageSharp.fluid}/>
               </Link>
               <Link to={successStory.fields.slug}>
-                {data.frontmatter.successStories[key].customerName}
+                <h4>{data.frontmatter.successStories[key].customerName}</h4>
               </Link>
             </div>
+        ));
+    }
+
+    let statements = [];
+    if (data.frontmatter.statements) {
+        statements = data.frontmatter.statements.map((statement, key) => (
+          <Slide index={key} key={key}>
+              <div className="statement">
+                <div className="statement-image">
+                    <Img fluid={statement.image.childImageSharp.fluid}/>
+                </div>
+                <div className="statement-message">
+                  <span className="statement-text">„{statement.body}“</span>
+                  <span className="statement-author">{statement.author}</span>
+                </div>
+              </div>
+          </Slide>
         ));
     }
 
@@ -94,6 +115,36 @@ export const CategoryPageTemplate = ({data}) => {
                           <div className="success-stories">
                             {successStories}
                           </div>
+                        </div>
+                    </div>
+                    <div className="category-info-box-wrapper">
+                        <div className="category-info-box">
+                            <div className="info-box-content">
+                              <h2>{data.frontmatter.infoBox.headline}</h2>
+                              <p>{data.frontmatter.infoBox.body}</p>
+                            </div>
+                            <div className="info-box-image">
+                                <Img fluid={data.fields.infoBoxImage.childImageSharp.fluid}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="statements-wrapper">
+                        <div className="statements-content">
+                            <CarouselProvider
+                              naturalSlideWidth={100}
+                              naturalSlideHeight={20}
+                              totalSlides={statements.length}
+                            >
+                                <div className="back-button-wrapper">
+                                    <ButtonBack><img src={sliderLeft} alt="Zurück" /></ButtonBack>
+                                </div>
+                                <Slider>
+                                    {statements}
+                                </Slider>
+                                <div className="next-button-wrapper">
+                                    <ButtonNext><img src={sliderRight} alt="Weiter" /></ButtonNext>
+                                </div>
+                            </CarouselProvider>
                         </div>
                     </div>
                     <div className="posts">
@@ -180,6 +231,13 @@ export const categoryPageQuery = graphql`
                         }
                     }
                 }
+                infoBoxImage {
+                    childImageSharp {
+                        fluid(maxWidth: 630) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
             }
             frontmatter {
                 title
@@ -210,7 +268,13 @@ export const categoryPageQuery = graphql`
                 }
                 statements {
                     author
-                    image
+                    image {
+                        childImageSharp {
+                            fluid(maxWidth: 200) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
                     body
                 }
                 relatedPosts {

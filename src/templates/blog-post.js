@@ -38,6 +38,11 @@ export const BlogPostTemplate = ({
               <Link to={category.fields.slug}>
                 <h5>{category.frontmatter.title}</h5>
               </Link>}
+              {!category && (
+                <Link to="/" >
+                  <h5>Fehlt!</h5>
+                </Link>
+              )}
               <h1>{title}</h1>
               <div className="image-type-featured">
                 {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid}/>}

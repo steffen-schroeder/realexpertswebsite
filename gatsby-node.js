@@ -10,8 +10,8 @@ exports.sourceNodes = ({actions, getNodes, getNode}) => {
   // the order in which they are defined to be sourced in gatsby-config.js
   // does seem to matter!
   console.log(
-    'All sourced nodes (type => id)',
-    allNodes.map(someNode => someNode.internal.type + ' => ' + someNode.id),
+    'All sourced nodes (type => id => name)',
+    allNodes.map(someNode => someNode.internal.type + ' => ' + someNode.id + ' => ' + someNode.name),
   );
 
   const expandAuthorField = (nodeToExpand, authorTitle, fieldName) => {
@@ -125,6 +125,14 @@ exports.sourceNodes = ({actions, getNodes, getNode}) => {
             value: resolvedSuccessStories,
           });
         }
+      }
+
+      if (node.frontmatter.infoBox) {
+          createNodeField({
+            node,
+            name: 'infoBox',
+            value: node.frontmatter.infoBox,
+          });
       }
 
       if (!!node.frontmatter.author) {
@@ -251,6 +259,7 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
     // Actually, that's kind of a fragile setup since it makes the assumption
     // to find the static folder exactly three folders down from file the images
     // path was defined in.
+
     if (node.frontmatter.image) {
       let imagePath = node.frontmatter.image;
       if (node.frontmatter.image.startsWith('/img/')) {
@@ -262,6 +271,7 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
         });
       }
     }
+
     if (node.frontmatter.thumbnail) {
       let imagePath = node.frontmatter.thumbnail;
       if (node.frontmatter.thumbnail.startsWith('/img/')) {
@@ -273,6 +283,7 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
         });
       }
     }
+
     if (node.frontmatter.headerImage) {
       let imagePath = node.frontmatter.headerImage;
       if (node.frontmatter.headerImage.startsWith('/img/')) {
@@ -285,11 +296,22 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
       }
     }
 
+    if (node.frontmatter.infoBox && node.frontmatter.infoBox.image) {
+      let imagePath = node.frontmatter.infoBox.image;
+      if (node.frontmatter.infoBox.image.startsWith('/img/')) {
+        imagePath = `../../../static${node.frontmatter.infoBox.image}`;
+        createNodeField({
+          name: `infoBoxImage`,
+          node,
+          value: imagePath,
+        });
+      }
+    }
   }
 
   const {frontmatter} = node;
   if (frontmatter) {
-    const {headerImage} = frontmatter;
+    const {headerImage, statements} = frontmatter;
     if (headerImage) {
       if (headerImage.indexOf('/img') === 0) {
         frontmatter.headerImage = path.relative(
@@ -298,5 +320,16 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
         );
       }
     }
+    if(statements){
+      statements.forEach((statement) => {
+        if(statement.image && statement.image.indexOf('/img') === 0){
+          statement.image = path.relative(
+            path.dirname(node.fileAbsolutePath),
+            path.join(__dirname, '/static/', statement.image),
+          );
+        }
+      });
+    }
   }
+
 };

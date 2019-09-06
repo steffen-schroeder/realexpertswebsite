@@ -19,11 +19,18 @@ export default class BlogPostTeaser extends React.Component {
           </Link>}
         </div>
         <div className="post-content">
+          <div className="post-category-name">
           {post.fields.category && (
-            <Link to={post.fields.category.fields.slug}>
+            <Link to={post.fields.category.fields.slug} >
               <h5>{post.fields.category.frontmatter.title}</h5>
             </Link>
           )}
+            {!post.fields.category && (
+              <Link to="/" >
+                <h5>Fehlt!</h5>
+              </Link>
+            )}
+          </div>
           <Link to={post.fields.slug}>
             <h4>{post.frontmatter.title}</h4>
           </Link>
