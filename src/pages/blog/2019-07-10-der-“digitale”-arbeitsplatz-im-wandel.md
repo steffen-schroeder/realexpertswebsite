@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 'Der “digitale” Arbeitsplatz im Wandel '
 date: '2019-07-10T13:29:01+02:00'
 author: Oliver Reithage
-image: /img/der-“digitale”arbeitsplatz-im-wandel.png
+image: /img/der-“digitale”arbeitsplatz-im-wandel-fertig.png
 description: >-
   Die interne digitale Transformation soll weiter vorangetrieben werden. Das
   Projekt “Aufbau Digital Workplace” der Unternehmensführung ist ambitioniert:
@@ -18,7 +18,7 @@ relatedPosts:
 ---
 Die interne digitale Transformation soll weiter vorangetrieben werden. Das Projekt **“Aufbau Digital** **Workplace”** der Unternehmensführung ist ambitioniert: Es soll eine begeisternde und intuitive Arbeitsplatzumgebung geschaffen werden, in der Mitarbeiter vom Potential und der Wirksamkeit digitaler Technologien profitieren. Die Etablierung eines Digital Workplace ist damit längst keine Vision mehr, sondern wird nun vielmehr eine sich durch alle Unternehmensbereiche erstreckende Mission. Soweit, so gut! Aber wie sieht eigentlich der zukünftige moderne digitale Arbeitsplatz für Mitarbeiter aus? Und überhaupt - wie unterscheidet dieser sich zur gegenwärtigen “digitalen” Arbeitsplatzumgebung? 
 
-Zur Erinnerung: In unserem [Blogbeitrag ](https://www.realexperts.de/blog/2018-12-27-digital-workplace-schreckgespenst-oder-lichtgestalt/)wurde dargestellt, dass es sich beim beim Buzzword Digital Workplace **nicht primär** um eine technologisch getriebene Entwicklung handelt. Vielmehr ist der Digital Workplace ein ganzheitliches, unternehmensweites Vorhaben, um den gegenwärtigen Anforderungen an Arbeits- und Organisationsprozessen in Unternehmen gerecht zu werden. Digitale Technologien sind daher mehr als Werkzeuge zur Bewältigung verschiedener Anforderungen in Unternehmen zu verstehen. Entscheidend ist: Im Mittelpunkt einer Arbeitsplatzumgebung jedes Unternehmens stehen nicht einzelne digitale Technologien, sondern ein Kollektiv an Mitarbeitern zur Nutzung dieser. 
+Zur Erinnerung: In unserem [Blogbeitrag ](https://www.realexperts.de/blog/2018-12-27-digital-workplace-schreckgespenst-oder-lichtgestalt/)wurde dargestellt, dass es sich beim beim Buzzword Digital Workplace **nicht primär** um eine technologisch getriebene Entwicklung handelt. Vielmehr ist der Digital Workplace ein ganzheitliches, unternehmensweites Vorhaben, um den gegenwärtigen Anforderungen an Arbeits- und Organisationsprozessen in Unternehmen gerecht zu werden. Digitale Technologien stellen daher mehr als Werkzeuge zur Bewältigung verschiedener Anforderungen in Unternehmen dar. Entscheidend ist: Im Mittelpunkt einer Arbeitsplatzumgebung jedes Unternehmens stehen nicht einzelne digitale Technologien, sondern ein Kollektiv an Mitarbeitern zur Nutzung dieser. 
 
 ### Keine Einführung digitaler Technologien ohne Zielbild
 
@@ -34,4 +34,4 @@ Wie im Schaubild dargestellt, fokussieren sich moderne Formen von Arbeitsplatzko
 
 ### Fazit: Mit klarem Zielbild zum wirksamen Digital Workplace
 
-Digitale Technologien werden nicht selten in den Mittelpunkt des modernen Arbeitsplatzes der Zukunft gestellt. Ein Aspekt der nicht zu kurz kommen darf, ist die Kommunikation der Unternehmen an die Mitarbeiter darüber, warum technologische Veränderungen am Arbeitsplatz der Mitarbeiter durchgeführt werden. Ein Weg besteht darin, den Mitarbeitern ein klares Zielbild zu vermitteln. Konkret: Wie will das Unternehmen zukünftig arbeiten? Welche Rolle spielen hierbei digitale Technologien um diese Vision umzusetzen? Nur so kann die Etablierung eines wirksamen Digital Workplace nachhaltig gelingen.
+Digitale Technologien werden nicht selten in den Mittelpunkt des modernen Arbeitsplatzes der Zukunft gestellt. Ein Aspekt der nicht zu kurz kommen darf, ist die Kommunikation der Unternehmen an die Mitarbeiter darüber, warum technologische Veränderungen am Arbeitsplatz durchgeführt werden. Ein Weg besteht darin, den Mitarbeitern ein klares Zielbild zu vermitteln. Konkret: Wie will das Unternehmen zukünftig arbeiten? Welche Rolle spielen hierbei digitale Technologien um diese Vision umzusetzen? Nur so kann die Etablierung eines wirksamen Digital Workplace nachhaltig gelingen.

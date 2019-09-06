@@ -30,13 +30,13 @@ Obwohl das Ziel der Reise vorerst nicht klar war, besteht die Mission von Real E
 
 Neben mir als Initiator begeben sich weitere Menschen aus meinem Netzwerk auf diese Reise. Formal ist es die neu gegründete Real Experts Network GmbH mit Sitz in Dresden. Diese Gesellschaft verbindet die Experten, die zukünftig im Unternehmen als Mitarbeiter angestellt sind und vor allem auch die externen Partner, die im Rahmen ihrer freien Tätigkeit am Markt auch Teil der Real Experts Community und damit des Netzwerkes werden. 
 
-Jeder, der Lust hat, teilzuhaben und für sich einen Mehrwert in der Zusammenarbeit im Netzwerk von Real Experts sieht, ist herzlich eingeladen dabei zu sein. Egal ob als Mitarbeiter, als Kunde oder als externer Netzwerkpartner. In der Zusammenarbeit im Netzwerk und in Kundenprojekten geschieht auf Augenhöhe. 
+Jeder, der Lust hat, teilzuhaben und für sich einen Mehrwert in der Zusammenarbeit im Netzwerk von Real Experts sieht, ist herzlich eingeladen dabei zu sein. Egal ob als Mitarbeiter, als Kunde oder als externer Netzwerkpartner. In der Zusammenarbeit im Netzwerk und in Kundenprojekten geschieht dabei alles auf Augenhöhe. 
 
 ## Wofür steht Real Experts?
 
 Real Experts steht für eine neue Form der Zusammenarbeit zwischen Menschen. Uns interessiert die Art und Weise der Zusammenarbeit zwischen Kollegen, Kunden und externen Partnern. Ziel ist es, die Bedürfnisse des Menschen im Vordergrund gegenüber den wirtschaftlichen Interessen der jeweiligen Unternehmen zu stellen. . Die negativen Folgen tradierter Arbeitsmuster sind hinlänglich bekannt und mit einer steigenden Unzufriedenheit von Mitarbeitern immer deutlicher zu erkennen. 
 
-Die Organisation von Real Experts wird geprägt sein durch eine sinnstiftende Zusammenarbeit, die eine ganzheitlich Sicht vertritt. Wir möchten für Mitarbeiter, Kunden und Partner eine wirkliche menschlichen Bereicherung und damit viel tiefer liegende Begeisterung für das Tun und Handeln zu erzeugen. Dazu gehören auch Werte wie Loyalität, Respekt, Vertrauen, offene Kommunikation und ehrliche Kooperation. 
+Die Organisation von Real Experts wird geprägt sein durch eine sinnstiftende Zusammenarbeit, die eine ganzheitlich Sicht vertritt. Wir möchten für Mitarbeiter, Kunden und Partner eine wirkliche menschliche Bereicherung und damit viel tiefer liegende Begeisterung für das Tun und Handeln zu erzeugen. Dazu gehören auch Werte wie Loyalität, Respekt, Vertrauen, offene Kommunikation und ehrliche Kooperation. 
 
 Ganz nach dem Motto: **“Du kriegst was Du gibst, wenn Du tust was Du liebst!”**
 
@@ -46,8 +46,8 @@ Schließlich werden die Menschen durch diese neue Form der Zusammenarbeit persö
 
 ## Was kann Real Experts leisten?
 
-Aus Sicht der Leistungserbringungen hat sich Real Experts zum Ziel gemacht, das was Grundlage der neuen Form der Zusammenarbeit ist, auch in die Unternehmen der Kunden zu bringen. Wir möchten unsere Idee einer sinnstiftenden Zusammenarbeit Kunden näher bringen, wodurch sie nachhaltiger arbeiten können. 
+Aus Sicht der Leistungserbringungen hat sich Real Experts zum Ziel gemacht, das, was Grundlage der neuen Form der Zusammenarbeit ist, auch in die Unternehmen der Kunden zu bringen. Wir möchten Kunden unsere Idee einer sinnstiftenden Zusammenarbeit näher vermitteln, wodurch sie nachhaltiger arbeiten können. 
 
-Durch die Nutzung neuer Technologien für Kommunikation und Zusammenarbeit zwischen Menschen im privaten wie im geschäftlichen Bereich bieten wir neue Möglichkeiten für enorme Erleichterungen und Leistungssteigerungen in Abläufen und Prozessen. Wir helfen, Fähigkeiten zu unterstützen und auszubauen, um die Wettbewerbs-, Innovationsfähigkeit und die Arbeitgeberattraktivität für die Zukunft Ihres Unternehmens zu sichern.
+Durch die Nutzung neuer Technologien für Kommunikation und Zusammenarbeit zwischen Menschen im privaten wie im geschäftlichen Bereich bieten wir neue Möglichkeiten für enorme Erleichterungen und Leistungssteigerungen in Abläufen und Prozessen. Wir helfen, Fähigkeiten zu unterstützen und auszubauen, um die Wettbewerbs-, und Innovationsfähigkeit und die Arbeitgeberattraktivität für die Zukunft Ihres Unternehmens zu sichern.
 
 Foto: Sarah Jürgel

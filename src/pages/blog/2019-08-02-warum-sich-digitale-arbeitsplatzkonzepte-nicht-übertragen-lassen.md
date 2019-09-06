@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 'Warum sich digitale Arbeitsplatzkonzepte nicht übertragen lassen '
 date: '2019-08-02T19:47:37+02:00'
 author: Oliver Reithage
-image: /img/warum-sich-digitale-arbeitsplatzkonzepte-nicht-übertragen-lassen-.png
+image: /img/warum-sich-digitale-arbeitsplatzkonzepte-nicht-übertragen-lassen-neu.png
 description: >-
 
   In unseren bisherigen Blogartikeln der #DigitalWorkplace Reihe wurde deutlich,
@@ -29,11 +29,11 @@ Ist der Schritt einer digitalen Veränderung im Unternehmen beschlossen, kommt e
 
 ### Wie zwei Beratungsansätze zu unterschiedlichen Ergebnissen führen
 
-Der Geschäftsführer einer etablierten Softwareentwicklungsfirma brachte in einem Gespräch über die Einführung und Bewertung digitaler Technologien, die Bedeutung der Dienstleister in diesem Fall an. Gerade in Digital Workplace Projekten schien mir der Gedanke interessant. Als beratender Dienstleister hat man bei der Frage nach Referenzprojekten gegenüber dem Kunden eigentlich zwei Antwortmöglichkeiten parat. Eine lässt sich als **gefällig**, die andere als **wirksam** kategorisieren. Entscheidend ist: Der Erfolg des Projekts wird durch beide Ansätze unterschiedlich beeinflusst. 
+Der Geschäftsführer einer etablierten Softwareentwicklungsfirma brachte in einem Gespräch über die Einführung und Bewertung digitaler Technologien die Bedeutung der Dienstleister in diesem Fall an. Gerade in Digital Workplace Projekten schien mir der Gedanke interessant. Als beratender Dienstleister hat man bei der Frage nach Referenzprojekten gegenüber dem Kunden eigentlich zwei Antwortmöglichkeiten parat. Eine lässt sich als **gefällig**, die andere als **wirksam** kategorisieren. Entscheidend ist: Der Erfolg des Projekts wird durch beide Ansätze unterschiedlich beeinflusst. 
 
 #### Antwortmöglichkeit 1: Der konfliktscheue, gefällige Berater
 
-Die erste Möglichkeit besteht darin, den Kunden in Sicherheit zu wiegen. Die Antwort lautet: „Ja, wir haben Erfahrung bei anderen Unternehmen gemacht. Das hat dort super funktioniert.“ Und im besten Fall hat man direkt eine Referenz zur Hand. Der Kunde lehnt sich entspannt zurück und fühlt sich bestätigt. Der Kunde denkt: „Hier kann nichts schiefgehen, wurde ja alles schon mal bei der Firma XY gemacht.“ Der Dienstleister denkt: „Einfacher Anwendungsfall, hat ja bei der Firma XY auch so funktioniert. Wird hier sicher auch passen.“ Alles im Lot könnte man meinen. 
+Die erste Möglichkeit besteht darin, den Kunden in Sicherheit zu wiegen. Die Antwort lautet: „Ja, wir haben Erfahrung bei anderen Unternehmen gemacht. Das hat dort super funktioniert.“ Und im besten Fall hat man direkt eine Referenz zur Hand. Der Kunde lehnt sich entspannt zurück und fühlt sich bestätigt. Der Kunde denkt: „Hier kann nichts schiefgehen, wurde ja alles schon mal bei der Firma XY gemacht.“ Der Dienstleister denkt: „Einfacher Anwendungsfall, hat ja bei der Firma XY auch so funktioniert. Wird hier sicher auch passen.“ Alles im Lot, könnte man meinen. 
 
 #### Antwortmöglichkeit 2: Der kritische, wirksame Berater
 
@@ -45,4 +45,4 @@ Das Prinzip der Übertragbarkeit funktioniert leider nur so lange gut, bis man m
 
 ### Fazit: Für den Projekterfolg bedarf es kritischer Stimmen
 
-Der Weg zum passgenauen digitalen Arbeitsplatzkonzept für das eigene Unternehmen ist kein einfaches Unterfangen. Es bedarf einer ausgiebigen Analysephase und vor allem einer Einbindung verschiedener Stakeholder aus allen Unternehmensbereichen in das Projekt. Oberstes Gebot: Pauschale Annahmen zu Bedarfen und Anforderungen sollten in Digitalisierungsprojekten keinen Platz finden. Zu groß ist die Gefahr, dass das Ergebnis von der eigentlichen Zielstellung abweicht. Auch externe Dienstleister sind hier in ihrer Funktion gefragt. Ein Berater tut dem Unternehmen durch ein gefälliges Auftreten keinen gefallen und verfehlt seine Aufgabe in einer kritischen und objektiven Rolle. Im Selbstverständnis sollte er die Rolle eines agilen Coaches erfüllen und im Sinne der Mitarbeiter handeln. Das bedeutet auch die eigene Meinung gegenüber der Geschäftsführung zu vertreten.
+Der Weg zum passgenauen digitalen Arbeitsplatzkonzept für das eigene Unternehmen ist kein einfaches Unterfangen. Es bedarf einer ausgiebigen Analysephase und vor allem einer Einbindung verschiedener Stakeholder aus allen Unternehmensbereichen in das Projekt. Oberstes Gebot: Pauschale Annahmen zu Bedarfen und Anforderungen sollten in Digitalisierungsprojekten keinen Platz finden. Zu groß ist die Gefahr, dass das Ergebnis von der eigentlichen Zielstellung abweicht. Auch externe Dienstleister sind hier in ihrer Funktion gefragt. Ein Berater tut dem Unternehmen durch ein gefälliges Auftreten keinen Gefallen und verfehlt seine Aufgabe in einer kritischen und objektiven Rolle. Im Selbstverständnis sollte er die Rolle eines agilen Coaches erfüllen und im Sinne der Mitarbeiter handeln. Das bedeutet auch, die eigene Meinung gegenüber der Geschäftsführung zu vertreten.
