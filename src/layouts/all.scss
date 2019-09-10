@@ -33,7 +33,7 @@ body {
     display: flex;
     flex-direction: row;
     padding: 20px;
-    border-top: 1px solid #CCCCCC;
+    border-top: 1px solid $grey;
 
     .image-type-normal {
       min-width: 21%;
@@ -90,6 +90,8 @@ body {
   align-items: center;
   position: relative;
   width: 100%;
+  height: 100%;
+  overflow: scroll;
 
   ul.taglist {
     display: flex;
@@ -258,7 +260,7 @@ header {
     }
 
     &.navbar-at-top {
-      transition: background-color 0.5s ease, height 0.5s ease;
+      transition: background-color 0.5s ease, height 0.5s ease, margin 0.5s ease;
       background-color: transparent;
       height: 140px;
 
@@ -280,9 +282,9 @@ header {
     }
 
     &.navbar-scrolled {
-      transition: background-color 0.5s ease, height 0.5s ease;
+      transition: background-color 0.5s ease, height 0.5s ease, margin 0.5s ease;
       background-color: $primary;
-      height: 80px;
+      height: 100px;
 
       nav {
         .navigation-bar-logo {
@@ -545,8 +547,11 @@ main {
             max-width: 800px;
 
             .statement-image {
-              width: 150px;
-              margin-right: 30px;
+
+              .gatsby-image-wrapper {
+                width: 150px;
+                margin-right: 30px;
+              }
             }
 
             .statement-message {
@@ -595,13 +600,13 @@ main {
           display: flex;
 
           .category-teaser {
-            max-width: 32%;
+            max-width: 48%;
             margin-right: 2%;
             flex-direction: column;
             display: flex;
             width: 100%;
 
-            &:nth-child(n+3) {
+            &:nth-child(2n) {
               margin-right: 0;
             }
 
@@ -655,15 +660,17 @@ main {
 
           @extend .horzontal-three-posts-list;
 
-          .post-category-name {
-            padding: 10px 0 0 0;
-          }
-
         }
       }
 
     }
 
+  }
+
+  .post-category-name {
+    padding: 10px 0 0 0;
+    text-transform: uppercase;
+    line-height: 26px;
   }
 
   .front {
@@ -714,14 +721,12 @@ main {
         .post-content {
           margin-left: 2%;
           width: 32%;
-          border-top: 1px solid #CCC;
-          border-bottom: 1px solid #CCC;
+          border-top: 1px solid $grey;
+          border-bottom: 1px solid $grey;
 
           .post-tags {
-
             margin-top: 120px;
             margin-bottom: 0;
-
           }
 
           h4 {
@@ -821,8 +826,7 @@ main {
       .content {
         flex: 8;
         display: block;
-        border-bottom: #CCC solid 1px;
-        padding-bottom: 20px;
+
 
         p {
           line-height: 28px;
@@ -882,16 +886,35 @@ main {
       }
     }
 
-    .overview-link {
-      font-weight: bold;
-      color: $primary;
+    .overview-link-wrapper {
       display: flex;
-      flex-direction: row;
-      align-items: stretch;
-      margin-top: 20px;
 
-      img {
-        margin-right: 10px;
+      div:nth-child(1),
+      div:nth-child(3){
+        flex: 1;
+      }
+
+      div:nth-child(1) {
+        padding-right: 60px;
+      }
+
+      div:nth-child(2){
+        flex: 8;
+        border-bottom: 1px solid $grey;
+        padding-bottom: 20px;
+      }
+
+      .overview-link {
+        font-weight: bold;
+        color: $primary;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        margin-top: 20px;
+
+        img {
+          margin-right: 10px;
+        }
       }
     }
 

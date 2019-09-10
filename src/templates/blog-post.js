@@ -6,7 +6,7 @@ import BlogPostTeaser from '../components/BlogPostTeaser';
 import Content, { HTMLContent } from '../components/Content';
 import SocialButtons from '../components/SocialButtons';
 import SEO from '../components/SEO';
-import arrowLeft from '../img/icons/arrow-left-bold-circle.svg';
+import arrowLeft from '../img/icons/arrow-left.svg';
 import Layout from '../components/layout';
 
 export const BlogPostTemplate = ({
@@ -61,11 +61,17 @@ export const BlogPostTemplate = ({
                 </div>
                 <div className="content">
                   <PostContent content={content}/>
+                </div>
+                <SocialButtons socialConfig={socialConfig} tags={tags}/>
+              </div>
+              <div className="overview-link-wrapper">
+                <div></div>
+                <div>
                   <Link className="overview-link" to={`/blog/`}>
                     <img src={arrowLeft} alt="Real Experts" style={{maxHeight: '75px'}}/> Zur Blogübersicht
                   </Link>
                 </div>
-                <SocialButtons socialConfig={socialConfig} tags={tags}/>
+                <div></div>
               </div>
               <div className="blog-post-category">
                   {category && category.fields && category.fields.slug &&
