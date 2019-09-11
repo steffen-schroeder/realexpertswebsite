@@ -601,13 +601,13 @@ main {
           display: flex;
 
           .category-teaser {
-            max-width: 48%;
+            max-width: 32%;
             margin-right: 2%;
             flex-direction: column;
             display: flex;
             width: 100%;
 
-            &:nth-child(2n) {
+            &:nth-child(3n) {
               margin-right: 0;
             }
 
