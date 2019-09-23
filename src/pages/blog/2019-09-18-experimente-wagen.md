@@ -18,8 +18,7 @@ relatedPosts:
   - post: 'Führen und führen lassen auf Augenhöhe '
   - post: Auf dem Weg zum AUGENHÖHEwegbegleiter
 ---
-\    _“Ich male die Dinge so wie ich sie denke, nicht wie ich sie sehe.”
-                                                                  _Pablo Picasso
+“Ich male die Dinge so wie ich sie denke, nicht wie ich sie sehe.” - Pablo Picasso
 
 Einfacher wäre es! Kausalabfolgen im Unternehmen. Ich mache etwas und weiß genau um die Folge. Eine Führungskraft äußert Kritik und daraufhin verschwinden Fehler. Eine ordentliche Projektretrospektive und das nächste Projekt läuft genau so, wie es geplant wurde. Ein gut überlegter Sprint und nichts geht schief.  Aber wir wissen es alle. So läuft das nicht. Nicht mehr. Organisationen sind komplexer geworden, weil wir in einer anderen Zeit leben. Eine Zeit der dynamischen Märkte, fluiden Arbeitsverhältnisse und komplexen Zusammenhänge. Schlagwörter, die wir in diesem Zusammenhang oft hören sind Unvorhersagbarkeit, Unsicherheit, Vielseitigkeit. Aber was bedeutet das für unsere Unternehmen, die Führungskräfte und Mitarbeiter? Und was braucht es nun dafür?
 
