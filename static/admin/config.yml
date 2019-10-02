@@ -62,6 +62,13 @@ collections:
       - {label: "Top Posts",      name: "relatedPosts",   widget: "list",   fields: [{label: "Post",      name: "post",     widget: "relation", collection: "blog", searchFields: ["name", "title"], valueField: title}]}
   - name: "pages"
     label: "Pages"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Template Key", name: "templateKey",  widget: "hidden", default: "simple-page"}
+      - {label: "Title",        name: "title",        widget: "string"}
+      - {label: "Body",         name: "body",         widget: "markdown"}
     files:
       - file: "src/pages/jobs/index.md"
         label: "Jobs"
